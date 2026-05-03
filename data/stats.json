@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-05-02T14:06:45.182736-04:00",
+  "last_updated": "2026-05-03T14:08:37.040447-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
     "avatar_url": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0134d/046431ce7950392c9849d8eb53c5e448.png",
-    "achievements": 1634,
-    "active_days": 887,
+    "achievements": 1636,
+    "active_days": 888,
     "avatar_count": 54,
     "chest_count": 1859,
     "five_star_characters": {
@@ -434,7 +434,7 @@
         "lc": null
       }
     },
-    "stamina": 44,
+    "stamina": 284,
     "current_train_score": 500,
     "anomaly_arbitration": {
       "season": "Happiness Syntax",
@@ -709,8 +709,8 @@
     "nickname": "avenlotl",
     "level": 57,
     "avatar_url": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/f6ed58ae3cfeeebd6e4956e7c5e4b725.png",
-    "achievements": 972,
-    "active_days": 342,
+    "achievements": 974,
+    "active_days": 343,
     "avatar_count": 55,
     "oculus": 1164,
     "chest_count": 3866,
@@ -971,30 +971,30 @@
         }
       }
     },
-    "resin": 112,
-    "daily_task": 0
+    "resin": 12,
+    "daily_task": 4
   },
   "hsr_diary": {
-    "Date": "2026-05-02",
-    "Net Currency Gain": 580,
+    "Date": "2026-05-03",
+    "Net Currency Gain": 370,
     "Pulls Net Gain": 0
   },
   "genshin_diary": {
-    "Date": "2026-05-02",
-    "Net Currency Gain": 0,
+    "Date": "2026-05-03",
+    "Net Currency Gain": 80,
     "Pulls Net Gain": 0
   },
   "endfield_attendance": {
     "status": "Check-in Successful",
     "rewards": [
       {
-        "name": "Talosian Credit Notes|T-Creds",
-        "count": 2000,
-        "icon": "https://static.skport.com/asset/endfield_attendance/2a58a0e85f39092433842ccd62324785.png"
+        "name": "Oroberyl",
+        "count": 80,
+        "icon": "https://static.skport.com/asset/endfield_attendance/8ed434a6cdb173c96ed0572115112f93.png"
       }
     ],
     "attendance": {
-      "totalSignIns": 3,
+      "totalSignIns": 4,
       "calendar": [
         {
           "awardId": "endfield_attendance_1_2",
@@ -1008,13 +1008,13 @@
         },
         {
           "awardId": "endfield_attendance_7_2000",
-          "available": true,
+          "available": false,
           "done": true
         },
         {
           "awardId": "endfield_attendance_8_80",
-          "available": false,
-          "done": false
+          "available": true,
+          "done": true
         },
         {
           "awardId": "endfield_attendance_4_2",
@@ -1155,9 +1155,9 @@
     },
     "error": null,
     "nextAward": {
-      "name": "Oroberyl",
-      "count": 80,
-      "icon": "https://static.skport.com/asset/endfield_attendance/8ed434a6cdb173c96ed0572115112f93.png"
+      "name": "Arms INSP Kit",
+      "count": 2,
+      "icon": "https://static.skport.com/asset/endfield_attendance/0dea0bc0fd87138df322e8a254a6999f.png"
     }
   },
   "endfield_data": {
@@ -1545,8 +1545,8 @@
         }
       }
     },
-    "stamina": "38",
-    "daily_mission": 100,
+    "stamina": "239",
+    "daily_mission": 0,
     "last_updated": "2026-05-02T14:06:45.182370-04:00"
   }
 }
