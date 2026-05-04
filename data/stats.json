@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-05-03T14:08:37.040447-04:00",
+  "last_updated": "2026-05-04T15:01:27.175290-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
     "avatar_url": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0134d/046431ce7950392c9849d8eb53c5e448.png",
-    "achievements": 1636,
-    "active_days": 888,
+    "achievements": 1637,
+    "active_days": 889,
     "avatar_count": 54,
     "chest_count": 1859,
     "five_star_characters": {
@@ -434,7 +434,7 @@
         "lc": null
       }
     },
-    "stamina": 284,
+    "stamina": 49,
     "current_train_score": 500,
     "anomaly_arbitration": {
       "season": "Happiness Syntax",
@@ -971,30 +971,30 @@
         }
       }
     },
-    "resin": 12,
-    "daily_task": 4
+    "resin": 199,
+    "daily_task": 0
   },
   "hsr_diary": {
-    "Date": "2026-05-03",
-    "Net Currency Gain": 370,
+    "Date": "2026-05-04",
+    "Net Currency Gain": 377,
     "Pulls Net Gain": 0
   },
   "genshin_diary": {
-    "Date": "2026-05-03",
-    "Net Currency Gain": 80,
+    "Date": "2026-05-04",
+    "Net Currency Gain": 0,
     "Pulls Net Gain": 0
   },
   "endfield_attendance": {
     "status": "Check-in Successful",
     "rewards": [
       {
-        "name": "Oroberyl",
-        "count": 80,
-        "icon": "https://static.skport.com/asset/endfield_attendance/8ed434a6cdb173c96ed0572115112f93.png"
+        "name": "Arms INSP Kit",
+        "count": 2,
+        "icon": "https://static.skport.com/asset/endfield_attendance/0dea0bc0fd87138df322e8a254a6999f.png"
       }
     ],
     "attendance": {
-      "totalSignIns": 4,
+      "totalSignIns": 5,
       "calendar": [
         {
           "awardId": "endfield_attendance_1_2",
@@ -1013,13 +1013,13 @@
         },
         {
           "awardId": "endfield_attendance_8_80",
-          "available": true,
+          "available": false,
           "done": true
         },
         {
           "awardId": "endfield_attendance_4_2",
-          "available": false,
-          "done": false
+          "available": true,
+          "done": true
         },
         {
           "awardId": "endfield_attendance_6_2",
@@ -1155,9 +1155,9 @@
     },
     "error": null,
     "nextAward": {
-      "name": "Arms INSP Kit",
+      "name": "Protoprism",
       "count": 2,
-      "icon": "https://static.skport.com/asset/endfield_attendance/0dea0bc0fd87138df322e8a254a6999f.png"
+      "icon": "https://static.skport.com/asset/endfield_attendance/0c1e8cf15711a7d59aa7d8786b533cf1.png"
     }
   },
   "endfield_data": {
@@ -1165,59 +1165,25 @@
     "level": 60,
     "avatar_url": "data/images/6beb98f8c8e7a81d37071bc3593b6321.png",
     "achievements": 81,
-    "active_days": 17,
+    "active_days": 18,
     "avatar_count": 22,
     "aurylenes": 289,
     "chest_count": 619,
     "six_star_characters": {
-      "Laevatain": {
-        "avatarSqUrl": "data/images/15a984eaecaf0d7c47d871175ae38937.png",
+      "Lifeng": {
+        "avatarSqUrl": "data/images/e1ffee22e9f4a4df2562cbfce21108e1.png",
         "rarity": "6",
-        "potential": 0,
-        "profession": "Striker",
-        "property": "Heat",
-        "weaponType": "Sword",
-        "level": 90,
-        "weapon": {
-          "name": "Umbral Torch",
-          "iconUrl": "data/images/f67ca28a6489e356f928c9c9ef1b61eb.png",
-          "rarity": "6",
-          "type": "Sword",
-          "level": 90,
-          "refineLevel": 0
-        }
-      },
-      "Tangtang": {
-        "avatarSqUrl": "data/images/ee017b6ab7f20b54c0effcf522518d2b.png",
-        "rarity": "6",
-        "potential": 1,
-        "profession": "Caster",
-        "property": "Cryo",
-        "weaponType": "Handcannon",
-        "level": 90,
-        "weapon": {
-          "name": "Brigand's Calling",
-          "iconUrl": "data/images/675ec992ee25214d0af5cdb60ccd893a.png",
-          "rarity": "6",
-          "type": "Handcannon",
-          "level": 90,
-          "refineLevel": 0
-        }
-      },
-      "Pogranichnik": {
-        "avatarSqUrl": "data/images/9c14933aa23b96d01658caed5a3b9907.png",
-        "rarity": "6",
-        "potential": 1,
-        "profession": "Vanguard",
+        "potential": 2,
+        "profession": "Guard",
         "property": "Physical",
-        "weaponType": "Sword",
+        "weaponType": "Polearm",
         "level": 90,
         "weapon": {
-          "name": "Never Rest",
-          "iconUrl": "data/images/21532368a8d1075f3259f51eb226f9b3.png",
+          "name": "Mountain Bearer",
+          "iconUrl": "data/images/b4827d12232501551485e0c9f671caa8.png",
           "rarity": "6",
-          "type": "Sword",
-          "level": 80,
+          "type": "Polearm",
+          "level": 90,
           "refineLevel": 0
         }
       },
@@ -1238,19 +1204,53 @@
           "refineLevel": 0
         }
       },
-      "Lifeng": {
-        "avatarSqUrl": "data/images/e1ffee22e9f4a4df2562cbfce21108e1.png",
+      "Pogranichnik": {
+        "avatarSqUrl": "data/images/9c14933aa23b96d01658caed5a3b9907.png",
         "rarity": "6",
-        "potential": 2,
-        "profession": "Guard",
+        "potential": 1,
+        "profession": "Vanguard",
         "property": "Physical",
-        "weaponType": "Polearm",
+        "weaponType": "Sword",
         "level": 90,
         "weapon": {
-          "name": "Mountain Bearer",
-          "iconUrl": "data/images/b4827d12232501551485e0c9f671caa8.png",
+          "name": "Never Rest",
+          "iconUrl": "data/images/21532368a8d1075f3259f51eb226f9b3.png",
           "rarity": "6",
-          "type": "Polearm",
+          "type": "Sword",
+          "level": 82,
+          "refineLevel": 0
+        }
+      },
+      "Tangtang": {
+        "avatarSqUrl": "data/images/ee017b6ab7f20b54c0effcf522518d2b.png",
+        "rarity": "6",
+        "potential": 1,
+        "profession": "Caster",
+        "property": "Cryo",
+        "weaponType": "Handcannon",
+        "level": 90,
+        "weapon": {
+          "name": "Brigand's Calling",
+          "iconUrl": "data/images/675ec992ee25214d0af5cdb60ccd893a.png",
+          "rarity": "6",
+          "type": "Handcannon",
+          "level": 90,
+          "refineLevel": 0
+        }
+      },
+      "Laevatain": {
+        "avatarSqUrl": "data/images/15a984eaecaf0d7c47d871175ae38937.png",
+        "rarity": "6",
+        "potential": 0,
+        "profession": "Striker",
+        "property": "Heat",
+        "weaponType": "Sword",
+        "level": 90,
+        "weapon": {
+          "name": "Umbral Torch",
+          "iconUrl": "data/images/f67ca28a6489e356f928c9c9ef1b61eb.png",
+          "rarity": "6",
+          "type": "Sword",
           "level": 90,
           "refineLevel": 0
         }
@@ -1272,6 +1272,23 @@
           "refineLevel": 5
         }
       },
+      "Ardelia": {
+        "avatarSqUrl": "data/images/8acdcdaa6c69979a9b01f77281465a0a.png",
+        "rarity": "6",
+        "potential": 1,
+        "profession": "Supporter",
+        "property": "Nature",
+        "weaponType": "Arts Unit",
+        "level": 82,
+        "weapon": {
+          "name": "Dreams of the Starry Beach",
+          "iconUrl": "data/images/fe34d89d2e92df4d993a4fc881b3d6d8.png",
+          "rarity": "6",
+          "type": "Arts Unit",
+          "level": 80,
+          "refineLevel": 0
+        }
+      },
       "Endministrator": {
         "avatarSqUrl": "data/images/a1d3ed03165785526b442aee65f0ef52.png",
         "rarity": "6",
@@ -1289,23 +1306,6 @@
           "refineLevel": 1
         }
       },
-      "Ardelia": {
-        "avatarSqUrl": "data/images/8acdcdaa6c69979a9b01f77281465a0a.png",
-        "rarity": "6",
-        "potential": 1,
-        "profession": "Supporter",
-        "property": "Nature",
-        "weaponType": "Arts Unit",
-        "level": 80,
-        "weapon": {
-          "name": "Dreams of the Starry Beach",
-          "iconUrl": "data/images/fe34d89d2e92df4d993a4fc881b3d6d8.png",
-          "rarity": "6",
-          "type": "Arts Unit",
-          "level": 80,
-          "refineLevel": 0
-        }
-      },
       "Yvonne": {
         "avatarSqUrl": "data/images/bacd477f99daf106e4995acef6c85456.png",
         "rarity": "6",
@@ -1321,23 +1321,6 @@
           "type": "Handcannon",
           "level": 80,
           "refineLevel": 0
-        }
-      },
-      "Perlica": {
-        "avatarSqUrl": "data/images/c7d4eaff6c2336b0e9d217e32d208e28.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Caster",
-        "property": "Electric",
-        "weaponType": "Arts Unit",
-        "level": 80,
-        "weapon": {
-          "name": "Stanza of Memorials",
-          "iconUrl": "data/images/bfbda14b0634b1ef9df15040f2e12640.png",
-          "rarity": "5",
-          "type": "Arts Unit",
-          "level": 80,
-          "refineLevel": 1
         }
       },
       "Xaihi": {
@@ -1370,6 +1353,23 @@
           "iconUrl": "data/images/cee67efec0389c4a0197291c3550ace7.png",
           "rarity": "5",
           "type": "Handcannon",
+          "level": 80,
+          "refineLevel": 1
+        }
+      },
+      "Perlica": {
+        "avatarSqUrl": "data/images/c7d4eaff6c2336b0e9d217e32d208e28.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Caster",
+        "property": "Electric",
+        "weaponType": "Arts Unit",
+        "level": 80,
+        "weapon": {
+          "name": "Stanza of Memorials",
+          "iconUrl": "data/images/bfbda14b0634b1ef9df15040f2e12640.png",
+          "rarity": "5",
+          "type": "Arts Unit",
           "level": 80,
           "refineLevel": 1
         }
@@ -1425,19 +1425,36 @@
           "refineLevel": 0
         }
       },
-      "Avywenna": {
-        "avatarSqUrl": "data/images/ad690ee34b0fe54fc21e82f04489894f.png",
+      "Arclight": {
+        "avatarSqUrl": "data/images/068394e39831e767a19d447579a97b1d.png",
         "rarity": "5",
         "potential": 5,
-        "profession": "Striker",
+        "profession": "Vanguard",
         "property": "Electric",
-        "weaponType": "Polearm",
+        "weaponType": "Sword",
         "level": 1,
         "weapon": {
-          "name": "Opero 77",
-          "iconUrl": "data/images/84a37c54af2051047d3da560fb9b98f9.png",
+          "name": "Tarr 11",
+          "iconUrl": "data/images/397d215b08df02e77309f693971a25bf.png",
           "rarity": "3",
-          "type": "Polearm",
+          "type": "Sword",
+          "level": 1,
+          "refineLevel": 0
+        }
+      },
+      "Snowshine": {
+        "avatarSqUrl": "data/images/b6dca12b51b4bd83b33e5fdce281a024.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Defender",
+        "property": "Cryo",
+        "weaponType": "Greatsword",
+        "level": 1,
+        "weapon": {
+          "name": "Darhoff 7",
+          "iconUrl": "data/images/405aa716336d0d399cde63f38096301e.png",
+          "rarity": "3",
+          "type": "Greatsword",
           "level": 1,
           "refineLevel": 0
         }
@@ -1459,36 +1476,19 @@
           "refineLevel": 3
         }
       },
-      "Snowshine": {
-        "avatarSqUrl": "data/images/b6dca12b51b4bd83b33e5fdce281a024.png",
+      "Avywenna": {
+        "avatarSqUrl": "data/images/ad690ee34b0fe54fc21e82f04489894f.png",
         "rarity": "5",
         "potential": 5,
-        "profession": "Defender",
-        "property": "Cryo",
-        "weaponType": "Greatsword",
-        "level": 1,
-        "weapon": {
-          "name": "Darhoff 7",
-          "iconUrl": "data/images/405aa716336d0d399cde63f38096301e.png",
-          "rarity": "3",
-          "type": "Greatsword",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
-      "Arclight": {
-        "avatarSqUrl": "data/images/068394e39831e767a19d447579a97b1d.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Vanguard",
+        "profession": "Striker",
         "property": "Electric",
-        "weaponType": "Sword",
+        "weaponType": "Polearm",
         "level": 1,
         "weapon": {
-          "name": "Tarr 11",
-          "iconUrl": "data/images/397d215b08df02e77309f693971a25bf.png",
+          "name": "Opero 77",
+          "iconUrl": "data/images/84a37c54af2051047d3da560fb9b98f9.png",
           "rarity": "3",
-          "type": "Sword",
+          "type": "Polearm",
           "level": 1,
           "refineLevel": 0
         }
@@ -1545,8 +1545,8 @@
         }
       }
     },
-    "stamina": "239",
-    "daily_mission": 0,
-    "last_updated": "2026-05-02T14:06:45.182370-04:00"
+    "stamina": "46",
+    "daily_mission": 100,
+    "last_updated": "2026-05-04T15:01:27.175053-04:00"
   }
 }
