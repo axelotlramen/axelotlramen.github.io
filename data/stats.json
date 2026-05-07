@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-05-06T15:08:33.848891-04:00",
+  "last_updated": "2026-05-07T15:10:40.615206-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
     "avatar_url": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/a87d3e754afb918943a1a61ded47cd79.png",
-    "achievements": 1639,
-    "active_days": 891,
+    "achievements": 1640,
+    "active_days": 892,
     "avatar_count": 54,
     "chest_count": 1859,
     "five_star_characters": {
@@ -434,7 +434,7 @@
         "lc": null
       }
     },
-    "stamina": 130,
+    "stamina": 116,
     "current_train_score": 500,
     "anomaly_arbitration": {
       "season": "Happiness Syntax",
@@ -710,7 +710,7 @@
     "level": 57,
     "avatar_url": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/f6ed58ae3cfeeebd6e4956e7c5e4b725.png",
     "achievements": 984,
-    "active_days": 346,
+    "active_days": 347,
     "avatar_count": 55,
     "oculus": 1176,
     "chest_count": 3967,
@@ -841,7 +841,7 @@
         "element": "Geo",
         "weaponType": 1,
         "level": 70,
-        "friendship": 6,
+        "friendship": 7,
         "weapon": {
           "name": "Festering Desire",
           "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/685c320aa78fc0c2e29f2e445393949a.png",
@@ -971,30 +971,30 @@
         }
       }
     },
-    "resin": 200,
-    "daily_task": 0
+    "resin": 73,
+    "daily_task": 4
   },
   "hsr_diary": {
-    "Date": "2026-05-06",
-    "Net Currency Gain": 150,
+    "Date": "2026-05-07",
+    "Net Currency Gain": 158,
     "Pulls Net Gain": 0
   },
   "genshin_diary": {
-    "Date": "2026-05-06",
-    "Net Currency Gain": 10,
+    "Date": "2026-05-07",
+    "Net Currency Gain": 120,
     "Pulls Net Gain": 0
   },
   "endfield_attendance": {
     "status": "Check-in Successful",
     "rewards": [
       {
-        "name": "Intermediate Combat Record",
-        "count": 3,
-        "icon": "https://static.skport.com/asset/endfield_attendance/921A397E2765462C009B939E0CD92606.png"
+        "name": "Talosian Credit Notes|T-Creds",
+        "count": 3000,
+        "icon": "https://static.skport.com/asset/endfield_attendance/2a58a0e85f39092433842ccd62324785.png"
       }
     ],
     "attendance": {
-      "totalSignIns": 7,
+      "totalSignIns": 8,
       "calendar": [
         {
           "awardId": "endfield_attendance_1_2",
@@ -1028,13 +1028,13 @@
         },
         {
           "awardId": "endfield_attendance_1_3",
-          "available": true,
+          "available": false,
           "done": true
         },
         {
           "awardId": "endfield_attendance_7_3000",
-          "available": false,
-          "done": false
+          "available": true,
+          "done": true
         },
         {
           "awardId": "endfield_attendance_4_3",
@@ -1155,9 +1155,9 @@
     },
     "error": null,
     "nextAward": {
-      "name": "Talosian Credit Notes|T-Creds",
-      "count": 3000,
-      "icon": "https://static.skport.com/asset/endfield_attendance/2a58a0e85f39092433842ccd62324785.png"
+      "name": "Arms INSP Kit",
+      "count": 3,
+      "icon": "https://static.skport.com/asset/endfield_attendance/0dea0bc0fd87138df322e8a254a6999f.png"
     }
   },
   "endfield_data": {
@@ -1165,7 +1165,7 @@
     "level": 60,
     "avatar_url": "data/images/6beb98f8c8e7a81d37071bc3593b6321.png",
     "achievements": 82,
-    "active_days": 18,
+    "active_days": 19,
     "avatar_count": 22,
     "aurylenes": 289,
     "chest_count": 619,
@@ -1181,23 +1181,6 @@
         "weapon": {
           "name": "Umbral Torch",
           "iconUrl": "data/images/f67ca28a6489e356f928c9c9ef1b61eb.png",
-          "rarity": "6",
-          "type": "Sword",
-          "level": 90,
-          "refineLevel": 0
-        }
-      },
-      "Rossi": {
-        "avatarSqUrl": "data/images/bb6cca7221225af1ce18c1850d1abb7e.png",
-        "rarity": "6",
-        "potential": 0,
-        "profession": "Guard",
-        "property": "Physical",
-        "weaponType": "Sword",
-        "level": 90,
-        "weapon": {
-          "name": "Lupine Scarlet",
-          "iconUrl": "data/images/dfa304b9de55a75bce9b5719e7cf1d59.png",
           "rarity": "6",
           "type": "Sword",
           "level": 90,
@@ -1234,7 +1217,7 @@
           "iconUrl": "data/images/21532368a8d1075f3259f51eb226f9b3.png",
           "rarity": "6",
           "type": "Sword",
-          "level": 84,
+          "level": 85,
           "refineLevel": 0
         }
       },
@@ -1251,6 +1234,23 @@
           "iconUrl": "data/images/b4827d12232501551485e0c9f671caa8.png",
           "rarity": "6",
           "type": "Polearm",
+          "level": 90,
+          "refineLevel": 0
+        }
+      },
+      "Rossi": {
+        "avatarSqUrl": "data/images/bb6cca7221225af1ce18c1850d1abb7e.png",
+        "rarity": "6",
+        "potential": 0,
+        "profession": "Guard",
+        "property": "Physical",
+        "weaponType": "Sword",
+        "level": 90,
+        "weapon": {
+          "name": "Lupine Scarlet",
+          "iconUrl": "data/images/dfa304b9de55a75bce9b5719e7cf1d59.png",
+          "rarity": "6",
+          "type": "Sword",
           "level": 90,
           "refineLevel": 0
         }
@@ -1279,7 +1279,7 @@
         "profession": "Supporter",
         "property": "Nature",
         "weaponType": "Arts Unit",
-        "level": 84,
+        "level": 85,
         "weapon": {
           "name": "Dreams of the Starry Beach",
           "iconUrl": "data/images/fe34d89d2e92df4d993a4fc881b3d6d8.png",
@@ -1323,6 +1323,23 @@
           "refineLevel": 0
         }
       },
+      "Perlica": {
+        "avatarSqUrl": "data/images/c7d4eaff6c2336b0e9d217e32d208e28.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Caster",
+        "property": "Electric",
+        "weaponType": "Arts Unit",
+        "level": 80,
+        "weapon": {
+          "name": "Stanza of Memorials",
+          "iconUrl": "data/images/bfbda14b0634b1ef9df15040f2e12640.png",
+          "rarity": "5",
+          "type": "Arts Unit",
+          "level": 80,
+          "refineLevel": 1
+        }
+      },
       "Xaihi": {
         "avatarSqUrl": "data/images/b57fb03447e70561cd497b60af8b69e3.png",
         "rarity": "5",
@@ -1353,23 +1370,6 @@
           "iconUrl": "data/images/cee67efec0389c4a0197291c3550ace7.png",
           "rarity": "5",
           "type": "Handcannon",
-          "level": 80,
-          "refineLevel": 1
-        }
-      },
-      "Perlica": {
-        "avatarSqUrl": "data/images/c7d4eaff6c2336b0e9d217e32d208e28.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Caster",
-        "property": "Electric",
-        "weaponType": "Arts Unit",
-        "level": 80,
-        "weapon": {
-          "name": "Stanza of Memorials",
-          "iconUrl": "data/images/bfbda14b0634b1ef9df15040f2e12640.png",
-          "rarity": "5",
-          "type": "Arts Unit",
           "level": 80,
           "refineLevel": 1
         }
@@ -1442,19 +1442,19 @@
           "refineLevel": 0
         }
       },
-      "Arclight": {
-        "avatarSqUrl": "data/images/068394e39831e767a19d447579a97b1d.png",
+      "Avywenna": {
+        "avatarSqUrl": "data/images/ad690ee34b0fe54fc21e82f04489894f.png",
         "rarity": "5",
         "potential": 5,
-        "profession": "Vanguard",
+        "profession": "Striker",
         "property": "Electric",
-        "weaponType": "Sword",
+        "weaponType": "Polearm",
         "level": 1,
         "weapon": {
-          "name": "Tarr 11",
-          "iconUrl": "data/images/397d215b08df02e77309f693971a25bf.png",
+          "name": "Opero 77",
+          "iconUrl": "data/images/84a37c54af2051047d3da560fb9b98f9.png",
           "rarity": "3",
-          "type": "Sword",
+          "type": "Polearm",
           "level": 1,
           "refineLevel": 0
         }
@@ -1476,36 +1476,19 @@
           "refineLevel": 3
         }
       },
-      "Avywenna": {
-        "avatarSqUrl": "data/images/ad690ee34b0fe54fc21e82f04489894f.png",
+      "Arclight": {
+        "avatarSqUrl": "data/images/068394e39831e767a19d447579a97b1d.png",
         "rarity": "5",
         "potential": 5,
-        "profession": "Striker",
+        "profession": "Vanguard",
         "property": "Electric",
-        "weaponType": "Polearm",
+        "weaponType": "Sword",
         "level": 1,
         "weapon": {
-          "name": "Opero 77",
-          "iconUrl": "data/images/84a37c54af2051047d3da560fb9b98f9.png",
+          "name": "Tarr 11",
+          "iconUrl": "data/images/397d215b08df02e77309f693971a25bf.png",
           "rarity": "3",
-          "type": "Polearm",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
-      "Fluorite": {
-        "avatarSqUrl": "data/images/e50b9cf1b565dc2d31d4b6a2659ada39.png",
-        "rarity": "4",
-        "potential": 5,
-        "profession": "Caster",
-        "property": "Nature",
-        "weaponType": "Handcannon",
-        "level": 1,
-        "weapon": {
-          "name": "Peco 5",
-          "iconUrl": "data/images/a774ee68210d6c5c2091e8249b093ba0.png",
-          "rarity": "3",
-          "type": "Handcannon",
+          "type": "Sword",
           "level": 1,
           "refineLevel": 0
         }
@@ -1543,10 +1526,27 @@
           "level": 1,
           "refineLevel": 0
         }
+      },
+      "Fluorite": {
+        "avatarSqUrl": "data/images/e50b9cf1b565dc2d31d4b6a2659ada39.png",
+        "rarity": "4",
+        "potential": 5,
+        "profession": "Caster",
+        "property": "Nature",
+        "weaponType": "Handcannon",
+        "level": 1,
+        "weapon": {
+          "name": "Peco 5",
+          "iconUrl": "data/images/a774ee68210d6c5c2091e8249b093ba0.png",
+          "rarity": "3",
+          "type": "Handcannon",
+          "level": 1,
+          "refineLevel": 0
+        }
       }
     },
-    "stamina": "207",
-    "daily_mission": 60,
-    "last_updated": "2026-05-04T15:01:27.175053-04:00"
+    "stamina": "88",
+    "daily_mission": 100,
+    "last_updated": "2026-05-07T15:10:40.614773-04:00"
   }
 }
