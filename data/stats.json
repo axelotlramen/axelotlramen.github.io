@@ -1,719 +1,15 @@
 {
-  "last_updated": "2026-05-08T14:50:11.185116-04:00",
-  "hsr_data": {
-    "nickname": "Caelus",
-    "level": 70,
-    "avatar_url": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/a87d3e754afb918943a1a61ded47cd79.png",
-    "achievements": 1640,
-    "active_days": 893,
-    "avatar_count": 54,
-    "chest_count": 1859,
-    "five_star_characters": {
-      "Trailblazer": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/ead7bf6c708e74c0c75b8e2c3123c36e.png",
-        "eidolon": 6,
-        "element": "ice",
-        "path": 8,
-        "level": 80,
-        "lc": {
-          "name": "Memory's Curtain Never Falls",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/9450e5c2a5dbc43606c7a74b0c46fcb3.png",
-          "rarity": 5,
-          "level": 80,
-          "superimposition": 5
-        }
-      },
-      "Ashveil": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/e610f44a05d8afec6c4805e0da285f65.png",
-        "eidolon": 1,
-        "element": "lightning",
-        "path": 2,
-        "level": 80,
-        "lc": {
-          "name": "The Finale of a Lie",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/71a67e5139e53c69b85b2abee628d756.png",
-          "rarity": 5,
-          "level": 80,
-          "superimposition": 1
-        }
-      },
-      "Dan Heng \u2022 Permansor Terrae": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/81755a3a880133239f8b3622befaa9bd.png",
-        "eidolon": 2,
-        "element": "physical",
-        "path": 6,
-        "level": 80,
-        "lc": {
-          "name": "Though Worlds Apart",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/4dae95e9f8ee833ec3a799726f899318.png",
-          "rarity": 5,
-          "level": 80,
-          "superimposition": 1
-        }
-      },
-      "Hysilens": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/ea63a5774f3bfff522c95b97e93ae0c8.png",
-        "eidolon": 0,
-        "element": "physical",
-        "path": 5,
-        "level": 80,
-        "lc": {
-          "name": "Eyes of the Prey",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/79ade45cea4c652e7b910eff15e07eaa.png",
-          "rarity": 4,
-          "level": 80,
-          "superimposition": 4
-        }
-      },
-      "Phainon": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/66a1068fbff111941972eef7aa87d637.png",
-        "eidolon": 0,
-        "element": "physical",
-        "path": 1,
-        "level": 80,
-        "lc": {
-          "name": "Something Irreplaceable",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/da72de63d1b12ad81507a9a7929b1b31.png",
-          "rarity": 5,
-          "level": 80,
-          "superimposition": 1
-        }
-      },
-      "Cipher": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/32de565e78a578aa6c588e85b207be56.png",
-        "eidolon": 1,
-        "element": "quantum",
-        "path": 5,
-        "level": 80,
-        "lc": {
-          "name": "Lies Dance on the Breeze",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/5c6ae7ddf069452b0a1ef694063e6bf6.png",
-          "rarity": 5,
-          "level": 80,
-          "superimposition": 1
-        }
-      },
-      "Anaxa": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/47702f52d10898ba40ba3774d980e66d.png",
-        "eidolon": 0,
-        "element": "wind",
-        "path": 3,
-        "level": 80,
-        "lc": {
-          "name": "Into the Unreachable Veil",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/ff7f64b06d27cc188fe58fc8fa6cb4c6.png",
-          "rarity": 5,
-          "level": 80,
-          "superimposition": 1
-        }
-      },
-      "Mydei": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/a69e4cea885b1b314038283f9b55142a.png",
-        "eidolon": 0,
-        "element": "imaginary",
-        "path": 1,
-        "level": 80,
-        "lc": {
-          "name": "Flame of Blood, Blaze My Path",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/dff00dc6dde980ccf348baf82f6ce63a.png",
-          "rarity": 5,
-          "level": 80,
-          "superimposition": 1
-        }
-      },
-      "Aglaea": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/9cfbe591c1597e8e02ff42216300fca4.png",
-        "eidolon": 0,
-        "element": "lightning",
-        "path": 8,
-        "level": 80,
-        "lc": {
-          "name": "Time Woven Into Gold",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/9768473e472fd53083d777ad69797f93.png",
-          "rarity": 5,
-          "level": 80,
-          "superimposition": 1
-        }
-      },
-      "The Herta": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/5fea45c9fb6453181ffe331a81382186.png",
-        "eidolon": 0,
-        "element": "ice",
-        "path": 3,
-        "level": 80,
-        "lc": {
-          "name": "The Great Cosmic Enterprise",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/4805ae399813c1a9cbd444434b181673.png",
-          "rarity": 4,
-          "level": 80,
-          "superimposition": 5
-        }
-      },
-      "Sunday": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/e2b8901533150df408dfc84ebddb5b77.png",
-        "eidolon": 2,
-        "element": "imaginary",
-        "path": 4,
-        "level": 80,
-        "lc": {
-          "name": "Dance! Dance! Dance!",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/2e5a7b6d8899763123a34f2052bd613f.png",
-          "rarity": 4,
-          "level": 80,
-          "superimposition": 5
-        }
-      },
-      "Firefly": {
-        "icon": "https://fastcdn.hoyoverse.com/static-resource-v2/2025/05/29/a3487cdc8e4ab08a6780b3e1b18ac03a_7123059584676820199.png",
-        "eidolon": 0,
-        "element": "fire",
-        "path": 1,
-        "level": 80,
-        "lc": {
-          "name": "On the Fall of an Aeon",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/daff3b537d1a8cfcc901852a49212107.png",
-          "rarity": 5,
-          "level": 80,
-          "superimposition": 5
-        }
-      },
-      "Robin": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/0762e415dd7c42624b3db47b17147b72.png",
-        "eidolon": 2,
-        "element": "physical",
-        "path": 4,
-        "level": 80,
-        "lc": {
-          "name": "Flowing Nightglow",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/8c6d5371b64dee47c8ee441fea6b735a.png",
-          "rarity": 5,
-          "level": 80,
-          "superimposition": 1
-        }
-      },
-      "Sparkle": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/609e563c89ca154b4a317894a9ed37e0.png",
-        "eidolon": 0,
-        "element": "quantum",
-        "path": 4,
-        "level": 80,
-        "lc": {
-          "name": "A Grounded Ascent",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/2c5bc9c558233a2d887286f3976f420f.png",
-          "rarity": 5,
-          "level": 80,
-          "superimposition": 1
-        }
-      },
-      "Dr. Ratio": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/46dd876c87d57b159d52ddb84c183419.png",
-        "eidolon": 0,
-        "element": "imaginary",
-        "path": 2,
-        "level": 80,
-        "lc": {
-          "name": "Swordplay",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/dd6ba829778bbf03cc7bae3b7412e74d.png",
-          "rarity": 4,
-          "level": 80,
-          "superimposition": 5
-        }
-      },
-      "Aventurine": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/b9d61f64468f63b22d5f356ee590478c.png",
-        "eidolon": 0,
-        "element": "imaginary",
-        "path": 6,
-        "level": 80,
-        "lc": {
-          "name": "Inherently Unjust Destiny",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/6970ec9304ec2b07470b7e571c316015.png",
-          "rarity": 5,
-          "level": 80,
-          "superimposition": 1
-        }
-      },
-      "Ruan Mei": {
-        "icon": "https://fastcdn.hoyoverse.com/static-resource-v2/2026/01/22/051b502dfdf55fef9ae6a8923c659a81_7714960152695640741.png",
-        "eidolon": 0,
-        "element": "ice",
-        "path": 4,
-        "level": 80,
-        "lc": null
-      },
-      "Argenti": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/26361b6bf3ba678d5da4afc1898f1a61.png",
-        "eidolon": 0,
-        "element": "physical",
-        "path": 3,
-        "level": 80,
-        "lc": {
-          "name": "Passkey",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/ae5afccf3847f787802d6995422305c3.png",
-          "rarity": 3,
-          "level": 80,
-          "superimposition": 5
-        }
-      },
-      "Feixiao": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/5dee6970c308dfb831ad881b1dce4df3.png",
-        "eidolon": 0,
-        "element": "wind",
-        "path": 2,
-        "level": 80,
-        "lc": {
-          "name": "I Venture Forth to Hunt",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/9d8b54172948c5414856cdc505481c87.png",
-          "rarity": 5,
-          "level": 80,
-          "superimposition": 1
-        }
-      },
-      "Huohuo": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/2bd6e19a7f80c91d924a764ceeec5e72.png",
-        "eidolon": 0,
-        "element": "wind",
-        "path": 7,
-        "level": 80,
-        "lc": {
-          "name": "Shared Feeling",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/19f79cac89ae3fb143c0c423e3879f06.png",
-          "rarity": 4,
-          "level": 80,
-          "superimposition": 5
-        }
-      },
-      "Dan Heng \u2022 Imbibitor Lunae": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/0859b980fa28503dfe1a711a87b2ff28.png",
-        "eidolon": 0,
-        "element": "imaginary",
-        "path": 1,
-        "level": 80,
-        "lc": {
-          "name": "A Secret Vow",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/1f8ce3fc8b602988ed91f40739276fe9.png",
-          "rarity": 4,
-          "level": 1,
-          "superimposition": 5
-        }
-      },
-      "Blade": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/10bac0abb0b4d342f21958c5e315fe35.png",
-        "eidolon": 0,
-        "element": "wind",
-        "path": 1,
-        "level": 80,
-        "lc": {
-          "name": "Holiday Thermae Escapade",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/10575f8ae293b621d3bf01b40f4ec94e.png",
-          "rarity": 4,
-          "level": 1,
-          "superimposition": 1
-        }
-      },
-      "Seele": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/5775cdc687d0f03152fe9195c2156c1e.png",
-        "eidolon": 2,
-        "element": "quantum",
-        "path": 2,
-        "level": 80,
-        "lc": {
-          "name": "Cruising in the Stellar Sea",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/270abee9961e9b8e9961aa67e7de8a9d.png",
-          "rarity": 5,
-          "level": 80,
-          "superimposition": 5
-        }
-      },
-      "Bronya": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/4334b33d459f3a2f48f304a2425873c0.png",
-        "eidolon": 4,
-        "element": "wind",
-        "path": 4,
-        "level": 80,
-        "lc": null
-      },
-      "Archer": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/ab721bfd0f4e35059f8163a0cb1a5605.png",
-        "eidolon": 0,
-        "element": "quantum",
-        "path": 2,
-        "level": 80,
-        "lc": {
-          "name": "The Hell Where Ideals Burn",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/662057ffbd23bddb91a69424bf9b39b6.png",
-          "rarity": 5,
-          "level": 80,
-          "superimposition": 1
-        }
-      },
-      "Saber": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/3b425350d1c9ba15c0fc5313995613c9.png",
-        "eidolon": 0,
-        "element": "wind",
-        "path": 1,
-        "level": 80,
-        "lc": {
-          "name": "A Thankless Coronation",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/67fba91599ef275f3fbdb4497af21643.png",
-          "rarity": 5,
-          "level": 80,
-          "superimposition": 1
-        }
-      },
-      "Kafka": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/13769a79240d2170908a6cd43ec04590.png",
-        "eidolon": 0,
-        "element": "lightning",
-        "path": 5,
-        "level": 80,
-        "lc": {
-          "name": "Before the Tutorial Mission Starts",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/40ebbd2859dbffa1c2462dc33d856ad7.png",
-          "rarity": 4,
-          "level": 80,
-          "superimposition": 5
-        }
-      },
-      "Welt": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/40527bf819bdc6b80ad84cd93677b2e5.png",
-        "eidolon": 1,
-        "element": "imaginary",
-        "path": 5,
-        "level": 80,
-        "lc": {
-          "name": "In the Name of the World",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/265d9ca5df7d8855a92c8f169c5e31b5.png",
-          "rarity": 5,
-          "level": 80,
-          "superimposition": 2
-        }
-      },
-      "Himeko": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/727187d881fdb625746efd2275c1c6b9.png",
-        "eidolon": 3,
-        "element": "fire",
-        "path": 3,
-        "level": 80,
-        "lc": {
-          "name": "The Seriousness of Breakfast",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/562a0614f6420647aed1475f62e85bdf.png",
-          "rarity": 4,
-          "level": 80,
-          "superimposition": 5
-        }
-      },
-      "Gepard": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/f9165cbb11d5b9688c73565198c45219.png",
-        "eidolon": 1,
-        "element": "ice",
-        "path": 6,
-        "level": 70,
-        "lc": {
-          "name": "Day One of My New Life",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/96704e4aa9aeb1bed379da37f55485aa.png",
-          "rarity": 4,
-          "level": 60,
-          "superimposition": 5
-        }
-      },
-      "Bailu": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/8b3972c3cd572c0f6dc5937c7c4d3e64.png",
-        "eidolon": 0,
-        "element": "lightning",
-        "path": 7,
-        "level": 60,
-        "lc": null
-      },
-      "Yanqing": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u1386d/62d00c7d17d796b2fb90a73403020f4a.png",
-        "eidolon": 1,
-        "element": "ice",
-        "path": 2,
-        "level": 60,
-        "lc": null
-      }
-    },
-    "stamina": 112,
-    "current_train_score": 500,
-    "anomaly_arbitration": {
-      "season": "Happiness Syntax",
-      "boss_stars": 3,
-      "mini_boss_stars": 4,
-      "cycles_used": 16,
-      "boss_record": {
-        "characters": [
-          {
-            "id": 1504,
-            "level": 80,
-            "eidolon": 1
-          },
-          {
-            "id": 1313,
-            "level": 80,
-            "eidolon": 2
-          },
-          {
-            "id": 1406,
-            "level": 80,
-            "eidolon": 1
-          },
-          {
-            "id": 1414,
-            "level": 80,
-            "eidolon": 2
-          }
-        ],
-        "cycles_used": 2,
-        "stars": 3,
-        "medal_type": "ChallengePeakRankIconTypeGold"
-      },
-      "mini_boss_records": [
-        {
-          "characters": [
-            {
-              "id": 1005,
-              "level": 80,
-              "eidolon": 0
-            },
-            {
-              "id": 1304,
-              "level": 80,
-              "eidolon": 0
-            },
-            {
-              "id": 1309,
-              "level": 80,
-              "eidolon": 2
-            },
-            {
-              "id": 1410,
-              "level": 80,
-              "eidolon": 0
-            }
-          ],
-          "cycles_used": 5,
-          "stars": 1
-        },
-        {
-          "characters": [
-            {
-              "id": 1504,
-              "level": 80,
-              "eidolon": 1
-            },
-            {
-              "id": 1313,
-              "level": 80,
-              "eidolon": 2
-            },
-            {
-              "id": 1406,
-              "level": 80,
-              "eidolon": 1
-            },
-            {
-              "id": 1217,
-              "level": 80,
-              "eidolon": 0
-            }
-          ],
-          "cycles_used": 6,
-          "stars": 1
-        },
-        {
-          "characters": [
-            {
-              "id": 1015,
-              "level": 80,
-              "eidolon": 0
-            },
-            {
-              "id": 1306,
-              "level": 80,
-              "eidolon": 0
-            },
-            {
-              "id": 8007,
-              "level": 80,
-              "eidolon": 6
-            },
-            {
-              "id": 1414,
-              "level": 80,
-              "eidolon": 2
-            }
-          ],
-          "cycles_used": 3,
-          "stars": 2
-        }
-      ]
-    },
-    "apocalyptic_shadow": {
-      "total_stars": 12,
-      "floor_data": {
-        "floor": "Idol of the Locusts: Difficulty 4",
-        "score": 7061,
-        "first_half": [
-          {
-            "id": 1015,
-            "level": 80,
-            "eidolon": 0
-          },
-          {
-            "id": 1306,
-            "level": 80,
-            "eidolon": 0
-          },
-          {
-            "id": 8007,
-            "level": 80,
-            "eidolon": 6
-          },
-          {
-            "id": 1414,
-            "level": 80,
-            "eidolon": 2
-          }
-        ],
-        "second_half": [
-          {
-            "id": 1410,
-            "level": 80,
-            "eidolon": 0
-          },
-          {
-            "id": 1005,
-            "level": 80,
-            "eidolon": 0
-          },
-          {
-            "id": 1309,
-            "level": 80,
-            "eidolon": 2
-          },
-          {
-            "id": 1217,
-            "level": 80,
-            "eidolon": 0
-          }
-        ]
-      }
-    },
-    "pure_fiction": {
-      "season": "Virtual Made Manifest",
-      "total_stars": 12,
-      "floor_data": {
-        "floor": "Virtual Made Manifest (IV)",
-        "score": 69160,
-        "first_half": [
-          {
-            "id": 1220,
-            "level": 80,
-            "eidolon": 0
-          },
-          {
-            "id": 1304,
-            "level": 80,
-            "eidolon": 0
-          },
-          {
-            "id": 1309,
-            "level": 80,
-            "eidolon": 1
-          },
-          {
-            "id": 1504,
-            "level": 80,
-            "eidolon": 1
-          }
-        ],
-        "second_half": [
-          {
-            "id": 1405,
-            "level": 80,
-            "eidolon": 0
-          },
-          {
-            "id": 1313,
-            "level": 80,
-            "eidolon": 2
-          },
-          {
-            "id": 1306,
-            "level": 80,
-            "eidolon": 0
-          },
-          {
-            "id": 1414,
-            "level": 80,
-            "eidolon": 2
-          }
-        ]
-      }
-    },
-    "memory_of_chaos": {
-      "season": "Grand Finale",
-      "total_stars": 36,
-      "floor_data": {
-        "floor": "Grand Finale (XII)",
-        "cycles": 3,
-        "first_half": [
-          {
-            "id": 1504,
-            "level": 80,
-            "eidolon": 1
-          },
-          {
-            "id": 8007,
-            "level": 80,
-            "eidolon": 6
-          },
-          {
-            "id": 1309,
-            "level": 80,
-            "eidolon": 1
-          },
-          {
-            "id": 1406,
-            "level": 80,
-            "eidolon": 1
-          }
-        ],
-        "second_half": [
-          {
-            "id": 1405,
-            "level": 80,
-            "eidolon": 0
-          },
-          {
-            "id": 1313,
-            "level": 80,
-            "eidolon": 2
-          },
-          {
-            "id": 1306,
-            "level": 80,
-            "eidolon": 0
-          },
-          {
-            "id": 1414,
-            "level": 80,
-            "eidolon": 2
-          }
-        ]
-      }
-    }
-  },
+  "last_updated": "2026-05-09T14:10:49.437406-04:00",
+  "hsr_data": {},
   "genshin_data": {
     "nickname": "avenlotl",
     "level": 57,
     "avatar_url": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/f6ed58ae3cfeeebd6e4956e7c5e4b725.png",
     "achievements": 989,
-    "active_days": 348,
+    "active_days": 349,
     "avatar_count": 55,
-    "oculus": 1190,
-    "chest_count": 4010,
+    "oculus": 1196,
+    "chest_count": 4026,
     "five_star_characters": {
       "Columbina": {
         "icon": "https://enka.network/ui/UI_AvatarIcon_Columbina.png",
@@ -971,30 +267,30 @@
         }
       }
     },
-    "resin": 17,
+    "resin": 32,
     "daily_task": 4
   },
   "hsr_diary": {
-    "Date": "2026-05-08",
+    "Date": "2026-05-09",
     "Net Currency Gain": 150,
     "Pulls Net Gain": 0
   },
   "genshin_diary": {
-    "Date": "2026-05-08",
-    "Net Currency Gain": 420,
+    "Date": "2026-05-09",
+    "Net Currency Gain": 188,
     "Pulls Net Gain": 0
   },
   "endfield_attendance": {
     "status": "Check-in Successful",
     "rewards": [
       {
-        "name": "Arms INSP Kit",
+        "name": "Intermediate Combat Record",
         "count": 3,
-        "icon": "https://static.skport.com/asset/endfield_attendance/0dea0bc0fd87138df322e8a254a6999f.png"
+        "icon": "https://static.skport.com/asset/endfield_attendance/921A397E2765462C009B939E0CD92606.png"
       }
     ],
     "attendance": {
-      "totalSignIns": 9,
+      "totalSignIns": 10,
       "calendar": [
         {
           "awardId": "endfield_attendance_1_2",
@@ -1038,13 +334,13 @@
         },
         {
           "awardId": "endfield_attendance_4_3",
-          "available": true,
+          "available": false,
           "done": true
         },
         {
           "awardId": "endfield_attendance_1_3",
-          "available": false,
-          "done": false
+          "available": true,
+          "done": true
         },
         {
           "awardId": "endfield_attendance_7_2000",
@@ -1155,9 +451,9 @@
     },
     "error": null,
     "nextAward": {
-      "name": "Intermediate Combat Record",
-      "count": 3,
-      "icon": "https://static.skport.com/asset/endfield_attendance/921A397E2765462C009B939E0CD92606.png"
+      "name": "Talosian Credit Notes|T-Creds",
+      "count": 2000,
+      "icon": "https://static.skport.com/asset/endfield_attendance/2a58a0e85f39092433842ccd62324785.png"
     }
   },
   "endfield_data": {
@@ -1170,23 +466,6 @@
     "aurylenes": 289,
     "chest_count": 619,
     "six_star_characters": {
-      "Laevatain": {
-        "avatarSqUrl": "data/images/15a984eaecaf0d7c47d871175ae38937.png",
-        "rarity": "6",
-        "potential": 0,
-        "profession": "Striker",
-        "property": "Heat",
-        "weaponType": "Sword",
-        "level": 90,
-        "weapon": {
-          "name": "Umbral Torch",
-          "iconUrl": "data/images/f67ca28a6489e356f928c9c9ef1b61eb.png",
-          "rarity": "6",
-          "type": "Sword",
-          "level": 90,
-          "refineLevel": 0
-        }
-      },
       "Pogranichnik": {
         "avatarSqUrl": "data/images/9c14933aa23b96d01658caed5a3b9907.png",
         "rarity": "6",
@@ -1201,6 +480,23 @@
           "rarity": "6",
           "type": "Sword",
           "level": 86,
+          "refineLevel": 0
+        }
+      },
+      "Lifeng": {
+        "avatarSqUrl": "data/images/e1ffee22e9f4a4df2562cbfce21108e1.png",
+        "rarity": "6",
+        "potential": 2,
+        "profession": "Guard",
+        "property": "Physical",
+        "weaponType": "Polearm",
+        "level": 90,
+        "weapon": {
+          "name": "Mountain Bearer",
+          "iconUrl": "data/images/b4827d12232501551485e0c9f671caa8.png",
+          "rarity": "6",
+          "type": "Polearm",
+          "level": 90,
           "refineLevel": 0
         }
       },
@@ -1221,19 +517,19 @@
           "refineLevel": 0
         }
       },
-      "Lifeng": {
-        "avatarSqUrl": "data/images/e1ffee22e9f4a4df2562cbfce21108e1.png",
+      "Laevatain": {
+        "avatarSqUrl": "data/images/15a984eaecaf0d7c47d871175ae38937.png",
         "rarity": "6",
-        "potential": 2,
-        "profession": "Guard",
-        "property": "Physical",
-        "weaponType": "Polearm",
+        "potential": 0,
+        "profession": "Striker",
+        "property": "Heat",
+        "weaponType": "Sword",
         "level": 90,
         "weapon": {
-          "name": "Mountain Bearer",
-          "iconUrl": "data/images/b4827d12232501551485e0c9f671caa8.png",
+          "name": "Umbral Torch",
+          "iconUrl": "data/images/f67ca28a6489e356f928c9c9ef1b61eb.png",
           "rarity": "6",
-          "type": "Polearm",
+          "type": "Sword",
           "level": 90,
           "refineLevel": 0
         }
@@ -1323,6 +619,23 @@
           "refineLevel": 0
         }
       },
+      "Perlica": {
+        "avatarSqUrl": "data/images/c7d4eaff6c2336b0e9d217e32d208e28.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Caster",
+        "property": "Electric",
+        "weaponType": "Arts Unit",
+        "level": 80,
+        "weapon": {
+          "name": "Stanza of Memorials",
+          "iconUrl": "data/images/bfbda14b0634b1ef9df15040f2e12640.png",
+          "rarity": "5",
+          "type": "Arts Unit",
+          "level": 80,
+          "refineLevel": 1
+        }
+      },
       "Wulfgard": {
         "avatarSqUrl": "data/images/7ddb3b88ce6f0029e143000cfece7b65.png",
         "rarity": "5",
@@ -1355,23 +668,6 @@
           "type": "Arts Unit",
           "level": 80,
           "refineLevel": 0
-        }
-      },
-      "Perlica": {
-        "avatarSqUrl": "data/images/c7d4eaff6c2336b0e9d217e32d208e28.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Caster",
-        "property": "Electric",
-        "weaponType": "Arts Unit",
-        "level": 80,
-        "weapon": {
-          "name": "Stanza of Memorials",
-          "iconUrl": "data/images/bfbda14b0634b1ef9df15040f2e12640.png",
-          "rarity": "5",
-          "type": "Arts Unit",
-          "level": 80,
-          "refineLevel": 1
         }
       },
       "Alesh": {
@@ -1421,23 +717,6 @@
           "iconUrl": "data/images/405aa716336d0d399cde63f38096301e.png",
           "rarity": "3",
           "type": "Greatsword",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
-      "Avywenna": {
-        "avatarSqUrl": "data/images/ad690ee34b0fe54fc21e82f04489894f.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Striker",
-        "property": "Electric",
-        "weaponType": "Polearm",
-        "level": 1,
-        "weapon": {
-          "name": "Opero 77",
-          "iconUrl": "data/images/84a37c54af2051047d3da560fb9b98f9.png",
-          "rarity": "3",
-          "type": "Polearm",
           "level": 1,
           "refineLevel": 0
         }
@@ -1493,12 +772,12 @@
           "refineLevel": 3
         }
       },
-      "Estella": {
-        "avatarSqUrl": "data/images/cc496a068b34e2d8df6b331f55e9ee8e.png",
-        "rarity": "4",
+      "Avywenna": {
+        "avatarSqUrl": "data/images/ad690ee34b0fe54fc21e82f04489894f.png",
+        "rarity": "5",
         "potential": 5,
-        "profession": "Guard",
-        "property": "Cryo",
+        "profession": "Striker",
+        "property": "Electric",
         "weaponType": "Polearm",
         "level": 1,
         "weapon": {
@@ -1527,6 +806,23 @@
           "refineLevel": 0
         }
       },
+      "Estella": {
+        "avatarSqUrl": "data/images/cc496a068b34e2d8df6b331f55e9ee8e.png",
+        "rarity": "4",
+        "potential": 5,
+        "profession": "Guard",
+        "property": "Cryo",
+        "weaponType": "Polearm",
+        "level": 1,
+        "weapon": {
+          "name": "Opero 77",
+          "iconUrl": "data/images/84a37c54af2051047d3da560fb9b98f9.png",
+          "rarity": "3",
+          "type": "Polearm",
+          "level": 1,
+          "refineLevel": 0
+        }
+      },
       "Antal": {
         "avatarSqUrl": "data/images/aca43ca0538ead35c4ff7442a6a2a724.png",
         "rarity": "4",
@@ -1545,8 +841,8 @@
         }
       }
     },
-    "stamina": "45",
-    "daily_mission": 100,
+    "stamina": "239",
+    "daily_mission": 0,
     "last_updated": "2026-05-08T14:50:11.184824-04:00"
   }
 }
