@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-09T14:10:49.437406-04:00",
+  "last_updated": "2026-05-10T14:12:04.653778-04:00",
   "hsr_data": {},
   "genshin_data": {
     "nickname": "avenlotl",
@@ -267,30 +267,30 @@
         }
       }
     },
-    "resin": 32,
-    "daily_task": 4
+    "resin": 200,
+    "daily_task": 0
   },
   "hsr_diary": {
-    "Date": "2026-05-09",
+    "Date": "2026-05-10",
     "Net Currency Gain": 150,
     "Pulls Net Gain": 0
   },
   "genshin_diary": {
-    "Date": "2026-05-09",
-    "Net Currency Gain": 188,
+    "Date": "2026-05-10",
+    "Net Currency Gain": 0,
     "Pulls Net Gain": 0
   },
   "endfield_attendance": {
     "status": "Check-in Successful",
     "rewards": [
       {
-        "name": "Intermediate Combat Record",
-        "count": 3,
-        "icon": "https://static.skport.com/asset/endfield_attendance/921A397E2765462C009B939E0CD92606.png"
+        "name": "Talosian Credit Notes|T-Creds",
+        "count": 2000,
+        "icon": "https://static.skport.com/asset/endfield_attendance/2a58a0e85f39092433842ccd62324785.png"
       }
     ],
     "attendance": {
-      "totalSignIns": 10,
+      "totalSignIns": 11,
       "calendar": [
         {
           "awardId": "endfield_attendance_1_2",
@@ -339,13 +339,13 @@
         },
         {
           "awardId": "endfield_attendance_1_3",
-          "available": true,
+          "available": false,
           "done": true
         },
         {
           "awardId": "endfield_attendance_7_2000",
-          "available": false,
-          "done": false
+          "available": true,
+          "done": true
         },
         {
           "awardId": "endfield_attendance_8_80",
@@ -451,9 +451,9 @@
     },
     "error": null,
     "nextAward": {
-      "name": "Talosian Credit Notes|T-Creds",
-      "count": 2000,
-      "icon": "https://static.skport.com/asset/endfield_attendance/2a58a0e85f39092433842ccd62324785.png"
+      "name": "Oroberyl",
+      "count": 80,
+      "icon": "https://static.skport.com/asset/endfield_attendance/8ed434a6cdb173c96ed0572115112f93.png"
     }
   },
   "endfield_data": {
@@ -841,7 +841,7 @@
         }
       }
     },
-    "stamina": "239",
+    "stamina": "360",
     "daily_mission": 0,
     "last_updated": "2026-05-08T14:50:11.184824-04:00"
   }
