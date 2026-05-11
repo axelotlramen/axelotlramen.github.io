@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-05-10T14:12:04.653778-04:00",
+  "last_updated": "2026-05-11T15:15:12.080382-04:00",
   "hsr_data": {},
   "genshin_data": {
     "nickname": "avenlotl",
     "level": 57,
     "avatar_url": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/f6ed58ae3cfeeebd6e4956e7c5e4b725.png",
     "achievements": 989,
-    "active_days": 349,
+    "active_days": 350,
     "avatar_count": 55,
     "oculus": 1196,
     "chest_count": 4026,
@@ -271,12 +271,12 @@
     "daily_task": 0
   },
   "hsr_diary": {
-    "Date": "2026-05-10",
-    "Net Currency Gain": 150,
+    "Date": "2026-05-11",
+    "Net Currency Gain": 979,
     "Pulls Net Gain": 0
   },
   "genshin_diary": {
-    "Date": "2026-05-10",
+    "Date": "2026-05-11",
     "Net Currency Gain": 0,
     "Pulls Net Gain": 0
   },
@@ -284,13 +284,13 @@
     "status": "Check-in Successful",
     "rewards": [
       {
-        "name": "Talosian Credit Notes|T-Creds",
-        "count": 2000,
-        "icon": "https://static.skport.com/asset/endfield_attendance/2a58a0e85f39092433842ccd62324785.png"
+        "name": "Oroberyl",
+        "count": 80,
+        "icon": "https://static.skport.com/asset/endfield_attendance/8ed434a6cdb173c96ed0572115112f93.png"
       }
     ],
     "attendance": {
-      "totalSignIns": 11,
+      "totalSignIns": 12,
       "calendar": [
         {
           "awardId": "endfield_attendance_1_2",
@@ -344,13 +344,13 @@
         },
         {
           "awardId": "endfield_attendance_7_2000",
-          "available": true,
+          "available": false,
           "done": true
         },
         {
           "awardId": "endfield_attendance_8_80",
-          "available": false,
-          "done": false
+          "available": true,
+          "done": true
         },
         {
           "awardId": "endfield_attendance_6_3",
@@ -451,9 +451,9 @@
     },
     "error": null,
     "nextAward": {
-      "name": "Oroberyl",
-      "count": 80,
-      "icon": "https://static.skport.com/asset/endfield_attendance/8ed434a6cdb173c96ed0572115112f93.png"
+      "name": "Protoprism",
+      "count": 3,
+      "icon": "https://static.skport.com/asset/endfield_attendance/0c1e8cf15711a7d59aa7d8786b533cf1.png"
     }
   },
   "endfield_data": {
