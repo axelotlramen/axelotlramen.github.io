@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-11T15:15:12.080382-04:00",
+  "last_updated": "2026-05-12T15:15:06.389070-04:00",
   "hsr_data": {},
   "genshin_data": {
     "nickname": "avenlotl",
@@ -267,16 +267,16 @@
         }
       }
     },
-    "resin": 200,
+    "resin": 114,
     "daily_task": 0
   },
   "hsr_diary": {
-    "Date": "2026-05-11",
-    "Net Currency Gain": 979,
+    "Date": "2026-05-12",
+    "Net Currency Gain": 170,
     "Pulls Net Gain": 0
   },
   "genshin_diary": {
-    "Date": "2026-05-11",
+    "Date": "2026-05-12",
     "Net Currency Gain": 0,
     "Pulls Net Gain": 0
   },
@@ -284,13 +284,13 @@
     "status": "Check-in Successful",
     "rewards": [
       {
-        "name": "Oroberyl",
-        "count": 80,
-        "icon": "https://static.skport.com/asset/endfield_attendance/8ed434a6cdb173c96ed0572115112f93.png"
+        "name": "Protoprism",
+        "count": 3,
+        "icon": "https://static.skport.com/asset/endfield_attendance/0c1e8cf15711a7d59aa7d8786b533cf1.png"
       }
     ],
     "attendance": {
-      "totalSignIns": 12,
+      "totalSignIns": 13,
       "calendar": [
         {
           "awardId": "endfield_attendance_1_2",
@@ -349,13 +349,13 @@
         },
         {
           "awardId": "endfield_attendance_8_80",
-          "available": true,
+          "available": false,
           "done": true
         },
         {
           "awardId": "endfield_attendance_6_3",
-          "available": false,
-          "done": false
+          "available": true,
+          "done": true
         },
         {
           "awardId": "endfield_attendance_1_3",
@@ -451,9 +451,9 @@
     },
     "error": null,
     "nextAward": {
-      "name": "Protoprism",
+      "name": "Intermediate Combat Record",
       "count": 3,
-      "icon": "https://static.skport.com/asset/endfield_attendance/0c1e8cf15711a7d59aa7d8786b533cf1.png"
+      "icon": "https://static.skport.com/asset/endfield_attendance/921A397E2765462C009B939E0CD92606.png"
     }
   },
   "endfield_data": {
