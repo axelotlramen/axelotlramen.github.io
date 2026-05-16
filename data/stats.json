@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-05-15T15:02:01.107425-04:00",
+  "last_updated": "2026-05-16T14:11:48.130995-04:00",
   "hsr_data": {},
   "genshin_data": {
     "nickname": "avenlotl",
     "level": 57,
     "avatar_url": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/f6ed58ae3cfeeebd6e4956e7c5e4b725.png",
     "achievements": 997,
-    "active_days": 352,
+    "active_days": 353,
     "avatar_count": 55,
     "oculus": 1208,
     "chest_count": 4082,
@@ -267,16 +267,16 @@
         }
       }
     },
-    "resin": 200,
+    "resin": 160,
     "daily_task": 0
   },
   "hsr_diary": {
-    "Date": "2026-05-15",
-    "Net Currency Gain": 150,
+    "Date": "2026-05-16",
+    "Net Currency Gain": 0,
     "Pulls Net Gain": 0
   },
   "genshin_diary": {
-    "Date": "2026-05-15",
+    "Date": "2026-05-16",
     "Net Currency Gain": 0,
     "Pulls Net Gain": 0
   },
@@ -284,13 +284,13 @@
     "status": "Check-in Successful",
     "rewards": [
       {
-        "name": "Talosian Credit Notes|T-Creds",
-        "count": 3000,
-        "icon": "https://static.skport.com/asset/endfield_attendance/2a58a0e85f39092433842ccd62324785.png"
+        "name": "Advanced Combat Record",
+        "count": 2,
+        "icon": "https://static.skport.com/asset/endfield_attendance/7f6ce8ae13546508255b89a4d8571fe3.png"
       }
     ],
     "attendance": {
-      "totalSignIns": 16,
+      "totalSignIns": 17,
       "calendar": [
         {
           "awardId": "endfield_attendance_1_2",
@@ -369,13 +369,13 @@
         },
         {
           "awardId": "endfield_attendance_7_3000",
-          "available": true,
+          "available": false,
           "done": true
         },
         {
           "awardId": "endfield_attendance_3_2",
-          "available": false,
-          "done": false
+          "available": true,
+          "done": true
         },
         {
           "awardId": "endfield_attendance_5_2",
@@ -451,9 +451,9 @@
     },
     "error": null,
     "nextAward": {
-      "name": "Advanced Combat Record",
+      "name": "Arms INSP Set",
       "count": 2,
-      "icon": "https://static.skport.com/asset/endfield_attendance/7f6ce8ae13546508255b89a4d8571fe3.png"
+      "icon": "https://static.skport.com/asset/endfield_attendance/90403112f070c14859d107b530ae5851.png"
     }
   },
   "endfield_data": {
@@ -466,23 +466,6 @@
     "aurylenes": 289,
     "chest_count": 619,
     "six_star_characters": {
-      "Pogranichnik": {
-        "avatarSqUrl": "data/images/9c14933aa23b96d01658caed5a3b9907.png",
-        "rarity": "6",
-        "potential": 1,
-        "profession": "Vanguard",
-        "property": "Physical",
-        "weaponType": "Sword",
-        "level": 90,
-        "weapon": {
-          "name": "Never Rest",
-          "iconUrl": "data/images/21532368a8d1075f3259f51eb226f9b3.png",
-          "rarity": "6",
-          "type": "Sword",
-          "level": 88,
-          "refineLevel": 0
-        }
-      },
       "Laevatain": {
         "avatarSqUrl": "data/images/15a984eaecaf0d7c47d871175ae38937.png",
         "rarity": "6",
@@ -500,20 +483,20 @@
           "refineLevel": 0
         }
       },
-      "Tangtang": {
-        "avatarSqUrl": "data/images/ee017b6ab7f20b54c0effcf522518d2b.png",
+      "Pogranichnik": {
+        "avatarSqUrl": "data/images/9c14933aa23b96d01658caed5a3b9907.png",
         "rarity": "6",
         "potential": 1,
-        "profession": "Caster",
-        "property": "Cryo",
-        "weaponType": "Handcannon",
+        "profession": "Vanguard",
+        "property": "Physical",
+        "weaponType": "Sword",
         "level": 90,
         "weapon": {
-          "name": "Brigand's Calling",
-          "iconUrl": "data/images/675ec992ee25214d0af5cdb60ccd893a.png",
+          "name": "Never Rest",
+          "iconUrl": "data/images/21532368a8d1075f3259f51eb226f9b3.png",
           "rarity": "6",
-          "type": "Handcannon",
-          "level": 90,
+          "type": "Sword",
+          "level": 88,
           "refineLevel": 0
         }
       },
@@ -547,6 +530,23 @@
           "iconUrl": "data/images/dfa304b9de55a75bce9b5719e7cf1d59.png",
           "rarity": "6",
           "type": "Sword",
+          "level": 90,
+          "refineLevel": 0
+        }
+      },
+      "Tangtang": {
+        "avatarSqUrl": "data/images/ee017b6ab7f20b54c0effcf522518d2b.png",
+        "rarity": "6",
+        "potential": 1,
+        "profession": "Caster",
+        "property": "Cryo",
+        "weaponType": "Handcannon",
+        "level": 90,
+        "weapon": {
+          "name": "Brigand's Calling",
+          "iconUrl": "data/images/675ec992ee25214d0af5cdb60ccd893a.png",
+          "rarity": "6",
+          "type": "Handcannon",
           "level": 90,
           "refineLevel": 0
         }
@@ -636,23 +636,6 @@
           "refineLevel": 1
         }
       },
-      "Wulfgard": {
-        "avatarSqUrl": "data/images/7ddb3b88ce6f0029e143000cfece7b65.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Caster",
-        "property": "Heat",
-        "weaponType": "Handcannon",
-        "level": 80,
-        "weapon": {
-          "name": "Rational Farewell",
-          "iconUrl": "data/images/cee67efec0389c4a0197291c3550ace7.png",
-          "rarity": "5",
-          "type": "Handcannon",
-          "level": 80,
-          "refineLevel": 1
-        }
-      },
       "Xaihi": {
         "avatarSqUrl": "data/images/b57fb03447e70561cd497b60af8b69e3.png",
         "rarity": "5",
@@ -670,21 +653,21 @@
           "refineLevel": 0
         }
       },
-      "Alesh": {
-        "avatarSqUrl": "data/images/cd332677f9e7fb1f297a7c85c34d8c42.png",
+      "Wulfgard": {
+        "avatarSqUrl": "data/images/7ddb3b88ce6f0029e143000cfece7b65.png",
         "rarity": "5",
         "potential": 5,
-        "profession": "Vanguard",
-        "property": "Cryo",
-        "weaponType": "Sword",
-        "level": 40,
+        "profession": "Caster",
+        "property": "Heat",
+        "weaponType": "Handcannon",
+        "level": 80,
         "weapon": {
-          "name": "Thermite Cutter",
-          "iconUrl": "data/images/c938f2a07f6fbd4af04c04fabf2001e0.png",
-          "rarity": "6",
-          "type": "Sword",
-          "level": 62,
-          "refineLevel": 0
+          "name": "Rational Farewell",
+          "iconUrl": "data/images/cee67efec0389c4a0197291c3550ace7.png",
+          "rarity": "5",
+          "type": "Handcannon",
+          "level": 80,
+          "refineLevel": 1
         }
       },
       "Akekuri": {
@@ -693,6 +676,23 @@
         "potential": 5,
         "profession": "Vanguard",
         "property": "Heat",
+        "weaponType": "Sword",
+        "level": 80,
+        "weapon": {
+          "name": "Thermite Cutter",
+          "iconUrl": "data/images/c938f2a07f6fbd4af04c04fabf2001e0.png",
+          "rarity": "6",
+          "type": "Sword",
+          "level": 63,
+          "refineLevel": 0
+        }
+      },
+      "Alesh": {
+        "avatarSqUrl": "data/images/cd332677f9e7fb1f297a7c85c34d8c42.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Vanguard",
+        "property": "Cryo",
         "weaponType": "Sword",
         "level": 40,
         "weapon": {
@@ -738,23 +738,6 @@
           "refineLevel": 3
         }
       },
-      "Snowshine": {
-        "avatarSqUrl": "data/images/b6dca12b51b4bd83b33e5fdce281a024.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Defender",
-        "property": "Cryo",
-        "weaponType": "Greatsword",
-        "level": 1,
-        "weapon": {
-          "name": "Darhoff 7",
-          "iconUrl": "data/images/405aa716336d0d399cde63f38096301e.png",
-          "rarity": "3",
-          "type": "Greatsword",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
       "Avywenna": {
         "avatarSqUrl": "data/images/ad690ee34b0fe54fc21e82f04489894f.png",
         "rarity": "5",
@@ -789,6 +772,23 @@
           "refineLevel": 0
         }
       },
+      "Snowshine": {
+        "avatarSqUrl": "data/images/b6dca12b51b4bd83b33e5fdce281a024.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Defender",
+        "property": "Cryo",
+        "weaponType": "Greatsword",
+        "level": 1,
+        "weapon": {
+          "name": "Darhoff 7",
+          "iconUrl": "data/images/405aa716336d0d399cde63f38096301e.png",
+          "rarity": "3",
+          "type": "Greatsword",
+          "level": 1,
+          "refineLevel": 0
+        }
+      },
       "Estella": {
         "avatarSqUrl": "data/images/cc496a068b34e2d8df6b331f55e9ee8e.png",
         "rarity": "4",
@@ -806,23 +806,6 @@
           "refineLevel": 0
         }
       },
-      "Fluorite": {
-        "avatarSqUrl": "data/images/e50b9cf1b565dc2d31d4b6a2659ada39.png",
-        "rarity": "4",
-        "potential": 5,
-        "profession": "Caster",
-        "property": "Nature",
-        "weaponType": "Handcannon",
-        "level": 1,
-        "weapon": {
-          "name": "Peco 5",
-          "iconUrl": "data/images/a774ee68210d6c5c2091e8249b093ba0.png",
-          "rarity": "3",
-          "type": "Handcannon",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
       "Antal": {
         "avatarSqUrl": "data/images/aca43ca0538ead35c4ff7442a6a2a724.png",
         "rarity": "4",
@@ -836,6 +819,23 @@
           "iconUrl": "data/images/74de5c6676451d5c7126ba84f87b0718.png",
           "rarity": "3",
           "type": "Arts Unit",
+          "level": 1,
+          "refineLevel": 0
+        }
+      },
+      "Fluorite": {
+        "avatarSqUrl": "data/images/e50b9cf1b565dc2d31d4b6a2659ada39.png",
+        "rarity": "4",
+        "potential": 5,
+        "profession": "Caster",
+        "property": "Nature",
+        "weaponType": "Handcannon",
+        "level": 1,
+        "weapon": {
+          "name": "Peco 5",
+          "iconUrl": "data/images/a774ee68210d6c5c2091e8249b093ba0.png",
+          "rarity": "3",
+          "type": "Handcannon",
           "level": 1,
           "refineLevel": 0
         }
