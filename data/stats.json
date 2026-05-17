@@ -1,15 +1,15 @@
 {
-  "last_updated": "2026-05-16T14:11:48.130995-04:00",
+  "last_updated": "2026-05-17T14:33:55.832812-04:00",
   "hsr_data": {},
   "genshin_data": {
     "nickname": "avenlotl",
     "level": 57,
     "avatar_url": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/f6ed58ae3cfeeebd6e4956e7c5e4b725.png",
     "achievements": 997,
-    "active_days": 353,
+    "active_days": 355,
     "avatar_count": 55,
     "oculus": 1208,
-    "chest_count": 4082,
+    "chest_count": 4108,
     "five_star_characters": {
       "Columbina": {
         "icon": "https://enka.network/ui/UI_AvatarIcon_Columbina.png",
@@ -169,11 +169,11 @@
         "level": 70,
         "friendship": 0,
         "weapon": {
-          "name": "Sword of Narzissenkreuz",
-          "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/7ef90872b3553d9c0f4e3452737cec2d.png",
+          "name": "Favonius Sword",
+          "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/cfda75195bd9c341e314a56e976d532f.png",
           "rarity": 4,
-          "level": 1,
-          "refinement": 3
+          "level": 80,
+          "refinement": 2
         }
       },
       "Manekina": {
@@ -267,30 +267,30 @@
         }
       }
     },
-    "resin": 160,
-    "daily_task": 0
+    "resin": 63,
+    "daily_task": 4
   },
   "hsr_diary": {
-    "Date": "2026-05-16",
-    "Net Currency Gain": 0,
+    "Date": "2026-05-17",
+    "Net Currency Gain": 150,
     "Pulls Net Gain": 0
   },
   "genshin_diary": {
-    "Date": "2026-05-16",
-    "Net Currency Gain": 0,
+    "Date": "2026-05-17",
+    "Net Currency Gain": 60,
     "Pulls Net Gain": 0
   },
   "endfield_attendance": {
     "status": "Check-in Successful",
     "rewards": [
       {
-        "name": "Advanced Combat Record",
+        "name": "Arms INSP Set",
         "count": 2,
-        "icon": "https://static.skport.com/asset/endfield_attendance/7f6ce8ae13546508255b89a4d8571fe3.png"
+        "icon": "https://static.skport.com/asset/endfield_attendance/90403112f070c14859d107b530ae5851.png"
       }
     ],
     "attendance": {
-      "totalSignIns": 17,
+      "totalSignIns": 18,
       "calendar": [
         {
           "awardId": "endfield_attendance_1_2",
@@ -374,13 +374,13 @@
         },
         {
           "awardId": "endfield_attendance_3_2",
-          "available": true,
+          "available": false,
           "done": true
         },
         {
           "awardId": "endfield_attendance_5_2",
-          "available": false,
-          "done": false
+          "available": true,
+          "done": true
         },
         {
           "awardId": "endfield_attendance_2_5",
@@ -451,38 +451,21 @@
     },
     "error": null,
     "nextAward": {
-      "name": "Arms INSP Set",
-      "count": 2,
-      "icon": "https://static.skport.com/asset/endfield_attendance/90403112f070c14859d107b530ae5851.png"
+      "name": "Elementary Cognitive Carrier",
+      "count": 5,
+      "icon": "https://static.skport.com/asset/endfield_attendance/ed34d5a121dbc81da6f6991792ff97f6.png"
     }
   },
   "endfield_data": {
     "nickname": "Axelle",
     "level": 60,
     "avatar_url": "data/images/6beb98f8c8e7a81d37071bc3593b6321.png",
-    "achievements": 83,
+    "achievements": 84,
     "active_days": 20,
     "avatar_count": 22,
     "aurylenes": 289,
     "chest_count": 619,
     "six_star_characters": {
-      "Laevatain": {
-        "avatarSqUrl": "data/images/15a984eaecaf0d7c47d871175ae38937.png",
-        "rarity": "6",
-        "potential": 0,
-        "profession": "Striker",
-        "property": "Heat",
-        "weaponType": "Sword",
-        "level": 90,
-        "weapon": {
-          "name": "Umbral Torch",
-          "iconUrl": "data/images/f67ca28a6489e356f928c9c9ef1b61eb.png",
-          "rarity": "6",
-          "type": "Sword",
-          "level": 90,
-          "refineLevel": 0
-        }
-      },
       "Pogranichnik": {
         "avatarSqUrl": "data/images/9c14933aa23b96d01658caed5a3b9907.png",
         "rarity": "6",
@@ -497,6 +480,23 @@
           "rarity": "6",
           "type": "Sword",
           "level": 88,
+          "refineLevel": 0
+        }
+      },
+      "Laevatain": {
+        "avatarSqUrl": "data/images/15a984eaecaf0d7c47d871175ae38937.png",
+        "rarity": "6",
+        "potential": 0,
+        "profession": "Striker",
+        "property": "Heat",
+        "weaponType": "Sword",
+        "level": 90,
+        "weapon": {
+          "name": "Umbral Torch",
+          "iconUrl": "data/images/f67ca28a6489e356f928c9c9ef1b61eb.png",
+          "rarity": "6",
+          "type": "Sword",
+          "level": 90,
           "refineLevel": 0
         }
       },
@@ -517,23 +517,6 @@
           "refineLevel": 0
         }
       },
-      "Rossi": {
-        "avatarSqUrl": "data/images/bb6cca7221225af1ce18c1850d1abb7e.png",
-        "rarity": "6",
-        "potential": 0,
-        "profession": "Guard",
-        "property": "Physical",
-        "weaponType": "Sword",
-        "level": 90,
-        "weapon": {
-          "name": "Lupine Scarlet",
-          "iconUrl": "data/images/dfa304b9de55a75bce9b5719e7cf1d59.png",
-          "rarity": "6",
-          "type": "Sword",
-          "level": 90,
-          "refineLevel": 0
-        }
-      },
       "Tangtang": {
         "avatarSqUrl": "data/images/ee017b6ab7f20b54c0effcf522518d2b.png",
         "rarity": "6",
@@ -547,6 +530,23 @@
           "iconUrl": "data/images/675ec992ee25214d0af5cdb60ccd893a.png",
           "rarity": "6",
           "type": "Handcannon",
+          "level": 90,
+          "refineLevel": 0
+        }
+      },
+      "Rossi": {
+        "avatarSqUrl": "data/images/bb6cca7221225af1ce18c1850d1abb7e.png",
+        "rarity": "6",
+        "potential": 0,
+        "profession": "Guard",
+        "property": "Physical",
+        "weaponType": "Sword",
+        "level": 90,
+        "weapon": {
+          "name": "Lupine Scarlet",
+          "iconUrl": "data/images/dfa304b9de55a75bce9b5719e7cf1d59.png",
+          "rarity": "6",
+          "type": "Sword",
           "level": 90,
           "refineLevel": 0
         }
@@ -585,6 +585,23 @@
           "refineLevel": 0
         }
       },
+      "Yvonne": {
+        "avatarSqUrl": "data/images/bacd477f99daf106e4995acef6c85456.png",
+        "rarity": "6",
+        "potential": 0,
+        "profession": "Striker",
+        "property": "Cryo",
+        "weaponType": "Handcannon",
+        "level": 81,
+        "weapon": {
+          "name": "Wedge",
+          "iconUrl": "data/images/599bc5ee4e3021f311259985c844107d.png",
+          "rarity": "6",
+          "type": "Handcannon",
+          "level": 80,
+          "refineLevel": 0
+        }
+      },
       "Endministrator": {
         "avatarSqUrl": "data/images/a1d3ed03165785526b442aee65f0ef52.png",
         "rarity": "6",
@@ -602,19 +619,19 @@
           "refineLevel": 1
         }
       },
-      "Yvonne": {
-        "avatarSqUrl": "data/images/bacd477f99daf106e4995acef6c85456.png",
-        "rarity": "6",
-        "potential": 0,
-        "profession": "Striker",
-        "property": "Cryo",
-        "weaponType": "Handcannon",
+      "Akekuri": {
+        "avatarSqUrl": "data/images/e230eb3f6a0fb635f8efaae2dae05c31.png",
+        "rarity": "4",
+        "potential": 5,
+        "profession": "Vanguard",
+        "property": "Heat",
+        "weaponType": "Sword",
         "level": 81,
         "weapon": {
-          "name": "Wedge",
-          "iconUrl": "data/images/599bc5ee4e3021f311259985c844107d.png",
+          "name": "Thermite Cutter",
+          "iconUrl": "data/images/c938f2a07f6fbd4af04c04fabf2001e0.png",
           "rarity": "6",
-          "type": "Handcannon",
+          "type": "Sword",
           "level": 80,
           "refineLevel": 0
         }
@@ -670,23 +687,6 @@
           "refineLevel": 1
         }
       },
-      "Akekuri": {
-        "avatarSqUrl": "data/images/e230eb3f6a0fb635f8efaae2dae05c31.png",
-        "rarity": "4",
-        "potential": 5,
-        "profession": "Vanguard",
-        "property": "Heat",
-        "weaponType": "Sword",
-        "level": 80,
-        "weapon": {
-          "name": "Thermite Cutter",
-          "iconUrl": "data/images/c938f2a07f6fbd4af04c04fabf2001e0.png",
-          "rarity": "6",
-          "type": "Sword",
-          "level": 63,
-          "refineLevel": 0
-        }
-      },
       "Alesh": {
         "avatarSqUrl": "data/images/cd332677f9e7fb1f297a7c85c34d8c42.png",
         "rarity": "5",
@@ -721,23 +721,6 @@
           "refineLevel": 0
         }
       },
-      "Da Pan": {
-        "avatarSqUrl": "data/images/56ead5c066fd0657518c009d12d67d75.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Striker",
-        "property": "Physical",
-        "weaponType": "Greatsword",
-        "level": 1,
-        "weapon": {
-          "name": "Finishing Call",
-          "iconUrl": "data/images/19f31f1c6464ea63c4012f70c813ab8e.png",
-          "rarity": "5",
-          "type": "Greatsword",
-          "level": 1,
-          "refineLevel": 3
-        }
-      },
       "Avywenna": {
         "avatarSqUrl": "data/images/ad690ee34b0fe54fc21e82f04489894f.png",
         "rarity": "5",
@@ -753,6 +736,40 @@
           "type": "Polearm",
           "level": 1,
           "refineLevel": 0
+        }
+      },
+      "Snowshine": {
+        "avatarSqUrl": "data/images/b6dca12b51b4bd83b33e5fdce281a024.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Defender",
+        "property": "Cryo",
+        "weaponType": "Greatsword",
+        "level": 1,
+        "weapon": {
+          "name": "Darhoff 7",
+          "iconUrl": "data/images/405aa716336d0d399cde63f38096301e.png",
+          "rarity": "3",
+          "type": "Greatsword",
+          "level": 1,
+          "refineLevel": 0
+        }
+      },
+      "Da Pan": {
+        "avatarSqUrl": "data/images/56ead5c066fd0657518c009d12d67d75.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Striker",
+        "property": "Physical",
+        "weaponType": "Greatsword",
+        "level": 1,
+        "weapon": {
+          "name": "Finishing Call",
+          "iconUrl": "data/images/19f31f1c6464ea63c4012f70c813ab8e.png",
+          "rarity": "5",
+          "type": "Greatsword",
+          "level": 1,
+          "refineLevel": 3
         }
       },
       "Arclight": {
@@ -772,19 +789,19 @@
           "refineLevel": 0
         }
       },
-      "Snowshine": {
-        "avatarSqUrl": "data/images/b6dca12b51b4bd83b33e5fdce281a024.png",
-        "rarity": "5",
+      "Fluorite": {
+        "avatarSqUrl": "data/images/e50b9cf1b565dc2d31d4b6a2659ada39.png",
+        "rarity": "4",
         "potential": 5,
-        "profession": "Defender",
-        "property": "Cryo",
-        "weaponType": "Greatsword",
+        "profession": "Caster",
+        "property": "Nature",
+        "weaponType": "Handcannon",
         "level": 1,
         "weapon": {
-          "name": "Darhoff 7",
-          "iconUrl": "data/images/405aa716336d0d399cde63f38096301e.png",
+          "name": "Peco 5",
+          "iconUrl": "data/images/a774ee68210d6c5c2091e8249b093ba0.png",
           "rarity": "3",
-          "type": "Greatsword",
+          "type": "Handcannon",
           "level": 1,
           "refineLevel": 0
         }
@@ -819,23 +836,6 @@
           "iconUrl": "data/images/74de5c6676451d5c7126ba84f87b0718.png",
           "rarity": "3",
           "type": "Arts Unit",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
-      "Fluorite": {
-        "avatarSqUrl": "data/images/e50b9cf1b565dc2d31d4b6a2659ada39.png",
-        "rarity": "4",
-        "potential": 5,
-        "profession": "Caster",
-        "property": "Nature",
-        "weaponType": "Handcannon",
-        "level": 1,
-        "weapon": {
-          "name": "Peco 5",
-          "iconUrl": "data/images/a774ee68210d6c5c2091e8249b093ba0.png",
-          "rarity": "3",
-          "type": "Handcannon",
           "level": 1,
           "refineLevel": 0
         }
