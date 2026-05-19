@@ -755,8 +755,8 @@ p {
 }
 
 .endfield-char-weapon img {
-  width: 16px;
-  height: 16px;
+  width: 40px;
+  height: 40px;
   border-radius: 3px;
   object-fit: cover;
   border: 1px solid var(--border);

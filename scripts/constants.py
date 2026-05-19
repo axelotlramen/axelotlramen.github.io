@@ -9,3 +9,15 @@ def now():
     return datetime.now(TZ)
 
 IMAGE_DIR = Path("data/images")
+
+HSR_PATH_NUM_TO_NAME = {
+    1: "DESTRUCTION",
+    2: "THE HUNT",
+    3: "ERUDITION",
+    4: "HARMONY",
+    5: "NIHILITY",
+    6: "PRESERVATION",
+    7: "ABUNDANCE",
+    8: "REMEMBRANCE",
+    9: "ELATION"
+}

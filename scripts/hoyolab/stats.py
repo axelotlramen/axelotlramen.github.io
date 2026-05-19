@@ -1,5 +1,6 @@
 import logging
 
+from scripts.constants import HSR_PATH_NUM_TO_NAME
 
 async def fetch_hsr_data(client, uid):
     logger = logging.getLogger("fetch_hsr_data")
@@ -16,8 +17,8 @@ async def fetch_hsr_data(client, uid):
             char.name: {
                 "icon": char.icon,
                 "eidolon": char.rank,
-                "element": char.element,
-                "path": char.path,
+                "element": char.element.capitalize(),
+                "path": HSR_PATH_NUM_TO_NAME[char.path],
                 "level": char.level,
                 "lc": {
                     "name": char.equip.name,

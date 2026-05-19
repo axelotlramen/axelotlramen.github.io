@@ -124,7 +124,7 @@ function renderHSR(data) {
 }
 
 function renderHSRCharacters(data) {
-  const chars = data?.hsr_data?.characters;
+  const chars = data?.hsr_data?.five_star_characters;
   if (!chars) return;
 
   const container = document.getElementById("hsr-characters");
@@ -132,19 +132,19 @@ function renderHSRCharacters(data) {
 
   Object.entries(chars).forEach(([name, char]) => {
     const card = document.createElement("div");
-    card.classList.add("character-card");
+    card.classList.add("endfield-char-card");
 
     card.innerHTML = `
-      <div class="character-image-wrapper">
+      <div class="endfield-char-avatar">
         <img src="${char.icon}" alt="${name}">
-        <div class="character-badge">E${char.eidolon}</div>
+        <div class="endfield-potential-badge">E${char.eidolon}</div>
       </div>
 
-      <div class="character-name">${name}</div>
-
-      <div class="character-meta">
-        Lv. ${char.level}
-      </div>
+      <div class="endfield-char-info">
+        <div class="endfield-char-name">${name}</div>
+        <div class="endfield-char-meta">
+          Lv. ${char.level}
+        </div>
 
       ${
         char.lc
