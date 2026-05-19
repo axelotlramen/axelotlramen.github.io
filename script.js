@@ -142,24 +142,18 @@ function renderHSRCharacters(data) {
 
       <div class="endfield-char-info">
         <div class="endfield-char-name">${name}</div>
-        <div class="endfield-char-meta">
-          Lv. ${char.level}
+        <div class="endfield-char-meta"> ${char.element} · ${char.path}</div>
+        <div class="endfield-char-level">Lv. ${char.level}</div>
+        
+        ${
+          char.lc
+            ? `<div class="endfield-char-weapon">
+            <img src="${char.lc.icon}" alt="${char.lc.name}">
+            <span>${char.lc.name}</span>
+          </div>`
+            : ""
+        }
         </div>
-
-      ${
-        char.lc
-          ? `<div class="weapon-section">
-          <img src="${char.lc.icon}" alt="${char.lc.name}">
-          <div>
-            <div class="weapon-name">${char.lc.name}</div>
-            <div class="weapon-meta">
-              S${char.lc.superimposition} · Lv. ${char.lc.level}
-            </div>
-          </div>
-        </div>
-      `
-          : ""
-      }
     `;
 
     container.appendChild(card);
