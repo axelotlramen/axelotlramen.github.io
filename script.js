@@ -123,6 +123,49 @@ function renderHSR(data) {
   `;
 }
 
+function renderHSRCharacters(data) {
+  const chars = data?.hsr_data?.characters;
+  if (!chars) return;
+
+  const container = document.getElementById("hsr-characters");
+  container.innerHTML = "";
+
+  Object.entries(chars).forEach(([name, char]) => {
+    const card = document.createElement("div");
+    card.classList.add("character-card");
+
+    card.innerHTML = `
+      <div class="character-image-wrapper">
+        <img src="${char.icon}" alt="${name}">
+        <div class="character-badge">E${char.eidolon}</div>
+      </div>
+
+      <div class="character-name">${name}</div>
+
+      <div class="character-meta">
+        Lv. ${char.level}
+      </div>
+
+      ${
+        char.lc
+          ? `<div class="weapon-section">
+          <img src="${char.lc.icon}" alt="${char.lc.name}">
+          <div>
+            <div class="weapon-name">${char.lc.name}</div>
+            <div class="weapon-meta">
+              S${char.lc.superimposition} · Lv. ${char.lc.level}
+            </div>
+          </div>
+        </div>
+      `
+          : ""
+      }
+    `;
+
+    container.appendChild(card);
+  });
+}
+
 /* =========================
    Genshin Render
 ========================= */
@@ -323,6 +366,8 @@ async function loadStats() {
     renderMoC(data);
     renderGenshin(data);
     renderEndfield(data);
+
+    renderHSRCharacters(data);
   } catch (err) {
     console.error("Stats load error:", err);
   }
