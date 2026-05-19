@@ -1,5 +1,5 @@
 httpx[brotli]
-genshin==1.7.23
+genshin
 ramael
 requests
 cookies
