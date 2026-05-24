@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-05-23T14:14:41.200264-04:00",
+  "last_updated": "2026-05-24T14:34:18.842852-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
     "avatar_url": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_ua8b8d/aa728f13f07bc32173604a505fc06842.png",
     "achievements": 1641,
-    "active_days": 908,
+    "active_days": 909,
     "avatar_count": 54,
     "chest_count": 1859,
     "five_star_characters": {
@@ -434,7 +434,7 @@
         "lc": null
       }
     },
-    "stamina": 79,
+    "stamina": 72,
     "current_train_score": 500,
     "anomaly_arbitration": {
       "season": "Happiness Syntax",
@@ -709,8 +709,8 @@
     "nickname": "avenlotl",
     "level": 58,
     "avatar_url": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/f6ed58ae3cfeeebd6e4956e7c5e4b725.png",
-    "achievements": 1006,
-    "active_days": 360,
+    "achievements": 1007,
+    "active_days": 361,
     "avatar_count": 57,
     "oculus": 1208,
     "chest_count": 4109,
@@ -986,30 +986,30 @@
         }
       }
     },
-    "resin": 47,
+    "resin": 39,
     "daily_task": 4
   },
   "hsr_diary": {
-    "Date": "2026-05-23",
-    "Net Currency Gain": 150,
+    "Date": "2026-05-24",
+    "Net Currency Gain": 180,
     "Pulls Net Gain": 0
   },
   "genshin_diary": {
-    "Date": "2026-05-23",
-    "Net Currency Gain": 200,
+    "Date": "2026-05-24",
+    "Net Currency Gain": 375,
     "Pulls Net Gain": 0
   },
   "endfield_attendance": {
     "status": "Check-in Successful",
     "rewards": [
       {
-        "name": "Talosian Credit Notes|T-Creds",
-        "count": 3000,
-        "icon": "https://static.skport.com/asset/endfield_attendance/2a58a0e85f39092433842ccd62324785.png"
+        "name": "Intermediate Combat Record",
+        "count": 5,
+        "icon": "https://static.skport.com/asset/endfield_attendance/921A397E2765462C009B939E0CD92606.png"
       }
     ],
     "attendance": {
-      "totalSignIns": 24,
+      "totalSignIns": 25,
       "calendar": [
         {
           "awardId": "endfield_attendance_1_2",
@@ -1128,13 +1128,13 @@
         },
         {
           "awardId": "endfield_attendance_7_3000",
-          "available": true,
+          "available": false,
           "done": true
         },
         {
           "awardId": "endfield_attendance_1_5",
-          "available": false,
-          "done": false
+          "available": true,
+          "done": true
         },
         {
           "awardId": "endfield_attendance_4_5",
@@ -1170,9 +1170,9 @@
     },
     "error": null,
     "nextAward": {
-      "name": "Intermediate Combat Record",
+      "name": "Arms INSP Kit",
       "count": 5,
-      "icon": "https://static.skport.com/asset/endfield_attendance/921A397E2765462C009B939E0CD92606.png"
+      "icon": "https://static.skport.com/asset/endfield_attendance/0dea0bc0fd87138df322e8a254a6999f.png"
     }
   },
   "endfield_data": {
@@ -1180,11 +1180,28 @@
     "level": 60,
     "avatar_url": "data/images/6beb98f8c8e7a81d37071bc3593b6321.png",
     "achievements": 86,
-    "active_days": 21,
+    "active_days": 22,
     "avatar_count": 22,
     "aurylenes": 291,
     "chest_count": 621,
     "six_star_characters": {
+      "Laevatain": {
+        "avatarSqUrl": "data/images/15a984eaecaf0d7c47d871175ae38937.png",
+        "rarity": "6",
+        "potential": 0,
+        "profession": "Striker",
+        "property": "Heat",
+        "weaponType": "Sword",
+        "level": 90,
+        "weapon": {
+          "name": "Umbral Torch",
+          "iconUrl": "data/images/f67ca28a6489e356f928c9c9ef1b61eb.png",
+          "rarity": "6",
+          "type": "Sword",
+          "level": 90,
+          "refineLevel": 0
+        }
+      },
       "Pogranichnik": {
         "avatarSqUrl": "data/images/9c14933aa23b96d01658caed5a3b9907.png",
         "rarity": "6",
@@ -1198,7 +1215,7 @@
           "iconUrl": "data/images/21532368a8d1075f3259f51eb226f9b3.png",
           "rarity": "6",
           "type": "Sword",
-          "level": 89,
+          "level": 90,
           "refineLevel": 0
         }
       },
@@ -1213,23 +1230,6 @@
         "weapon": {
           "name": "Lupine Scarlet",
           "iconUrl": "data/images/dfa304b9de55a75bce9b5719e7cf1d59.png",
-          "rarity": "6",
-          "type": "Sword",
-          "level": 90,
-          "refineLevel": 0
-        }
-      },
-      "Laevatain": {
-        "avatarSqUrl": "data/images/15a984eaecaf0d7c47d871175ae38937.png",
-        "rarity": "6",
-        "potential": 0,
-        "profession": "Striker",
-        "property": "Heat",
-        "weaponType": "Sword",
-        "level": 90,
-        "weapon": {
-          "name": "Umbral Torch",
-          "iconUrl": "data/images/f67ca28a6489e356f928c9c9ef1b61eb.png",
           "rarity": "6",
           "type": "Sword",
           "level": 90,
@@ -1311,7 +1311,7 @@
         "profession": "Vanguard",
         "property": "Heat",
         "weaponType": "Sword",
-        "level": 83,
+        "level": 84,
         "weapon": {
           "name": "Thermite Cutter",
           "iconUrl": "data/images/c938f2a07f6fbd4af04c04fabf2001e0.png",
@@ -1319,23 +1319,6 @@
           "type": "Sword",
           "level": 80,
           "refineLevel": 0
-        }
-      },
-      "Endministrator": {
-        "avatarSqUrl": "data/images/a1d3ed03165785526b442aee65f0ef52.png",
-        "rarity": "6",
-        "potential": 2,
-        "profession": "Guard",
-        "property": "Physical",
-        "weaponType": "Sword",
-        "level": 81,
-        "weapon": {
-          "name": "Grand Vision",
-          "iconUrl": "data/images/22cd7d47a45fd012e7a7db575cce0e3c.png",
-          "rarity": "6",
-          "type": "Sword",
-          "level": 81,
-          "refineLevel": 1
         }
       },
       "Yvonne": {
@@ -1355,20 +1338,20 @@
           "refineLevel": 0
         }
       },
-      "Perlica": {
-        "avatarSqUrl": "data/images/c7d4eaff6c2336b0e9d217e32d208e28.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Caster",
-        "property": "Electric",
-        "weaponType": "Arts Unit",
-        "level": 80,
+      "Endministrator": {
+        "avatarSqUrl": "data/images/a1d3ed03165785526b442aee65f0ef52.png",
+        "rarity": "6",
+        "potential": 2,
+        "profession": "Guard",
+        "property": "Physical",
+        "weaponType": "Sword",
+        "level": 81,
         "weapon": {
-          "name": "Stanza of Memorials",
-          "iconUrl": "data/images/bfbda14b0634b1ef9df15040f2e12640.png",
-          "rarity": "5",
-          "type": "Arts Unit",
-          "level": 80,
+          "name": "Grand Vision",
+          "iconUrl": "data/images/22cd7d47a45fd012e7a7db575cce0e3c.png",
+          "rarity": "6",
+          "type": "Sword",
+          "level": 81,
           "refineLevel": 1
         }
       },
@@ -1402,6 +1385,23 @@
           "iconUrl": "data/images/cee67efec0389c4a0197291c3550ace7.png",
           "rarity": "5",
           "type": "Handcannon",
+          "level": 80,
+          "refineLevel": 1
+        }
+      },
+      "Perlica": {
+        "avatarSqUrl": "data/images/c7d4eaff6c2336b0e9d217e32d208e28.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Caster",
+        "property": "Electric",
+        "weaponType": "Arts Unit",
+        "level": 80,
+        "weapon": {
+          "name": "Stanza of Memorials",
+          "iconUrl": "data/images/bfbda14b0634b1ef9df15040f2e12640.png",
+          "rarity": "5",
+          "type": "Arts Unit",
           "level": 80,
           "refineLevel": 1
         }
@@ -1474,23 +1474,6 @@
           "refineLevel": 0
         }
       },
-      "Arclight": {
-        "avatarSqUrl": "data/images/068394e39831e767a19d447579a97b1d.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Vanguard",
-        "property": "Electric",
-        "weaponType": "Sword",
-        "level": 1,
-        "weapon": {
-          "name": "Tarr 11",
-          "iconUrl": "data/images/397d215b08df02e77309f693971a25bf.png",
-          "rarity": "3",
-          "type": "Sword",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
       "Da Pan": {
         "avatarSqUrl": "data/images/56ead5c066fd0657518c009d12d67d75.png",
         "rarity": "5",
@@ -1508,19 +1491,36 @@
           "refineLevel": 3
         }
       },
-      "Antal": {
-        "avatarSqUrl": "data/images/aca43ca0538ead35c4ff7442a6a2a724.png",
-        "rarity": "4",
+      "Arclight": {
+        "avatarSqUrl": "data/images/068394e39831e767a19d447579a97b1d.png",
+        "rarity": "5",
         "potential": 5,
-        "profession": "Supporter",
+        "profession": "Vanguard",
         "property": "Electric",
-        "weaponType": "Arts Unit",
+        "weaponType": "Sword",
         "level": 1,
         "weapon": {
-          "name": "Jiminy 12",
-          "iconUrl": "data/images/74de5c6676451d5c7126ba84f87b0718.png",
+          "name": "Tarr 11",
+          "iconUrl": "data/images/397d215b08df02e77309f693971a25bf.png",
           "rarity": "3",
-          "type": "Arts Unit",
+          "type": "Sword",
+          "level": 1,
+          "refineLevel": 0
+        }
+      },
+      "Fluorite": {
+        "avatarSqUrl": "data/images/e50b9cf1b565dc2d31d4b6a2659ada39.png",
+        "rarity": "4",
+        "potential": 5,
+        "profession": "Caster",
+        "property": "Nature",
+        "weaponType": "Handcannon",
+        "level": 1,
+        "weapon": {
+          "name": "Peco 5",
+          "iconUrl": "data/images/a774ee68210d6c5c2091e8249b093ba0.png",
+          "rarity": "3",
+          "type": "Handcannon",
           "level": 1,
           "refineLevel": 0
         }
@@ -1542,26 +1542,26 @@
           "refineLevel": 0
         }
       },
-      "Fluorite": {
-        "avatarSqUrl": "data/images/e50b9cf1b565dc2d31d4b6a2659ada39.png",
+      "Antal": {
+        "avatarSqUrl": "data/images/aca43ca0538ead35c4ff7442a6a2a724.png",
         "rarity": "4",
         "potential": 5,
-        "profession": "Caster",
-        "property": "Nature",
-        "weaponType": "Handcannon",
+        "profession": "Supporter",
+        "property": "Electric",
+        "weaponType": "Arts Unit",
         "level": 1,
         "weapon": {
-          "name": "Peco 5",
-          "iconUrl": "data/images/a774ee68210d6c5c2091e8249b093ba0.png",
+          "name": "Jiminy 12",
+          "iconUrl": "data/images/74de5c6676451d5c7126ba84f87b0718.png",
           "rarity": "3",
-          "type": "Handcannon",
+          "type": "Arts Unit",
           "level": 1,
           "refineLevel": 0
         }
       }
     },
-    "stamina": "68",
+    "stamina": "270",
     "daily_mission": 100,
-    "last_updated": "2026-05-23T14:14:41.200071-04:00"
+    "last_updated": "2026-05-24T14:34:18.842612-04:00"
   }
 }
