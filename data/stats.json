@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-06-07T14:45:02.191680-04:00",
+  "last_updated": "2026-06-08T15:37:57.497842-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
     "avatar_url": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0a0ae/9c7348aed5712386c2a9f1c4a9bb92b4.png",
     "achievements": 1666,
-    "active_days": 923,
+    "active_days": 924,
     "avatar_count": 56,
     "chest_count": 1890,
     "five_star_characters": {
@@ -99,7 +99,13 @@
         "element": "Quantum",
         "path": "NIHILITY",
         "level": 80,
-        "lc": null
+        "lc": {
+          "name": "Lies Dance on the Breeze",
+          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0a0ae/dc2651a3065f7767dcd44bdb760cd0bc.png",
+          "rarity": 5,
+          "level": 80,
+          "superimposition": 1
+        }
       },
       "Anaxa": {
         "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0a0ae/9b9330374b47f57fbe85f662b058ceb5.png",
@@ -375,13 +381,7 @@
         "element": "Quantum",
         "path": "NIHILITY",
         "level": 80,
-        "lc": {
-          "name": "Lies Dance on the Breeze",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0a0ae/dc2651a3065f7767dcd44bdb760cd0bc.png",
-          "rarity": 5,
-          "level": 80,
-          "superimposition": 1
-        }
+        "lc": null
       },
       "Kafka": {
         "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0a0ae/8113f2756523d9d611912456014ed8c1.png",
@@ -456,13 +456,13 @@
         "lc": null
       }
     },
-    "stamina": 100,
+    "stamina": 39,
     "current_train_score": 500,
     "anomaly_arbitration": {
       "season": "The Humming Laughter",
       "boss_stars": 3,
-      "mini_boss_stars": 5,
-      "cycles_used": 11,
+      "mini_boss_stars": 7,
+      "cycles_used": 9,
       "boss_record": {
         "characters": [
           {
@@ -494,32 +494,6 @@
         {
           "characters": [
             {
-              "id": 1410,
-              "level": 80,
-              "eidolon": 0
-            },
-            {
-              "id": 1005,
-              "level": 80,
-              "eidolon": 0
-            },
-            {
-              "id": 1406,
-              "level": 80,
-              "eidolon": 1
-            },
-            {
-              "id": 1217,
-              "level": 80,
-              "eidolon": 0
-            }
-          ],
-          "cycles_used": 5,
-          "stars": 1
-        },
-        {
-          "characters": [
-            {
               "id": 1220,
               "level": 80,
               "eidolon": 2
@@ -535,13 +509,39 @@
               "eidolon": 0
             },
             {
-              "id": 1504,
+              "id": 1406,
               "level": 80,
               "eidolon": 1
             }
           ],
-          "cycles_used": 3,
+          "cycles_used": 4,
           "stars": 2
+        },
+        {
+          "characters": [
+            {
+              "id": 1504,
+              "level": 80,
+              "eidolon": 1
+            },
+            {
+              "id": 1313,
+              "level": 80,
+              "eidolon": 2
+            },
+            {
+              "id": 1507,
+              "level": 80,
+              "eidolon": 2
+            },
+            {
+              "id": 1217,
+              "level": 80,
+              "eidolon": 0
+            }
+          ],
+          "cycles_used": 2,
+          "stars": 3
         },
         {
           "characters": [
@@ -574,23 +574,23 @@
     "apocalyptic_shadow": {
       "total_stars": 12,
       "floor_data": {
-        "floor": "Idol of the Locusts: Difficulty 4",
-        "score": 7061,
+        "floor": "Gale of Forgetting: Difficulty 4Starward Mode",
+        "score": 7488,
         "first_half": [
           {
-            "id": 1015,
+            "id": 1405,
             "level": 80,
             "eidolon": 0
           },
           {
-            "id": 1306,
+            "id": 1313,
             "level": 80,
-            "eidolon": 0
+            "eidolon": 2
           },
           {
-            "id": 8007,
+            "id": 1406,
             "level": 80,
-            "eidolon": 6
+            "eidolon": 1
           },
           {
             "id": 1414,
@@ -600,24 +600,24 @@
         ],
         "second_half": [
           {
-            "id": 1410,
-            "level": 80,
-            "eidolon": 0
-          },
-          {
-            "id": 1005,
-            "level": 80,
-            "eidolon": 0
-          },
-          {
-            "id": 1309,
+            "id": 1220,
             "level": 80,
             "eidolon": 2
           },
           {
-            "id": 1217,
+            "id": 1304,
             "level": 80,
             "eidolon": 0
+          },
+          {
+            "id": 1507,
+            "level": 80,
+            "eidolon": 2
+          },
+          {
+            "id": 1504,
+            "level": 80,
+            "eidolon": 1
           }
         ]
       }
@@ -1012,12 +1012,12 @@
     "daily_task": 0
   },
   "hsr_diary": {
-    "Date": "2026-06-07",
-    "Net Currency Gain": 155,
+    "Date": "2026-06-08",
+    "Net Currency Gain": 1275,
     "Pulls Net Gain": 0
   },
   "genshin_diary": {
-    "Date": "2026-06-07",
+    "Date": "2026-06-08",
     "Net Currency Gain": 0,
     "Pulls Net Gain": 0
   },
@@ -1025,13 +1025,13 @@
     "status": "Check-in Successful",
     "rewards": [
       {
-        "name": "Talosian Credit Notes|T-Creds",
-        "count": 3000,
-        "icon": "https://static.skport.com/asset/endfield_attendance/2a58a0e85f39092433842ccd62324785.png"
+        "name": "Arms INSP Kit",
+        "count": 3,
+        "icon": "https://static.skport.com/asset/endfield_attendance/0dea0bc0fd87138df322e8a254a6999f.png"
       }
     ],
     "attendance": {
-      "totalSignIns": 8,
+      "totalSignIns": 9,
       "calendar": [
         {
           "awardId": "endfield_attendance_1_2",
@@ -1070,13 +1070,13 @@
         },
         {
           "awardId": "endfield_attendance_7_3000",
-          "available": true,
+          "available": false,
           "done": true
         },
         {
           "awardId": "endfield_attendance_4_3",
-          "available": false,
-          "done": false
+          "available": true,
+          "done": true
         },
         {
           "awardId": "endfield_attendance_1_3",
@@ -1187,55 +1187,21 @@
     },
     "error": null,
     "nextAward": {
-      "name": "Arms INSP Kit",
+      "name": "Intermediate Combat Record",
       "count": 3,
-      "icon": "https://static.skport.com/asset/endfield_attendance/0dea0bc0fd87138df322e8a254a6999f.png"
+      "icon": "https://static.skport.com/asset/endfield_attendance/921A397E2765462C009B939E0CD92606.png"
     }
   },
   "endfield_data": {
     "nickname": "Axelle",
     "level": 60,
     "avatar_url": "data/images/6beb98f8c8e7a81d37071bc3593b6321.png",
-    "achievements": 86,
+    "achievements": 94,
     "active_days": 22,
     "avatar_count": 22,
-    "aurylenes": 291,
-    "chest_count": 621,
+    "aurylenes": 306,
+    "chest_count": 651,
     "six_star_characters": {
-      "Rossi": {
-        "avatarSqUrl": "data/images/bb6cca7221225af1ce18c1850d1abb7e.png",
-        "rarity": "6",
-        "potential": 0,
-        "profession": "Guard",
-        "property": "Physical",
-        "weaponType": "Sword",
-        "level": 90,
-        "weapon": {
-          "name": "Lupine Scarlet",
-          "iconUrl": "data/images/dfa304b9de55a75bce9b5719e7cf1d59.png",
-          "rarity": "6",
-          "type": "Sword",
-          "level": 90,
-          "refineLevel": 0
-        }
-      },
-      "Laevatain": {
-        "avatarSqUrl": "data/images/15a984eaecaf0d7c47d871175ae38937.png",
-        "rarity": "6",
-        "potential": 0,
-        "profession": "Striker",
-        "property": "Heat",
-        "weaponType": "Sword",
-        "level": 90,
-        "weapon": {
-          "name": "Umbral Torch",
-          "iconUrl": "data/images/f67ca28a6489e356f928c9c9ef1b61eb.png",
-          "rarity": "6",
-          "type": "Sword",
-          "level": 90,
-          "refineLevel": 0
-        }
-      },
       "Lifeng": {
         "avatarSqUrl": "data/images/e1ffee22e9f4a4df2562cbfce21108e1.png",
         "rarity": "6",
@@ -1281,6 +1247,40 @@
         "weapon": {
           "name": "Never Rest",
           "iconUrl": "data/images/21532368a8d1075f3259f51eb226f9b3.png",
+          "rarity": "6",
+          "type": "Sword",
+          "level": 90,
+          "refineLevel": 0
+        }
+      },
+      "Rossi": {
+        "avatarSqUrl": "data/images/bb6cca7221225af1ce18c1850d1abb7e.png",
+        "rarity": "6",
+        "potential": 0,
+        "profession": "Guard",
+        "property": "Physical",
+        "weaponType": "Sword",
+        "level": 90,
+        "weapon": {
+          "name": "Lupine Scarlet",
+          "iconUrl": "data/images/dfa304b9de55a75bce9b5719e7cf1d59.png",
+          "rarity": "6",
+          "type": "Sword",
+          "level": 90,
+          "refineLevel": 0
+        }
+      },
+      "Laevatain": {
+        "avatarSqUrl": "data/images/15a984eaecaf0d7c47d871175ae38937.png",
+        "rarity": "6",
+        "potential": 0,
+        "profession": "Striker",
+        "property": "Heat",
+        "weaponType": "Sword",
+        "level": 90,
+        "weapon": {
+          "name": "Umbral Torch",
+          "iconUrl": "data/images/f67ca28a6489e356f928c9c9ef1b61eb.png",
           "rarity": "6",
           "type": "Sword",
           "level": 90,
@@ -1457,21 +1457,21 @@
           "refineLevel": 0
         }
       },
-      "Avywenna": {
-        "avatarSqUrl": "data/images/ad690ee34b0fe54fc21e82f04489894f.png",
+      "Da Pan": {
+        "avatarSqUrl": "data/images/56ead5c066fd0657518c009d12d67d75.png",
         "rarity": "5",
         "potential": 5,
         "profession": "Striker",
-        "property": "Electric",
-        "weaponType": "Polearm",
+        "property": "Physical",
+        "weaponType": "Greatsword",
         "level": 1,
         "weapon": {
-          "name": "Opero 77",
-          "iconUrl": "data/images/84a37c54af2051047d3da560fb9b98f9.png",
-          "rarity": "3",
-          "type": "Polearm",
+          "name": "Finishing Call",
+          "iconUrl": "data/images/19f31f1c6464ea63c4012f70c813ab8e.png",
+          "rarity": "5",
+          "type": "Greatsword",
           "level": 1,
-          "refineLevel": 0
+          "refineLevel": 3
         }
       },
       "Snowshine": {
@@ -1491,21 +1491,21 @@
           "refineLevel": 0
         }
       },
-      "Da Pan": {
-        "avatarSqUrl": "data/images/56ead5c066fd0657518c009d12d67d75.png",
+      "Avywenna": {
+        "avatarSqUrl": "data/images/ad690ee34b0fe54fc21e82f04489894f.png",
         "rarity": "5",
         "potential": 5,
         "profession": "Striker",
-        "property": "Physical",
-        "weaponType": "Greatsword",
+        "property": "Electric",
+        "weaponType": "Polearm",
         "level": 1,
         "weapon": {
-          "name": "Finishing Call",
-          "iconUrl": "data/images/19f31f1c6464ea63c4012f70c813ab8e.png",
-          "rarity": "5",
-          "type": "Greatsword",
+          "name": "Opero 77",
+          "iconUrl": "data/images/84a37c54af2051047d3da560fb9b98f9.png",
+          "rarity": "3",
+          "type": "Polearm",
           "level": 1,
-          "refineLevel": 3
+          "refineLevel": 0
         }
       },
       "Arclight": {
@@ -1521,6 +1521,23 @@
           "iconUrl": "data/images/397d215b08df02e77309f693971a25bf.png",
           "rarity": "3",
           "type": "Sword",
+          "level": 1,
+          "refineLevel": 0
+        }
+      },
+      "Fluorite": {
+        "avatarSqUrl": "data/images/e50b9cf1b565dc2d31d4b6a2659ada39.png",
+        "rarity": "4",
+        "potential": 5,
+        "profession": "Caster",
+        "property": "Nature",
+        "weaponType": "Handcannon",
+        "level": 1,
+        "weapon": {
+          "name": "Peco 5",
+          "iconUrl": "data/images/a774ee68210d6c5c2091e8249b093ba0.png",
+          "rarity": "3",
+          "type": "Handcannon",
           "level": 1,
           "refineLevel": 0
         }
@@ -1558,27 +1575,10 @@
           "level": 1,
           "refineLevel": 0
         }
-      },
-      "Fluorite": {
-        "avatarSqUrl": "data/images/e50b9cf1b565dc2d31d4b6a2659ada39.png",
-        "rarity": "4",
-        "potential": 5,
-        "profession": "Caster",
-        "property": "Nature",
-        "weaponType": "Handcannon",
-        "level": 1,
-        "weapon": {
-          "name": "Peco 5",
-          "iconUrl": "data/images/a774ee68210d6c5c2091e8249b093ba0.png",
-          "rarity": "3",
-          "type": "Handcannon",
-          "level": 1,
-          "refineLevel": 0
-        }
       }
     },
-    "stamina": "360",
-    "daily_mission": 20,
+    "stamina": "172",
+    "daily_mission": 0,
     "last_updated": "2026-05-24T14:34:18.842612-04:00"
   }
 }
