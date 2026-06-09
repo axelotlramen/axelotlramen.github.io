@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-06-08T15:37:57.497842-04:00",
+  "last_updated": "2026-06-09T15:32:37.424596-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
     "avatar_url": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0a0ae/9c7348aed5712386c2a9f1c4a9bb92b4.png",
     "achievements": 1666,
-    "active_days": 924,
+    "active_days": 925,
     "avatar_count": 56,
     "chest_count": 1890,
     "five_star_characters": {
@@ -212,11 +212,11 @@
         "path": "HARMONY",
         "level": 80,
         "lc": {
-          "name": "Dance! Dance! Dance!",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0a0ae/cbdc03dbf4455ace9b882a1af06dafa0.png",
-          "rarity": 4,
+          "name": "But the Battle Isn't Over",
+          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0a0ae/9d4be91c735bc9fe402ac318c8abd948.png",
+          "rarity": 5,
           "level": 80,
-          "superimposition": 5
+          "superimposition": 3
         }
       },
       "Dr. Ratio": {
@@ -226,8 +226,8 @@
         "path": "THE HUNT",
         "level": 80,
         "lc": {
-          "name": "Swordplay",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0a0ae/2d86775617f08523a03473b44150673c.png",
+          "name": "Only Silence Remains",
+          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0a0ae/d527db57b972834c35ae363bb61513c4.png",
           "rarity": 4,
           "level": 80,
           "superimposition": 5
@@ -253,7 +253,13 @@
         "element": "Ice",
         "path": "HARMONY",
         "level": 80,
-        "lc": null
+        "lc": {
+          "name": "Dance! Dance! Dance!",
+          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0a0ae/cbdc03dbf4455ace9b882a1af06dafa0.png",
+          "rarity": 4,
+          "level": 80,
+          "superimposition": 5
+        }
       },
       "Argenti": {
         "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0a0ae/70e076909e0d17b290ab552296c39a23.png",
@@ -456,7 +462,7 @@
         "lc": null
       }
     },
-    "stamina": 39,
+    "stamina": 38,
     "current_train_score": 500,
     "anomaly_arbitration": {
       "season": "The Humming Laughter",
@@ -575,7 +581,7 @@
       "total_stars": 12,
       "floor_data": {
         "floor": "Gale of Forgetting: Difficulty 4Starward Mode",
-        "score": 7488,
+        "score": 7479,
         "first_half": [
           {
             "id": 1405,
@@ -605,9 +611,9 @@
             "eidolon": 2
           },
           {
-            "id": 1304,
+            "id": 1223,
             "level": 80,
-            "eidolon": 0
+            "eidolon": 6
           },
           {
             "id": 1507,
@@ -1012,12 +1018,12 @@
     "daily_task": 0
   },
   "hsr_diary": {
-    "Date": "2026-06-08",
-    "Net Currency Gain": 1275,
+    "Date": "2026-06-09",
+    "Net Currency Gain": 150,
     "Pulls Net Gain": 0
   },
   "genshin_diary": {
-    "Date": "2026-06-08",
+    "Date": "2026-06-09",
     "Net Currency Gain": 0,
     "Pulls Net Gain": 0
   },
@@ -1025,13 +1031,13 @@
     "status": "Check-in Successful",
     "rewards": [
       {
-        "name": "Arms INSP Kit",
+        "name": "Intermediate Combat Record",
         "count": 3,
-        "icon": "https://static.skport.com/asset/endfield_attendance/0dea0bc0fd87138df322e8a254a6999f.png"
+        "icon": "https://static.skport.com/asset/endfield_attendance/921A397E2765462C009B939E0CD92606.png"
       }
     ],
     "attendance": {
-      "totalSignIns": 9,
+      "totalSignIns": 10,
       "calendar": [
         {
           "awardId": "endfield_attendance_1_2",
@@ -1075,13 +1081,13 @@
         },
         {
           "awardId": "endfield_attendance_4_3",
-          "available": true,
+          "available": false,
           "done": true
         },
         {
           "awardId": "endfield_attendance_1_3",
-          "available": false,
-          "done": false
+          "available": true,
+          "done": true
         },
         {
           "awardId": "endfield_attendance_7_2000",
@@ -1187,9 +1193,9 @@
     },
     "error": null,
     "nextAward": {
-      "name": "Intermediate Combat Record",
-      "count": 3,
-      "icon": "https://static.skport.com/asset/endfield_attendance/921A397E2765462C009B939E0CD92606.png"
+      "name": "Talosian Credit Notes|T-Creds",
+      "count": 2000,
+      "icon": "https://static.skport.com/asset/endfield_attendance/2a58a0e85f39092433842ccd62324785.png"
     }
   },
   "endfield_data": {
@@ -1577,7 +1583,7 @@
         }
       }
     },
-    "stamina": "172",
+    "stamina": "360",
     "daily_mission": 0,
     "last_updated": "2026-05-24T14:34:18.842612-04:00"
   }
