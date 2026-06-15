@@ -1,23 +1,23 @@
 {
-  "last_updated": "2026-06-14T14:49:08.381656-04:00",
+  "last_updated": "2026-06-15T16:36:28.350726-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
     "avatar_url": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0a0ae/9c7348aed5712386c2a9f1c4a9bb92b4.png",
-    "achievements": 1687,
-    "active_days": 930,
+    "achievements": 1688,
+    "active_days": 931,
     "avatar_count": 56,
     "chest_count": 1890,
     "five_star_characters": {
       "Trailblazer": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0a0ae/411b9c981aad01d19570f66b9ba4ce96.png",
+        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0a0ae/8d192286e94a463f0d85fbe45c54eb00.png",
         "eidolon": 6,
-        "element": "Lightning",
-        "path": "ELATION",
+        "element": "Ice",
+        "path": "REMEMBRANCE",
         "level": 80,
         "lc": {
-          "name": "Elation Brimming With Blessings",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0a0ae/56c1e087a0c1f8c4afa76c9d4691f3fb.png",
+          "name": "Memory's Curtain Never Falls",
+          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0a0ae/bb8f4951847e3942480db38a6ec3d0b4.png",
           "rarity": 5,
           "level": 80,
           "superimposition": 5
@@ -100,11 +100,11 @@
         "path": "NIHILITY",
         "level": 80,
         "lc": {
-          "name": "Lies Dance on the Breeze",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0a0ae/dc2651a3065f7767dcd44bdb760cd0bc.png",
-          "rarity": 5,
+          "name": "Before the Tutorial Mission Starts",
+          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0a0ae/3ae9113a79040fd5bd20fa67e81bf866.png",
+          "rarity": 4,
           "level": 80,
-          "superimposition": 1
+          "superimposition": 5
         }
       },
       "Anaxa": {
@@ -254,11 +254,11 @@
         "path": "HARMONY",
         "level": 80,
         "lc": {
-          "name": "Dance! Dance! Dance!",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0a0ae/cbdc03dbf4455ace9b882a1af06dafa0.png",
-          "rarity": 4,
+          "name": "But the Battle Isn't Over",
+          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0a0ae/9d4be91c735bc9fe402ac318c8abd948.png",
+          "rarity": 5,
           "level": 80,
-          "superimposition": 2
+          "superimposition": 3
         }
       },
       "Argenti": {
@@ -338,11 +338,11 @@
         "path": "THE HUNT",
         "level": 80,
         "lc": {
-          "name": "Cruising in the Stellar Sea",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0a0ae/cbf577cc50348be439ee16932d80bdb5.png",
+          "name": "The Hell Where Ideals Burn",
+          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0a0ae/ee0323b068594d47c22d64040ebbc85f.png",
           "rarity": 5,
           "level": 80,
-          "superimposition": 5
+          "superimposition": 1
         }
       },
       "Bronya": {
@@ -366,11 +366,11 @@
         "path": "THE HUNT",
         "level": 80,
         "lc": {
-          "name": "The Hell Where Ideals Burn",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0a0ae/ee0323b068594d47c22d64040ebbc85f.png",
+          "name": "Cruising in the Stellar Sea",
+          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0a0ae/cbf577cc50348be439ee16932d80bdb5.png",
           "rarity": 5,
           "level": 80,
-          "superimposition": 1
+          "superimposition": 5
         }
       },
       "Saber": {
@@ -416,11 +416,11 @@
         "path": "NIHILITY",
         "level": 80,
         "lc": {
-          "name": "Before the Tutorial Mission Starts",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0a0ae/3ae9113a79040fd5bd20fa67e81bf866.png",
-          "rarity": 4,
+          "name": "Lies Dance on the Breeze",
+          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0a0ae/dc2651a3065f7767dcd44bdb760cd0bc.png",
+          "rarity": 5,
           "level": 80,
-          "superimposition": 5
+          "superimposition": 1
         }
       },
       "Himeko": {
@@ -468,7 +468,7 @@
         "lc": null
       }
     },
-    "stamina": 111,
+    "stamina": 85,
     "current_train_score": 500,
     "anomaly_arbitration": {
       "season": "The Humming Laughter",
@@ -1024,12 +1024,12 @@
     "daily_task": 0
   },
   "hsr_diary": {
-    "Date": "2026-06-14",
-    "Net Currency Gain": 150,
+    "Date": "2026-06-15",
+    "Net Currency Gain": 495,
     "Pulls Net Gain": 0
   },
   "genshin_diary": {
-    "Date": "2026-06-14",
+    "Date": "2026-06-15",
     "Net Currency Gain": 0,
     "Pulls Net Gain": 0
   },
@@ -1037,13 +1037,13 @@
     "status": "Check-in Successful",
     "rewards": [
       {
-        "name": "Arms INSP Kit",
-        "count": 3,
-        "icon": "https://static.skport.com/asset/endfield_attendance/0dea0bc0fd87138df322e8a254a6999f.png"
+        "name": "Talosian Credit Notes|T-Creds",
+        "count": 3000,
+        "icon": "https://static.skport.com/asset/endfield_attendance/2a58a0e85f39092433842ccd62324785.png"
       }
     ],
     "attendance": {
-      "totalSignIns": 15,
+      "totalSignIns": 16,
       "calendar": [
         {
           "awardId": "endfield_attendance_1_2",
@@ -1117,13 +1117,13 @@
         },
         {
           "awardId": "endfield_attendance_4_3",
-          "available": true,
+          "available": false,
           "done": true
         },
         {
           "awardId": "endfield_attendance_7_3000",
-          "available": false,
-          "done": false
+          "available": true,
+          "done": true
         },
         {
           "awardId": "endfield_attendance_3_2",
@@ -1199,16 +1199,16 @@
     },
     "error": null,
     "nextAward": {
-      "name": "Talosian Credit Notes|T-Creds",
-      "count": 3000,
-      "icon": "https://static.skport.com/asset/endfield_attendance/2a58a0e85f39092433842ccd62324785.png"
+      "name": "Advanced Combat Record",
+      "count": 2,
+      "icon": "https://static.skport.com/asset/endfield_attendance/7f6ce8ae13546508255b89a4d8571fe3.png"
     }
   },
   "endfield_data": {
     "nickname": "Axelle",
     "level": 60,
     "avatar_url": "data/images/6beb98f8c8e7a81d37071bc3593b6321.png",
-    "achievements": 95,
+    "achievements": 96,
     "active_days": 22,
     "avatar_count": 22,
     "aurylenes": 306,
@@ -1225,40 +1225,6 @@
         "weapon": {
           "name": "Never Rest",
           "iconUrl": "data/images/21532368a8d1075f3259f51eb226f9b3.png",
-          "rarity": "6",
-          "type": "Sword",
-          "level": 90,
-          "refineLevel": 0
-        }
-      },
-      "Tangtang": {
-        "avatarSqUrl": "data/images/ee017b6ab7f20b54c0effcf522518d2b.png",
-        "rarity": "6",
-        "potential": 1,
-        "profession": "Caster",
-        "property": "Cryo",
-        "weaponType": "Handcannon",
-        "level": 90,
-        "weapon": {
-          "name": "Brigand's Calling",
-          "iconUrl": "data/images/675ec992ee25214d0af5cdb60ccd893a.png",
-          "rarity": "6",
-          "type": "Handcannon",
-          "level": 90,
-          "refineLevel": 0
-        }
-      },
-      "Laevatain": {
-        "avatarSqUrl": "data/images/15a984eaecaf0d7c47d871175ae38937.png",
-        "rarity": "6",
-        "potential": 0,
-        "profession": "Striker",
-        "property": "Heat",
-        "weaponType": "Sword",
-        "level": 90,
-        "weapon": {
-          "name": "Umbral Torch",
-          "iconUrl": "data/images/f67ca28a6489e356f928c9c9ef1b61eb.png",
           "rarity": "6",
           "type": "Sword",
           "level": 90,
@@ -1282,6 +1248,23 @@
           "refineLevel": 0
         }
       },
+      "Laevatain": {
+        "avatarSqUrl": "data/images/15a984eaecaf0d7c47d871175ae38937.png",
+        "rarity": "6",
+        "potential": 0,
+        "profession": "Striker",
+        "property": "Heat",
+        "weaponType": "Sword",
+        "level": 90,
+        "weapon": {
+          "name": "Umbral Torch",
+          "iconUrl": "data/images/f67ca28a6489e356f928c9c9ef1b61eb.png",
+          "rarity": "6",
+          "type": "Sword",
+          "level": 90,
+          "refineLevel": 0
+        }
+      },
       "Lifeng": {
         "avatarSqUrl": "data/images/e1ffee22e9f4a4df2562cbfce21108e1.png",
         "rarity": "6",
@@ -1295,6 +1278,23 @@
           "iconUrl": "data/images/b4827d12232501551485e0c9f671caa8.png",
           "rarity": "6",
           "type": "Polearm",
+          "level": 90,
+          "refineLevel": 0
+        }
+      },
+      "Tangtang": {
+        "avatarSqUrl": "data/images/ee017b6ab7f20b54c0effcf522518d2b.png",
+        "rarity": "6",
+        "potential": 1,
+        "profession": "Caster",
+        "property": "Cryo",
+        "weaponType": "Handcannon",
+        "level": 90,
+        "weapon": {
+          "name": "Brigand's Calling",
+          "iconUrl": "data/images/675ec992ee25214d0af5cdb60ccd893a.png",
+          "rarity": "6",
+          "type": "Handcannon",
           "level": 90,
           "refineLevel": 0
         }
@@ -1374,7 +1374,7 @@
         "profession": "Guard",
         "property": "Physical",
         "weaponType": "Sword",
-        "level": 82,
+        "level": 83,
         "weapon": {
           "name": "Grand Vision",
           "iconUrl": "data/images/22cd7d47a45fd012e7a7db575cce0e3c.png",
@@ -1384,21 +1384,21 @@
           "refineLevel": 1
         }
       },
-      "Xaihi": {
-        "avatarSqUrl": "data/images/b57fb03447e70561cd497b60af8b69e3.png",
+      "Wulfgard": {
+        "avatarSqUrl": "data/images/7ddb3b88ce6f0029e143000cfece7b65.png",
         "rarity": "5",
         "potential": 5,
-        "profession": "Supporter",
-        "property": "Cryo",
-        "weaponType": "Arts Unit",
+        "profession": "Caster",
+        "property": "Heat",
+        "weaponType": "Handcannon",
         "level": 80,
         "weapon": {
-          "name": "Detonation Unit",
-          "iconUrl": "data/images/27335fd9a9e8c41c3cc063fbf8481f9b.png",
-          "rarity": "6",
-          "type": "Arts Unit",
+          "name": "Rational Farewell",
+          "iconUrl": "data/images/cee67efec0389c4a0197291c3550ace7.png",
+          "rarity": "5",
+          "type": "Handcannon",
           "level": 80,
-          "refineLevel": 0
+          "refineLevel": 1
         }
       },
       "Perlica": {
@@ -1418,21 +1418,21 @@
           "refineLevel": 1
         }
       },
-      "Wulfgard": {
-        "avatarSqUrl": "data/images/7ddb3b88ce6f0029e143000cfece7b65.png",
+      "Xaihi": {
+        "avatarSqUrl": "data/images/b57fb03447e70561cd497b60af8b69e3.png",
         "rarity": "5",
         "potential": 5,
-        "profession": "Caster",
-        "property": "Heat",
-        "weaponType": "Handcannon",
+        "profession": "Supporter",
+        "property": "Cryo",
+        "weaponType": "Arts Unit",
         "level": 80,
         "weapon": {
-          "name": "Rational Farewell",
-          "iconUrl": "data/images/cee67efec0389c4a0197291c3550ace7.png",
-          "rarity": "5",
-          "type": "Handcannon",
+          "name": "Detonation Unit",
+          "iconUrl": "data/images/27335fd9a9e8c41c3cc063fbf8481f9b.png",
+          "rarity": "6",
+          "type": "Arts Unit",
           "level": 80,
-          "refineLevel": 1
+          "refineLevel": 0
         }
       },
       "Alesh": {
@@ -1469,21 +1469,21 @@
           "refineLevel": 0
         }
       },
-      "Arclight": {
-        "avatarSqUrl": "data/images/068394e39831e767a19d447579a97b1d.png",
+      "Da Pan": {
+        "avatarSqUrl": "data/images/56ead5c066fd0657518c009d12d67d75.png",
         "rarity": "5",
         "potential": 5,
-        "profession": "Vanguard",
-        "property": "Electric",
-        "weaponType": "Sword",
+        "profession": "Striker",
+        "property": "Physical",
+        "weaponType": "Greatsword",
         "level": 1,
         "weapon": {
-          "name": "Tarr 11",
-          "iconUrl": "data/images/397d215b08df02e77309f693971a25bf.png",
-          "rarity": "3",
-          "type": "Sword",
+          "name": "Finishing Call",
+          "iconUrl": "data/images/19f31f1c6464ea63c4012f70c813ab8e.png",
+          "rarity": "5",
+          "type": "Greatsword",
           "level": 1,
-          "refineLevel": 0
+          "refineLevel": 3
         }
       },
       "Snowshine": {
@@ -1503,23 +1503,6 @@
           "refineLevel": 0
         }
       },
-      "Da Pan": {
-        "avatarSqUrl": "data/images/56ead5c066fd0657518c009d12d67d75.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Striker",
-        "property": "Physical",
-        "weaponType": "Greatsword",
-        "level": 1,
-        "weapon": {
-          "name": "Finishing Call",
-          "iconUrl": "data/images/19f31f1c6464ea63c4012f70c813ab8e.png",
-          "rarity": "5",
-          "type": "Greatsword",
-          "level": 1,
-          "refineLevel": 3
-        }
-      },
       "Avywenna": {
         "avatarSqUrl": "data/images/ad690ee34b0fe54fc21e82f04489894f.png",
         "rarity": "5",
@@ -1533,6 +1516,23 @@
           "iconUrl": "data/images/84a37c54af2051047d3da560fb9b98f9.png",
           "rarity": "3",
           "type": "Polearm",
+          "level": 1,
+          "refineLevel": 0
+        }
+      },
+      "Arclight": {
+        "avatarSqUrl": "data/images/068394e39831e767a19d447579a97b1d.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Vanguard",
+        "property": "Electric",
+        "weaponType": "Sword",
+        "level": 1,
+        "weapon": {
+          "name": "Tarr 11",
+          "iconUrl": "data/images/397d215b08df02e77309f693971a25bf.png",
+          "rarity": "3",
+          "type": "Sword",
           "level": 1,
           "refineLevel": 0
         }
@@ -1554,23 +1554,6 @@
           "refineLevel": 0
         }
       },
-      "Fluorite": {
-        "avatarSqUrl": "data/images/e50b9cf1b565dc2d31d4b6a2659ada39.png",
-        "rarity": "4",
-        "potential": 5,
-        "profession": "Caster",
-        "property": "Nature",
-        "weaponType": "Handcannon",
-        "level": 1,
-        "weapon": {
-          "name": "Peco 5",
-          "iconUrl": "data/images/a774ee68210d6c5c2091e8249b093ba0.png",
-          "rarity": "3",
-          "type": "Handcannon",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
       "Antal": {
         "avatarSqUrl": "data/images/aca43ca0538ead35c4ff7442a6a2a724.png",
         "rarity": "4",
@@ -1587,9 +1570,26 @@
           "level": 1,
           "refineLevel": 0
         }
+      },
+      "Fluorite": {
+        "avatarSqUrl": "data/images/e50b9cf1b565dc2d31d4b6a2659ada39.png",
+        "rarity": "4",
+        "potential": 5,
+        "profession": "Caster",
+        "property": "Nature",
+        "weaponType": "Handcannon",
+        "level": 1,
+        "weapon": {
+          "name": "Peco 5",
+          "iconUrl": "data/images/a774ee68210d6c5c2091e8249b093ba0.png",
+          "rarity": "3",
+          "type": "Handcannon",
+          "level": 1,
+          "refineLevel": 0
+        }
       }
     },
-    "stamina": "360",
+    "stamina": "167",
     "daily_mission": 0,
     "last_updated": "2026-05-24T14:34:18.842612-04:00"
   }
