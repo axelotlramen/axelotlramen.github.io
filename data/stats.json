@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-06-20T14:52:29.627100-04:00",
+  "last_updated": "2026-06-21T14:56:42.516594-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
     "avatar_url": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0a0ae/9c7348aed5712386c2a9f1c4a9bb92b4.png",
     "achievements": 1700,
-    "active_days": 936,
+    "active_days": 937,
     "avatar_count": 56,
     "chest_count": 1897,
     "five_star_characters": {
@@ -468,7 +468,7 @@
         "lc": null
       }
     },
-    "stamina": 86,
+    "stamina": 87,
     "current_train_score": 500,
     "anomaly_arbitration": {
       "season": "The Humming Laughter",
@@ -744,7 +744,7 @@
     "level": 58,
     "avatar_url": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/f6ed58ae3cfeeebd6e4956e7c5e4b725.png",
     "achievements": 1008,
-    "active_days": 372,
+    "active_days": 373,
     "avatar_count": 57,
     "oculus": 1208,
     "chest_count": 4111,
@@ -1024,12 +1024,12 @@
     "daily_task": 0
   },
   "hsr_diary": {
-    "Date": "2026-06-20",
+    "Date": "2026-06-21",
     "Net Currency Gain": 150,
     "Pulls Net Gain": 0
   },
   "genshin_diary": {
-    "Date": "2026-06-20",
+    "Date": "2026-06-21",
     "Net Currency Gain": 0,
     "Pulls Net Gain": 0
   },
@@ -1037,13 +1037,13 @@
     "status": "Check-in Successful",
     "rewards": [
       {
-        "name": "Protoprism",
-        "count": 5,
-        "icon": "https://static.skport.com/asset/endfield_attendance/0c1e8cf15711a7d59aa7d8786b533cf1.png"
+        "name": "Advanced Combat Record",
+        "count": 3,
+        "icon": "https://static.skport.com/asset/endfield_attendance/7f6ce8ae13546508255b89a4d8571fe3.png"
       }
     ],
     "attendance": {
-      "totalSignIns": 21,
+      "totalSignIns": 22,
       "calendar": [
         {
           "awardId": "endfield_attendance_1_2",
@@ -1147,13 +1147,13 @@
         },
         {
           "awardId": "endfield_attendance_6_5",
-          "available": true,
+          "available": false,
           "done": true
         },
         {
           "awardId": "endfield_attendance_3_3",
-          "available": false,
-          "done": false
+          "available": true,
+          "done": true
         },
         {
           "awardId": "endfield_attendance_5_3",
@@ -1199,9 +1199,9 @@
     },
     "error": null,
     "nextAward": {
-      "name": "Advanced Combat Record",
+      "name": "Arms INSP Set",
       "count": 3,
-      "icon": "https://static.skport.com/asset/endfield_attendance/7f6ce8ae13546508255b89a4d8571fe3.png"
+      "icon": "https://static.skport.com/asset/endfield_attendance/90403112f070c14859d107b530ae5851.png"
     }
   },
   "endfield_data": {
@@ -1214,23 +1214,6 @@
     "aurylenes": 321,
     "chest_count": 691,
     "six_star_characters": {
-      "Pogranichnik": {
-        "avatarSqUrl": "data/images/9c14933aa23b96d01658caed5a3b9907.png",
-        "rarity": "6",
-        "potential": 1,
-        "profession": "Vanguard",
-        "property": "Physical",
-        "weaponType": "Sword",
-        "level": 90,
-        "weapon": {
-          "name": "Never Rest",
-          "iconUrl": "data/images/21532368a8d1075f3259f51eb226f9b3.png",
-          "rarity": "6",
-          "type": "Sword",
-          "level": 90,
-          "refineLevel": 0
-        }
-      },
       "Lifeng": {
         "avatarSqUrl": "data/images/e1ffee22e9f4a4df2562cbfce21108e1.png",
         "rarity": "6",
@@ -1245,23 +1228,6 @@
           "rarity": "6",
           "type": "Polearm",
           "level": 90,
-          "refineLevel": 0
-        }
-      },
-      "Ardelia": {
-        "avatarSqUrl": "data/images/8acdcdaa6c69979a9b01f77281465a0a.png",
-        "rarity": "6",
-        "potential": 1,
-        "profession": "Supporter",
-        "property": "Nature",
-        "weaponType": "Arts Unit",
-        "level": 90,
-        "weapon": {
-          "name": "Dreams of the Starry Beach",
-          "iconUrl": "data/images/fe34d89d2e92df4d993a4fc881b3d6d8.png",
-          "rarity": "6",
-          "type": "Arts Unit",
-          "level": 83,
           "refineLevel": 0
         }
       },
@@ -1316,21 +1282,38 @@
           "refineLevel": 0
         }
       },
-      "Chen Qianyu": {
-        "avatarSqUrl": "data/images/a9166c16be2bd4de3a768f55f9521cd9.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Guard",
+      "Pogranichnik": {
+        "avatarSqUrl": "data/images/9c14933aa23b96d01658caed5a3b9907.png",
+        "rarity": "6",
+        "potential": 1,
+        "profession": "Vanguard",
         "property": "Physical",
         "weaponType": "Sword",
         "level": 90,
         "weapon": {
-          "name": "Sundering Steel",
-          "iconUrl": "data/images/b78d6567010acaea597aa7cc75980909.png",
-          "rarity": "5",
+          "name": "Never Rest",
+          "iconUrl": "data/images/21532368a8d1075f3259f51eb226f9b3.png",
+          "rarity": "6",
           "type": "Sword",
           "level": 90,
-          "refineLevel": 5
+          "refineLevel": 0
+        }
+      },
+      "Ardelia": {
+        "avatarSqUrl": "data/images/8acdcdaa6c69979a9b01f77281465a0a.png",
+        "rarity": "6",
+        "potential": 1,
+        "profession": "Supporter",
+        "property": "Nature",
+        "weaponType": "Arts Unit",
+        "level": 90,
+        "weapon": {
+          "name": "Dreams of the Starry Beach",
+          "iconUrl": "data/images/fe34d89d2e92df4d993a4fc881b3d6d8.png",
+          "rarity": "6",
+          "type": "Arts Unit",
+          "level": 83,
+          "refineLevel": 0
         }
       },
       "Wulfgard": {
@@ -1348,6 +1331,23 @@
           "type": "Handcannon",
           "level": 80,
           "refineLevel": 1
+        }
+      },
+      "Chen Qianyu": {
+        "avatarSqUrl": "data/images/a9166c16be2bd4de3a768f55f9521cd9.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Guard",
+        "property": "Physical",
+        "weaponType": "Sword",
+        "level": 90,
+        "weapon": {
+          "name": "Sundering Steel",
+          "iconUrl": "data/images/b78d6567010acaea597aa7cc75980909.png",
+          "rarity": "5",
+          "type": "Sword",
+          "level": 90,
+          "refineLevel": 5
         }
       },
       "Yvonne": {
@@ -1520,23 +1520,6 @@
           "refineLevel": 0
         }
       },
-      "Da Pan": {
-        "avatarSqUrl": "data/images/56ead5c066fd0657518c009d12d67d75.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Striker",
-        "property": "Physical",
-        "weaponType": "Greatsword",
-        "level": 1,
-        "weapon": {
-          "name": "Finishing Call",
-          "iconUrl": "data/images/19f31f1c6464ea63c4012f70c813ab8e.png",
-          "rarity": "5",
-          "type": "Greatsword",
-          "level": 1,
-          "refineLevel": 3
-        }
-      },
       "Avywenna": {
         "avatarSqUrl": "data/images/ad690ee34b0fe54fc21e82f04489894f.png",
         "rarity": "5",
@@ -1552,6 +1535,23 @@
           "type": "Polearm",
           "level": 1,
           "refineLevel": 0
+        }
+      },
+      "Da Pan": {
+        "avatarSqUrl": "data/images/56ead5c066fd0657518c009d12d67d75.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Striker",
+        "property": "Physical",
+        "weaponType": "Greatsword",
+        "level": 1,
+        "weapon": {
+          "name": "Finishing Call",
+          "iconUrl": "data/images/19f31f1c6464ea63c4012f70c813ab8e.png",
+          "rarity": "5",
+          "type": "Greatsword",
+          "level": 1,
+          "refineLevel": 3
         }
       },
       "Fluorite": {
@@ -1589,8 +1589,8 @@
         }
       }
     },
-    "stamina": "360",
-    "daily_mission": 100,
+    "stamina": "100",
+    "daily_mission": 80,
     "last_updated": "2026-06-20T14:52:29.626624-04:00"
   }
 }
