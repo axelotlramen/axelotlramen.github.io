@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-06-21T14:56:42.516594-04:00",
+  "last_updated": "2026-06-22T16:18:12.153450-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
     "avatar_url": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0a0ae/9c7348aed5712386c2a9f1c4a9bb92b4.png",
     "achievements": 1700,
-    "active_days": 937,
+    "active_days": 938,
     "avatar_count": 56,
     "chest_count": 1897,
     "five_star_characters": {
@@ -295,13 +295,7 @@
         "element": "Wind",
         "path": "ABUNDANCE",
         "level": 80,
-        "lc": {
-          "name": "Post-Op Conversation",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0a0ae/ea55cc41ab0ad89ef6b32a8127ecb727.png",
-          "rarity": 4,
-          "level": 80,
-          "superimposition": 5
-        }
+        "lc": null
       },
       "Dan Heng \u2022 Imbibitor Lunae": {
         "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0a0ae/114b258fa5beabe5c4529af44a04ab02.png",
@@ -468,7 +462,7 @@
         "lc": null
       }
     },
-    "stamina": 87,
+    "stamina": 101,
     "current_train_score": 500,
     "anomaly_arbitration": {
       "season": "The Humming Laughter",
@@ -635,38 +629,38 @@
       }
     },
     "pure_fiction": {
-      "season": "Illusory Concepts",
+      "season": "Falsehood to Fact",
       "total_stars": 12,
       "floor_data": {
-        "floor": "Illusory Concepts (IV)",
-        "score": 60400,
+        "floor": "Falsehood to Fact (IV)Starward Mode",
+        "score": 72240,
         "first_half": [
           {
-            "id": 1410,
+            "id": 1102,
+            "level": 80,
+            "eidolon": 2
+          },
+          {
+            "id": 1306,
             "level": 80,
             "eidolon": 0
           },
           {
-            "id": 1005,
+            "id": 8007,
             "level": 80,
-            "eidolon": 0
+            "eidolon": 6
           },
           {
-            "id": 1406,
+            "id": 1309,
             "level": 80,
-            "eidolon": 1
-          },
-          {
-            "id": 1217,
-            "level": 80,
-            "eidolon": 0
+            "eidolon": 2
           }
         ],
         "second_half": [
           {
-            "id": 1220,
+            "id": 1013,
             "level": 80,
-            "eidolon": 0
+            "eidolon": 6
           },
           {
             "id": 1504,
@@ -674,14 +668,14 @@
             "eidolon": 1
           },
           {
-            "id": 1309,
+            "id": 1507,
             "level": 80,
             "eidolon": 2
           },
           {
-            "id": 1414,
+            "id": 1202,
             "level": 80,
-            "eidolon": 2
+            "eidolon": 6
           }
         ]
       }
@@ -1024,12 +1018,12 @@
     "daily_task": 0
   },
   "hsr_diary": {
-    "Date": "2026-06-21",
-    "Net Currency Gain": 150,
+    "Date": "2026-06-22",
+    "Net Currency Gain": 1275,
     "Pulls Net Gain": 0
   },
   "genshin_diary": {
-    "Date": "2026-06-21",
+    "Date": "2026-06-22",
     "Net Currency Gain": 0,
     "Pulls Net Gain": 0
   },
@@ -1037,13 +1031,13 @@
     "status": "Check-in Successful",
     "rewards": [
       {
-        "name": "Advanced Combat Record",
+        "name": "Arms INSP Set",
         "count": 3,
-        "icon": "https://static.skport.com/asset/endfield_attendance/7f6ce8ae13546508255b89a4d8571fe3.png"
+        "icon": "https://static.skport.com/asset/endfield_attendance/90403112f070c14859d107b530ae5851.png"
       }
     ],
     "attendance": {
-      "totalSignIns": 22,
+      "totalSignIns": 23,
       "calendar": [
         {
           "awardId": "endfield_attendance_1_2",
@@ -1152,13 +1146,13 @@
         },
         {
           "awardId": "endfield_attendance_3_3",
-          "available": true,
+          "available": false,
           "done": true
         },
         {
           "awardId": "endfield_attendance_5_3",
-          "available": false,
-          "done": false
+          "available": true,
+          "done": true
         },
         {
           "awardId": "endfield_attendance_7_3000",
@@ -1199,38 +1193,21 @@
     },
     "error": null,
     "nextAward": {
-      "name": "Arms INSP Set",
-      "count": 3,
-      "icon": "https://static.skport.com/asset/endfield_attendance/90403112f070c14859d107b530ae5851.png"
+      "name": "Talosian Credit Notes|T-Creds",
+      "count": 3000,
+      "icon": "https://static.skport.com/asset/endfield_attendance/2a58a0e85f39092433842ccd62324785.png"
     }
   },
   "endfield_data": {
     "nickname": "Axelle",
     "level": 60,
     "avatar_url": "data/images/6beb98f8c8e7a81d37071bc3593b6321.png",
-    "achievements": 99,
+    "achievements": 100,
     "active_days": 24,
     "avatar_count": 22,
     "aurylenes": 321,
     "chest_count": 691,
     "six_star_characters": {
-      "Lifeng": {
-        "avatarSqUrl": "data/images/e1ffee22e9f4a4df2562cbfce21108e1.png",
-        "rarity": "6",
-        "potential": 2,
-        "profession": "Guard",
-        "property": "Physical",
-        "weaponType": "Polearm",
-        "level": 90,
-        "weapon": {
-          "name": "Mountain Bearer",
-          "iconUrl": "data/images/b4827d12232501551485e0c9f671caa8.png",
-          "rarity": "6",
-          "type": "Polearm",
-          "level": 90,
-          "refineLevel": 0
-        }
-      },
       "Laevatain": {
         "avatarSqUrl": "data/images/15a984eaecaf0d7c47d871175ae38937.png",
         "rarity": "6",
@@ -1244,6 +1221,40 @@
           "iconUrl": "data/images/f67ca28a6489e356f928c9c9ef1b61eb.png",
           "rarity": "6",
           "type": "Sword",
+          "level": 90,
+          "refineLevel": 0
+        }
+      },
+      "Ardelia": {
+        "avatarSqUrl": "data/images/8acdcdaa6c69979a9b01f77281465a0a.png",
+        "rarity": "6",
+        "potential": 1,
+        "profession": "Supporter",
+        "property": "Nature",
+        "weaponType": "Arts Unit",
+        "level": 90,
+        "weapon": {
+          "name": "Dreams of the Starry Beach",
+          "iconUrl": "data/images/fe34d89d2e92df4d993a4fc881b3d6d8.png",
+          "rarity": "6",
+          "type": "Arts Unit",
+          "level": 83,
+          "refineLevel": 0
+        }
+      },
+      "Lifeng": {
+        "avatarSqUrl": "data/images/e1ffee22e9f4a4df2562cbfce21108e1.png",
+        "rarity": "6",
+        "potential": 2,
+        "profession": "Guard",
+        "property": "Physical",
+        "weaponType": "Polearm",
+        "level": 90,
+        "weapon": {
+          "name": "Mountain Bearer",
+          "iconUrl": "data/images/b4827d12232501551485e0c9f671caa8.png",
+          "rarity": "6",
+          "type": "Polearm",
           "level": 90,
           "refineLevel": 0
         }
@@ -1299,23 +1310,6 @@
           "refineLevel": 0
         }
       },
-      "Ardelia": {
-        "avatarSqUrl": "data/images/8acdcdaa6c69979a9b01f77281465a0a.png",
-        "rarity": "6",
-        "potential": 1,
-        "profession": "Supporter",
-        "property": "Nature",
-        "weaponType": "Arts Unit",
-        "level": 90,
-        "weapon": {
-          "name": "Dreams of the Starry Beach",
-          "iconUrl": "data/images/fe34d89d2e92df4d993a4fc881b3d6d8.png",
-          "rarity": "6",
-          "type": "Arts Unit",
-          "level": 83,
-          "refineLevel": 0
-        }
-      },
       "Wulfgard": {
         "avatarSqUrl": "data/images/7ddb3b88ce6f0029e143000cfece7b65.png",
         "rarity": "5",
@@ -1367,6 +1361,23 @@
           "refineLevel": 0
         }
       },
+      "Endministrator": {
+        "avatarSqUrl": "data/images/a1d3ed03165785526b442aee65f0ef52.png",
+        "rarity": "6",
+        "potential": 2,
+        "profession": "Guard",
+        "property": "Physical",
+        "weaponType": "Sword",
+        "level": 84,
+        "weapon": {
+          "name": "Grand Vision",
+          "iconUrl": "data/images/22cd7d47a45fd012e7a7db575cce0e3c.png",
+          "rarity": "6",
+          "type": "Sword",
+          "level": 85,
+          "refineLevel": 1
+        }
+      },
       "Akekuri": {
         "avatarSqUrl": "data/images/e230eb3f6a0fb635f8efaae2dae05c31.png",
         "rarity": "4",
@@ -1380,40 +1391,6 @@
           "iconUrl": "data/images/c938f2a07f6fbd4af04c04fabf2001e0.png",
           "rarity": "6",
           "type": "Sword",
-          "level": 80,
-          "refineLevel": 0
-        }
-      },
-      "Endministrator": {
-        "avatarSqUrl": "data/images/a1d3ed03165785526b442aee65f0ef52.png",
-        "rarity": "6",
-        "potential": 2,
-        "profession": "Guard",
-        "property": "Physical",
-        "weaponType": "Sword",
-        "level": 83,
-        "weapon": {
-          "name": "Grand Vision",
-          "iconUrl": "data/images/22cd7d47a45fd012e7a7db575cce0e3c.png",
-          "rarity": "6",
-          "type": "Sword",
-          "level": 85,
-          "refineLevel": 1
-        }
-      },
-      "Xaihi": {
-        "avatarSqUrl": "data/images/b57fb03447e70561cd497b60af8b69e3.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Supporter",
-        "property": "Cryo",
-        "weaponType": "Arts Unit",
-        "level": 80,
-        "weapon": {
-          "name": "Detonation Unit",
-          "iconUrl": "data/images/27335fd9a9e8c41c3cc063fbf8481f9b.png",
-          "rarity": "6",
-          "type": "Arts Unit",
           "level": 80,
           "refineLevel": 0
         }
@@ -1433,6 +1410,23 @@
           "type": "Arts Unit",
           "level": 80,
           "refineLevel": 1
+        }
+      },
+      "Xaihi": {
+        "avatarSqUrl": "data/images/b57fb03447e70561cd497b60af8b69e3.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Supporter",
+        "property": "Cryo",
+        "weaponType": "Arts Unit",
+        "level": 80,
+        "weapon": {
+          "name": "Detonation Unit",
+          "iconUrl": "data/images/27335fd9a9e8c41c3cc063fbf8481f9b.png",
+          "rarity": "6",
+          "type": "Arts Unit",
+          "level": 80,
+          "refineLevel": 0
         }
       },
       "Estella": {
@@ -1503,21 +1497,21 @@
           "refineLevel": 0
         }
       },
-      "Snowshine": {
-        "avatarSqUrl": "data/images/b6dca12b51b4bd83b33e5fdce281a024.png",
+      "Da Pan": {
+        "avatarSqUrl": "data/images/56ead5c066fd0657518c009d12d67d75.png",
         "rarity": "5",
         "potential": 5,
-        "profession": "Defender",
-        "property": "Cryo",
+        "profession": "Striker",
+        "property": "Physical",
         "weaponType": "Greatsword",
         "level": 1,
         "weapon": {
-          "name": "Darhoff 7",
-          "iconUrl": "data/images/405aa716336d0d399cde63f38096301e.png",
-          "rarity": "3",
+          "name": "Finishing Call",
+          "iconUrl": "data/images/19f31f1c6464ea63c4012f70c813ab8e.png",
+          "rarity": "5",
           "type": "Greatsword",
           "level": 1,
-          "refineLevel": 0
+          "refineLevel": 3
         }
       },
       "Avywenna": {
@@ -1537,21 +1531,21 @@
           "refineLevel": 0
         }
       },
-      "Da Pan": {
-        "avatarSqUrl": "data/images/56ead5c066fd0657518c009d12d67d75.png",
+      "Snowshine": {
+        "avatarSqUrl": "data/images/b6dca12b51b4bd83b33e5fdce281a024.png",
         "rarity": "5",
         "potential": 5,
-        "profession": "Striker",
-        "property": "Physical",
+        "profession": "Defender",
+        "property": "Cryo",
         "weaponType": "Greatsword",
         "level": 1,
         "weapon": {
-          "name": "Finishing Call",
-          "iconUrl": "data/images/19f31f1c6464ea63c4012f70c813ab8e.png",
-          "rarity": "5",
+          "name": "Darhoff 7",
+          "iconUrl": "data/images/405aa716336d0d399cde63f38096301e.png",
+          "rarity": "3",
           "type": "Greatsword",
           "level": 1,
-          "refineLevel": 3
+          "refineLevel": 0
         }
       },
       "Fluorite": {
@@ -1589,8 +1583,8 @@
         }
       }
     },
-    "stamina": "100",
-    "daily_mission": 80,
+    "stamina": "311",
+    "daily_mission": 40,
     "last_updated": "2026-06-20T14:52:29.626624-04:00"
   }
 }
