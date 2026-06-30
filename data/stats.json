@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-06-29T15:19:00.849502-04:00",
+  "last_updated": "2026-06-30T15:14:00.137839-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
     "avatar_url": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0a0ae/9c7348aed5712386c2a9f1c4a9bb92b4.png",
     "achievements": 1700,
-    "active_days": 945,
+    "active_days": 946,
     "avatar_count": 56,
     "chest_count": 1897,
     "five_star_characters": {
@@ -462,7 +462,7 @@
         "lc": null
       }
     },
-    "stamina": 130,
+    "stamina": 88,
     "current_train_score": 500,
     "anomaly_arbitration": {
       "season": "The Humming Laughter",
@@ -1018,12 +1018,12 @@
     "daily_task": 0
   },
   "hsr_diary": {
-    "Date": "2026-06-29",
-    "Net Currency Gain": 495,
+    "Date": "2026-06-30",
+    "Net Currency Gain": 150,
     "Pulls Net Gain": 0
   },
   "genshin_diary": {
-    "Date": "2026-06-29",
+    "Date": "2026-06-30",
     "Net Currency Gain": 0,
     "Pulls Net Gain": 0
   },
@@ -1031,189 +1031,233 @@
     "status": "Check-in Successful",
     "rewards": [
       {
-        "name": "Talosian Credit Notes|T-Creds",
-        "count": 2000,
-        "icon": "https://static.skport.com/asset/endfield_attendance/2a58a0e85f39092433842ccd62324785.png"
+        "name": "Intermediate Combat Record",
+        "count": 2,
+        "icon": "https://static.skport.com/asset/endfield_attendance/921A397E2765462C009B939E0CD92606.png"
       }
     ],
     "attendance": {
-      "totalSignIns": 30,
+      "totalSignIns": 1,
       "calendar": [
         {
           "awardId": "endfield_attendance_1_2",
-          "available": false,
+          "available": true,
           "done": true
         },
         {
           "awardId": "endfield_attendance_4_2",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_7_2000",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_8_80",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_4_2",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_6_2",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_1_3",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_7_3000",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_4_3",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_1_3",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_7_2000",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_8_80",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_6_3",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_1_3",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_4_3",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_7_3000",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_3_2",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_5_2",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_2_5",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_8_100",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_6_5",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_3_3",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_5_3",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_7_3000",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_1_5",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_4_5",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_3_5",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_5_5",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_7_2000",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_7_2000",
-          "available": true,
-          "done": true
+          "available": false,
+          "done": false
+        },
+        {
+          "awardId": "endfield_attendance_7_2000",
+          "available": false,
+          "done": false
         }
       ]
     },
-    "error": null
+    "error": null,
+    "nextAward": {
+      "name": "Arms INSP Kit",
+      "count": 2,
+      "icon": "https://static.skport.com/asset/endfield_attendance/0dea0bc0fd87138df322e8a254a6999f.png"
+    }
   },
   "endfield_data": {
     "nickname": "Axelle",
     "level": 60,
     "avatar_url": "data/images/6beb98f8c8e7a81d37071bc3593b6321.png",
     "achievements": 101,
-    "active_days": 29,
+    "active_days": 30,
     "avatar_count": 23,
     "aurylenes": 321,
     "chest_count": 691,
     "six_star_characters": {
-      "Pogranichnik": {
-        "avatarSqUrl": "data/images/9c14933aa23b96d01658caed5a3b9907.png",
+      "Lifeng": {
+        "avatarSqUrl": "data/images/e1ffee22e9f4a4df2562cbfce21108e1.png",
         "rarity": "6",
-        "potential": 1,
+        "potential": 2,
+        "profession": "Guard",
+        "property": "Physical",
+        "weaponType": "Polearm",
+        "level": 90,
+        "weapon": {
+          "name": "Mountain Bearer",
+          "iconUrl": "data/images/b4827d12232501551485e0c9f671caa8.png",
+          "rarity": "6",
+          "type": "Polearm",
+          "level": 90,
+          "refineLevel": 0
+        }
+      },
+      "Camille": {
+        "avatarSqUrl": "data/images/3bbfecee29ca157e6015ac90f9684311.png",
+        "rarity": "6",
+        "potential": 0,
         "profession": "Vanguard",
+        "property": "Heat",
+        "weaponType": "Polearm",
+        "level": 90,
+        "weapon": {
+          "name": "Blessing of Lustrous Carmine",
+          "iconUrl": "data/images/02ef4bb9403658103f9e0f43ae77c407.png",
+          "rarity": "6",
+          "type": "Polearm",
+          "level": 90,
+          "refineLevel": 0
+        }
+      },
+      "Rossi": {
+        "avatarSqUrl": "data/images/bb6cca7221225af1ce18c1850d1abb7e.png",
+        "rarity": "6",
+        "potential": 0,
+        "profession": "Guard",
         "property": "Physical",
         "weaponType": "Sword",
         "level": 90,
         "weapon": {
-          "name": "Never Rest",
-          "iconUrl": "data/images/21532368a8d1075f3259f51eb226f9b3.png",
+          "name": "Lupine Scarlet",
+          "iconUrl": "data/images/dfa304b9de55a75bce9b5719e7cf1d59.png",
           "rarity": "6",
           "type": "Sword",
           "level": 90,
@@ -1237,23 +1281,6 @@
           "refineLevel": 0
         }
       },
-      "Lifeng": {
-        "avatarSqUrl": "data/images/e1ffee22e9f4a4df2562cbfce21108e1.png",
-        "rarity": "6",
-        "potential": 2,
-        "profession": "Guard",
-        "property": "Physical",
-        "weaponType": "Polearm",
-        "level": 90,
-        "weapon": {
-          "name": "Mountain Bearer",
-          "iconUrl": "data/images/b4827d12232501551485e0c9f671caa8.png",
-          "rarity": "6",
-          "type": "Polearm",
-          "level": 90,
-          "refineLevel": 0
-        }
-      },
       "Ardelia": {
         "avatarSqUrl": "data/images/8acdcdaa6c69979a9b01f77281465a0a.png",
         "rarity": "6",
@@ -1268,23 +1295,6 @@
           "rarity": "6",
           "type": "Arts Unit",
           "level": 83,
-          "refineLevel": 0
-        }
-      },
-      "Rossi": {
-        "avatarSqUrl": "data/images/bb6cca7221225af1ce18c1850d1abb7e.png",
-        "rarity": "6",
-        "potential": 0,
-        "profession": "Guard",
-        "property": "Physical",
-        "weaponType": "Sword",
-        "level": 90,
-        "weapon": {
-          "name": "Lupine Scarlet",
-          "iconUrl": "data/images/dfa304b9de55a75bce9b5719e7cf1d59.png",
-          "rarity": "6",
-          "type": "Sword",
-          "level": 90,
           "refineLevel": 0
         }
       },
@@ -1305,19 +1315,19 @@
           "refineLevel": 0
         }
       },
-      "Camille": {
-        "avatarSqUrl": "data/images/3bbfecee29ca157e6015ac90f9684311.png",
+      "Pogranichnik": {
+        "avatarSqUrl": "data/images/9c14933aa23b96d01658caed5a3b9907.png",
         "rarity": "6",
-        "potential": 0,
+        "potential": 1,
         "profession": "Vanguard",
-        "property": "Heat",
-        "weaponType": "Polearm",
+        "property": "Physical",
+        "weaponType": "Sword",
         "level": 90,
         "weapon": {
-          "name": "Blessing of Lustrous Carmine",
-          "iconUrl": "data/images/02ef4bb9403658103f9e0f43ae77c407.png",
+          "name": "Never Rest",
+          "iconUrl": "data/images/21532368a8d1075f3259f51eb226f9b3.png",
           "rarity": "6",
-          "type": "Polearm",
+          "type": "Sword",
           "level": 90,
           "refineLevel": 0
         }
@@ -1356,23 +1366,6 @@
           "refineLevel": 1
         }
       },
-      "Endministrator": {
-        "avatarSqUrl": "data/images/a1d3ed03165785526b442aee65f0ef52.png",
-        "rarity": "6",
-        "potential": 2,
-        "profession": "Guard",
-        "property": "Physical",
-        "weaponType": "Sword",
-        "level": 84,
-        "weapon": {
-          "name": "Grand Vision",
-          "iconUrl": "data/images/22cd7d47a45fd012e7a7db575cce0e3c.png",
-          "rarity": "6",
-          "type": "Sword",
-          "level": 85,
-          "refineLevel": 1
-        }
-      },
       "Yvonne": {
         "avatarSqUrl": "data/images/bacd477f99daf106e4995acef6c85456.png",
         "rarity": "6",
@@ -1388,6 +1381,23 @@
           "type": "Handcannon",
           "level": 80,
           "refineLevel": 0
+        }
+      },
+      "Endministrator": {
+        "avatarSqUrl": "data/images/a1d3ed03165785526b442aee65f0ef52.png",
+        "rarity": "6",
+        "potential": 2,
+        "profession": "Guard",
+        "property": "Physical",
+        "weaponType": "Sword",
+        "level": 84,
+        "weapon": {
+          "name": "Grand Vision",
+          "iconUrl": "data/images/22cd7d47a45fd012e7a7db575cce0e3c.png",
+          "rarity": "6",
+          "type": "Sword",
+          "level": 85,
+          "refineLevel": 1
         }
       },
       "Akekuri": {
@@ -1424,23 +1434,6 @@
           "refineLevel": 0
         }
       },
-      "Xaihi": {
-        "avatarSqUrl": "data/images/b57fb03447e70561cd497b60af8b69e3.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Supporter",
-        "property": "Cryo",
-        "weaponType": "Arts Unit",
-        "level": 80,
-        "weapon": {
-          "name": "Stanza of Memorials",
-          "iconUrl": "data/images/bfbda14b0634b1ef9df15040f2e12640.png",
-          "rarity": "5",
-          "type": "Arts Unit",
-          "level": 80,
-          "refineLevel": 2
-        }
-      },
       "Perlica": {
         "avatarSqUrl": "data/images/c7d4eaff6c2336b0e9d217e32d208e28.png",
         "rarity": "5",
@@ -1456,6 +1449,23 @@
           "type": "Arts Unit",
           "level": 80,
           "refineLevel": 0
+        }
+      },
+      "Xaihi": {
+        "avatarSqUrl": "data/images/b57fb03447e70561cd497b60af8b69e3.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Supporter",
+        "property": "Cryo",
+        "weaponType": "Arts Unit",
+        "level": 80,
+        "weapon": {
+          "name": "Stanza of Memorials",
+          "iconUrl": "data/images/bfbda14b0634b1ef9df15040f2e12640.png",
+          "rarity": "5",
+          "type": "Arts Unit",
+          "level": 80,
+          "refineLevel": 2
         }
       },
       "Alesh": {
@@ -1492,23 +1502,6 @@
           "refineLevel": 0
         }
       },
-      "Da Pan": {
-        "avatarSqUrl": "data/images/56ead5c066fd0657518c009d12d67d75.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Striker",
-        "property": "Physical",
-        "weaponType": "Greatsword",
-        "level": 1,
-        "weapon": {
-          "name": "Finishing Call",
-          "iconUrl": "data/images/19f31f1c6464ea63c4012f70c813ab8e.png",
-          "rarity": "5",
-          "type": "Greatsword",
-          "level": 1,
-          "refineLevel": 3
-        }
-      },
       "Arclight": {
         "avatarSqUrl": "data/images/068394e39831e767a19d447579a97b1d.png",
         "rarity": "5",
@@ -1541,6 +1534,23 @@
           "type": "Polearm",
           "level": 1,
           "refineLevel": 0
+        }
+      },
+      "Da Pan": {
+        "avatarSqUrl": "data/images/56ead5c066fd0657518c009d12d67d75.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Striker",
+        "property": "Physical",
+        "weaponType": "Greatsword",
+        "level": 1,
+        "weapon": {
+          "name": "Finishing Call",
+          "iconUrl": "data/images/19f31f1c6464ea63c4012f70c813ab8e.png",
+          "rarity": "5",
+          "type": "Greatsword",
+          "level": 1,
+          "refineLevel": 3
         }
       },
       "Snowshine": {
@@ -1595,8 +1605,8 @@
         }
       }
     },
-    "stamina": "52",
+    "stamina": "51",
     "daily_mission": 100,
-    "last_updated": "2026-06-29T15:19:00.849210-04:00"
+    "last_updated": "2026-06-30T15:14:00.137548-04:00"
   }
 }
