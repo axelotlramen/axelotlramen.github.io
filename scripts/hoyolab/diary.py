@@ -76,168 +76,172 @@ def _col(n):
     return get_column_letter(n)
 
 
-def _apply_header(ws, currency_name):
-    headers = [
-        "Date",
-        "Net Currency Gain",
-        "Pulls Net Gain",
-        currency_name,
-        "Pulls",
-        "Total Pulls",
-        "Currency Needed for 5 Star",
-        "3-Week Avg Gain",
-        "Estimated Days Til 5 Star",
-    ]
-    for col, header in enumerate(headers, start=1):
-        cell = ws.cell(row=1, column=col, value=header)
-        cell.font = HEADER_FONT
-        cell.fill = HEADER_FILL
-        cell.alignment = Alignment(horizontal="center")
-        cell.border = THIN_BORDER
+class DiaryWorkbook:
+    """Manages the pull-income tracking .xlsx log for a single game (HSR or Genshin)."""
 
-    col_widths = [12, 20, 16, 18, 8, 14, 28, 18, 26]
-    for col, width in enumerate(col_widths, start=1):
-        ws.column_dimensions[_col(col)].width = width
+    def __init__(self, config: GameConfig):
+        self.config = config
 
+    async def update(self, client, uid):
+        logger = logging.getLogger(f"update_{self.config.name.lower()}_diary")
+        os.makedirs("data", exist_ok=True)
 
-def _write_row_formulas(ws, row, pull_cost, five_star_pity):
-    """
-    Write Excel formulas for a given data row.
-    Columns B (Net Currency Gain) and C (Pulls Net Gain) are left as plain
-    values (blue, user-editable inputs). All other calculated columns use
-    Excel formulas that auto-update when B or C is changed.
-    """
-    r = row
-    prev_r = r - 1  # previous data row (or 0 if this is the first)
+        diary = await self.config.diary_fetcher(client, uid)
+        day_data = diary.day_data
+        today = now().strftime("%Y-%m-%d")
+        currency_gain = getattr(day_data, self.config.currency_attr)
 
-    # D: currency_name total = previous total + Net Currency Gain
-    if prev_r < 2:
-        ws.cell(r, COL_CURRENCY_TOTAL).value = f"={_col(COL_NET_CURRENCY)}{r}"
-    else:
-        ws.cell(r, COL_CURRENCY_TOTAL).value = (
-            f"={_col(COL_CURRENCY_TOTAL)}{prev_r}+{_col(COL_NET_CURRENCY)}{r}"
+        wb = self._load_or_create()
+        ws = wb.active
+
+        # Remove today's row if it already exists (re-run scenario)
+        existing_today_row = self._find_today_row(ws, today)
+        if existing_today_row:
+            ws.delete_rows(existing_today_row)
+
+        new_row = self._last_data_row(ws) + 1
+
+        # Write date and the two user-editable input values
+        ws.cell(new_row, COL_DATE).value = today
+        ws.cell(new_row, COL_NET_CURRENCY).value = currency_gain
+        ws.cell(new_row, COL_PULLS_NET).value = 0
+
+        # Write all formula-driven columns
+        self._write_row_formulas(ws, new_row)
+
+        wb.save(self.config.xlsx_file)
+        logger.info(f"{self.config.name} diary updated successfully (row {new_row}).")
+        return {"Date": today, "Net Currency Gain": currency_gain, "Pulls Net Gain": 0}
+
+    def _load_or_create(self):
+        if os.path.exists(self.config.xlsx_file):
+            return load_workbook(self.config.xlsx_file)
+        wb = Workbook()
+        ws = wb.active
+        ws.title = "Diary Log"
+        ws.freeze_panes = "A2"
+        self._apply_header(ws)
+        return wb
+
+    def _apply_header(self, ws):
+        headers = [
+            "Date",
+            "Net Currency Gain",
+            "Pulls Net Gain",
+            self.config.currency_name,
+            "Pulls",
+            "Total Pulls",
+            "Currency Needed for 5 Star",
+            "3-Week Avg Gain",
+            "Estimated Days Til 5 Star",
+        ]
+        for col, header in enumerate(headers, start=1):
+            cell = ws.cell(row=1, column=col, value=header)
+            cell.font = HEADER_FONT
+            cell.fill = HEADER_FILL
+            cell.alignment = Alignment(horizontal="center")
+            cell.border = THIN_BORDER
+
+        col_widths = [12, 20, 16, 18, 8, 14, 28, 18, 26]
+        for col, width in enumerate(col_widths, start=1):
+            ws.column_dimensions[_col(col)].width = width
+
+    def _find_today_row(self, ws, today):
+        for row in ws.iter_rows(min_row=2, max_col=1, values_only=False):
+            cell = row[0]
+            if str(cell.value) == today:
+                return cell.row
+        return None
+
+    def _last_data_row(self, ws):
+        for r in range(ws.max_row, 1, -1):
+            if ws.cell(r, COL_DATE).value is not None:
+                return r
+        return 1  # only header exists
+
+    def _write_row_formulas(self, ws, row):
+        """
+        Write Excel formulas for a given data row.
+        Columns B (Net Currency Gain) and C (Pulls Net Gain) are left as plain
+        values (blue, user-editable inputs). All other calculated columns use
+        Excel formulas that auto-update when B or C is changed.
+        """
+        pull_cost = self.config.pull_cost
+        five_star_pity = self.config.five_star_pity
+
+        r = row
+        prev_r = r - 1  # previous data row (or 0 if this is the first)
+
+        # D: currency_name total = previous total + Net Currency Gain
+        if prev_r < 2:
+            ws.cell(r, COL_CURRENCY_TOTAL).value = f"={_col(COL_NET_CURRENCY)}{r}"
+        else:
+            ws.cell(r, COL_CURRENCY_TOTAL).value = (
+                f"={_col(COL_CURRENCY_TOTAL)}{prev_r}+{_col(COL_NET_CURRENCY)}{r}"
+            )
+
+        # E: Pulls total = previous pulls total + Pulls Net Gain
+        if prev_r < 2:
+            ws.cell(r, COL_PULLS_TOTAL).value = f"={_col(COL_PULLS_NET)}{r}"
+        else:
+            ws.cell(r, COL_PULLS_TOTAL).value = (
+                f"={_col(COL_PULLS_TOTAL)}{prev_r}+{_col(COL_PULLS_NET)}{r}"
+            )
+
+        # F: Total Pulls = D/pull_cost + E
+        ws.cell(r, COL_TOTAL_PULLS).value = (
+            f"={_col(COL_CURRENCY_TOTAL)}{r}/{pull_cost}+{_col(COL_PULLS_TOTAL)}{r}"
         )
 
-    # E: Pulls total = previous pulls total + Pulls Net Gain
-    if prev_r < 2:
-        ws.cell(r, COL_PULLS_TOTAL).value = f"={_col(COL_PULLS_NET)}{r}"
-    else:
-        ws.cell(r, COL_PULLS_TOTAL).value = (
-            f"={_col(COL_PULLS_TOTAL)}{prev_r}+{_col(COL_PULLS_NET)}{r}"
+        # G: Currency Needed = MAX((pity - Total Pulls) * pull_cost, 0)
+        ws.cell(r, COL_CURRENCY_NEEDED).value = (
+            f"=MAX(({five_star_pity}-{_col(COL_TOTAL_PULLS)}{r})*{pull_cost},0)"
         )
 
-    # F: Total Pulls = D/pull_cost + E
-    ws.cell(r, COL_TOTAL_PULLS).value = (
-        f"={_col(COL_CURRENCY_TOTAL)}{r}/{pull_cost}+{_col(COL_PULLS_TOTAL)}{r}"
-    )
+        # H: 3-Week Avg Gain (average of last THREE_WEEKS combined daily gains)
+        # Combined daily gain for each row = Net Currency Gain + Pulls Net Gain * pull_cost
+        # We build a helper column approach using SUMPRODUCT over the last 21 rows.
+        start_r = max(2, r - THREE_WEEKS + 1)
+        b_range = f"{_col(COL_NET_CURRENCY)}{start_r}:{_col(COL_NET_CURRENCY)}{r}"
+        c_range = f"{_col(COL_PULLS_NET)}{start_r}:{_col(COL_PULLS_NET)}{r}"
+        count = r - start_r + 1
+        ws.cell(r, COL_AVG_GAIN).value = (
+            f"=IF({count}>={THREE_WEEKS},"
+            f"SUMPRODUCT({b_range}+{c_range}*{pull_cost})/{THREE_WEEKS},"
+            f"0)"
+        )
 
-    # G: Currency Needed = MAX((pity - Total Pulls) * pull_cost, 0)
-    ws.cell(r, COL_CURRENCY_NEEDED).value = (
-        f"=MAX(({five_star_pity}-{_col(COL_TOTAL_PULLS)}{r})*{pull_cost},0)"
-    )
+        # I: Estimated Days = Currency Needed / Avg Gain (guarded against div/0)
+        ws.cell(r, COL_EST_DAYS).value = (
+            f"=IF({_col(COL_AVG_GAIN)}{r}>0,"
+            f"{_col(COL_CURRENCY_NEEDED)}{r}/{_col(COL_AVG_GAIN)}{r},"
+            f"0)"
+        )
 
-    # H: 3-Week Avg Gain (average of last THREE_WEEKS combined daily gains)
-    # Combined daily gain for each row = Net Currency Gain + Pulls Net Gain * pull_cost
-    # We build a helper column approach using SUMPRODUCT over the last 21 rows.
-    start_r = max(2, r - THREE_WEEKS + 1)
-    b_range = f"{_col(COL_NET_CURRENCY)}{start_r}:{_col(COL_NET_CURRENCY)}{r}"
-    c_range = f"{_col(COL_PULLS_NET)}{start_r}:{_col(COL_PULLS_NET)}{r}"
-    count = r - start_r + 1
-    ws.cell(r, COL_AVG_GAIN).value = (
-        f"=IF({count}>={THREE_WEEKS},"
-        f"SUMPRODUCT({b_range}+{c_range}*{pull_cost})/{THREE_WEEKS},"
-        f"0)"
-    )
+        # Style calculated columns as black formula cells
+        for col in [
+            COL_CURRENCY_TOTAL,
+            COL_PULLS_TOTAL,
+            COL_TOTAL_PULLS,
+            COL_CURRENCY_NEEDED,
+            COL_AVG_GAIN,
+            COL_EST_DAYS,
+        ]:
+            cell = ws.cell(r, col)
+            cell.font = FORMULA_FONT
+            cell.border = THIN_BORDER
+            cell.number_format = "0.00"
 
-    # I: Estimated Days = Currency Needed / Avg Gain (guarded against div/0)
-    ws.cell(r, COL_EST_DAYS).value = (
-        f"=IF({_col(COL_AVG_GAIN)}{r}>0,"
-        f"{_col(COL_CURRENCY_NEEDED)}{r}/{_col(COL_AVG_GAIN)}{r},"
-        f"0)"
-    )
+        # Style input columns as blue
+        for col in [COL_NET_CURRENCY, COL_PULLS_NET]:
+            cell = ws.cell(r, col)
+            cell.font = INPUT_FONT
+            cell.border = THIN_BORDER
 
-    # Style calculated columns as black formula cells
-    for col in [
-        COL_CURRENCY_TOTAL,
-        COL_PULLS_TOTAL,
-        COL_TOTAL_PULLS,
-        COL_CURRENCY_NEEDED,
-        COL_AVG_GAIN,
-        COL_EST_DAYS,
-    ]:
-        cell = ws.cell(r, col)
-        cell.font = FORMULA_FONT
-        cell.border = THIN_BORDER
-        cell.number_format = "0.00"
+        # Alternate row shading
+        if r % 2 == 0:
+            for col in range(1, 10):
+                ws.cell(r, col).fill = ALT_FILL
 
-    # Style input columns as blue
-    for col in [COL_NET_CURRENCY, COL_PULLS_NET]:
-        cell = ws.cell(r, col)
-        cell.font = INPUT_FONT
-        cell.border = THIN_BORDER
-
-    # Alternate row shading
-    if r % 2 == 0:
-        for col in range(1, 10):
-            ws.cell(r, col).fill = ALT_FILL
-
-    # Date cell
-    ws.cell(r, COL_DATE).border = THIN_BORDER
-
-
-def _load_or_create_workbook(xlsx_file, currency_name):
-    if os.path.exists(xlsx_file):
-        return load_workbook(xlsx_file)
-    wb = Workbook()
-    ws = wb.active
-    ws.title = "Diary Log"
-    ws.freeze_panes = "A2"
-    _apply_header(ws, currency_name)
-    return wb
-
-
-def _find_today_row(ws, today):
-    for row in ws.iter_rows(min_row=2, max_col=1, values_only=False):
-        cell = row[0]
-        if str(cell.value) == today:
-            return cell.row
-    return None
-
-
-def _last_data_row(ws):
-    for r in range(ws.max_row, 1, -1):
-        if ws.cell(r, COL_DATE).value is not None:
-            return r
-    return 1  # only header exists
-
-
-async def update_diary_xlsx(client, uid, config: GameConfig):
-    logger = logging.getLogger(f"update_{config.name.lower()}_diary")
-    os.makedirs("data", exist_ok=True)
-
-    diary = await config.diary_fetcher(client, uid)
-    day_data = diary.day_data
-    today = now().strftime("%Y-%m-%d")
-    currency_gain = getattr(day_data, config.currency_attr)
-
-    wb = _load_or_create_workbook(config.xlsx_file, config.currency_name)
-    ws = wb.active
-
-    # Remove today's row if it already exists (re-run scenario)
-    existing_today_row = _find_today_row(ws, today)
-    if existing_today_row:
-        ws.delete_rows(existing_today_row)
-
-    new_row = _last_data_row(ws) + 1
-
-    # Write date and the two user-editable input values
-    ws.cell(new_row, COL_DATE).value = today
-    ws.cell(new_row, COL_NET_CURRENCY).value = currency_gain
-    ws.cell(new_row, COL_PULLS_NET).value = 0
-
-    # Write all formula-driven columns
-    _write_row_formulas(ws, new_row, config.pull_cost, config.five_star_pity)
-
-    wb.save(config.xlsx_file)
-    logger.info(f"{config.name} diary updated successfully (row {new_row}).")
-    return {"Date": today, "Net Currency Gain": currency_gain, "Pulls Net Gain": 0}
+        # Date cell
+        ws.cell(r, COL_DATE).border = THIN_BORDER

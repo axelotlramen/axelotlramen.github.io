@@ -1,343 +1,231 @@
 /* =========================
+   Data
+========================= */
+
+class StatsStore {
+  async load() {
+    const response = await fetch("data/stats.json");
+    if (!response.ok) throw new Error("Failed to fetch JSON");
+    this.data = await response.json();
+    return this.data;
+  }
+}
+
+/* =========================
    Navigation
 ========================= */
 
-function showPage(pageId) {
-  document.querySelectorAll(".page").forEach((p) => {
-    p.classList.remove("active");
-  });
-  document.getElementById(pageId).classList.add("active");
+class Router {
+  constructor() {
+    document.querySelectorAll(".sidebar nav button[data-page]").forEach((button) => {
+      button.addEventListener("click", () => this.show(button.dataset.page));
+    });
+  }
+
+  show(pageId) {
+    document.querySelectorAll(".page").forEach((p) => {
+      p.classList.remove("active");
+    });
+    document.getElementById(pageId).classList.add("active");
+  }
 }
 
 /* =========================
-   Memory of Chaos
+   Shared rendering helpers
 ========================= */
 
-function renderMoC(data) {
-  const moc = data?.hsr_data?.memory_of_chaos;
-  if (!moc || !moc.floor_data) return;
-
-  const container = document.getElementById("moc-content");
-  container.innerHTML = "";
-
-  const floor = moc.floor_data;
-
-  const card = document.createElement("div");
-  card.classList.add("moc-card");
-
-  const header = document.createElement("div");
-  header.classList.add("moc-header");
-
-  const floorTitle = document.createElement("div");
-  floorTitle.classList.add("moc-floor");
-  floorTitle.textContent = floor.floor;
-
-  const cycles = document.createElement("div");
-  cycles.classList.add("moc-cycles");
-  cycles.textContent = `${floor.cycles} cycles · ⭐ ${moc.total_stars}`;
-
-  header.appendChild(floorTitle);
-  header.appendChild(cycles);
-  card.appendChild(header);
-
-  const nodeRow = document.createElement("div");
-  nodeRow.classList.add("moc-node-row");
-
-  nodeRow.appendChild(createNode("Node 1", floor.first_half));
-  nodeRow.appendChild(createNode("Node 2", floor.second_half));
-
-  card.appendChild(nodeRow);
-  container.appendChild(card);
-}
-
-function createNode(title, characters) {
-  const node = document.createElement("div");
-  node.classList.add("moc-node");
-
-  const nodeTitle = document.createElement("div");
-  nodeTitle.classList.add("moc-node-title");
-  nodeTitle.textContent = title;
-
-  const avatarRow = document.createElement("div");
-  avatarRow.classList.add("moc-avatars");
-
-  characters.forEach((char) => {
-    const wrapper = document.createElement("div");
-    wrapper.classList.add("moc-avatar");
-
-    const img = document.createElement("img");
-    img.src = `https://stardb.gg/api/static/StarRailResWebp/icon/character/${char.id}.webp`;
-    img.alt = `Character ${char.id}`;
-
-    const badge = document.createElement("div");
-    badge.classList.add("eidolon-badge");
-    badge.textContent = `E${char.eidolon}`;
-
-    wrapper.appendChild(img);
-    wrapper.appendChild(badge);
-    avatarRow.appendChild(wrapper);
-  });
-
-  node.appendChild(nodeTitle);
-  node.appendChild(avatarRow);
-
-  return node;
-}
-
-/* =========================
-   HSR Profile Render
-========================= */
-
-function renderHSR(data) {
-  const sr = data.hsr_data;
-  if (!sr) return;
-
-  const container = document.getElementById("hsr-profile");
-
-  container.innerHTML = `
-    <div class="card">
-      <div class="avatar">
-        <img src="${sr.avatar_url}" alt="${sr.nickname}" style="width:100%;height:100%;border-radius:50%;object-fit:cover;">
-      </div>
-      <div class="nickname">${sr.nickname}</div>
-      <div class="server-level">NA · Level ${sr.level}</div>
-      <div class="stats">
-        <div class="stat">Active Days<br><strong>${sr.active_days}</strong></div>
-        <div class="stat">Achievements<br><strong>${sr.achievements}</strong></div>
-        <div class="stat">Characters<br><strong>${sr.avatar_count}</strong></div>
-        <div class="stat">Chests<br><strong>${sr.chest_count}</strong></div>
-      </div>
-    </div>
-  `;
-
-  const trail = document.getElementById("trailblaze-card");
-  const loggedIn = (sr.current_train_score ?? 0) !== 0;
-
-  trail.innerHTML = `
-    <div class="mini-card">
-      <h3>Today's Status</h3>
-      <div class="line">Trailblaze Power <strong>${sr.stamina ?? 0}/300</strong></div>
-      <div class="line">Daily Training <strong>${sr.current_train_score ?? 0}/500</strong></div>
-      <div class="line">Logged In Today <strong>${loggedIn ? "Yes" : "No"}</strong></div>
-    </div>
-  `;
-}
-
-function renderHSRCharacters(data) {
-  const chars = data?.hsr_data?.five_star_characters;
-  if (!chars) return;
-
-  const container = document.getElementById("hsr-characters");
-  container.innerHTML = "";
-
-  Object.entries(chars).forEach(([name, char]) => {
-    const card = document.createElement("div");
-    card.classList.add("endfield-char-card");
-
-    card.innerHTML = `
-      <div class="endfield-char-avatar">
-        <img src="${char.icon}" alt="${name}">
-        <div class="endfield-potential-badge">E${char.eidolon}</div>
-      </div>
-
-      <div class="endfield-char-info">
-        <div class="endfield-char-name">${name}</div>
-        <div class="endfield-char-meta"> ${char.element} · ${char.path}</div>
-        <div class="endfield-char-level">Lv. ${char.level}</div>
-        
-        ${
-          char.lc
-            ? `<div class="endfield-char-weapon">
-            <img src="${char.lc.icon}" alt="${char.lc.name}">
-            <span>${char.lc.name}</span>
-          </div>`
-            : ""
-        }
+class SectionRenderer {
+  renderProfileCard(container, { title, avatarUrl, nickname, subtitle, stats }) {
+    container.innerHTML = `
+      <div class="card">
+        ${title ? `<h2>${title}</h2>` : ""}
+        <div class="avatar">
+          <img src="${avatarUrl}" alt="${nickname}" style="width:100%;height:100%;border-radius:50%;object-fit:cover;">
         </div>
-    `;
-
-    container.appendChild(card);
-  });
-}
-
-/* =========================
-   Genshin Render
-========================= */
-
-function renderGenshin(data) {
-  const gi = data.genshin_data;
-  if (!gi) return;
-
-  const container = document.getElementById("genshin-profile");
-
-  container.innerHTML = `
-    <div class="card">
-      <div class="avatar">
-        <img src="${gi.avatar_url}" alt="${gi.nickname}" style="width:100%;height:100%;border-radius:50%;object-fit:cover;">
-      </div>
-      <div class="nickname">${gi.nickname}</div>
-      <div class="server-level">AR ${gi.level}</div>
-      <div class="stats">
-        <div class="stat">Achievements<br><strong>${gi.achievements}</strong></div>
-        <div class="stat">Active Days<br><strong>${gi.active_days}</strong></div>
-        <div class="stat">Characters<br><strong>${gi.avatar_count}</strong></div>
-        <div class="stat">Oculus<br><strong>${gi.oculus}</strong></div>
-        <div class="stat">Chests<br><strong>${gi.chest_count}</strong></div>
-      </div>
-    </div>
-  `;
-
-  const notes = document.getElementById("genshin-notes");
-  const loggedIn = (gi.daily_task ?? 0) !== 0;
-
-  notes.innerHTML = `
-    <div class="mini-card">
-      <h3>Today's Status</h3>
-      <div class="line">Resin <strong>${gi.resin ?? 0}/200</strong></div>
-      <div class="line">Daily Tasks <strong>${gi.daily_task ?? 0}/4</strong></div>
-      <div class="line">Logged In Today <strong>${loggedIn ? "Yes" : "No"}</strong></div>
-    </div>
-  `;
-}
-
-/* =========================
-   Endfield Render
-========================= */
-
-function renderEndfield(data) {
-  const ef = data.endfield_data;
-  if (!ef) return;
-
-  // Profile card
-  const container = document.getElementById("endfield-profile");
-  container.innerHTML = `
-    <div class="card">
-      <div class="avatar">
-        <img src="${ef.avatar_url}" alt="${ef.nickname}" style="width:100%;height:100%;border-radius:50%;object-fit:cover;">
-      </div>
-      <div class="nickname">${ef.nickname}</div>
-      <div class="server-level">Level ${ef.level}</div>
-      <div class="stats">
-        <div class="stat">Active Days<br><strong>${ef.active_days}</strong></div>
-        <div class="stat">Achievements<br><strong>${ef.achievements}</strong></div>
-        <div class="stat">Characters<br><strong>${ef.avatar_count}</strong></div>
-        <div class="stat">Chests<br><strong>${ef.chest_count}</strong></div>
-      </div>
-    </div>
-  `;
-
-  // Daily status card
-  const status = document.getElementById("endfield-status");
-  const loggedIn = ef.daily_mission > 0;
-
-  status.innerHTML = `
-    <div class="mini-card">
-      <h3>Today's Status</h3>
-      <div class="line">Sanity <strong>${ef.stamina ?? 0}/240</strong></div>
-      <div class="line">Daily Missions <strong>${ef.daily_mission ?? 0}/100</strong></div>
-      <div class="line">Logged In Today <strong>${loggedIn ? "Yes" : "No"}</strong></div>
-    </div>
-  `;
-
-  // 6★ roster
-  const roster = document.getElementById("endfield-roster");
-  roster.innerHTML = "";
-
-  const chars = ef.six_star_characters;
-  if (!chars) return;
-
-  // Only show rarity 6 characters, sorted by level desc
-  const sixStars = Object.entries(chars)
-    .filter(([, c]) => c.rarity === "6")
-    .sort(([, a], [, b]) => b.level - a.level);
-
-  sixStars.forEach(([name, char]) => {
-    const card = document.createElement("div");
-    card.classList.add("endfield-char-card");
-
-    card.innerHTML = `
-      <div class="endfield-char-avatar">
-        <img src="${char.avatarSqUrl}" alt="${name}">
-        <div class="endfield-potential-badge">P${char.potential}</div>
-      </div>
-      <div class="endfield-char-info">
-        <div class="endfield-char-name">${name}</div>
-        <div class="endfield-char-meta">${char.profession} · ${char.property}</div>
-        <div class="endfield-char-level">Lv. ${char.level}</div>
-        ${
-          char.weapon
-            ? `<div class="endfield-char-weapon">
-          <img src="${char.weapon.iconUrl}" alt="${char.weapon.name}">
-          <span>${char.weapon.name}</span>
-        </div>`
-            : ""
-        }
+        <div class="nickname">${nickname}</div>
+        <div class="server-level">${subtitle}</div>
+        <div class="stats">
+          ${stats.map((s) => `<div class="stat">${s.label}<br><strong>${s.value}</strong></div>`).join("")}
+        </div>
       </div>
     `;
+  }
 
-    roster.appendChild(card);
-  });
+  renderMiniCard(container, title, lines) {
+    container.innerHTML = `
+      <div class="mini-card">
+        <h3>${title}</h3>
+        ${lines.map((l) => `<div class="line">${l.label} <strong>${l.value}</strong></div>`).join("")}
+      </div>
+    `;
+  }
+
+  renderCharacterCard({ iconUrl, name, badge, meta, level, weapon }) {
+    return `
+      <div class="endfield-char-card">
+        <div class="endfield-char-avatar">
+          <img src="${iconUrl}" alt="${name}">
+          <div class="endfield-potential-badge">${badge}</div>
+        </div>
+        <div class="endfield-char-info">
+          <div class="endfield-char-name">${name}</div>
+          <div class="endfield-char-meta">${meta}</div>
+          <div class="endfield-char-level">Lv. ${level}</div>
+          ${
+            weapon
+              ? `<div class="endfield-char-weapon">
+              <img src="${weapon.iconUrl}" alt="${weapon.name}">
+              <span>${weapon.name}</span>
+            </div>`
+              : ""
+          }
+        </div>
+      </div>
+    `;
+  }
 }
 
 /* =========================
    Home
 ========================= */
 
-function renderHome(data) {
-  const sr = data.hsr_data;
-  const gi = data.genshin_data;
-  const ef = data.endfield_data;
+class HomeRenderer extends SectionRenderer {
+  render(data) {
+    const sr = data.hsr_data;
+    const gi = data.genshin_data;
+    const ef = data.endfield_data;
 
-  const homeHSR = document.getElementById("home-hsr");
-  const homeGI = document.getElementById("home-genshin");
-  const homeEF = document.getElementById("home-endfield");
+    if (sr) {
+      this.renderProfileCard(document.getElementById("home-hsr"), {
+        title: "Honkai: Star Rail",
+        avatarUrl: sr.avatar_url,
+        nickname: sr.nickname,
+        subtitle: `Level ${sr.level}`,
+        stats: [
+          { label: "MoC Stars", value: sr.memory_of_chaos?.total_stars ?? 0 },
+          { label: "TB Power", value: `${sr.stamina ?? 0}/300` },
+        ],
+      });
+    }
 
-  if (sr) {
-    homeHSR.innerHTML = `
-      <div class="card">
-        <h2>Honkai: Star Rail</h2>
-        <div class="avatar">
-          <img src="${sr.avatar_url}" alt="${sr.nickname}" style="width:100%;height:100%;border-radius:50%;object-fit:cover;">
+    if (gi) {
+      this.renderProfileCard(document.getElementById("home-genshin"), {
+        title: "Genshin Impact",
+        avatarUrl: gi.avatar_url,
+        nickname: gi.nickname,
+        subtitle: `AR ${gi.level}`,
+        stats: [
+          { label: "Achievements", value: gi.achievements },
+          { label: "Resin", value: `${gi.resin ?? 0}/200` },
+        ],
+      });
+    }
+
+    if (ef) {
+      this.renderProfileCard(document.getElementById("home-endfield"), {
+        title: "Arknights: Endfield",
+        avatarUrl: ef.avatar_url,
+        nickname: ef.nickname,
+        subtitle: `Level ${ef.level}`,
+        stats: [
+          { label: "Achievements", value: ef.achievements },
+          { label: "Sanity", value: `${ef.stamina ?? 0}/240` },
+        ],
+      });
+    }
+  }
+}
+
+/* =========================
+   Honkai: Star Rail
+========================= */
+
+class HsrRenderer extends SectionRenderer {
+  render(data) {
+    const sr = data.hsr_data;
+    if (!sr) return;
+
+    this.renderProfile(sr);
+    this.renderCharacters(sr);
+    this.renderMoc(sr);
+  }
+
+  renderProfile(sr) {
+    this.renderProfileCard(document.getElementById("hsr-profile"), {
+      avatarUrl: sr.avatar_url,
+      nickname: sr.nickname,
+      subtitle: `NA · Level ${sr.level}`,
+      stats: [
+        { label: "Active Days", value: sr.active_days },
+        { label: "Achievements", value: sr.achievements },
+        { label: "Characters", value: sr.avatar_count },
+        { label: "Chests", value: sr.chest_count },
+      ],
+    });
+
+    const loggedIn = (sr.current_train_score ?? 0) !== 0;
+    this.renderMiniCard(document.getElementById("trailblaze-card"), "Today's Status", [
+      { label: "Trailblaze Power", value: `${sr.stamina ?? 0}/300` },
+      { label: "Daily Training", value: `${sr.current_train_score ?? 0}/500` },
+      { label: "Logged In Today", value: loggedIn ? "Yes" : "No" },
+    ]);
+  }
+
+  renderCharacters(sr) {
+    const chars = sr?.five_star_characters;
+    if (!chars) return;
+
+    const container = document.getElementById("hsr-characters");
+    container.innerHTML = Object.entries(chars)
+      .map(([name, char]) =>
+        this.renderCharacterCard({
+          iconUrl: char.icon,
+          name,
+          badge: `E${char.eidolon}`,
+          meta: ` ${char.element} · ${char.path}`,
+          level: char.level,
+          weapon: char.lc ? { iconUrl: char.lc.icon, name: char.lc.name } : null,
+        })
+      )
+      .join("");
+  }
+
+  renderMoc(sr) {
+    const moc = sr?.memory_of_chaos;
+    if (!moc || !moc.floor_data) return;
+
+    const floor = moc.floor_data;
+    const container = document.getElementById("moc-content");
+
+    container.innerHTML = `
+      <div class="moc-card">
+        <div class="moc-header">
+          <div class="moc-floor">${floor.floor}</div>
+          <div class="moc-cycles">${floor.cycles} cycles · ⭐ ${moc.total_stars}</div>
         </div>
-        <div class="nickname">${sr.nickname}</div>
-        <div class="server-level">Level ${sr.level}</div>
-        <div class="stats">
-          <div class="stat">MoC Stars<br><strong>${sr.memory_of_chaos?.total_stars ?? 0}</strong></div>
-          <div class="stat">TB Power<br><strong>${sr.stamina ?? 0}/300</strong></div>
+        <div class="moc-node-row">
+          ${this._renderMocNode("Node 1", floor.first_half)}
+          ${this._renderMocNode("Node 2", floor.second_half)}
         </div>
       </div>
     `;
   }
 
-  if (gi) {
-    homeGI.innerHTML = `
-      <div class="card">
-        <h2>Genshin Impact</h2>
-        <div class="avatar">
-          <img src="${gi.avatar_url}" alt="${gi.nickname}" style="width:100%;height:100%;border-radius:50%;object-fit:cover;">
-        </div>
-        <div class="nickname">${gi.nickname}</div>
-        <div class="server-level">AR ${gi.level}</div>
-        <div class="stats">
-          <div class="stat">Achievements<br><strong>${gi.achievements}</strong></div>
-          <div class="stat">Resin<br><strong>${gi.resin ?? 0}/200</strong></div>
-        </div>
-      </div>
-    `;
-  }
-
-  if (ef) {
-    homeEF.innerHTML = `
-      <div class="card">
-        <h2>Arknights: Endfield</h2>
-        <div class="avatar">
-          <img src="${ef.avatar_url}" alt="${ef.nickname}" style="width:100%;height:100%;border-radius:50%;object-fit:cover;">
-        </div>
-        <div class="nickname">${ef.nickname}</div>
-        <div class="server-level">Level ${ef.level}</div>
-        <div class="stats">
-          <div class="stat">Achievements<br><strong>${ef.achievements}</strong></div>
-          <div class="stat">Sanity<br><strong>${ef.stamina ?? 0}/240</strong></div>
+  _renderMocNode(title, characters) {
+    return `
+      <div class="moc-node">
+        <div class="moc-node-title">${title}</div>
+        <div class="moc-avatars">
+          ${characters
+            .map(
+              (char) => `
+            <div class="moc-avatar">
+              <img src="https://stardb.gg/api/static/StarRailResWebp/icon/character/${char.id}.webp" alt="Character ${char.id}">
+              <div class="eidolon-badge">E${char.eidolon}</div>
+            </div>
+          `
+            )
+            .join("")}
         </div>
       </div>
     `;
@@ -345,26 +233,113 @@ function renderHome(data) {
 }
 
 /* =========================
-   Load Everything
+   Genshin Impact
 ========================= */
 
-async function loadStats() {
-  try {
-    const response = await fetch("data/stats.json");
-    if (!response.ok) throw new Error("Failed to fetch JSON");
+class GenshinRenderer extends SectionRenderer {
+  render(data) {
+    const gi = data.genshin_data;
+    if (!gi) return;
 
-    const data = await response.json();
+    this.renderProfileCard(document.getElementById("genshin-profile"), {
+      avatarUrl: gi.avatar_url,
+      nickname: gi.nickname,
+      subtitle: `AR ${gi.level}`,
+      stats: [
+        { label: "Achievements", value: gi.achievements },
+        { label: "Active Days", value: gi.active_days },
+        { label: "Characters", value: gi.avatar_count },
+        { label: "Oculus", value: gi.oculus },
+        { label: "Chests", value: gi.chest_count },
+      ],
+    });
 
-    renderHome(data);
-    renderHSR(data);
-    renderMoC(data);
-    renderGenshin(data);
-    renderEndfield(data);
-
-    renderHSRCharacters(data);
-  } catch (err) {
-    console.error("Stats load error:", err);
+    const loggedIn = (gi.daily_task ?? 0) !== 0;
+    this.renderMiniCard(document.getElementById("genshin-notes"), "Today's Status", [
+      { label: "Resin", value: `${gi.resin ?? 0}/200` },
+      { label: "Daily Tasks", value: `${gi.daily_task ?? 0}/4` },
+      { label: "Logged In Today", value: loggedIn ? "Yes" : "No" },
+    ]);
   }
 }
 
-loadStats();
+/* =========================
+   Arknights: Endfield
+========================= */
+
+class EndfieldRenderer extends SectionRenderer {
+  render(data) {
+    const ef = data.endfield_data;
+    if (!ef) return;
+
+    this.renderProfileCard(document.getElementById("endfield-profile"), {
+      avatarUrl: ef.avatar_url,
+      nickname: ef.nickname,
+      subtitle: `Level ${ef.level}`,
+      stats: [
+        { label: "Active Days", value: ef.active_days },
+        { label: "Achievements", value: ef.achievements },
+        { label: "Characters", value: ef.avatar_count },
+        { label: "Chests", value: ef.chest_count },
+      ],
+    });
+
+    const loggedIn = ef.daily_mission > 0;
+    this.renderMiniCard(document.getElementById("endfield-status"), "Today's Status", [
+      { label: "Sanity", value: `${ef.stamina ?? 0}/240` },
+      { label: "Daily Missions", value: `${ef.daily_mission ?? 0}/100` },
+      { label: "Logged In Today", value: loggedIn ? "Yes" : "No" },
+    ]);
+
+    this.renderRoster(ef);
+  }
+
+  renderRoster(ef) {
+    const roster = document.getElementById("endfield-roster");
+    roster.innerHTML = "";
+
+    const chars = ef.six_star_characters;
+    if (!chars) return;
+
+    // Only show rarity 6 characters, sorted by level desc
+    const sixStars = Object.entries(chars)
+      .filter(([, c]) => c.rarity === "6")
+      .sort(([, a], [, b]) => b.level - a.level);
+
+    roster.innerHTML = sixStars
+      .map(([name, char]) =>
+        this.renderCharacterCard({
+          iconUrl: char.avatarSqUrl,
+          name,
+          badge: `P${char.potential}`,
+          meta: `${char.profession} · ${char.property}`,
+          level: char.level,
+          weapon: char.weapon ? { iconUrl: char.weapon.iconUrl, name: char.weapon.name } : null,
+        })
+      )
+      .join("");
+  }
+}
+
+/* =========================
+   App
+========================= */
+
+class App {
+  constructor() {
+    this.store = new StatsStore();
+    this.router = new Router();
+    this.renderers = [new HomeRenderer(), new HsrRenderer(), new GenshinRenderer(), new EndfieldRenderer()];
+  }
+
+  async init() {
+    try {
+      const data = await this.store.load();
+      this.renderers.forEach((renderer) => renderer.render(data));
+    } catch (err) {
+      console.error("Stats load error:", err);
+    }
+  }
+}
+
+new App().init();

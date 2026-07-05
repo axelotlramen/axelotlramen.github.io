@@ -9,30 +9,38 @@ import httpx
 
 from scripts.constants import IMAGE_DIR, now
 
-def download_image(url: str, http: httpx.Client, logger: logging.Logger) -> str:
-    """Download an image from a URL into data/images/, return the local relative path.
-    If the image already exists locally, skip the download. Returns the original URL on failure."""
-    if not url:
-        return url
 
-    filename = url.split("/")[-1]
-    local_path = IMAGE_DIR / filename
-    relative_path = f"data/images/{filename}"
+class ImageCache:
+    """Downloads images into data/images/ and serves them back as local relative paths."""
 
-    if local_path.exists():
-        logger.debug(f"Image already cached: {filename}")
-        return relative_path
+    def __init__(self, http: httpx.Client, logger: logging.Logger):
+        self._http = http
+        self._logger = logger
 
-    try:
-        IMAGE_DIR.mkdir(parents=True, exist_ok=True)
-        response = http.get(url, follow_redirects=True)
-        response.raise_for_status()
-        local_path.write_bytes(response.content)
-        logger.info(f"Downloaded image: {filename}")
-        return relative_path
-    except Exception as e:
-        logger.warning(f"Failed to download image {url}: {e}")
-        return url  # fall back to remote URL
+    def get(self, url: str) -> str:
+        """Return the local relative path for url, downloading it first if not already cached.
+        Returns the original URL on failure."""
+        if not url:
+            return url
+
+        filename = url.split("/")[-1]
+        local_path = IMAGE_DIR / filename
+        relative_path = f"data/images/{filename}"
+
+        if local_path.exists():
+            self._logger.debug(f"Image already cached: {filename}")
+            return relative_path
+
+        try:
+            IMAGE_DIR.mkdir(parents=True, exist_ok=True)
+            response = self._http.get(url, follow_redirects=True)
+            response.raise_for_status()
+            local_path.write_bytes(response.content)
+            self._logger.info(f"Downloaded image: {filename}")
+            return relative_path
+        except Exception as e:
+            self._logger.warning(f"Failed to download image {url}: {e}")
+            return url  # fall back to remote URL
 
 
 class EndfieldClient:
@@ -46,6 +54,7 @@ class EndfieldClient:
         self.logger = logging.getLogger("EndfieldClient")
         self._token: Optional[str] = None
         self._http = httpx.Client(timeout=timeout)
+        self._images = ImageCache(self._http, self.logger)
 
     # ------------------------
     # Internal helpers
@@ -303,7 +312,7 @@ class EndfieldClient:
             detail = data.get("data", {}).get("detail", {})
 
             def dl(url):
-                return download_image(url, self._http, self.logger)
+                return self._images.get(url)
 
             six_stars = {
                 char.get("charData").get("name"): {
@@ -342,7 +351,7 @@ class EndfieldClient:
                 "avatar_url": dl(detail.get("base").get("avatarUrl")),
 
                 "achievements": detail.get("achieve").get("count"),
-                "active_days": get_total_days_login(old_endfield, detail.get("dailyMission").get("dailyActivation")),
+                "active_days": self._get_total_days_login(old_endfield, detail.get("dailyMission").get("dailyActivation")),
                 "avatar_count": detail.get("base").get("charNum"),
                 "aurylenes": aurylenes,
                 "chest_count": crates,
@@ -350,34 +359,35 @@ class EndfieldClient:
 
                 "stamina": detail.get("dungeon").get("curStamina"),
                 "daily_mission": detail.get("dailyMission").get("dailyActivation"),
-                "last_updated": get_last_updated(old_endfield, detail.get("dailyMission").get("dailyActivation"))
+                "last_updated": self._get_last_updated(old_endfield, detail.get("dailyMission").get("dailyActivation"))
             }
-        
+
         else:
             self.logger.warning(f"Unexpected response code: {code}")
             return {}
-        
-def get_last_updated(old_endfield, daily_mission):
-    """Update last_updated timestamp only if we're counting a new active day."""
-    last_updated_raw = old_endfield.get("last_updated")
-    last_updated = datetime.fromisoformat(last_updated_raw) if last_updated_raw else None
 
-    daily_reset = now().replace(hour=4, minute=0, second=0, microsecond=0)
-    already_updated_today = last_updated is not None and last_updated >= daily_reset
+    @staticmethod
+    def _get_last_updated(old_endfield, daily_mission):
+        """Update last_updated timestamp only if we're counting a new active day."""
+        last_updated_raw = old_endfield.get("last_updated")
+        last_updated = datetime.fromisoformat(last_updated_raw) if last_updated_raw else None
 
-    if not already_updated_today and daily_mission == 100:
-        return now().isoformat()
-    return last_updated_raw 
+        daily_reset = now().replace(hour=4, minute=0, second=0, microsecond=0)
+        already_updated_today = last_updated is not None and last_updated >= daily_reset
 
+        if not already_updated_today and daily_mission == 100:
+            return now().isoformat()
+        return last_updated_raw
 
-def get_total_days_login(old_endfield, daily_mission):
-    active_days = old_endfield.get("active_days", 0)
-    last_updated_raw = old_endfield.get("last_updated")
-    last_updated = datetime.fromisoformat(last_updated_raw) if last_updated_raw else None
+    @staticmethod
+    def _get_total_days_login(old_endfield, daily_mission):
+        active_days = old_endfield.get("active_days", 0)
+        last_updated_raw = old_endfield.get("last_updated")
+        last_updated = datetime.fromisoformat(last_updated_raw) if last_updated_raw else None
 
-    daily_reset = now().replace(hour=4, minute=0, second=0, microsecond=0)
-    already_updated_today = last_updated is not None and last_updated >= daily_reset
+        daily_reset = now().replace(hour=4, minute=0, second=0, microsecond=0)
+        already_updated_today = last_updated is not None and last_updated >= daily_reset
 
-    if not already_updated_today and daily_mission == 100:
-        return active_days + 1
-    return active_days
+        if not already_updated_today and daily_mission == 100:
+            return active_days + 1
+        return active_days
