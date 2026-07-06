@@ -1,0 +1,24 @@
+[project]
+name = "gacha-profile-viewer"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "httpx[brotli]",
+    "genshin",
+    "ramael",
+    "requests",
+    "cookies",
+    "rsa",
+    "openpyxl",
+]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+genshin = { git = "https://github.com/seriaati/genshin.py", branch = "master" }
+
+[dependency-groups]
+dev = ["nox"]
+lint = ["ruff"]
+typecheck = ["pyright"]
