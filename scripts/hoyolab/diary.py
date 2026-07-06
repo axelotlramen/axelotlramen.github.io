@@ -93,6 +93,7 @@ class DiaryWorkbook:
 
         wb = self._load_or_create()
         ws = wb.active
+        assert ws is not None  # always has at least one sheet, freshly created or loaded
 
         # Remove today's row if it already exists (re-run scenario)
         existing_today_row = self._find_today_row(ws, today)
@@ -101,10 +102,12 @@ class DiaryWorkbook:
 
         new_row = self._last_data_row(ws) + 1
 
-        # Write date and the two user-editable input values
-        ws.cell(new_row, COL_DATE).value = today
+        # Write date and the two user-editable input values.
+        # ws.cell() is typed Cell | MergedCell, but this sheet never merges cells,
+        # so .value is always writable in practice.
+        ws.cell(new_row, COL_DATE).value = today  # pyright: ignore[reportAttributeAccessIssue]
         ws.cell(new_row, COL_NET_CURRENCY).value = currency_gain
-        ws.cell(new_row, COL_PULLS_NET).value = 0
+        ws.cell(new_row, COL_PULLS_NET).value = 0  # pyright: ignore[reportAttributeAccessIssue]
 
         # Write all formula-driven columns
         self._write_row_formulas(ws, new_row)
@@ -118,6 +121,7 @@ class DiaryWorkbook:
             return load_workbook(self.config.xlsx_file)
         wb = Workbook()
         ws = wb.active
+        assert ws is not None  # a freshly created Workbook always has an active sheet
         ws.title = "Diary Log"
         ws.freeze_panes = "A2"
         self._apply_header(ws)
