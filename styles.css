@@ -515,6 +515,13 @@ p {
   border-radius: 6px;
 }
 
+.mode-empty {
+  color: var(--muted);
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 1rem;
+}
+
 /* =========================
    Pull Grid
 ========================= */

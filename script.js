@@ -60,6 +60,44 @@ class SectionRenderer {
     `;
   }
 
+  renderEmptyState(container, message) {
+    container.innerHTML = `<p class="mode-empty">${message}</p>`;
+  }
+
+  renderFloorCard(container, { floorLabel, badge, nodes }) {
+    container.innerHTML = `
+      <div class="moc-card">
+        <div class="moc-header">
+          <div class="moc-floor">${floorLabel}</div>
+          <div class="moc-cycles">${badge}</div>
+        </div>
+        <div class="moc-node-row">
+          ${nodes.map((n) => this._renderNode(n.title, n.characters)).join("")}
+        </div>
+      </div>
+    `;
+  }
+
+  _renderNode(title, characters) {
+    return `
+      <div class="moc-node">
+        <div class="moc-node-title">${title}</div>
+        <div class="moc-avatars">
+          ${characters
+            .map(
+              (char) => `
+            <div class="moc-avatar">
+              <img src="https://stardb.gg/api/static/StarRailResWebp/icon/character/${char.id}.webp" alt="Character ${char.id}">
+              <div class="eidolon-badge">E${char.eidolon}</div>
+            </div>
+          `
+            )
+            .join("")}
+        </div>
+      </div>
+    `;
+  }
+
   renderCharacterCard({ iconUrl, name, badge, meta, level, weapon }) {
     return `
       <div class="endfield-char-card">
@@ -102,7 +140,7 @@ class HomeRenderer extends SectionRenderer {
         nickname: sr.nickname,
         subtitle: `Level ${sr.level}`,
         stats: [
-          { label: "MoC Stars", value: sr.memory_of_chaos?.total_stars ?? 0 },
+          { label: "Achievements", value: sr.achievements },
           { label: "TB Power", value: `${sr.stamina ?? 0}/300` },
         ],
       });
@@ -147,7 +185,10 @@ class HsrRenderer extends SectionRenderer {
 
     this.renderProfile(sr);
     this.renderCharacters(sr);
+    this.renderApocalypticShadow(sr);
+    this.renderPureFiction(sr);
     this.renderMoc(sr);
+    this.renderAnomalyArbitration(sr);
   }
 
   renderProfile(sr) {
@@ -190,45 +231,86 @@ class HsrRenderer extends SectionRenderer {
       .join("");
   }
 
-  renderMoc(sr) {
-    const moc = sr?.memory_of_chaos;
-    if (!moc || !moc.floor_data) return;
+  renderApocalypticShadow(sr) {
+    const container = document.getElementById("apc-shadow-content");
+    const apoc = sr?.apocalyptic_shadow;
+    if (!apoc || !apoc.floor_data) {
+      this.renderEmptyState(container, "I have not attempted Apocalyptic Shadow yet.");
+      return;
+    }
 
-    const floor = moc.floor_data;
-    const container = document.getElementById("moc-content");
-
-    container.innerHTML = `
-      <div class="moc-card">
-        <div class="moc-header">
-          <div class="moc-floor">${floor.floor}</div>
-          <div class="moc-cycles">${floor.cycles} cycles · ⭐ ${moc.total_stars}</div>
-        </div>
-        <div class="moc-node-row">
-          ${this._renderMocNode("Node 1", floor.first_half)}
-          ${this._renderMocNode("Node 2", floor.second_half)}
-        </div>
-      </div>
-    `;
+    const floor = apoc.floor_data;
+    this.renderFloorCard(container, {
+      floorLabel: floor.floor,
+      badge: `${floor.score} pts · ⭐ ${apoc.total_stars}`,
+      nodes: [
+        { title: "Node 1", characters: floor.node_1 },
+        { title: "Node 2", characters: floor.node_2 },
+        { title: "Node 3", characters: floor.node_3 },
+      ].filter((n) => n.characters),
+    });
   }
 
-  _renderMocNode(title, characters) {
-    return `
-      <div class="moc-node">
-        <div class="moc-node-title">${title}</div>
-        <div class="moc-avatars">
-          ${characters
-            .map(
-              (char) => `
-            <div class="moc-avatar">
-              <img src="https://stardb.gg/api/static/StarRailResWebp/icon/character/${char.id}.webp" alt="Character ${char.id}">
-              <div class="eidolon-badge">E${char.eidolon}</div>
-            </div>
-          `
-            )
-            .join("")}
-        </div>
-      </div>
-    `;
+  renderPureFiction(sr) {
+    const container = document.getElementById("pure-fiction-content");
+    const pf = sr?.pure_fiction;
+    if (!pf || !pf.floor_data) {
+      this.renderEmptyState(container, "I have not attempted Pure Fiction yet.");
+      return;
+    }
+
+    const floor = pf.floor_data;
+    this.renderFloorCard(container, {
+      floorLabel: floor.floor,
+      badge: `${floor.score} pts · ⭐ ${pf.total_stars}`,
+      nodes: [
+        { title: "Node 1", characters: floor.node_1 },
+        { title: "Node 2", characters: floor.node_2 },
+        { title: "Node 3", characters: floor.node_3 },
+      ].filter((n) => n.characters),
+    });
+  }
+
+  renderMoc(sr) {
+    const container = document.getElementById("moc-content");
+    const moc = sr?.memory_of_chaos;
+    if (!moc || !moc.floor_data) {
+      this.renderEmptyState(container, "I have not attempted Memory of Chaos yet.");
+      return;
+    }
+
+    const floor = moc.floor_data;
+    this.renderFloorCard(container, {
+      floorLabel: floor.floor,
+      badge: `${floor.cycles} cycles · ⭐ ${moc.total_stars}`,
+      nodes: [
+        { title: "Node 1", characters: floor.first_half },
+        { title: "Node 2", characters: floor.second_half },
+      ],
+    });
+  }
+
+  renderAnomalyArbitration(sr) {
+    const container = document.getElementById("anomaly-arbitration-content");
+    const aa = sr?.anomaly_arbitration;
+    if (!aa || Object.keys(aa).length === 0) {
+      this.renderEmptyState(container, "I have not attempted Anomaly Arbitration yet.");
+      return;
+    }
+
+    const nodes = [];
+    if (aa.boss_record) {
+      nodes.push({ title: "Boss", characters: aa.boss_record.characters });
+    }
+    (aa.mini_boss_records || []).forEach((miniBoss, i) => {
+      nodes.push({ title: `Mini Boss ${i + 1}`, characters: miniBoss.characters });
+    });
+
+    this.renderFloorCard(container, {
+      floorLabel: aa.season || "Anomaly Arbitration",
+      badge: `${aa.cycles_used} cycles · ⭐ ${aa.boss_stars + aa.mini_boss_stars}`,
+      nodes,
+    });
   }
 }
 
