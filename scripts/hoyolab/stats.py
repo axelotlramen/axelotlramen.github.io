@@ -115,6 +115,13 @@ class HoyolabStatsFetcher:
             logger.error("Failed to fetch Anomaly Arbitration", exc_info=True)
             return {}
 
+    @staticmethod
+    def _node_characters(node):
+        """Return this node's characters, or None if the floor doesn't have this node."""
+        if node is None:
+            return None
+        return [{"id": a.id, "level": a.level, "eidolon": a.rank} for a in node.avatars]
+
     async def _fetch_apocalyptic_shadow(self, uid):
         logger = logging.getLogger("fetch_apocalyptic_shadow")
         try:
@@ -127,23 +134,10 @@ class HoyolabStatsFetcher:
             floor_data = {
                 "floor": floor_4.name,
                 "score": floor_4.score,
-                "first_half": [],
-                "second_half": [],
+                "node_1": self._node_characters(floor_4.node_1),
+                "node_2": self._node_characters(floor_4.node_2),
+                "node_3": self._node_characters(floor_4.node_3),
             }
-
-            for avatar in floor_4.node_1.avatars:
-                floor_data["first_half"].append({
-                    "id": avatar.id,
-                    "level": avatar.level,
-                    "eidolon": avatar.rank,
-                })
-
-            for avatar in floor_4.node_2.avatars:
-                floor_data["second_half"].append({
-                    "id": avatar.id,
-                    "level": avatar.level,
-                    "eidolon": avatar.rank,
-                })
 
             return {
                 "total_stars": challenge.total_stars,
@@ -166,23 +160,10 @@ class HoyolabStatsFetcher:
             floor_data = {
                 "floor": floor_4.name,
                 "score": floor_4.score,
-                "first_half": [],
-                "second_half": [],
+                "node_1": self._node_characters(floor_4.node_1),
+                "node_2": self._node_characters(floor_4.node_2),
+                "node_3": self._node_characters(floor_4.node_3),
             }
-
-            for avatar in floor_4.node_1.avatars:
-                floor_data["first_half"].append({
-                    "id": avatar.id,
-                    "level": avatar.level,
-                    "eidolon": avatar.rank,
-                })
-
-            for avatar in floor_4.node_2.avatars:
-                floor_data["second_half"].append({
-                    "id": avatar.id,
-                    "level": avatar.level,
-                    "eidolon": avatar.rank,
-                })
 
             return {
                 "season": challenge.name,
@@ -207,23 +188,9 @@ class HoyolabStatsFetcher:
             floor_data = {
                 "floor": floor_12.name,
                 "cycles": floor_12.round_num,
-                "first_half": [],
-                "second_half": [],
+                "first_half": self._node_characters(floor_12.node_1) or [],
+                "second_half": self._node_characters(floor_12.node_2) or [],
             }
-
-            for avatar in floor_12.node_1.avatars:
-                floor_data["first_half"].append({
-                    "id": avatar.id,
-                    "level": avatar.level,
-                    "eidolon": avatar.rank,
-                })
-
-            for avatar in floor_12.node_2.avatars:
-                floor_data["second_half"].append({
-                    "id": avatar.id,
-                    "level": avatar.level,
-                    "eidolon": avatar.rank,
-                })
 
             return {
                 "season": challenge.name,
