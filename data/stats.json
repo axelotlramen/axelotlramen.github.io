@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-05T14:34:09.678746-04:00",
+  "last_updated": "2026-07-05T20:26:14.187727-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
@@ -462,7 +462,7 @@
         "lc": null
       }
     },
-    "stamina": 82,
+    "stamina": 140,
     "current_train_score": 500,
     "anomaly_arbitration": {
       "season": "The Humming Laughter",
@@ -582,7 +582,7 @@
       "floor_data": {
         "floor": "Gale of Forgetting: Difficulty 4Starward Mode",
         "score": 11322,
-        "first_half": [
+        "node_1": [
           {
             "id": 1405,
             "level": 80,
@@ -604,7 +604,7 @@
             "eidolon": 2
           }
         ],
-        "second_half": [
+        "node_2": [
           {
             "id": 1220,
             "level": 80,
@@ -625,6 +625,28 @@
             "level": 80,
             "eidolon": 1
           }
+        ],
+        "node_3": [
+          {
+            "id": 1102,
+            "level": 80,
+            "eidolon": 2
+          },
+          {
+            "id": 1309,
+            "level": 80,
+            "eidolon": 2
+          },
+          {
+            "id": 1306,
+            "level": 80,
+            "eidolon": 0
+          },
+          {
+            "id": 8007,
+            "level": 80,
+            "eidolon": 6
+          }
         ]
       }
     },
@@ -634,7 +656,7 @@
       "floor_data": {
         "floor": "Falsehood to Fact (IV)Starward Mode",
         "score": 104240,
-        "first_half": [
+        "node_1": [
           {
             "id": 1102,
             "level": 80,
@@ -656,7 +678,7 @@
             "eidolon": 2
           }
         ],
-        "second_half": [
+        "node_2": [
           {
             "id": 1013,
             "level": 80,
@@ -676,6 +698,28 @@
             "id": 1202,
             "level": 80,
             "eidolon": 6
+          }
+        ],
+        "node_3": [
+          {
+            "id": 1405,
+            "level": 80,
+            "eidolon": 0
+          },
+          {
+            "id": 1313,
+            "level": 80,
+            "eidolon": 2
+          },
+          {
+            "id": 1406,
+            "level": 80,
+            "eidolon": 1
+          },
+          {
+            "id": 1414,
+            "level": 80,
+            "eidolon": 2
           }
         ]
       }
@@ -738,7 +782,7 @@
     "level": 58,
     "avatar_url": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/f6ed58ae3cfeeebd6e4956e7c5e4b725.png",
     "achievements": 1020,
-    "active_days": 378,
+    "active_days": 379,
     "avatar_count": 58,
     "oculus": 1219,
     "chest_count": 4135,
@@ -1014,8 +1058,8 @@
         }
       }
     },
-    "resin": 200,
-    "daily_task": 0
+    "resin": 19,
+    "daily_task": 4
   },
   "hsr_diary": {
     "Date": "2026-07-05",
@@ -1024,11 +1068,11 @@
   },
   "genshin_diary": {
     "Date": "2026-07-05",
-    "Net Currency Gain": 0,
+    "Net Currency Gain": 120,
     "Pulls Net Gain": 0
   },
   "endfield_attendance": {
-    "status": "Check-in Successful",
+    "status": "Already Claimed",
     "rewards": [
       {
         "name": "Protoprism",
@@ -1066,7 +1110,7 @@
         },
         {
           "awardId": "endfield_attendance_6_2",
-          "available": true,
+          "available": false,
           "done": true
         },
         {
@@ -1230,20 +1274,20 @@
           "refineLevel": 0
         }
       },
-      "Ardelia": {
-        "avatarSqUrl": "data/images/8acdcdaa6c69979a9b01f77281465a0a.png",
+      "Tangtang": {
+        "avatarSqUrl": "data/images/ee017b6ab7f20b54c0effcf522518d2b.png",
         "rarity": "6",
         "potential": 1,
-        "profession": "Supporter",
-        "property": "Nature",
-        "weaponType": "Arts Unit",
+        "profession": "Caster",
+        "property": "Cryo",
+        "weaponType": "Handcannon",
         "level": 90,
         "weapon": {
-          "name": "Dreams of the Starry Beach",
-          "iconUrl": "data/images/fe34d89d2e92df4d993a4fc881b3d6d8.png",
+          "name": "Brigand's Calling",
+          "iconUrl": "data/images/675ec992ee25214d0af5cdb60ccd893a.png",
           "rarity": "6",
-          "type": "Arts Unit",
-          "level": 83,
+          "type": "Handcannon",
+          "level": 90,
           "refineLevel": 0
         }
       },
@@ -1264,20 +1308,37 @@
           "refineLevel": 0
         }
       },
-      "Tangtang": {
-        "avatarSqUrl": "data/images/ee017b6ab7f20b54c0effcf522518d2b.png",
+      "Pogranichnik": {
+        "avatarSqUrl": "data/images/9c14933aa23b96d01658caed5a3b9907.png",
         "rarity": "6",
         "potential": 1,
-        "profession": "Caster",
-        "property": "Cryo",
-        "weaponType": "Handcannon",
+        "profession": "Vanguard",
+        "property": "Physical",
+        "weaponType": "Sword",
         "level": 90,
         "weapon": {
-          "name": "Brigand's Calling",
-          "iconUrl": "data/images/675ec992ee25214d0af5cdb60ccd893a.png",
+          "name": "Never Rest",
+          "iconUrl": "data/images/21532368a8d1075f3259f51eb226f9b3.png",
           "rarity": "6",
-          "type": "Handcannon",
+          "type": "Sword",
           "level": 90,
+          "refineLevel": 0
+        }
+      },
+      "Ardelia": {
+        "avatarSqUrl": "data/images/8acdcdaa6c69979a9b01f77281465a0a.png",
+        "rarity": "6",
+        "potential": 1,
+        "profession": "Supporter",
+        "property": "Nature",
+        "weaponType": "Arts Unit",
+        "level": 90,
+        "weapon": {
+          "name": "Dreams of the Starry Beach",
+          "iconUrl": "data/images/fe34d89d2e92df4d993a4fc881b3d6d8.png",
+          "rarity": "6",
+          "type": "Arts Unit",
+          "level": 83,
           "refineLevel": 0
         }
       },
@@ -1315,21 +1376,21 @@
           "refineLevel": 0
         }
       },
-      "Pogranichnik": {
-        "avatarSqUrl": "data/images/9c14933aa23b96d01658caed5a3b9907.png",
-        "rarity": "6",
-        "potential": 1,
-        "profession": "Vanguard",
-        "property": "Physical",
-        "weaponType": "Sword",
+      "Wulfgard": {
+        "avatarSqUrl": "data/images/7ddb3b88ce6f0029e143000cfece7b65.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Caster",
+        "property": "Heat",
+        "weaponType": "Handcannon",
         "level": 90,
         "weapon": {
-          "name": "Never Rest",
-          "iconUrl": "data/images/21532368a8d1075f3259f51eb226f9b3.png",
-          "rarity": "6",
-          "type": "Sword",
+          "name": "Rational Farewell",
+          "iconUrl": "data/images/cee67efec0389c4a0197291c3550ace7.png",
+          "rarity": "5",
+          "type": "Handcannon",
           "level": 90,
-          "refineLevel": 0
+          "refineLevel": 1
         }
       },
       "Chen Qianyu": {
@@ -1347,23 +1408,6 @@
           "type": "Sword",
           "level": 90,
           "refineLevel": 5
-        }
-      },
-      "Wulfgard": {
-        "avatarSqUrl": "data/images/7ddb3b88ce6f0029e143000cfece7b65.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Caster",
-        "property": "Heat",
-        "weaponType": "Handcannon",
-        "level": 90,
-        "weapon": {
-          "name": "Rational Farewell",
-          "iconUrl": "data/images/cee67efec0389c4a0197291c3550ace7.png",
-          "rarity": "5",
-          "type": "Handcannon",
-          "level": 90,
-          "refineLevel": 1
         }
       },
       "Endministrator": {
@@ -1434,23 +1478,6 @@
           "refineLevel": 0
         }
       },
-      "Perlica": {
-        "avatarSqUrl": "data/images/c7d4eaff6c2336b0e9d217e32d208e28.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Caster",
-        "property": "Electric",
-        "weaponType": "Arts Unit",
-        "level": 80,
-        "weapon": {
-          "name": "Detonation Unit",
-          "iconUrl": "data/images/27335fd9a9e8c41c3cc063fbf8481f9b.png",
-          "rarity": "6",
-          "type": "Arts Unit",
-          "level": 80,
-          "refineLevel": 0
-        }
-      },
       "Xaihi": {
         "avatarSqUrl": "data/images/b57fb03447e70561cd497b60af8b69e3.png",
         "rarity": "5",
@@ -1466,6 +1493,23 @@
           "type": "Arts Unit",
           "level": 80,
           "refineLevel": 2
+        }
+      },
+      "Perlica": {
+        "avatarSqUrl": "data/images/c7d4eaff6c2336b0e9d217e32d208e28.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Caster",
+        "property": "Electric",
+        "weaponType": "Arts Unit",
+        "level": 80,
+        "weapon": {
+          "name": "Detonation Unit",
+          "iconUrl": "data/images/27335fd9a9e8c41c3cc063fbf8481f9b.png",
+          "rarity": "6",
+          "type": "Arts Unit",
+          "level": 80,
+          "refineLevel": 0
         }
       },
       "Alesh": {
@@ -1519,23 +1563,6 @@
           "refineLevel": 3
         }
       },
-      "Avywenna": {
-        "avatarSqUrl": "data/images/ad690ee34b0fe54fc21e82f04489894f.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Striker",
-        "property": "Electric",
-        "weaponType": "Polearm",
-        "level": 1,
-        "weapon": {
-          "name": "Opero 77",
-          "iconUrl": "data/images/84a37c54af2051047d3da560fb9b98f9.png",
-          "rarity": "3",
-          "type": "Polearm",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
       "Snowshine": {
         "avatarSqUrl": "data/images/b6dca12b51b4bd83b33e5fdce281a024.png",
         "rarity": "5",
@@ -1549,6 +1576,23 @@
           "iconUrl": "data/images/405aa716336d0d399cde63f38096301e.png",
           "rarity": "3",
           "type": "Greatsword",
+          "level": 1,
+          "refineLevel": 0
+        }
+      },
+      "Avywenna": {
+        "avatarSqUrl": "data/images/ad690ee34b0fe54fc21e82f04489894f.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Striker",
+        "property": "Electric",
+        "weaponType": "Polearm",
+        "level": 1,
+        "weapon": {
+          "name": "Opero 77",
+          "iconUrl": "data/images/84a37c54af2051047d3da560fb9b98f9.png",
+          "rarity": "3",
+          "type": "Polearm",
           "level": 1,
           "refineLevel": 0
         }
@@ -1605,7 +1649,7 @@
         }
       }
     },
-    "stamina": "120",
+    "stamina": "168",
     "daily_mission": 100,
     "last_updated": "2026-07-05T14:34:09.678527-04:00"
   }
