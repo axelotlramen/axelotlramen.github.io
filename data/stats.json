@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-07-06T15:12:19.781643-04:00",
+  "last_updated": "2026-07-07T15:18:30.266754-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
     "avatar_url": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0a0ae/9c7348aed5712386c2a9f1c4a9bb92b4.png",
-    "achievements": 1700,
-    "active_days": 952,
+    "achievements": 1702,
+    "active_days": 953,
     "avatar_count": 56,
     "chest_count": 1897,
     "five_star_characters": {
@@ -30,8 +30,8 @@
         "path": "NIHILITY",
         "level": 80,
         "lc": {
-          "name": "Good Night and Sleep Well",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0a0ae/49f8d3719d13ef8435e0a1a89dc145ec.png",
+          "name": "Before the Tutorial Mission Starts",
+          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0a0ae/3ae9113a79040fd5bd20fa67e81bf866.png",
           "rarity": 4,
           "level": 80,
           "superimposition": 5
@@ -338,11 +338,11 @@
         "path": "THE HUNT",
         "level": 80,
         "lc": {
-          "name": "Cruising in the Stellar Sea",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0a0ae/cbf577cc50348be439ee16932d80bdb5.png",
+          "name": "The Hell Where Ideals Burn",
+          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0a0ae/ee0323b068594d47c22d64040ebbc85f.png",
           "rarity": 5,
           "level": 80,
-          "superimposition": 5
+          "superimposition": 1
         }
       },
       "Bronya": {
@@ -365,13 +365,7 @@
         "element": "Quantum",
         "path": "THE HUNT",
         "level": 80,
-        "lc": {
-          "name": "The Hell Where Ideals Burn",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0a0ae/ee0323b068594d47c22d64040ebbc85f.png",
-          "rarity": 5,
-          "level": 80,
-          "superimposition": 1
-        }
+        "lc": null
       },
       "Saber": {
         "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0a0ae/cdd2e6e61e312de58c1e7dadbde45863.png",
@@ -402,11 +396,11 @@
         "path": "NIHILITY",
         "level": 80,
         "lc": {
-          "name": "Before the Tutorial Mission Starts",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0a0ae/3ae9113a79040fd5bd20fa67e81bf866.png",
-          "rarity": 4,
+          "name": "In the Name of the World",
+          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0a0ae/5e0a795d2ba308e70a44c8143116c07a.png",
+          "rarity": 5,
           "level": 80,
-          "superimposition": 5
+          "superimposition": 2
         }
       },
       "Welt": {
@@ -416,11 +410,11 @@
         "path": "NIHILITY",
         "level": 80,
         "lc": {
-          "name": "In the Name of the World",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0a0ae/5e0a795d2ba308e70a44c8143116c07a.png",
-          "rarity": 5,
+          "name": "Good Night and Sleep Well",
+          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0a0ae/49f8d3719d13ef8435e0a1a89dc145ec.png",
+          "rarity": 4,
           "level": 80,
-          "superimposition": 2
+          "superimposition": 5
         }
       },
       "Himeko": {
@@ -468,7 +462,7 @@
         "lc": null
       }
     },
-    "stamina": 88,
+    "stamina": 59,
     "current_train_score": 500,
     "anomaly_arbitration": {
       "season": "The Humming Laughter",
@@ -734,26 +728,26 @@
       "season": "Academy Ghost Story",
       "total_stars": 36,
       "floor_data": {
-        "floor": "Academy Ghost Story (XI)",
-        "cycles": 0,
+        "floor": "Academy Ghost Story (XII)Starward Mode",
+        "cycles": 6,
         "first_half": [
           {
-            "id": 1405,
+            "id": 1102,
+            "level": 80,
+            "eidolon": 2
+          },
+          {
+            "id": 1306,
             "level": 80,
             "eidolon": 0
           },
           {
-            "id": 1313,
+            "id": 8007,
             "level": 80,
-            "eidolon": 2
+            "eidolon": 6
           },
           {
-            "id": 1309,
-            "level": 80,
-            "eidolon": 2
-          },
-          {
-            "id": 1414,
+            "id": 1507,
             "level": 80,
             "eidolon": 2
           }
@@ -770,7 +764,7 @@
             "eidolon": 1
           },
           {
-            "id": 1507,
+            "id": 1309,
             "level": 80,
             "eidolon": 2
           },
@@ -788,7 +782,7 @@
     "level": 58,
     "avatar_url": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/f6ed58ae3cfeeebd6e4956e7c5e4b725.png",
     "achievements": 1031,
-    "active_days": 379,
+    "active_days": 380,
     "avatar_count": 58,
     "oculus": 1243,
     "chest_count": 4190,
@@ -1064,30 +1058,30 @@
         }
       }
     },
-    "resin": 159,
+    "resin": 114,
     "daily_task": 0
   },
   "hsr_diary": {
-    "Date": "2026-07-06",
-    "Net Currency Gain": 870,
+    "Date": "2026-07-07",
+    "Net Currency Gain": 155,
     "Pulls Net Gain": 0
   },
   "genshin_diary": {
-    "Date": "2026-07-06",
-    "Net Currency Gain": 18,
+    "Date": "2026-07-07",
+    "Net Currency Gain": 0,
     "Pulls Net Gain": 0
   },
   "endfield_attendance": {
     "status": "Check-in Successful",
     "rewards": [
       {
-        "name": "Intermediate Combat Record",
-        "count": 3,
-        "icon": "https://static.skport.com/asset/endfield_attendance/921A397E2765462C009B939E0CD92606.png"
+        "name": "Talosian Credit Notes|T-Creds",
+        "count": 3000,
+        "icon": "https://static.skport.com/asset/endfield_attendance/2a58a0e85f39092433842ccd62324785.png"
       }
     ],
     "attendance": {
-      "totalSignIns": 7,
+      "totalSignIns": 8,
       "calendar": [
         {
           "awardId": "endfield_attendance_1_2",
@@ -1121,13 +1115,13 @@
         },
         {
           "awardId": "endfield_attendance_1_3",
-          "available": true,
+          "available": false,
           "done": true
         },
         {
           "awardId": "endfield_attendance_7_3000",
-          "available": false,
-          "done": false
+          "available": true,
+          "done": true
         },
         {
           "awardId": "endfield_attendance_4_3",
@@ -1248,9 +1242,9 @@
     },
     "error": null,
     "nextAward": {
-      "name": "Talosian Credit Notes|T-Creds",
-      "count": 3000,
-      "icon": "https://static.skport.com/asset/endfield_attendance/2a58a0e85f39092433842ccd62324785.png"
+      "name": "Arms INSP Kit",
+      "count": 3,
+      "icon": "https://static.skport.com/asset/endfield_attendance/0dea0bc0fd87138df322e8a254a6999f.png"
     }
   },
   "endfield_data": {
@@ -1258,45 +1252,11 @@
     "level": 60,
     "avatar_url": "data/images/6beb98f8c8e7a81d37071bc3593b6321.png",
     "achievements": 102,
-    "active_days": 32,
+    "active_days": 33,
     "avatar_count": 23,
     "aurylenes": 321,
     "chest_count": 691,
     "six_star_characters": {
-      "Rossi": {
-        "avatarSqUrl": "data/images/bb6cca7221225af1ce18c1850d1abb7e.png",
-        "rarity": "6",
-        "potential": 0,
-        "profession": "Guard",
-        "property": "Physical",
-        "weaponType": "Sword",
-        "level": 90,
-        "weapon": {
-          "name": "Lupine Scarlet",
-          "iconUrl": "data/images/dfa304b9de55a75bce9b5719e7cf1d59.png",
-          "rarity": "6",
-          "type": "Sword",
-          "level": 90,
-          "refineLevel": 0
-        }
-      },
-      "Tangtang": {
-        "avatarSqUrl": "data/images/ee017b6ab7f20b54c0effcf522518d2b.png",
-        "rarity": "6",
-        "potential": 1,
-        "profession": "Caster",
-        "property": "Cryo",
-        "weaponType": "Handcannon",
-        "level": 90,
-        "weapon": {
-          "name": "Brigand's Calling",
-          "iconUrl": "data/images/675ec992ee25214d0af5cdb60ccd893a.png",
-          "rarity": "6",
-          "type": "Handcannon",
-          "level": 90,
-          "refineLevel": 0
-        }
-      },
       "Lifeng": {
         "avatarSqUrl": "data/images/e1ffee22e9f4a4df2562cbfce21108e1.png",
         "rarity": "6",
@@ -1314,17 +1274,34 @@
           "refineLevel": 0
         }
       },
-      "Pogranichnik": {
-        "avatarSqUrl": "data/images/9c14933aa23b96d01658caed5a3b9907.png",
+      "Laevatain": {
+        "avatarSqUrl": "data/images/15a984eaecaf0d7c47d871175ae38937.png",
         "rarity": "6",
-        "potential": 1,
-        "profession": "Vanguard",
+        "potential": 0,
+        "profession": "Striker",
+        "property": "Heat",
+        "weaponType": "Sword",
+        "level": 90,
+        "weapon": {
+          "name": "Umbral Torch",
+          "iconUrl": "data/images/f67ca28a6489e356f928c9c9ef1b61eb.png",
+          "rarity": "6",
+          "type": "Sword",
+          "level": 90,
+          "refineLevel": 0
+        }
+      },
+      "Rossi": {
+        "avatarSqUrl": "data/images/bb6cca7221225af1ce18c1850d1abb7e.png",
+        "rarity": "6",
+        "potential": 0,
+        "profession": "Guard",
         "property": "Physical",
         "weaponType": "Sword",
         "level": 90,
         "weapon": {
-          "name": "Never Rest",
-          "iconUrl": "data/images/21532368a8d1075f3259f51eb226f9b3.png",
+          "name": "Lupine Scarlet",
+          "iconUrl": "data/images/dfa304b9de55a75bce9b5719e7cf1d59.png",
           "rarity": "6",
           "type": "Sword",
           "level": 90,
@@ -1348,19 +1325,19 @@
           "refineLevel": 0
         }
       },
-      "Laevatain": {
-        "avatarSqUrl": "data/images/15a984eaecaf0d7c47d871175ae38937.png",
+      "Tangtang": {
+        "avatarSqUrl": "data/images/ee017b6ab7f20b54c0effcf522518d2b.png",
         "rarity": "6",
-        "potential": 0,
-        "profession": "Striker",
-        "property": "Heat",
-        "weaponType": "Sword",
+        "potential": 1,
+        "profession": "Caster",
+        "property": "Cryo",
+        "weaponType": "Handcannon",
         "level": 90,
         "weapon": {
-          "name": "Umbral Torch",
-          "iconUrl": "data/images/f67ca28a6489e356f928c9c9ef1b61eb.png",
+          "name": "Brigand's Calling",
+          "iconUrl": "data/images/675ec992ee25214d0af5cdb60ccd893a.png",
           "rarity": "6",
-          "type": "Sword",
+          "type": "Handcannon",
           "level": 90,
           "refineLevel": 0
         }
@@ -1378,6 +1355,23 @@
           "iconUrl": "data/images/02ef4bb9403658103f9e0f43ae77c407.png",
           "rarity": "6",
           "type": "Polearm",
+          "level": 90,
+          "refineLevel": 0
+        }
+      },
+      "Pogranichnik": {
+        "avatarSqUrl": "data/images/9c14933aa23b96d01658caed5a3b9907.png",
+        "rarity": "6",
+        "potential": 1,
+        "profession": "Vanguard",
+        "property": "Physical",
+        "weaponType": "Sword",
+        "level": 90,
+        "weapon": {
+          "name": "Never Rest",
+          "iconUrl": "data/images/21532368a8d1075f3259f51eb226f9b3.png",
+          "rarity": "6",
+          "type": "Sword",
           "level": 90,
           "refineLevel": 0
         }
@@ -1484,23 +1478,6 @@
           "refineLevel": 0
         }
       },
-      "Xaihi": {
-        "avatarSqUrl": "data/images/b57fb03447e70561cd497b60af8b69e3.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Supporter",
-        "property": "Cryo",
-        "weaponType": "Arts Unit",
-        "level": 80,
-        "weapon": {
-          "name": "Stanza of Memorials",
-          "iconUrl": "data/images/bfbda14b0634b1ef9df15040f2e12640.png",
-          "rarity": "5",
-          "type": "Arts Unit",
-          "level": 80,
-          "refineLevel": 2
-        }
-      },
       "Perlica": {
         "avatarSqUrl": "data/images/c7d4eaff6c2336b0e9d217e32d208e28.png",
         "rarity": "5",
@@ -1516,6 +1493,23 @@
           "type": "Arts Unit",
           "level": 80,
           "refineLevel": 0
+        }
+      },
+      "Xaihi": {
+        "avatarSqUrl": "data/images/b57fb03447e70561cd497b60af8b69e3.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Supporter",
+        "property": "Cryo",
+        "weaponType": "Arts Unit",
+        "level": 80,
+        "weapon": {
+          "name": "Stanza of Memorials",
+          "iconUrl": "data/images/bfbda14b0634b1ef9df15040f2e12640.png",
+          "rarity": "5",
+          "type": "Arts Unit",
+          "level": 80,
+          "refineLevel": 2
         }
       },
       "Alesh": {
@@ -1569,6 +1563,23 @@
           "refineLevel": 3
         }
       },
+      "Arclight": {
+        "avatarSqUrl": "data/images/068394e39831e767a19d447579a97b1d.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Vanguard",
+        "property": "Electric",
+        "weaponType": "Sword",
+        "level": 1,
+        "weapon": {
+          "name": "Tarr 11",
+          "iconUrl": "data/images/397d215b08df02e77309f693971a25bf.png",
+          "rarity": "3",
+          "type": "Sword",
+          "level": 1,
+          "refineLevel": 0
+        }
+      },
       "Snowshine": {
         "avatarSqUrl": "data/images/b6dca12b51b4bd83b33e5fdce281a024.png",
         "rarity": "5",
@@ -1599,23 +1610,6 @@
           "iconUrl": "data/images/84a37c54af2051047d3da560fb9b98f9.png",
           "rarity": "3",
           "type": "Polearm",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
-      "Arclight": {
-        "avatarSqUrl": "data/images/068394e39831e767a19d447579a97b1d.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Vanguard",
-        "property": "Electric",
-        "weaponType": "Sword",
-        "level": 1,
-        "weapon": {
-          "name": "Tarr 11",
-          "iconUrl": "data/images/397d215b08df02e77309f693971a25bf.png",
-          "rarity": "3",
-          "type": "Sword",
           "level": 1,
           "refineLevel": 0
         }
@@ -1655,8 +1649,8 @@
         }
       }
     },
-    "stamina": "325",
-    "daily_mission": 0,
-    "last_updated": "2026-07-05T14:34:09.678527-04:00"
+    "stamina": "70",
+    "daily_mission": 100,
+    "last_updated": "2026-07-07T15:18:30.266514-04:00"
   }
 }
