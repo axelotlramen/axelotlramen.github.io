@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-07-13T14:53:19.556068-04:00",
+  "last_updated": "2026-07-14T14:35:22.631933-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
     "avatar_url": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u0a0ae/9c7348aed5712386c2a9f1c4a9bb92b4.png",
     "achievements": 1702,
-    "active_days": 959,
+    "active_days": 960,
     "avatar_count": 56,
     "chest_count": 1897,
     "five_star_characters": {
@@ -456,7 +456,7 @@
         "lc": null
       }
     },
-    "stamina": 45,
+    "stamina": 82,
     "current_train_score": 500,
     "anomaly_arbitration": {
       "season": "The Humming Laughter",
@@ -1056,12 +1056,12 @@
     "daily_task": 0
   },
   "hsr_diary": {
-    "Date": "2026-07-13",
-    "Net Currency Gain": 150,
+    "Date": "2026-07-14",
+    "Net Currency Gain": 375,
     "Pulls Net Gain": 0
   },
   "genshin_diary": {
-    "Date": "2026-07-13",
+    "Date": "2026-07-14",
     "Net Currency Gain": 0,
     "Pulls Net Gain": 0
   },
@@ -1069,13 +1069,13 @@
     "status": "Check-in Successful",
     "rewards": [
       {
-        "name": "Intermediate Combat Record",
+        "name": "Arms INSP Kit",
         "count": 3,
-        "icon": "https://static.skport.com/asset/endfield_attendance/921A397E2765462C009B939E0CD92606.png"
+        "icon": "https://static.skport.com/asset/endfield_attendance/0dea0bc0fd87138df322e8a254a6999f.png"
       }
     ],
     "attendance": {
-      "totalSignIns": 14,
+      "totalSignIns": 15,
       "calendar": [
         {
           "awardId": "endfield_attendance_1_2",
@@ -1144,13 +1144,13 @@
         },
         {
           "awardId": "endfield_attendance_1_3",
-          "available": true,
+          "available": false,
           "done": true
         },
         {
           "awardId": "endfield_attendance_4_3",
-          "available": false,
-          "done": false
+          "available": true,
+          "done": true
         },
         {
           "awardId": "endfield_attendance_7_3000",
@@ -1236,9 +1236,9 @@
     },
     "error": null,
     "nextAward": {
-      "name": "Arms INSP Kit",
-      "count": 3,
-      "icon": "https://static.skport.com/asset/endfield_attendance/0dea0bc0fd87138df322e8a254a6999f.png"
+      "name": "Talosian Credit Notes|T-Creds",
+      "count": 3000,
+      "icon": "https://static.skport.com/asset/endfield_attendance/2a58a0e85f39092433842ccd62324785.png"
     }
   },
   "endfield_data": {
@@ -1251,6 +1251,74 @@
     "aurylenes": 321,
     "chest_count": 691,
     "six_star_characters": {
+      "Ardelia": {
+        "avatarSqUrl": "data/images/8acdcdaa6c69979a9b01f77281465a0a.png",
+        "rarity": "6",
+        "potential": 1,
+        "profession": "Supporter",
+        "property": "Nature",
+        "weaponType": "Arts Unit",
+        "level": 90,
+        "weapon": {
+          "name": "Dreams of the Starry Beach",
+          "iconUrl": "data/images/fe34d89d2e92df4d993a4fc881b3d6d8.png",
+          "rarity": "6",
+          "type": "Arts Unit",
+          "level": 83,
+          "refineLevel": 0
+        }
+      },
+      "Lifeng": {
+        "avatarSqUrl": "data/images/e1ffee22e9f4a4df2562cbfce21108e1.png",
+        "rarity": "6",
+        "potential": 2,
+        "profession": "Guard",
+        "property": "Physical",
+        "weaponType": "Polearm",
+        "level": 90,
+        "weapon": {
+          "name": "Mountain Bearer",
+          "iconUrl": "data/images/b4827d12232501551485e0c9f671caa8.png",
+          "rarity": "6",
+          "type": "Polearm",
+          "level": 90,
+          "refineLevel": 0
+        }
+      },
+      "Camille": {
+        "avatarSqUrl": "data/images/ebd60d15f1e07b64fb53c59b905d9767.png",
+        "rarity": "6",
+        "potential": 0,
+        "profession": "Vanguard",
+        "property": "Heat",
+        "weaponType": "Polearm",
+        "level": 90,
+        "weapon": {
+          "name": "Blessing of Lustrous Carmine",
+          "iconUrl": "data/images/02ef4bb9403658103f9e0f43ae77c407.png",
+          "rarity": "6",
+          "type": "Polearm",
+          "level": 90,
+          "refineLevel": 0
+        }
+      },
+      "Pogranichnik": {
+        "avatarSqUrl": "data/images/9c14933aa23b96d01658caed5a3b9907.png",
+        "rarity": "6",
+        "potential": 1,
+        "profession": "Vanguard",
+        "property": "Physical",
+        "weaponType": "Sword",
+        "level": 90,
+        "weapon": {
+          "name": "Never Rest",
+          "iconUrl": "data/images/21532368a8d1075f3259f51eb226f9b3.png",
+          "rarity": "6",
+          "type": "Sword",
+          "level": 90,
+          "refineLevel": 0
+        }
+      },
       "Tangtang": {
         "avatarSqUrl": "data/images/ee017b6ab7f20b54c0effcf522518d2b.png",
         "rarity": "6",
@@ -1268,17 +1336,17 @@
           "refineLevel": 0
         }
       },
-      "Pogranichnik": {
-        "avatarSqUrl": "data/images/9c14933aa23b96d01658caed5a3b9907.png",
+      "Laevatain": {
+        "avatarSqUrl": "data/images/15a984eaecaf0d7c47d871175ae38937.png",
         "rarity": "6",
-        "potential": 1,
-        "profession": "Vanguard",
-        "property": "Physical",
+        "potential": 0,
+        "profession": "Striker",
+        "property": "Heat",
         "weaponType": "Sword",
         "level": 90,
         "weapon": {
-          "name": "Never Rest",
-          "iconUrl": "data/images/21532368a8d1075f3259f51eb226f9b3.png",
+          "name": "Umbral Torch",
+          "iconUrl": "data/images/f67ca28a6489e356f928c9c9ef1b61eb.png",
           "rarity": "6",
           "type": "Sword",
           "level": 90,
@@ -1302,72 +1370,21 @@
           "refineLevel": 0
         }
       },
-      "Laevatain": {
-        "avatarSqUrl": "data/images/15a984eaecaf0d7c47d871175ae38937.png",
-        "rarity": "6",
-        "potential": 0,
-        "profession": "Striker",
+      "Wulfgard": {
+        "avatarSqUrl": "data/images/7ddb3b88ce6f0029e143000cfece7b65.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Caster",
         "property": "Heat",
-        "weaponType": "Sword",
+        "weaponType": "Handcannon",
         "level": 90,
         "weapon": {
-          "name": "Umbral Torch",
-          "iconUrl": "data/images/f67ca28a6489e356f928c9c9ef1b61eb.png",
-          "rarity": "6",
-          "type": "Sword",
+          "name": "Rational Farewell",
+          "iconUrl": "data/images/cee67efec0389c4a0197291c3550ace7.png",
+          "rarity": "5",
+          "type": "Handcannon",
           "level": 90,
-          "refineLevel": 0
-        }
-      },
-      "Ardelia": {
-        "avatarSqUrl": "data/images/8acdcdaa6c69979a9b01f77281465a0a.png",
-        "rarity": "6",
-        "potential": 1,
-        "profession": "Supporter",
-        "property": "Nature",
-        "weaponType": "Arts Unit",
-        "level": 90,
-        "weapon": {
-          "name": "Dreams of the Starry Beach",
-          "iconUrl": "data/images/fe34d89d2e92df4d993a4fc881b3d6d8.png",
-          "rarity": "6",
-          "type": "Arts Unit",
-          "level": 83,
-          "refineLevel": 0
-        }
-      },
-      "Camille": {
-        "avatarSqUrl": "data/images/ebd60d15f1e07b64fb53c59b905d9767.png",
-        "rarity": "6",
-        "potential": 0,
-        "profession": "Vanguard",
-        "property": "Heat",
-        "weaponType": "Polearm",
-        "level": 90,
-        "weapon": {
-          "name": "Blessing of Lustrous Carmine",
-          "iconUrl": "data/images/02ef4bb9403658103f9e0f43ae77c407.png",
-          "rarity": "6",
-          "type": "Polearm",
-          "level": 90,
-          "refineLevel": 0
-        }
-      },
-      "Lifeng": {
-        "avatarSqUrl": "data/images/e1ffee22e9f4a4df2562cbfce21108e1.png",
-        "rarity": "6",
-        "potential": 2,
-        "profession": "Guard",
-        "property": "Physical",
-        "weaponType": "Polearm",
-        "level": 90,
-        "weapon": {
-          "name": "Mountain Bearer",
-          "iconUrl": "data/images/b4827d12232501551485e0c9f671caa8.png",
-          "rarity": "6",
-          "type": "Polearm",
-          "level": 90,
-          "refineLevel": 0
+          "refineLevel": 1
         }
       },
       "Chen Qianyu": {
@@ -1385,23 +1402,6 @@
           "type": "Sword",
           "level": 90,
           "refineLevel": 5
-        }
-      },
-      "Wulfgard": {
-        "avatarSqUrl": "data/images/7ddb3b88ce6f0029e143000cfece7b65.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Caster",
-        "property": "Heat",
-        "weaponType": "Handcannon",
-        "level": 90,
-        "weapon": {
-          "name": "Rational Farewell",
-          "iconUrl": "data/images/cee67efec0389c4a0197291c3550ace7.png",
-          "rarity": "5",
-          "type": "Handcannon",
-          "level": 90,
-          "refineLevel": 1
         }
       },
       "Endministrator": {
@@ -1472,23 +1472,6 @@
           "refineLevel": 0
         }
       },
-      "Perlica": {
-        "avatarSqUrl": "data/images/c7d4eaff6c2336b0e9d217e32d208e28.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Caster",
-        "property": "Electric",
-        "weaponType": "Arts Unit",
-        "level": 80,
-        "weapon": {
-          "name": "Detonation Unit",
-          "iconUrl": "data/images/27335fd9a9e8c41c3cc063fbf8481f9b.png",
-          "rarity": "6",
-          "type": "Arts Unit",
-          "level": 80,
-          "refineLevel": 0
-        }
-      },
       "Xaihi": {
         "avatarSqUrl": "data/images/b57fb03447e70561cd497b60af8b69e3.png",
         "rarity": "5",
@@ -1504,6 +1487,23 @@
           "type": "Arts Unit",
           "level": 80,
           "refineLevel": 2
+        }
+      },
+      "Perlica": {
+        "avatarSqUrl": "data/images/c7d4eaff6c2336b0e9d217e32d208e28.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Caster",
+        "property": "Electric",
+        "weaponType": "Arts Unit",
+        "level": 80,
+        "weapon": {
+          "name": "Detonation Unit",
+          "iconUrl": "data/images/27335fd9a9e8c41c3cc063fbf8481f9b.png",
+          "rarity": "6",
+          "type": "Arts Unit",
+          "level": 80,
+          "refineLevel": 0
         }
       },
       "Alesh": {
@@ -1536,6 +1536,23 @@
           "iconUrl": "data/images/405aa716336d0d399cde63f38096301e.png",
           "rarity": "3",
           "type": "Greatsword",
+          "level": 1,
+          "refineLevel": 0
+        }
+      },
+      "Arclight": {
+        "avatarSqUrl": "data/images/068394e39831e767a19d447579a97b1d.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Vanguard",
+        "property": "Electric",
+        "weaponType": "Sword",
+        "level": 1,
+        "weapon": {
+          "name": "Tarr 11",
+          "iconUrl": "data/images/397d215b08df02e77309f693971a25bf.png",
+          "rarity": "3",
+          "type": "Sword",
           "level": 1,
           "refineLevel": 0
         }
@@ -1591,23 +1608,6 @@
           "refineLevel": 0
         }
       },
-      "Arclight": {
-        "avatarSqUrl": "data/images/068394e39831e767a19d447579a97b1d.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Vanguard",
-        "property": "Electric",
-        "weaponType": "Sword",
-        "level": 1,
-        "weapon": {
-          "name": "Tarr 11",
-          "iconUrl": "data/images/397d215b08df02e77309f693971a25bf.png",
-          "rarity": "3",
-          "type": "Sword",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
       "Antal": {
         "avatarSqUrl": "data/images/aca43ca0538ead35c4ff7442a6a2a724.png",
         "rarity": "4",
@@ -1643,8 +1643,8 @@
         }
       }
     },
-    "stamina": "19",
-    "daily_mission": 100,
+    "stamina": "216",
+    "daily_mission": 0,
     "last_updated": "2026-07-13T14:53:19.555757-04:00"
   }
 }
