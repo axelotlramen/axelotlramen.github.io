@@ -1,13 +1,13 @@
 {
-  "last_updated": "2026-07-15T14:35:42.579069-04:00",
+  "last_updated": "2026-07-16T14:37:08.754028-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
     "avatar_url": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_ua5ece/9f24a56bd4461ea276e9f0de27ae90ad.png",
-    "achievements": 1725,
-    "active_days": 961,
+    "achievements": 1732,
+    "active_days": 962,
     "avatar_count": 56,
-    "chest_count": 1935,
+    "chest_count": 1961,
     "five_star_characters": {
       "Trailblazer": {
         "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_ua5ece/3dc0f18ca0873f1934651011f22d195a.png",
@@ -462,7 +462,7 @@
         "lc": null
       }
     },
-    "stamina": 92,
+    "stamina": 72,
     "current_train_score": 500,
     "anomaly_arbitration": {
       "season": "Enwreathed by the World",
@@ -1062,12 +1062,12 @@
     "daily_task": 0
   },
   "hsr_diary": {
-    "Date": "2026-07-15",
-    "Net Currency Gain": 845,
+    "Date": "2026-07-16",
+    "Net Currency Gain": 195,
     "Pulls Net Gain": 0
   },
   "genshin_diary": {
-    "Date": "2026-07-15",
+    "Date": "2026-07-16",
     "Net Currency Gain": 0,
     "Pulls Net Gain": 0
   },
@@ -1075,13 +1075,18 @@
     "status": "Check-in Successful",
     "rewards": [
       {
-        "name": "Talosian Credit Notes|T-Creds",
-        "count": 3000,
-        "icon": "https://static.skport.com/asset/endfield_attendance/2a58a0e85f39092433842ccd62324785.png"
+        "name": "Oroberyl",
+        "count": 80,
+        "icon": "https://static.skport.com/asset/endfield_attendance/8ed434a6cdb173c96ed0572115112f93.png"
+      },
+      {
+        "name": "Advanced Combat Record",
+        "count": 2,
+        "icon": "https://static.skport.com/asset/endfield_attendance/7f6ce8ae13546508255b89a4d8571fe3.png"
       }
     ],
     "attendance": {
-      "totalSignIns": 16,
+      "totalSignIns": 17,
       "calendar": [
         {
           "awardId": "endfield_attendance_1_2",
@@ -1160,13 +1165,13 @@
         },
         {
           "awardId": "endfield_attendance_7_3000",
-          "available": true,
+          "available": false,
           "done": true
         },
         {
           "awardId": "endfield_attendance_3_2",
-          "available": false,
-          "done": false
+          "available": true,
+          "done": true
         },
         {
           "awardId": "endfield_attendance_5_2",
@@ -1242,9 +1247,9 @@
     },
     "error": null,
     "nextAward": {
-      "name": "Advanced Combat Record",
+      "name": "Arms INSP Set",
       "count": 2,
-      "icon": "https://static.skport.com/asset/endfield_attendance/7f6ce8ae13546508255b89a4d8571fe3.png"
+      "icon": "https://static.skport.com/asset/endfield_attendance/90403112f070c14859d107b530ae5851.png"
     }
   },
   "endfield_data": {
@@ -1274,6 +1279,23 @@
           "refineLevel": 0
         }
       },
+      "Rossi": {
+        "avatarSqUrl": "data/images/bb6cca7221225af1ce18c1850d1abb7e.png",
+        "rarity": "6",
+        "potential": 0,
+        "profession": "Guard",
+        "property": "Physical",
+        "weaponType": "Sword",
+        "level": 90,
+        "weapon": {
+          "name": "Lupine Scarlet",
+          "iconUrl": "data/images/dfa304b9de55a75bce9b5719e7cf1d59.png",
+          "rarity": "6",
+          "type": "Sword",
+          "level": 90,
+          "refineLevel": 0
+        }
+      },
       "Pogranichnik": {
         "avatarSqUrl": "data/images/9c14933aa23b96d01658caed5a3b9907.png",
         "rarity": "6",
@@ -1287,6 +1309,40 @@
           "iconUrl": "data/images/21532368a8d1075f3259f51eb226f9b3.png",
           "rarity": "6",
           "type": "Sword",
+          "level": 90,
+          "refineLevel": 0
+        }
+      },
+      "Lifeng": {
+        "avatarSqUrl": "data/images/e1ffee22e9f4a4df2562cbfce21108e1.png",
+        "rarity": "6",
+        "potential": 2,
+        "profession": "Guard",
+        "property": "Physical",
+        "weaponType": "Polearm",
+        "level": 90,
+        "weapon": {
+          "name": "Mountain Bearer",
+          "iconUrl": "data/images/b4827d12232501551485e0c9f671caa8.png",
+          "rarity": "6",
+          "type": "Polearm",
+          "level": 90,
+          "refineLevel": 0
+        }
+      },
+      "Camille": {
+        "avatarSqUrl": "data/images/ebd60d15f1e07b64fb53c59b905d9767.png",
+        "rarity": "6",
+        "potential": 0,
+        "profession": "Vanguard",
+        "property": "Heat",
+        "weaponType": "Polearm",
+        "level": 90,
+        "weapon": {
+          "name": "Blessing of Lustrous Carmine",
+          "iconUrl": "data/images/02ef4bb9403658103f9e0f43ae77c407.png",
+          "rarity": "6",
+          "type": "Polearm",
           "level": 90,
           "refineLevel": 0
         }
@@ -1325,55 +1381,21 @@
           "refineLevel": 0
         }
       },
-      "Rossi": {
-        "avatarSqUrl": "data/images/bb6cca7221225af1ce18c1850d1abb7e.png",
-        "rarity": "6",
-        "potential": 0,
-        "profession": "Guard",
-        "property": "Physical",
-        "weaponType": "Sword",
-        "level": 90,
-        "weapon": {
-          "name": "Lupine Scarlet",
-          "iconUrl": "data/images/dfa304b9de55a75bce9b5719e7cf1d59.png",
-          "rarity": "6",
-          "type": "Sword",
-          "level": 90,
-          "refineLevel": 0
-        }
-      },
-      "Camille": {
-        "avatarSqUrl": "data/images/ebd60d15f1e07b64fb53c59b905d9767.png",
-        "rarity": "6",
-        "potential": 0,
-        "profession": "Vanguard",
+      "Wulfgard": {
+        "avatarSqUrl": "data/images/7ddb3b88ce6f0029e143000cfece7b65.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Caster",
         "property": "Heat",
-        "weaponType": "Polearm",
+        "weaponType": "Handcannon",
         "level": 90,
         "weapon": {
-          "name": "Blessing of Lustrous Carmine",
-          "iconUrl": "data/images/02ef4bb9403658103f9e0f43ae77c407.png",
-          "rarity": "6",
-          "type": "Polearm",
+          "name": "Rational Farewell",
+          "iconUrl": "data/images/cee67efec0389c4a0197291c3550ace7.png",
+          "rarity": "5",
+          "type": "Handcannon",
           "level": 90,
-          "refineLevel": 0
-        }
-      },
-      "Lifeng": {
-        "avatarSqUrl": "data/images/e1ffee22e9f4a4df2562cbfce21108e1.png",
-        "rarity": "6",
-        "potential": 2,
-        "profession": "Guard",
-        "property": "Physical",
-        "weaponType": "Polearm",
-        "level": 90,
-        "weapon": {
-          "name": "Mountain Bearer",
-          "iconUrl": "data/images/b4827d12232501551485e0c9f671caa8.png",
-          "rarity": "6",
-          "type": "Polearm",
-          "level": 90,
-          "refineLevel": 0
+          "refineLevel": 1
         }
       },
       "Chen Qianyu": {
@@ -1391,23 +1413,6 @@
           "type": "Sword",
           "level": 90,
           "refineLevel": 5
-        }
-      },
-      "Wulfgard": {
-        "avatarSqUrl": "data/images/7ddb3b88ce6f0029e143000cfece7b65.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Caster",
-        "property": "Heat",
-        "weaponType": "Handcannon",
-        "level": 90,
-        "weapon": {
-          "name": "Rational Farewell",
-          "iconUrl": "data/images/cee67efec0389c4a0197291c3550ace7.png",
-          "rarity": "5",
-          "type": "Handcannon",
-          "level": 90,
-          "refineLevel": 1
         }
       },
       "Endministrator": {
@@ -1546,23 +1551,6 @@
           "refineLevel": 0
         }
       },
-      "Arclight": {
-        "avatarSqUrl": "data/images/068394e39831e767a19d447579a97b1d.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Vanguard",
-        "property": "Electric",
-        "weaponType": "Sword",
-        "level": 1,
-        "weapon": {
-          "name": "Tarr 11",
-          "iconUrl": "data/images/397d215b08df02e77309f693971a25bf.png",
-          "rarity": "3",
-          "type": "Sword",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
       "Da Pan": {
         "avatarSqUrl": "data/images/56ead5c066fd0657518c009d12d67d75.png",
         "rarity": "5",
@@ -1580,23 +1568,6 @@
           "refineLevel": 3
         }
       },
-      "Snowshine": {
-        "avatarSqUrl": "data/images/b6dca12b51b4bd83b33e5fdce281a024.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Defender",
-        "property": "Cryo",
-        "weaponType": "Greatsword",
-        "level": 1,
-        "weapon": {
-          "name": "Darhoff 7",
-          "iconUrl": "data/images/405aa716336d0d399cde63f38096301e.png",
-          "rarity": "3",
-          "type": "Greatsword",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
       "Avywenna": {
         "avatarSqUrl": "data/images/ad690ee34b0fe54fc21e82f04489894f.png",
         "rarity": "5",
@@ -1610,6 +1581,40 @@
           "iconUrl": "data/images/84a37c54af2051047d3da560fb9b98f9.png",
           "rarity": "3",
           "type": "Polearm",
+          "level": 1,
+          "refineLevel": 0
+        }
+      },
+      "Arclight": {
+        "avatarSqUrl": "data/images/068394e39831e767a19d447579a97b1d.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Vanguard",
+        "property": "Electric",
+        "weaponType": "Sword",
+        "level": 1,
+        "weapon": {
+          "name": "Tarr 11",
+          "iconUrl": "data/images/397d215b08df02e77309f693971a25bf.png",
+          "rarity": "3",
+          "type": "Sword",
+          "level": 1,
+          "refineLevel": 0
+        }
+      },
+      "Snowshine": {
+        "avatarSqUrl": "data/images/b6dca12b51b4bd83b33e5fdce281a024.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Defender",
+        "property": "Cryo",
+        "weaponType": "Greatsword",
+        "level": 1,
+        "weapon": {
+          "name": "Darhoff 7",
+          "iconUrl": "data/images/405aa716336d0d399cde63f38096301e.png",
+          "rarity": "3",
+          "type": "Greatsword",
           "level": 1,
           "refineLevel": 0
         }
@@ -1649,8 +1654,8 @@
         }
       }
     },
-    "stamina": "176",
-    "daily_mission": 0,
+    "stamina": "360",
+    "daily_mission": 40,
     "last_updated": "2026-07-13T14:53:19.555757-04:00"
   }
 }
