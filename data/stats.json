@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-07-16T14:37:08.754028-04:00",
+  "last_updated": "2026-07-17T14:31:08.207912-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
     "avatar_url": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_ua5ece/9f24a56bd4461ea276e9f0de27ae90ad.png",
-    "achievements": 1732,
-    "active_days": 962,
+    "achievements": 1733,
+    "active_days": 963,
     "avatar_count": 56,
     "chest_count": 1961,
     "five_star_characters": {
@@ -16,9 +16,9 @@
         "path": "REMEMBRANCE",
         "level": 80,
         "lc": {
-          "name": "Memory's Curtain Never Falls",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_ua5ece/f075160beec439d079af2bde80abd085.png",
-          "rarity": 5,
+          "name": "Fly Into a Pink Tomorrow",
+          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_ua5ece/f318d5749756a12debc2774bd2b05b5f.png",
+          "rarity": 4,
           "level": 80,
           "superimposition": 5
         }
@@ -142,11 +142,11 @@
         "path": "REMEMBRANCE",
         "level": 80,
         "lc": {
-          "name": "Time Woven Into Gold",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_ua5ece/1dfc78fef2e59fc2ffd54b410fd7816e.png",
+          "name": "Memory's Curtain Never Falls",
+          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_ua5ece/f075160beec439d079af2bde80abd085.png",
           "rarity": 5,
           "level": 80,
-          "superimposition": 1
+          "superimposition": 5
         }
       },
       "The Herta": {
@@ -462,7 +462,7 @@
         "lc": null
       }
     },
-    "stamina": 72,
+    "stamina": 21,
     "current_train_score": 500,
     "anomaly_arbitration": {
       "season": "Enwreathed by the World",
@@ -500,9 +500,9 @@
         {
           "characters": [
             {
-              "id": 1507,
+              "id": 1406,
               "level": 80,
-              "eidolon": 2
+              "eidolon": 1
             },
             {
               "id": 1313,
@@ -510,9 +510,9 @@
               "eidolon": 2
             },
             {
-              "id": 1406,
+              "id": 1507,
               "level": 80,
-              "eidolon": 1
+              "eidolon": 2
             },
             {
               "id": 1217,
@@ -1062,12 +1062,12 @@
     "daily_task": 0
   },
   "hsr_diary": {
-    "Date": "2026-07-16",
-    "Net Currency Gain": 195,
+    "Date": "2026-07-17",
+    "Net Currency Gain": 155,
     "Pulls Net Gain": 0
   },
   "genshin_diary": {
-    "Date": "2026-07-16",
+    "Date": "2026-07-17",
     "Net Currency Gain": 0,
     "Pulls Net Gain": 0
   },
@@ -1075,18 +1075,18 @@
     "status": "Check-in Successful",
     "rewards": [
       {
-        "name": "Oroberyl",
-        "count": 80,
-        "icon": "https://static.skport.com/asset/endfield_attendance/8ed434a6cdb173c96ed0572115112f93.png"
+        "name": "Protoprism",
+        "count": 10,
+        "icon": "https://static.skport.com/asset/endfield_attendance/0c1e8cf15711a7d59aa7d8786b533cf1.png"
       },
       {
-        "name": "Advanced Combat Record",
+        "name": "Arms INSP Set",
         "count": 2,
-        "icon": "https://static.skport.com/asset/endfield_attendance/7f6ce8ae13546508255b89a4d8571fe3.png"
+        "icon": "https://static.skport.com/asset/endfield_attendance/90403112f070c14859d107b530ae5851.png"
       }
     ],
     "attendance": {
-      "totalSignIns": 17,
+      "totalSignIns": 18,
       "calendar": [
         {
           "awardId": "endfield_attendance_1_2",
@@ -1170,13 +1170,13 @@
         },
         {
           "awardId": "endfield_attendance_3_2",
-          "available": true,
+          "available": false,
           "done": true
         },
         {
           "awardId": "endfield_attendance_5_2",
-          "available": false,
-          "done": false
+          "available": true,
+          "done": true
         },
         {
           "awardId": "endfield_attendance_2_5",
@@ -1247,9 +1247,9 @@
     },
     "error": null,
     "nextAward": {
-      "name": "Arms INSP Set",
-      "count": 2,
-      "icon": "https://static.skport.com/asset/endfield_attendance/90403112f070c14859d107b530ae5851.png"
+      "name": "Elementary Cognitive Carrier",
+      "count": 5,
+      "icon": "https://static.skport.com/asset/endfield_attendance/ed34d5a121dbc81da6f6991792ff97f6.png"
     }
   },
   "endfield_data": {
@@ -1257,28 +1257,11 @@
     "level": 60,
     "avatar_url": "data/images/6beb98f8c8e7a81d37071bc3593b6321.png",
     "achievements": 103,
-    "active_days": 38,
-    "avatar_count": 23,
+    "active_days": 39,
+    "avatar_count": 24,
     "aurylenes": 321,
     "chest_count": 691,
     "six_star_characters": {
-      "Ardelia": {
-        "avatarSqUrl": "data/images/8acdcdaa6c69979a9b01f77281465a0a.png",
-        "rarity": "6",
-        "potential": 1,
-        "profession": "Supporter",
-        "property": "Nature",
-        "weaponType": "Arts Unit",
-        "level": 90,
-        "weapon": {
-          "name": "Dreams of the Starry Beach",
-          "iconUrl": "data/images/fe34d89d2e92df4d993a4fc881b3d6d8.png",
-          "rarity": "6",
-          "type": "Arts Unit",
-          "level": 83,
-          "refineLevel": 0
-        }
-      },
       "Rossi": {
         "avatarSqUrl": "data/images/bb6cca7221225af1ce18c1850d1abb7e.png",
         "rarity": "6",
@@ -1296,17 +1279,17 @@
           "refineLevel": 0
         }
       },
-      "Pogranichnik": {
-        "avatarSqUrl": "data/images/9c14933aa23b96d01658caed5a3b9907.png",
+      "Laevatain": {
+        "avatarSqUrl": "data/images/15a984eaecaf0d7c47d871175ae38937.png",
         "rarity": "6",
-        "potential": 1,
-        "profession": "Vanguard",
-        "property": "Physical",
+        "potential": 0,
+        "profession": "Striker",
+        "property": "Heat",
         "weaponType": "Sword",
         "level": 90,
         "weapon": {
-          "name": "Never Rest",
-          "iconUrl": "data/images/21532368a8d1075f3259f51eb226f9b3.png",
+          "name": "Umbral Torch",
+          "iconUrl": "data/images/f67ca28a6489e356f928c9c9ef1b61eb.png",
           "rarity": "6",
           "type": "Sword",
           "level": 90,
@@ -1330,20 +1313,20 @@
           "refineLevel": 0
         }
       },
-      "Camille": {
-        "avatarSqUrl": "data/images/ebd60d15f1e07b64fb53c59b905d9767.png",
+      "Ardelia": {
+        "avatarSqUrl": "data/images/8acdcdaa6c69979a9b01f77281465a0a.png",
         "rarity": "6",
-        "potential": 0,
-        "profession": "Vanguard",
-        "property": "Heat",
-        "weaponType": "Polearm",
+        "potential": 1,
+        "profession": "Supporter",
+        "property": "Nature",
+        "weaponType": "Arts Unit",
         "level": 90,
         "weapon": {
-          "name": "Blessing of Lustrous Carmine",
-          "iconUrl": "data/images/02ef4bb9403658103f9e0f43ae77c407.png",
+          "name": "Dreams of the Starry Beach",
+          "iconUrl": "data/images/fe34d89d2e92df4d993a4fc881b3d6d8.png",
           "rarity": "6",
-          "type": "Polearm",
-          "level": 90,
+          "type": "Arts Unit",
+          "level": 83,
           "refineLevel": 0
         }
       },
@@ -1364,19 +1347,36 @@
           "refineLevel": 0
         }
       },
-      "Laevatain": {
-        "avatarSqUrl": "data/images/15a984eaecaf0d7c47d871175ae38937.png",
+      "Pogranichnik": {
+        "avatarSqUrl": "data/images/9c14933aa23b96d01658caed5a3b9907.png",
         "rarity": "6",
-        "potential": 0,
-        "profession": "Striker",
-        "property": "Heat",
+        "potential": 2,
+        "profession": "Vanguard",
+        "property": "Physical",
         "weaponType": "Sword",
         "level": 90,
         "weapon": {
-          "name": "Umbral Torch",
-          "iconUrl": "data/images/f67ca28a6489e356f928c9c9ef1b61eb.png",
+          "name": "Never Rest",
+          "iconUrl": "data/images/21532368a8d1075f3259f51eb226f9b3.png",
           "rarity": "6",
           "type": "Sword",
+          "level": 90,
+          "refineLevel": 0
+        }
+      },
+      "Camille": {
+        "avatarSqUrl": "data/images/ebd60d15f1e07b64fb53c59b905d9767.png",
+        "rarity": "6",
+        "potential": 0,
+        "profession": "Vanguard",
+        "property": "Heat",
+        "weaponType": "Polearm",
+        "level": 90,
+        "weapon": {
+          "name": "Blessing of Lustrous Carmine",
+          "iconUrl": "data/images/02ef4bb9403658103f9e0f43ae77c407.png",
+          "rarity": "6",
+          "type": "Polearm",
           "level": 90,
           "refineLevel": 0
         }
@@ -1479,6 +1479,23 @@
           "iconUrl": "data/images/1eb9f2fd6e269da49a919242dfd998cf.png",
           "rarity": "5",
           "type": "Polearm",
+          "level": 80,
+          "refineLevel": 0
+        }
+      },
+      "Arcane": {
+        "avatarSqUrl": "data/images/214ab1caf883e6ca4645b518eacd7231.png",
+        "rarity": "6",
+        "potential": 0,
+        "profession": "Caster",
+        "property": "Nature",
+        "weaponType": "Arts Unit",
+        "level": 80,
+        "weapon": {
+          "name": "Type 42: Solemn Phalanx",
+          "iconUrl": "data/images/a13f27526ecf141f2d572796f87169a7.png",
+          "rarity": "6",
+          "type": "Arts Unit",
           "level": 80,
           "refineLevel": 0
         }
@@ -1654,8 +1671,8 @@
         }
       }
     },
-    "stamina": "360",
-    "daily_mission": 40,
-    "last_updated": "2026-07-13T14:53:19.555757-04:00"
+    "stamina": "62",
+    "daily_mission": 100,
+    "last_updated": "2026-07-17T14:31:08.207202-04:00"
   }
 }
