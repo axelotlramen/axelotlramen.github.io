@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-07-22T14:38:03.915226-04:00",
+  "last_updated": "2026-07-23T14:42:16.696286-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
     "avatar_url": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_ua5ece/9f24a56bd4461ea276e9f0de27ae90ad.png",
     "achievements": 1733,
-    "active_days": 968,
+    "active_days": 969,
     "avatar_count": 56,
     "chest_count": 1961,
     "five_star_characters": {
@@ -462,7 +462,7 @@
         "lc": null
       }
     },
-    "stamina": 72,
+    "stamina": 63,
     "current_train_score": 500,
     "anomaly_arbitration": {
       "season": "Enwreathed by the World",
@@ -1062,12 +1062,12 @@
     "daily_task": 0
   },
   "hsr_diary": {
-    "Date": "2026-07-22",
+    "Date": "2026-07-23",
     "Net Currency Gain": 150,
     "Pulls Net Gain": 0
   },
   "genshin_diary": {
-    "Date": "2026-07-22",
+    "Date": "2026-07-23",
     "Net Currency Gain": 0,
     "Pulls Net Gain": 0
   },
@@ -1075,18 +1075,13 @@
     "status": "Check-in Successful",
     "rewards": [
       {
-        "name": "Oroberyl",
-        "count": 100,
-        "icon": "https://static.skport.com/asset/endfield_attendance/8ed434a6cdb173c96ed0572115112f93.png"
-      },
-      {
-        "name": "Arms INSP Set",
-        "count": 3,
-        "icon": "https://static.skport.com/asset/endfield_attendance/90403112f070c14859d107b530ae5851.png"
+        "name": "Talosian Credit Notes|T-Creds",
+        "count": 3000,
+        "icon": "https://static.skport.com/asset/endfield_attendance/2a58a0e85f39092433842ccd62324785.png"
       }
     ],
     "attendance": {
-      "totalSignIns": 23,
+      "totalSignIns": 24,
       "calendar": [
         {
           "awardId": "endfield_attendance_1_2",
@@ -1200,13 +1195,13 @@
         },
         {
           "awardId": "endfield_attendance_5_3",
-          "available": true,
+          "available": false,
           "done": true
         },
         {
           "awardId": "endfield_attendance_7_3000",
-          "available": false,
-          "done": false
+          "available": true,
+          "done": true
         },
         {
           "awardId": "endfield_attendance_1_5",
@@ -1247,9 +1242,9 @@
     },
     "error": null,
     "nextAward": {
-      "name": "Talosian Credit Notes|T-Creds",
-      "count": 3000,
-      "icon": "https://static.skport.com/asset/endfield_attendance/2a58a0e85f39092433842ccd62324785.png"
+      "name": "Intermediate Combat Record",
+      "count": 5,
+      "icon": "https://static.skport.com/asset/endfield_attendance/921A397E2765462C009B939E0CD92606.png"
     }
   },
   "endfield_data": {
@@ -1262,23 +1257,6 @@
     "aurylenes": 365,
     "chest_count": 802,
     "six_star_characters": {
-      "Pogranichnik": {
-        "avatarSqUrl": "data/images/9c14933aa23b96d01658caed5a3b9907.png",
-        "rarity": "6",
-        "potential": 2,
-        "profession": "Vanguard",
-        "property": "Physical",
-        "weaponType": "Sword",
-        "level": 90,
-        "weapon": {
-          "name": "Never Rest",
-          "iconUrl": "data/images/21532368a8d1075f3259f51eb226f9b3.png",
-          "rarity": "6",
-          "type": "Sword",
-          "level": 90,
-          "refineLevel": 0
-        }
-      },
       "Camille": {
         "avatarSqUrl": "data/images/ebd60d15f1e07b64fb53c59b905d9767.png",
         "rarity": "6",
@@ -1292,6 +1270,23 @@
           "iconUrl": "data/images/02ef4bb9403658103f9e0f43ae77c407.png",
           "rarity": "6",
           "type": "Polearm",
+          "level": 90,
+          "refineLevel": 0
+        }
+      },
+      "Pogranichnik": {
+        "avatarSqUrl": "data/images/9c14933aa23b96d01658caed5a3b9907.png",
+        "rarity": "6",
+        "potential": 2,
+        "profession": "Vanguard",
+        "property": "Physical",
+        "weaponType": "Sword",
+        "level": 90,
+        "weapon": {
+          "name": "Never Rest",
+          "iconUrl": "data/images/21532368a8d1075f3259f51eb226f9b3.png",
+          "rarity": "6",
+          "type": "Sword",
           "level": 90,
           "refineLevel": 0
         }
@@ -1313,53 +1308,19 @@
           "refineLevel": 0
         }
       },
-      "Arcane": {
-        "avatarSqUrl": "data/images/214ab1caf883e6ca4645b518eacd7231.png",
+      "Lifeng": {
+        "avatarSqUrl": "data/images/e1ffee22e9f4a4df2562cbfce21108e1.png",
         "rarity": "6",
-        "potential": 0,
-        "profession": "Caster",
-        "property": "Nature",
-        "weaponType": "Arts Unit",
-        "level": 90,
-        "weapon": {
-          "name": "Type 42: Solemn Phalanx",
-          "iconUrl": "data/images/a13f27526ecf141f2d572796f87169a7.png",
-          "rarity": "6",
-          "type": "Arts Unit",
-          "level": 90,
-          "refineLevel": 0
-        }
-      },
-      "Tangtang": {
-        "avatarSqUrl": "data/images/ee017b6ab7f20b54c0effcf522518d2b.png",
-        "rarity": "6",
-        "potential": 1,
-        "profession": "Caster",
-        "property": "Cryo",
-        "weaponType": "Handcannon",
-        "level": 90,
-        "weapon": {
-          "name": "Brigand's Calling",
-          "iconUrl": "data/images/675ec992ee25214d0af5cdb60ccd893a.png",
-          "rarity": "6",
-          "type": "Handcannon",
-          "level": 90,
-          "refineLevel": 0
-        }
-      },
-      "Rossi": {
-        "avatarSqUrl": "data/images/bb6cca7221225af1ce18c1850d1abb7e.png",
-        "rarity": "6",
-        "potential": 0,
+        "potential": 3,
         "profession": "Guard",
         "property": "Physical",
-        "weaponType": "Sword",
+        "weaponType": "Polearm",
         "level": 90,
         "weapon": {
-          "name": "Lupine Scarlet",
-          "iconUrl": "data/images/dfa304b9de55a75bce9b5719e7cf1d59.png",
+          "name": "Mountain Bearer",
+          "iconUrl": "data/images/b4827d12232501551485e0c9f671caa8.png",
           "rarity": "6",
-          "type": "Sword",
+          "type": "Polearm",
           "level": 90,
           "refineLevel": 0
         }
@@ -1381,19 +1342,53 @@
           "refineLevel": 0
         }
       },
-      "Lifeng": {
-        "avatarSqUrl": "data/images/e1ffee22e9f4a4df2562cbfce21108e1.png",
+      "Arcane": {
+        "avatarSqUrl": "data/images/214ab1caf883e6ca4645b518eacd7231.png",
         "rarity": "6",
-        "potential": 3,
-        "profession": "Guard",
-        "property": "Physical",
-        "weaponType": "Polearm",
+        "potential": 0,
+        "profession": "Caster",
+        "property": "Nature",
+        "weaponType": "Arts Unit",
         "level": 90,
         "weapon": {
-          "name": "Mountain Bearer",
-          "iconUrl": "data/images/b4827d12232501551485e0c9f671caa8.png",
+          "name": "Type 42: Solemn Phalanx",
+          "iconUrl": "data/images/a13f27526ecf141f2d572796f87169a7.png",
           "rarity": "6",
-          "type": "Polearm",
+          "type": "Arts Unit",
+          "level": 90,
+          "refineLevel": 0
+        }
+      },
+      "Rossi": {
+        "avatarSqUrl": "data/images/bb6cca7221225af1ce18c1850d1abb7e.png",
+        "rarity": "6",
+        "potential": 0,
+        "profession": "Guard",
+        "property": "Physical",
+        "weaponType": "Sword",
+        "level": 90,
+        "weapon": {
+          "name": "Lupine Scarlet",
+          "iconUrl": "data/images/dfa304b9de55a75bce9b5719e7cf1d59.png",
+          "rarity": "6",
+          "type": "Sword",
+          "level": 90,
+          "refineLevel": 0
+        }
+      },
+      "Tangtang": {
+        "avatarSqUrl": "data/images/ee017b6ab7f20b54c0effcf522518d2b.png",
+        "rarity": "6",
+        "potential": 1,
+        "profession": "Caster",
+        "property": "Cryo",
+        "weaponType": "Handcannon",
+        "level": 90,
+        "weapon": {
+          "name": "Brigand's Calling",
+          "iconUrl": "data/images/675ec992ee25214d0af5cdb60ccd893a.png",
+          "rarity": "6",
+          "type": "Handcannon",
           "level": 90,
           "refineLevel": 0
         }
@@ -1500,23 +1495,6 @@
           "refineLevel": 0
         }
       },
-      "Xaihi": {
-        "avatarSqUrl": "data/images/b57fb03447e70561cd497b60af8b69e3.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Supporter",
-        "property": "Cryo",
-        "weaponType": "Arts Unit",
-        "level": 80,
-        "weapon": {
-          "name": "Stanza of Memorials",
-          "iconUrl": "data/images/bfbda14b0634b1ef9df15040f2e12640.png",
-          "rarity": "5",
-          "type": "Arts Unit",
-          "level": 80,
-          "refineLevel": 2
-        }
-      },
       "Perlica": {
         "avatarSqUrl": "data/images/c7d4eaff6c2336b0e9d217e32d208e28.png",
         "rarity": "5",
@@ -1532,6 +1510,23 @@
           "type": "Arts Unit",
           "level": 80,
           "refineLevel": 0
+        }
+      },
+      "Xaihi": {
+        "avatarSqUrl": "data/images/b57fb03447e70561cd497b60af8b69e3.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Supporter",
+        "property": "Cryo",
+        "weaponType": "Arts Unit",
+        "level": 80,
+        "weapon": {
+          "name": "Stanza of Memorials",
+          "iconUrl": "data/images/bfbda14b0634b1ef9df15040f2e12640.png",
+          "rarity": "5",
+          "type": "Arts Unit",
+          "level": 80,
+          "refineLevel": 2
         }
       },
       "Alesh": {
@@ -1585,23 +1580,6 @@
           "refineLevel": 0
         }
       },
-      "Snowshine": {
-        "avatarSqUrl": "data/images/b6dca12b51b4bd83b33e5fdce281a024.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Defender",
-        "property": "Cryo",
-        "weaponType": "Greatsword",
-        "level": 1,
-        "weapon": {
-          "name": "Darhoff 7",
-          "iconUrl": "data/images/405aa716336d0d399cde63f38096301e.png",
-          "rarity": "3",
-          "type": "Greatsword",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
       "Da Pan": {
         "avatarSqUrl": "data/images/56ead5c066fd0657518c009d12d67d75.png",
         "rarity": "5",
@@ -1632,6 +1610,23 @@
           "iconUrl": "data/images/397d215b08df02e77309f693971a25bf.png",
           "rarity": "3",
           "type": "Sword",
+          "level": 1,
+          "refineLevel": 0
+        }
+      },
+      "Snowshine": {
+        "avatarSqUrl": "data/images/b6dca12b51b4bd83b33e5fdce281a024.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Defender",
+        "property": "Cryo",
+        "weaponType": "Greatsword",
+        "level": 1,
+        "weapon": {
+          "name": "Darhoff 7",
+          "iconUrl": "data/images/405aa716336d0d399cde63f38096301e.png",
+          "rarity": "3",
+          "type": "Greatsword",
           "level": 1,
           "refineLevel": 0
         }
@@ -1671,8 +1666,8 @@
         }
       }
     },
-    "stamina": "57",
-    "daily_mission": 100,
+    "stamina": "258",
+    "daily_mission": 40,
     "last_updated": "2026-07-22T14:38:03.914937-04:00"
   }
 }
