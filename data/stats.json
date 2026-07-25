@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-07-24T14:52:51.430657-04:00",
+  "last_updated": "2026-07-25T14:12:50.484096-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
     "avatar_url": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u47dee/63bad4d8cc536ef482b88b8aa3d8f867.png",
-    "achievements": 1733,
-    "active_days": 970,
+    "achievements": 1746,
+    "active_days": 971,
     "avatar_count": 58,
     "chest_count": 1961,
     "five_star_characters": {
@@ -484,15 +484,20 @@
         "lc": null
       }
     },
-    "stamina": 85,
+    "stamina": 78,
     "current_train_score": 500,
     "anomaly_arbitration": {
       "season": "Enwreathed by the World",
       "boss_stars": 3,
-      "mini_boss_stars": 7,
-      "cycles_used": 6,
+      "mini_boss_stars": 9,
+      "cycles_used": 5,
       "boss_record": {
         "characters": [
+          {
+            "id": 1509,
+            "level": 80,
+            "eidolon": 1
+          },
           {
             "id": 1504,
             "level": 80,
@@ -507,11 +512,6 @@
             "id": 1414,
             "level": 80,
             "eidolon": 2
-          },
-          {
-            "id": 1313,
-            "level": 80,
-            "eidolon": 2
           }
         ],
         "cycles_used": 0,
@@ -522,14 +522,14 @@
         {
           "characters": [
             {
-              "id": 1406,
+              "id": 1014,
               "level": 80,
-              "eidolon": 1
+              "eidolon": 0
             },
             {
-              "id": 1313,
+              "id": 1509,
               "level": 80,
-              "eidolon": 2
+              "eidolon": 0
             },
             {
               "id": 1507,
@@ -542,7 +542,7 @@
               "eidolon": 0
             }
           ],
-          "cycles_used": 1,
+          "cycles_used": 2,
           "stars": 3
         },
         {
@@ -558,9 +558,9 @@
               "eidolon": 0
             },
             {
-              "id": 8007,
+              "id": 1508,
               "level": 80,
-              "eidolon": 6
+              "eidolon": 0
             },
             {
               "id": 1414,
@@ -568,8 +568,8 @@
               "eidolon": 2
             }
           ],
-          "cycles_used": 5,
-          "stars": 1
+          "cycles_used": 2,
+          "stars": 3
         },
         {
           "characters": [
@@ -594,7 +594,7 @@
               "eidolon": 1
             }
           ],
-          "cycles_used": 0,
+          "cycles_used": 1,
           "stars": 3
         }
       ]
@@ -1084,12 +1084,12 @@
     "daily_task": 0
   },
   "hsr_diary": {
-    "Date": "2026-07-24",
-    "Net Currency Gain": 150,
+    "Date": "2026-07-25",
+    "Net Currency Gain": 445,
     "Pulls Net Gain": 0
   },
   "genshin_diary": {
-    "Date": "2026-07-24",
+    "Date": "2026-07-25",
     "Net Currency Gain": 0,
     "Pulls Net Gain": 0
   },
@@ -1097,13 +1097,13 @@
     "status": "Check-in Successful",
     "rewards": [
       {
-        "name": "Intermediate Combat Record",
+        "name": "Arms INSP Kit",
         "count": 5,
-        "icon": "https://static.skport.com/asset/endfield_attendance/921A397E2765462C009B939E0CD92606.png"
+        "icon": "https://static.skport.com/asset/endfield_attendance/0dea0bc0fd87138df322e8a254a6999f.png"
       }
     ],
     "attendance": {
-      "totalSignIns": 25,
+      "totalSignIns": 26,
       "calendar": [
         {
           "awardId": "endfield_attendance_1_2",
@@ -1227,13 +1227,13 @@
         },
         {
           "awardId": "endfield_attendance_1_5",
-          "available": true,
+          "available": false,
           "done": true
         },
         {
           "awardId": "endfield_attendance_4_5",
-          "available": false,
-          "done": false
+          "available": true,
+          "done": true
         },
         {
           "awardId": "endfield_attendance_3_5",
@@ -1264,9 +1264,9 @@
     },
     "error": null,
     "nextAward": {
-      "name": "Arms INSP Kit",
+      "name": "Advanced Combat Record",
       "count": 5,
-      "icon": "https://static.skport.com/asset/endfield_attendance/0dea0bc0fd87138df322e8a254a6999f.png"
+      "icon": "https://static.skport.com/asset/endfield_attendance/7f6ce8ae13546508255b89a4d8571fe3.png"
     }
   },
   "endfield_data": {
@@ -1688,7 +1688,7 @@
         }
       }
     },
-    "stamina": "180",
+    "stamina": "360",
     "daily_mission": 0,
     "last_updated": "2026-07-22T14:38:03.914937-04:00"
   }
