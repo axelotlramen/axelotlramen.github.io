@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-07-25T14:12:50.484096-04:00",
+  "last_updated": "2026-07-26T14:29:32.073421-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
     "avatar_url": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u47dee/63bad4d8cc536ef482b88b8aa3d8f867.png",
     "achievements": 1746,
-    "active_days": 971,
+    "active_days": 972,
     "avatar_count": 58,
     "chest_count": 1961,
     "five_star_characters": {
@@ -16,9 +16,9 @@
         "path": "REMEMBRANCE",
         "level": 80,
         "lc": {
-          "name": "Fly Into a Pink Tomorrow",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u47dee/0e11ad9b91bd2fe78279045b977fac8a.png",
-          "rarity": 4,
+          "name": "Memory's Curtain Never Falls",
+          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u47dee/28e500e8fde563e647c982c7261b441b.png",
+          "rarity": 5,
           "level": 80,
           "superimposition": 5
         }
@@ -164,9 +164,9 @@
         "path": "REMEMBRANCE",
         "level": 80,
         "lc": {
-          "name": "Memory's Curtain Never Falls",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u47dee/28e500e8fde563e647c982c7261b441b.png",
-          "rarity": 5,
+          "name": "Fly Into a Pink Tomorrow",
+          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u47dee/0e11ad9b91bd2fe78279045b977fac8a.png",
+          "rarity": 4,
           "level": 80,
           "superimposition": 5
         }
@@ -276,11 +276,11 @@
         "path": "HARMONY",
         "level": 80,
         "lc": {
-          "name": "But the Battle Isn't Over",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u47dee/c660114d4dfe12dfa38769bd383ba777.png",
-          "rarity": 5,
+          "name": "Dance! Dance! Dance!",
+          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u47dee/84f9e77b0947ba47c577ed3f1e6c046f.png",
+          "rarity": 4,
           "level": 80,
-          "superimposition": 3
+          "superimposition": 2
         }
       },
       "Argenti": {
@@ -359,7 +359,13 @@
         "element": "Quantum",
         "path": "THE HUNT",
         "level": 80,
-        "lc": null
+        "lc": {
+          "name": "Cruising in the Stellar Sea",
+          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u47dee/a0d4a60a422342fe7dce4bed4216fcd5.png",
+          "rarity": 5,
+          "level": 80,
+          "superimposition": 5
+        }
       },
       "Bronya": {
         "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u47dee/6b77de736b153d9d91e13c7edf3a6518.png",
@@ -484,7 +490,7 @@
         "lc": null
       }
     },
-    "stamina": 78,
+    "stamina": 131,
     "current_train_score": 500,
     "anomaly_arbitration": {
       "season": "Enwreathed by the World",
@@ -751,12 +757,12 @@
       "total_stars": 36,
       "floor_data": {
         "floor": "Academy Ghost Story (XII)Starward Mode",
-        "cycles": 6,
+        "cycles": 1,
         "first_half": [
           {
-            "id": 1102,
+            "id": 1015,
             "level": 80,
-            "eidolon": 2
+            "eidolon": 0
           },
           {
             "id": 1306,
@@ -764,12 +770,12 @@
             "eidolon": 0
           },
           {
-            "id": 8007,
+            "id": 1508,
             "level": 80,
-            "eidolon": 6
+            "eidolon": 0
           },
           {
-            "id": 1507,
+            "id": 1414,
             "level": 80,
             "eidolon": 2
           }
@@ -1084,12 +1090,12 @@
     "daily_task": 0
   },
   "hsr_diary": {
-    "Date": "2026-07-25",
-    "Net Currency Gain": 445,
+    "Date": "2026-07-26",
+    "Net Currency Gain": 155,
     "Pulls Net Gain": 0
   },
   "genshin_diary": {
-    "Date": "2026-07-25",
+    "Date": "2026-07-26",
     "Net Currency Gain": 0,
     "Pulls Net Gain": 0
   },
@@ -1097,13 +1103,13 @@
     "status": "Check-in Successful",
     "rewards": [
       {
-        "name": "Arms INSP Kit",
+        "name": "Advanced Combat Record",
         "count": 5,
-        "icon": "https://static.skport.com/asset/endfield_attendance/0dea0bc0fd87138df322e8a254a6999f.png"
+        "icon": "https://static.skport.com/asset/endfield_attendance/7f6ce8ae13546508255b89a4d8571fe3.png"
       }
     ],
     "attendance": {
-      "totalSignIns": 26,
+      "totalSignIns": 27,
       "calendar": [
         {
           "awardId": "endfield_attendance_1_2",
@@ -1232,13 +1238,13 @@
         },
         {
           "awardId": "endfield_attendance_4_5",
-          "available": true,
+          "available": false,
           "done": true
         },
         {
           "awardId": "endfield_attendance_3_5",
-          "available": false,
-          "done": false
+          "available": true,
+          "done": true
         },
         {
           "awardId": "endfield_attendance_5_5",
@@ -1264,9 +1270,9 @@
     },
     "error": null,
     "nextAward": {
-      "name": "Advanced Combat Record",
+      "name": "Arms INSP Set",
       "count": 5,
-      "icon": "https://static.skport.com/asset/endfield_attendance/7f6ce8ae13546508255b89a4d8571fe3.png"
+      "icon": "https://static.skport.com/asset/endfield_attendance/90403112f070c14859d107b530ae5851.png"
     }
   },
   "endfield_data": {
@@ -1279,6 +1285,23 @@
     "aurylenes": 365,
     "chest_count": 802,
     "six_star_characters": {
+      "Arcane": {
+        "avatarSqUrl": "data/images/214ab1caf883e6ca4645b518eacd7231.png",
+        "rarity": "6",
+        "potential": 0,
+        "profession": "Caster",
+        "property": "Nature",
+        "weaponType": "Arts Unit",
+        "level": 90,
+        "weapon": {
+          "name": "Type 42: Solemn Phalanx",
+          "iconUrl": "data/images/a13f27526ecf141f2d572796f87169a7.png",
+          "rarity": "6",
+          "type": "Arts Unit",
+          "level": 90,
+          "refineLevel": 0
+        }
+      },
       "Tangtang": {
         "avatarSqUrl": "data/images/ee017b6ab7f20b54c0effcf522518d2b.png",
         "rarity": "6",
@@ -1307,23 +1330,6 @@
         "weapon": {
           "name": "Umbral Torch",
           "iconUrl": "data/images/f67ca28a6489e356f928c9c9ef1b61eb.png",
-          "rarity": "6",
-          "type": "Sword",
-          "level": 90,
-          "refineLevel": 0
-        }
-      },
-      "Pogranichnik": {
-        "avatarSqUrl": "data/images/9c14933aa23b96d01658caed5a3b9907.png",
-        "rarity": "6",
-        "potential": 2,
-        "profession": "Vanguard",
-        "property": "Physical",
-        "weaponType": "Sword",
-        "level": 90,
-        "weapon": {
-          "name": "Never Rest",
-          "iconUrl": "data/images/21532368a8d1075f3259f51eb226f9b3.png",
           "rarity": "6",
           "type": "Sword",
           "level": 90,
@@ -1398,19 +1404,19 @@
           "refineLevel": 0
         }
       },
-      "Arcane": {
-        "avatarSqUrl": "data/images/214ab1caf883e6ca4645b518eacd7231.png",
+      "Pogranichnik": {
+        "avatarSqUrl": "data/images/9c14933aa23b96d01658caed5a3b9907.png",
         "rarity": "6",
-        "potential": 0,
-        "profession": "Caster",
-        "property": "Nature",
-        "weaponType": "Arts Unit",
+        "potential": 2,
+        "profession": "Vanguard",
+        "property": "Physical",
+        "weaponType": "Sword",
         "level": 90,
         "weapon": {
-          "name": "Type 42: Solemn Phalanx",
-          "iconUrl": "data/images/a13f27526ecf141f2d572796f87169a7.png",
+          "name": "Never Rest",
+          "iconUrl": "data/images/21532368a8d1075f3259f51eb226f9b3.png",
           "rarity": "6",
-          "type": "Arts Unit",
+          "type": "Sword",
           "level": 90,
           "refineLevel": 0
         }
@@ -1517,23 +1523,6 @@
           "refineLevel": 0
         }
       },
-      "Perlica": {
-        "avatarSqUrl": "data/images/c7d4eaff6c2336b0e9d217e32d208e28.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Caster",
-        "property": "Electric",
-        "weaponType": "Arts Unit",
-        "level": 80,
-        "weapon": {
-          "name": "Detonation Unit",
-          "iconUrl": "data/images/27335fd9a9e8c41c3cc063fbf8481f9b.png",
-          "rarity": "6",
-          "type": "Arts Unit",
-          "level": 80,
-          "refineLevel": 0
-        }
-      },
       "Xaihi": {
         "avatarSqUrl": "data/images/b57fb03447e70561cd497b60af8b69e3.png",
         "rarity": "5",
@@ -1549,6 +1538,23 @@
           "type": "Arts Unit",
           "level": 80,
           "refineLevel": 2
+        }
+      },
+      "Perlica": {
+        "avatarSqUrl": "data/images/c7d4eaff6c2336b0e9d217e32d208e28.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Caster",
+        "property": "Electric",
+        "weaponType": "Arts Unit",
+        "level": 80,
+        "weapon": {
+          "name": "Detonation Unit",
+          "iconUrl": "data/images/27335fd9a9e8c41c3cc063fbf8481f9b.png",
+          "rarity": "6",
+          "type": "Arts Unit",
+          "level": 80,
+          "refineLevel": 0
         }
       },
       "Alesh": {
@@ -1602,6 +1608,23 @@
           "refineLevel": 0
         }
       },
+      "Snowshine": {
+        "avatarSqUrl": "data/images/b6dca12b51b4bd83b33e5fdce281a024.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Defender",
+        "property": "Cryo",
+        "weaponType": "Greatsword",
+        "level": 1,
+        "weapon": {
+          "name": "Darhoff 7",
+          "iconUrl": "data/images/405aa716336d0d399cde63f38096301e.png",
+          "rarity": "3",
+          "type": "Greatsword",
+          "level": 1,
+          "refineLevel": 0
+        }
+      },
       "Avywenna": {
         "avatarSqUrl": "data/images/ad690ee34b0fe54fc21e82f04489894f.png",
         "rarity": "5",
@@ -1636,19 +1659,19 @@
           "refineLevel": 3
         }
       },
-      "Snowshine": {
-        "avatarSqUrl": "data/images/b6dca12b51b4bd83b33e5fdce281a024.png",
-        "rarity": "5",
+      "Fluorite": {
+        "avatarSqUrl": "data/images/e50b9cf1b565dc2d31d4b6a2659ada39.png",
+        "rarity": "4",
         "potential": 5,
-        "profession": "Defender",
-        "property": "Cryo",
-        "weaponType": "Greatsword",
+        "profession": "Caster",
+        "property": "Nature",
+        "weaponType": "Handcannon",
         "level": 1,
         "weapon": {
-          "name": "Darhoff 7",
-          "iconUrl": "data/images/405aa716336d0d399cde63f38096301e.png",
+          "name": "Peco 5",
+          "iconUrl": "data/images/a774ee68210d6c5c2091e8249b093ba0.png",
           "rarity": "3",
-          "type": "Greatsword",
+          "type": "Handcannon",
           "level": 1,
           "refineLevel": 0
         }
@@ -1666,23 +1689,6 @@
           "iconUrl": "data/images/74de5c6676451d5c7126ba84f87b0718.png",
           "rarity": "3",
           "type": "Arts Unit",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
-      "Fluorite": {
-        "avatarSqUrl": "data/images/e50b9cf1b565dc2d31d4b6a2659ada39.png",
-        "rarity": "4",
-        "potential": 5,
-        "profession": "Caster",
-        "property": "Nature",
-        "weaponType": "Handcannon",
-        "level": 1,
-        "weapon": {
-          "name": "Peco 5",
-          "iconUrl": "data/images/a774ee68210d6c5c2091e8249b093ba0.png",
-          "rarity": "3",
-          "type": "Handcannon",
           "level": 1,
           "refineLevel": 0
         }
