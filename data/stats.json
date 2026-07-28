@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-07-27T14:52:36.800326-04:00",
+  "last_updated": "2026-07-28T14:51:57.476610-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
     "avatar_url": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u47dee/63bad4d8cc536ef482b88b8aa3d8f867.png",
-    "achievements": 1746,
-    "active_days": 973,
+    "achievements": 1747,
+    "active_days": 974,
     "avatar_count": 58,
     "chest_count": 1961,
     "five_star_characters": {
@@ -359,13 +359,7 @@
         "element": "Quantum",
         "path": "THE HUNT",
         "level": 80,
-        "lc": {
-          "name": "Cruising in the Stellar Sea",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u47dee/a0d4a60a422342fe7dce4bed4216fcd5.png",
-          "rarity": 5,
-          "level": 80,
-          "superimposition": 5
-        }
+        "lc": null
       },
       "Bronya": {
         "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u47dee/6b77de736b153d9d91e13c7edf3a6518.png",
@@ -490,7 +484,7 @@
         "lc": null
       }
     },
-    "stamina": 127,
+    "stamina": 126,
     "current_train_score": 500,
     "anomaly_arbitration": {
       "season": "Enwreathed by the World",
@@ -609,27 +603,27 @@
       "total_stars": 12,
       "floor_data": {
         "floor": "Vanguard Knight: Difficulty 04Starward Mode",
-        "score": 10536,
+        "score": 11242,
         "node_1": [
+          {
+            "id": 1220,
+            "level": 80,
+            "eidolon": 2
+          },
           {
             "id": 1504,
             "level": 80,
             "eidolon": 1
           },
           {
-            "id": 8007,
-            "level": 80,
-            "eidolon": 6
-          },
-          {
-            "id": 1507,
+            "id": 1414,
             "level": 80,
             "eidolon": 2
           },
           {
-            "id": 1217,
+            "id": 1313,
             "level": 80,
-            "eidolon": 0
+            "eidolon": 2
           }
         ],
         "node_2": [
@@ -649,29 +643,29 @@
             "eidolon": 2
           },
           {
-            "id": 1304,
+            "id": 1508,
             "level": 80,
             "eidolon": 0
           }
         ],
         "node_3": [
           {
-            "id": 1405,
+            "id": 1014,
             "level": 80,
             "eidolon": 0
           },
           {
-            "id": 1313,
-            "level": 80,
-            "eidolon": 2
-          },
-          {
-            "id": 1406,
+            "id": 1509,
             "level": 80,
             "eidolon": 1
           },
           {
-            "id": 1414,
+            "id": 8007,
+            "level": 80,
+            "eidolon": 6
+          },
+          {
+            "id": 1507,
             "level": 80,
             "eidolon": 2
           }
@@ -1090,12 +1084,12 @@
     "daily_task": 0
   },
   "hsr_diary": {
-    "Date": "2026-07-27",
-    "Net Currency Gain": 170,
+    "Date": "2026-07-28",
+    "Net Currency Gain": 520,
     "Pulls Net Gain": 0
   },
   "genshin_diary": {
-    "Date": "2026-07-27",
+    "Date": "2026-07-28",
     "Net Currency Gain": 0,
     "Pulls Net Gain": 0
   },
@@ -1103,13 +1097,13 @@
     "status": "Check-in Successful",
     "rewards": [
       {
-        "name": "Arms INSP Set",
-        "count": 5,
-        "icon": "https://static.skport.com/asset/endfield_attendance/90403112f070c14859d107b530ae5851.png"
+        "name": "Talosian Credit Notes|T-Creds",
+        "count": 2000,
+        "icon": "https://static.skport.com/asset/endfield_attendance/2a58a0e85f39092433842ccd62324785.png"
       }
     ],
     "attendance": {
-      "totalSignIns": 28,
+      "totalSignIns": 29,
       "calendar": [
         {
           "awardId": "endfield_attendance_1_2",
@@ -1248,13 +1242,13 @@
         },
         {
           "awardId": "endfield_attendance_5_5",
-          "available": true,
+          "available": false,
           "done": true
         },
         {
           "awardId": "endfield_attendance_7_2000",
-          "available": false,
-          "done": false
+          "available": true,
+          "done": true
         },
         {
           "awardId": "endfield_attendance_7_2000",
@@ -1285,23 +1279,6 @@
     "aurylenes": 365,
     "chest_count": 802,
     "six_star_characters": {
-      "Lifeng": {
-        "avatarSqUrl": "data/images/e1ffee22e9f4a4df2562cbfce21108e1.png",
-        "rarity": "6",
-        "potential": 3,
-        "profession": "Guard",
-        "property": "Physical",
-        "weaponType": "Polearm",
-        "level": 90,
-        "weapon": {
-          "name": "Mountain Bearer",
-          "iconUrl": "data/images/b4827d12232501551485e0c9f671caa8.png",
-          "rarity": "6",
-          "type": "Polearm",
-          "level": 90,
-          "refineLevel": 0
-        }
-      },
       "Tangtang": {
         "avatarSqUrl": "data/images/ee017b6ab7f20b54c0effcf522518d2b.png",
         "rarity": "6",
@@ -1330,23 +1307,6 @@
         "weapon": {
           "name": "Lupine Scarlet",
           "iconUrl": "data/images/dfa304b9de55a75bce9b5719e7cf1d59.png",
-          "rarity": "6",
-          "type": "Sword",
-          "level": 90,
-          "refineLevel": 0
-        }
-      },
-      "Pogranichnik": {
-        "avatarSqUrl": "data/images/9c14933aa23b96d01658caed5a3b9907.png",
-        "rarity": "6",
-        "potential": 2,
-        "profession": "Vanguard",
-        "property": "Physical",
-        "weaponType": "Sword",
-        "level": 90,
-        "weapon": {
-          "name": "Never Rest",
-          "iconUrl": "data/images/21532368a8d1075f3259f51eb226f9b3.png",
           "rarity": "6",
           "type": "Sword",
           "level": 90,
@@ -1404,6 +1364,23 @@
           "refineLevel": 0
         }
       },
+      "Pogranichnik": {
+        "avatarSqUrl": "data/images/9c14933aa23b96d01658caed5a3b9907.png",
+        "rarity": "6",
+        "potential": 2,
+        "profession": "Vanguard",
+        "property": "Physical",
+        "weaponType": "Sword",
+        "level": 90,
+        "weapon": {
+          "name": "Never Rest",
+          "iconUrl": "data/images/21532368a8d1075f3259f51eb226f9b3.png",
+          "rarity": "6",
+          "type": "Sword",
+          "level": 90,
+          "refineLevel": 0
+        }
+      },
       "Camille": {
         "avatarSqUrl": "data/images/ebd60d15f1e07b64fb53c59b905d9767.png",
         "rarity": "6",
@@ -1415,6 +1392,23 @@
         "weapon": {
           "name": "Blessing of Lustrous Carmine",
           "iconUrl": "data/images/02ef4bb9403658103f9e0f43ae77c407.png",
+          "rarity": "6",
+          "type": "Polearm",
+          "level": 90,
+          "refineLevel": 0
+        }
+      },
+      "Lifeng": {
+        "avatarSqUrl": "data/images/e1ffee22e9f4a4df2562cbfce21108e1.png",
+        "rarity": "6",
+        "potential": 3,
+        "profession": "Guard",
+        "property": "Physical",
+        "weaponType": "Polearm",
+        "level": 90,
+        "weapon": {
+          "name": "Mountain Bearer",
+          "iconUrl": "data/images/b4827d12232501551485e0c9f671caa8.png",
           "rarity": "6",
           "type": "Polearm",
           "level": 90,
@@ -1523,23 +1517,6 @@
           "refineLevel": 0
         }
       },
-      "Xaihi": {
-        "avatarSqUrl": "data/images/b57fb03447e70561cd497b60af8b69e3.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Supporter",
-        "property": "Cryo",
-        "weaponType": "Arts Unit",
-        "level": 80,
-        "weapon": {
-          "name": "Stanza of Memorials",
-          "iconUrl": "data/images/bfbda14b0634b1ef9df15040f2e12640.png",
-          "rarity": "5",
-          "type": "Arts Unit",
-          "level": 80,
-          "refineLevel": 2
-        }
-      },
       "Perlica": {
         "avatarSqUrl": "data/images/c7d4eaff6c2336b0e9d217e32d208e28.png",
         "rarity": "5",
@@ -1555,6 +1532,23 @@
           "type": "Arts Unit",
           "level": 80,
           "refineLevel": 0
+        }
+      },
+      "Xaihi": {
+        "avatarSqUrl": "data/images/b57fb03447e70561cd497b60af8b69e3.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Supporter",
+        "property": "Cryo",
+        "weaponType": "Arts Unit",
+        "level": 80,
+        "weapon": {
+          "name": "Stanza of Memorials",
+          "iconUrl": "data/images/bfbda14b0634b1ef9df15040f2e12640.png",
+          "rarity": "5",
+          "type": "Arts Unit",
+          "level": 80,
+          "refineLevel": 2
         }
       },
       "Alesh": {
@@ -1608,23 +1602,6 @@
           "refineLevel": 0
         }
       },
-      "Da Pan": {
-        "avatarSqUrl": "data/images/56ead5c066fd0657518c009d12d67d75.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Striker",
-        "property": "Physical",
-        "weaponType": "Greatsword",
-        "level": 1,
-        "weapon": {
-          "name": "Finishing Call",
-          "iconUrl": "data/images/19f31f1c6464ea63c4012f70c813ab8e.png",
-          "rarity": "5",
-          "type": "Greatsword",
-          "level": 1,
-          "refineLevel": 3
-        }
-      },
       "Snowshine": {
         "avatarSqUrl": "data/images/b6dca12b51b4bd83b33e5fdce281a024.png",
         "rarity": "5",
@@ -1657,6 +1634,23 @@
           "type": "Polearm",
           "level": 1,
           "refineLevel": 0
+        }
+      },
+      "Da Pan": {
+        "avatarSqUrl": "data/images/56ead5c066fd0657518c009d12d67d75.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Striker",
+        "property": "Physical",
+        "weaponType": "Greatsword",
+        "level": 1,
+        "weapon": {
+          "name": "Finishing Call",
+          "iconUrl": "data/images/19f31f1c6464ea63c4012f70c813ab8e.png",
+          "rarity": "5",
+          "type": "Greatsword",
+          "level": 1,
+          "refineLevel": 3
         }
       },
       "Antal": {
@@ -1694,8 +1688,8 @@
         }
       }
     },
-    "stamina": "134",
-    "daily_mission": 100,
+    "stamina": "334",
+    "daily_mission": 0,
     "last_updated": "2026-07-27T14:52:36.800069-04:00"
   }
 }
