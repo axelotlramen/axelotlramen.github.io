@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-07-30T14:52:34.902108-04:00",
+  "last_updated": "2026-07-31T14:49:24.234323-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
     "avatar_url": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u47dee/63bad4d8cc536ef482b88b8aa3d8f867.png",
-    "achievements": 1747,
-    "active_days": 976,
+    "achievements": 1750,
+    "active_days": 977,
     "avatar_count": 58,
     "chest_count": 1961,
     "five_star_characters": {
@@ -484,7 +484,7 @@
         "lc": null
       }
     },
-    "stamina": 37,
+    "stamina": 77,
     "current_train_score": 500,
     "anomaly_arbitration": {
       "season": "Enwreathed by the World",
@@ -1084,12 +1084,12 @@
     "daily_task": 0
   },
   "hsr_diary": {
-    "Date": "2026-07-30",
-    "Net Currency Gain": 150,
+    "Date": "2026-07-31",
+    "Net Currency Gain": 325,
     "Pulls Net Gain": 0
   },
   "genshin_diary": {
-    "Date": "2026-07-30",
+    "Date": "2026-07-31",
     "Net Currency Gain": 0,
     "Pulls Net Gain": 0
   },
@@ -1097,172 +1097,177 @@
     "status": "Check-in Successful",
     "rewards": [
       {
-        "name": "Talosian Credit Notes|T-Creds",
-        "count": 2000,
-        "icon": "https://static.skport.com/asset/endfield_attendance/2a58a0e85f39092433842ccd62324785.png"
+        "name": "Intermediate Combat Record",
+        "count": 2,
+        "icon": "https://static.skport.com/asset/endfield_attendance/921A397E2765462C009B939E0CD92606.png"
       }
     ],
     "attendance": {
-      "totalSignIns": 31,
+      "totalSignIns": 1,
       "calendar": [
         {
           "awardId": "endfield_attendance_1_2",
-          "available": false,
+          "available": true,
           "done": true
         },
         {
           "awardId": "endfield_attendance_4_2",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_7_2000",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_8_80",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_4_2",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_6_2",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_1_3",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_7_3000",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_4_3",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_1_3",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_7_2000",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_8_80",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_6_3",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_1_3",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_4_3",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_7_3000",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_3_2",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_5_2",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_2_5",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_8_100",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_6_5",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_3_3",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_5_3",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_7_3000",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_1_5",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_4_5",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_3_5",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_5_5",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_7_2000",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_7_2000",
           "available": false,
-          "done": true
+          "done": false
         },
         {
           "awardId": "endfield_attendance_7_2000",
-          "available": true,
-          "done": true
+          "available": false,
+          "done": false
         }
       ]
     },
-    "error": null
+    "error": null,
+    "nextAward": {
+      "name": "Arms INSP Kit",
+      "count": 2,
+      "icon": "https://static.skport.com/asset/endfield_attendance/0dea0bc0fd87138df322e8a254a6999f.png"
+    }
   },
   "endfield_data": {
     "nickname": "Axelle",
@@ -1274,57 +1279,6 @@
     "aurylenes": 365,
     "chest_count": 802,
     "six_star_characters": {
-      "Camille": {
-        "avatarSqUrl": "data/images/ebd60d15f1e07b64fb53c59b905d9767.png",
-        "rarity": "6",
-        "potential": 0,
-        "profession": "Vanguard",
-        "property": "Heat",
-        "weaponType": "Polearm",
-        "level": 90,
-        "weapon": {
-          "name": "Blessing of Lustrous Carmine",
-          "iconUrl": "data/images/02ef4bb9403658103f9e0f43ae77c407.png",
-          "rarity": "6",
-          "type": "Polearm",
-          "level": 90,
-          "refineLevel": 0
-        }
-      },
-      "Ardelia": {
-        "avatarSqUrl": "data/images/8acdcdaa6c69979a9b01f77281465a0a.png",
-        "rarity": "6",
-        "potential": 1,
-        "profession": "Supporter",
-        "property": "Nature",
-        "weaponType": "Arts Unit",
-        "level": 90,
-        "weapon": {
-          "name": "Dreams of the Starry Beach",
-          "iconUrl": "data/images/fe34d89d2e92df4d993a4fc881b3d6d8.png",
-          "rarity": "6",
-          "type": "Arts Unit",
-          "level": 83,
-          "refineLevel": 0
-        }
-      },
-      "Tangtang": {
-        "avatarSqUrl": "data/images/ee017b6ab7f20b54c0effcf522518d2b.png",
-        "rarity": "6",
-        "potential": 1,
-        "profession": "Caster",
-        "property": "Cryo",
-        "weaponType": "Handcannon",
-        "level": 90,
-        "weapon": {
-          "name": "Brigand's Calling",
-          "iconUrl": "data/images/675ec992ee25214d0af5cdb60ccd893a.png",
-          "rarity": "6",
-          "type": "Handcannon",
-          "level": 90,
-          "refineLevel": 0
-        }
-      },
       "Rossi": {
         "avatarSqUrl": "data/images/bb6cca7221225af1ce18c1850d1abb7e.png",
         "rarity": "6",
@@ -1336,40 +1290,6 @@
         "weapon": {
           "name": "Lupine Scarlet",
           "iconUrl": "data/images/dfa304b9de55a75bce9b5719e7cf1d59.png",
-          "rarity": "6",
-          "type": "Sword",
-          "level": 90,
-          "refineLevel": 0
-        }
-      },
-      "Pogranichnik": {
-        "avatarSqUrl": "data/images/9c14933aa23b96d01658caed5a3b9907.png",
-        "rarity": "6",
-        "potential": 2,
-        "profession": "Vanguard",
-        "property": "Physical",
-        "weaponType": "Sword",
-        "level": 90,
-        "weapon": {
-          "name": "Never Rest",
-          "iconUrl": "data/images/21532368a8d1075f3259f51eb226f9b3.png",
-          "rarity": "6",
-          "type": "Sword",
-          "level": 90,
-          "refineLevel": 0
-        }
-      },
-      "Laevatain": {
-        "avatarSqUrl": "data/images/15a984eaecaf0d7c47d871175ae38937.png",
-        "rarity": "6",
-        "potential": 0,
-        "profession": "Striker",
-        "property": "Heat",
-        "weaponType": "Sword",
-        "level": 90,
-        "weapon": {
-          "name": "Umbral Torch",
-          "iconUrl": "data/images/f67ca28a6489e356f928c9c9ef1b61eb.png",
           "rarity": "6",
           "type": "Sword",
           "level": 90,
@@ -1410,21 +1330,89 @@
           "refineLevel": 0
         }
       },
-      "Wulfgard": {
-        "avatarSqUrl": "data/images/7ddb3b88ce6f0029e143000cfece7b65.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Caster",
+      "Ardelia": {
+        "avatarSqUrl": "data/images/8acdcdaa6c69979a9b01f77281465a0a.png",
+        "rarity": "6",
+        "potential": 1,
+        "profession": "Supporter",
+        "property": "Nature",
+        "weaponType": "Arts Unit",
+        "level": 90,
+        "weapon": {
+          "name": "Dreams of the Starry Beach",
+          "iconUrl": "data/images/fe34d89d2e92df4d993a4fc881b3d6d8.png",
+          "rarity": "6",
+          "type": "Arts Unit",
+          "level": 83,
+          "refineLevel": 0
+        }
+      },
+      "Laevatain": {
+        "avatarSqUrl": "data/images/15a984eaecaf0d7c47d871175ae38937.png",
+        "rarity": "6",
+        "potential": 0,
+        "profession": "Striker",
         "property": "Heat",
+        "weaponType": "Sword",
+        "level": 90,
+        "weapon": {
+          "name": "Umbral Torch",
+          "iconUrl": "data/images/f67ca28a6489e356f928c9c9ef1b61eb.png",
+          "rarity": "6",
+          "type": "Sword",
+          "level": 90,
+          "refineLevel": 0
+        }
+      },
+      "Camille": {
+        "avatarSqUrl": "data/images/ebd60d15f1e07b64fb53c59b905d9767.png",
+        "rarity": "6",
+        "potential": 0,
+        "profession": "Vanguard",
+        "property": "Heat",
+        "weaponType": "Polearm",
+        "level": 90,
+        "weapon": {
+          "name": "Blessing of Lustrous Carmine",
+          "iconUrl": "data/images/02ef4bb9403658103f9e0f43ae77c407.png",
+          "rarity": "6",
+          "type": "Polearm",
+          "level": 90,
+          "refineLevel": 0
+        }
+      },
+      "Pogranichnik": {
+        "avatarSqUrl": "data/images/9c14933aa23b96d01658caed5a3b9907.png",
+        "rarity": "6",
+        "potential": 2,
+        "profession": "Vanguard",
+        "property": "Physical",
+        "weaponType": "Sword",
+        "level": 90,
+        "weapon": {
+          "name": "Never Rest",
+          "iconUrl": "data/images/21532368a8d1075f3259f51eb226f9b3.png",
+          "rarity": "6",
+          "type": "Sword",
+          "level": 90,
+          "refineLevel": 0
+        }
+      },
+      "Tangtang": {
+        "avatarSqUrl": "data/images/ee017b6ab7f20b54c0effcf522518d2b.png",
+        "rarity": "6",
+        "potential": 1,
+        "profession": "Caster",
+        "property": "Cryo",
         "weaponType": "Handcannon",
         "level": 90,
         "weapon": {
-          "name": "Rational Farewell",
-          "iconUrl": "data/images/cee67efec0389c4a0197291c3550ace7.png",
-          "rarity": "5",
+          "name": "Brigand's Calling",
+          "iconUrl": "data/images/675ec992ee25214d0af5cdb60ccd893a.png",
+          "rarity": "6",
           "type": "Handcannon",
           "level": 90,
-          "refineLevel": 1
+          "refineLevel": 0
         }
       },
       "Chen Qianyu": {
@@ -1442,6 +1430,23 @@
           "type": "Sword",
           "level": 90,
           "refineLevel": 5
+        }
+      },
+      "Wulfgard": {
+        "avatarSqUrl": "data/images/7ddb3b88ce6f0029e143000cfece7b65.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Caster",
+        "property": "Heat",
+        "weaponType": "Handcannon",
+        "level": 90,
+        "weapon": {
+          "name": "Rational Farewell",
+          "iconUrl": "data/images/cee67efec0389c4a0197291c3550ace7.png",
+          "rarity": "5",
+          "type": "Handcannon",
+          "level": 90,
+          "refineLevel": 1
         }
       },
       "Endministrator": {
@@ -1512,23 +1517,6 @@
           "refineLevel": 0
         }
       },
-      "Perlica": {
-        "avatarSqUrl": "data/images/c7d4eaff6c2336b0e9d217e32d208e28.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Caster",
-        "property": "Electric",
-        "weaponType": "Arts Unit",
-        "level": 80,
-        "weapon": {
-          "name": "Detonation Unit",
-          "iconUrl": "data/images/27335fd9a9e8c41c3cc063fbf8481f9b.png",
-          "rarity": "6",
-          "type": "Arts Unit",
-          "level": 80,
-          "refineLevel": 0
-        }
-      },
       "Xaihi": {
         "avatarSqUrl": "data/images/b57fb03447e70561cd497b60af8b69e3.png",
         "rarity": "5",
@@ -1544,6 +1532,23 @@
           "type": "Arts Unit",
           "level": 80,
           "refineLevel": 2
+        }
+      },
+      "Perlica": {
+        "avatarSqUrl": "data/images/c7d4eaff6c2336b0e9d217e32d208e28.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Caster",
+        "property": "Electric",
+        "weaponType": "Arts Unit",
+        "level": 80,
+        "weapon": {
+          "name": "Detonation Unit",
+          "iconUrl": "data/images/27335fd9a9e8c41c3cc063fbf8481f9b.png",
+          "rarity": "6",
+          "type": "Arts Unit",
+          "level": 80,
+          "refineLevel": 0
         }
       },
       "Alesh": {
@@ -1648,23 +1653,6 @@
           "refineLevel": 0
         }
       },
-      "Fluorite": {
-        "avatarSqUrl": "data/images/e50b9cf1b565dc2d31d4b6a2659ada39.png",
-        "rarity": "4",
-        "potential": 5,
-        "profession": "Caster",
-        "property": "Nature",
-        "weaponType": "Handcannon",
-        "level": 1,
-        "weapon": {
-          "name": "Peco 5",
-          "iconUrl": "data/images/a774ee68210d6c5c2091e8249b093ba0.png",
-          "rarity": "3",
-          "type": "Handcannon",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
       "Antal": {
         "avatarSqUrl": "data/images/aca43ca0538ead35c4ff7442a6a2a724.png",
         "rarity": "4",
@@ -1681,10 +1669,27 @@
           "level": 1,
           "refineLevel": 0
         }
+      },
+      "Fluorite": {
+        "avatarSqUrl": "data/images/e50b9cf1b565dc2d31d4b6a2659ada39.png",
+        "rarity": "4",
+        "potential": 5,
+        "profession": "Caster",
+        "property": "Nature",
+        "weaponType": "Handcannon",
+        "level": 1,
+        "weapon": {
+          "name": "Peco 5",
+          "iconUrl": "data/images/a774ee68210d6c5c2091e8249b093ba0.png",
+          "rarity": "3",
+          "type": "Handcannon",
+          "level": 1,
+          "refineLevel": 0
+        }
       }
     },
-    "stamina": "254",
-    "daily_mission": 20,
+    "stamina": "213",
+    "daily_mission": 0,
     "last_updated": "2026-07-27T14:52:36.800069-04:00"
   }
 }
