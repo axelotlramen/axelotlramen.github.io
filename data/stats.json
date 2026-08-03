@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-08-02T14:28:02.089829-04:00",
+  "last_updated": "2026-08-03T15:01:25.165400-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
     "avatar_url": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u47dee/63bad4d8cc536ef482b88b8aa3d8f867.png",
     "achievements": 1751,
-    "active_days": 979,
+    "active_days": 980,
     "avatar_count": 58,
     "chest_count": 1961,
     "five_star_characters": {
@@ -58,8 +58,8 @@
         "path": "NIHILITY",
         "level": 80,
         "lc": {
-          "name": "Good Night and Sleep Well",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u47dee/431023ea1bd7741a2c43b81a2576d948.png",
+          "name": "Before the Tutorial Mission Starts",
+          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u47dee/cca80097c02b2136596d751936dbd24a.png",
           "rarity": 4,
           "level": 80,
           "superimposition": 5
@@ -276,11 +276,11 @@
         "path": "HARMONY",
         "level": 80,
         "lc": {
-          "name": "Dance! Dance! Dance!",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u47dee/84f9e77b0947ba47c577ed3f1e6c046f.png",
+          "name": "Memories of the Past",
+          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u47dee/4db5a824a005740cc2863f4e4527e026.png",
           "rarity": 4,
           "level": 80,
-          "superimposition": 2
+          "superimposition": 5
         }
       },
       "Argenti": {
@@ -432,8 +432,8 @@
         "path": "NIHILITY",
         "level": 80,
         "lc": {
-          "name": "Before the Tutorial Mission Starts",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u47dee/cca80097c02b2136596d751936dbd24a.png",
+          "name": "Good Night and Sleep Well",
+          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u47dee/431023ea1bd7741a2c43b81a2576d948.png",
           "rarity": 4,
           "level": 80,
           "superimposition": 5
@@ -484,7 +484,7 @@
         "lc": null
       }
     },
-    "stamina": 73,
+    "stamina": 79,
     "current_train_score": 500,
     "anomaly_arbitration": {
       "season": "Enwreathed by the World",
@@ -673,56 +673,12 @@
       }
     },
     "pure_fiction": {
-      "season": "Falsehood to Fact",
+      "season": "Fabricated Business",
       "total_stars": 12,
       "floor_data": {
-        "floor": "Falsehood to Fact (IV)Starward Mode",
-        "score": 113320,
+        "floor": "Fabricated Business (IV)Starward Mode",
+        "score": 120000,
         "node_1": [
-          {
-            "id": 1013,
-            "level": 80,
-            "eidolon": 6
-          },
-          {
-            "id": 1304,
-            "level": 80,
-            "eidolon": 0
-          },
-          {
-            "id": 1309,
-            "level": 80,
-            "eidolon": 2
-          },
-          {
-            "id": 1504,
-            "level": 80,
-            "eidolon": 1
-          }
-        ],
-        "node_2": [
-          {
-            "id": 1015,
-            "level": 80,
-            "eidolon": 0
-          },
-          {
-            "id": 1508,
-            "level": 80,
-            "eidolon": 0
-          },
-          {
-            "id": 1306,
-            "level": 80,
-            "eidolon": 0
-          },
-          {
-            "id": 1414,
-            "level": 80,
-            "eidolon": 2
-          }
-        ],
-        "node_3": [
           {
             "id": 1014,
             "level": 80,
@@ -739,7 +695,51 @@
             "eidolon": 6
           },
           {
+            "id": 1202,
+            "level": 80,
+            "eidolon": 6
+          }
+        ],
+        "node_2": [
+          {
+            "id": 1013,
+            "level": 80,
+            "eidolon": 6
+          },
+          {
+            "id": 1504,
+            "level": 80,
+            "eidolon": 1
+          },
+          {
             "id": 1507,
+            "level": 80,
+            "eidolon": 2
+          },
+          {
+            "id": 1309,
+            "level": 80,
+            "eidolon": 2
+          }
+        ],
+        "node_3": [
+          {
+            "id": 1015,
+            "level": 80,
+            "eidolon": 0
+          },
+          {
+            "id": 1306,
+            "level": 80,
+            "eidolon": 0
+          },
+          {
+            "id": 1508,
+            "level": 80,
+            "eidolon": 0
+          },
+          {
+            "id": 1414,
             "level": 80,
             "eidolon": 2
           }
@@ -1084,12 +1084,12 @@
     "daily_task": 0
   },
   "hsr_diary": {
-    "Date": "2026-08-02",
-    "Net Currency Gain": 150,
+    "Date": "2026-08-03",
+    "Net Currency Gain": 1050,
     "Pulls Net Gain": 0
   },
   "genshin_diary": {
-    "Date": "2026-08-02",
+    "Date": "2026-08-03",
     "Net Currency Gain": 0,
     "Pulls Net Gain": 0
   },
