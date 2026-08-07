@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-06T21:26:48.953171-04:00",
+  "last_updated": "2026-08-07T14:08:08.110224-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
@@ -484,8 +484,8 @@
         "lc": null
       }
     },
-    "stamina": 133,
-    "current_train_score": 500,
+    "stamina": 300,
+    "current_train_score": 0,
     "anomaly_arbitration": {
       "season": "Enwreathed by the World",
       "boss_stars": 3,
@@ -1084,12 +1084,12 @@
     "daily_task": 0
   },
   "hsr_diary": {
-    "Date": "2026-08-06",
-    "Net Currency Gain": 150,
+    "Date": "2026-08-07",
+    "Net Currency Gain": 0,
     "Pulls Net Gain": 0
   },
   "genshin_diary": {
-    "Date": "2026-08-06",
+    "Date": "2026-08-07",
     "Net Currency Gain": 0,
     "Pulls Net Gain": 0
   },
@@ -1097,13 +1097,13 @@
     "status": "Check-in Successful",
     "rewards": [
       {
-        "name": "Arms INSP Kit",
+        "name": "Protoprism",
         "count": 2,
-        "icon": "https://static.skport.com/asset/endfield_attendance/0dea0bc0fd87138df322e8a254a6999f.png"
+        "icon": "https://static.skport.com/asset/endfield_attendance/0c1e8cf15711a7d59aa7d8786b533cf1.png"
       }
     ],
     "attendance": {
-      "totalSignIns": 5,
+      "totalSignIns": 6,
       "calendar": [
         {
           "awardId": "endfield_attendance_1_2",
@@ -1127,13 +1127,13 @@
         },
         {
           "awardId": "endfield_attendance_4_2",
-          "available": true,
+          "available": false,
           "done": true
         },
         {
           "awardId": "endfield_attendance_6_2",
-          "available": false,
-          "done": false
+          "available": true,
+          "done": true
         },
         {
           "awardId": "endfield_attendance_1_3",
@@ -1264,21 +1264,72 @@
     },
     "error": null,
     "nextAward": {
-      "name": "Protoprism",
-      "count": 2,
-      "icon": "https://static.skport.com/asset/endfield_attendance/0c1e8cf15711a7d59aa7d8786b533cf1.png"
+      "name": "Intermediate Combat Record",
+      "count": 3,
+      "icon": "https://static.skport.com/asset/endfield_attendance/921A397E2765462C009B939E0CD92606.png"
     }
   },
   "endfield_data": {
     "nickname": "Axelle",
     "level": 60,
     "avatar_url": "data/images/6beb98f8c8e7a81d37071bc3593b6321.png",
-    "achievements": 122,
+    "achievements": 123,
     "active_days": 0,
     "avatar_count": 24,
     "aurylenes": 365,
     "chest_count": 802,
     "six_star_characters": {
+      "Tangtang": {
+        "avatarSqUrl": "data/images/ee017b6ab7f20b54c0effcf522518d2b.png",
+        "rarity": "6",
+        "potential": 1,
+        "profession": "Caster",
+        "property": "Cryo",
+        "weaponType": "Handcannon",
+        "level": 90,
+        "weapon": {
+          "name": "Brigand's Calling",
+          "iconUrl": "data/images/675ec992ee25214d0af5cdb60ccd893a.png",
+          "rarity": "6",
+          "type": "Handcannon",
+          "level": 90,
+          "refineLevel": 0
+        }
+      },
+      "Ardelia": {
+        "avatarSqUrl": "data/images/8acdcdaa6c69979a9b01f77281465a0a.png",
+        "rarity": "6",
+        "potential": 1,
+        "profession": "Supporter",
+        "property": "Nature",
+        "weaponType": "Arts Unit",
+        "level": 90,
+        "weapon": {
+          "name": "Dreams of the Starry Beach",
+          "iconUrl": "data/images/fe34d89d2e92df4d993a4fc881b3d6d8.png",
+          "rarity": "6",
+          "type": "Arts Unit",
+          "level": 83,
+          "refineLevel": 0
+        }
+      },
+      "Lifeng": {
+        "avatarSqUrl": "data/images/e1ffee22e9f4a4df2562cbfce21108e1.png",
+        "rarity": "6",
+        "potential": 3,
+        "profession": "Guard",
+        "property": "Physical",
+        "weaponType": "Polearm",
+        "level": 90,
+        "weapon": {
+          "name": "Mountain Bearer",
+          "iconUrl": "data/images/b4827d12232501551485e0c9f671caa8.png",
+          "rarity": "6",
+          "type": "Polearm",
+          "level": 90,
+          "refineLevel": 0
+        }
+      },
       "Camille": {
         "avatarSqUrl": "data/images/ebd60d15f1e07b64fb53c59b905d9767.png",
         "rarity": "6",
@@ -1292,6 +1343,23 @@
           "iconUrl": "data/images/02ef4bb9403658103f9e0f43ae77c407.png",
           "rarity": "6",
           "type": "Polearm",
+          "level": 90,
+          "refineLevel": 0
+        }
+      },
+      "Pogranichnik": {
+        "avatarSqUrl": "data/images/9c14933aa23b96d01658caed5a3b9907.png",
+        "rarity": "6",
+        "potential": 3,
+        "profession": "Vanguard",
+        "property": "Physical",
+        "weaponType": "Sword",
+        "level": 90,
+        "weapon": {
+          "name": "Never Rest",
+          "iconUrl": "data/images/21532368a8d1075f3259f51eb226f9b3.png",
+          "rarity": "6",
+          "type": "Sword",
           "level": 90,
           "refineLevel": 0
         }
@@ -1347,72 +1415,21 @@
           "refineLevel": 0
         }
       },
-      "Pogranichnik": {
-        "avatarSqUrl": "data/images/9c14933aa23b96d01658caed5a3b9907.png",
-        "rarity": "6",
-        "potential": 3,
-        "profession": "Vanguard",
+      "Chen Qianyu": {
+        "avatarSqUrl": "data/images/a9166c16be2bd4de3a768f55f9521cd9.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Guard",
         "property": "Physical",
         "weaponType": "Sword",
         "level": 90,
         "weapon": {
-          "name": "Never Rest",
-          "iconUrl": "data/images/21532368a8d1075f3259f51eb226f9b3.png",
-          "rarity": "6",
+          "name": "Sundering Steel",
+          "iconUrl": "data/images/b78d6567010acaea597aa7cc75980909.png",
+          "rarity": "5",
           "type": "Sword",
           "level": 90,
-          "refineLevel": 0
-        }
-      },
-      "Ardelia": {
-        "avatarSqUrl": "data/images/8acdcdaa6c69979a9b01f77281465a0a.png",
-        "rarity": "6",
-        "potential": 1,
-        "profession": "Supporter",
-        "property": "Nature",
-        "weaponType": "Arts Unit",
-        "level": 90,
-        "weapon": {
-          "name": "Dreams of the Starry Beach",
-          "iconUrl": "data/images/fe34d89d2e92df4d993a4fc881b3d6d8.png",
-          "rarity": "6",
-          "type": "Arts Unit",
-          "level": 83,
-          "refineLevel": 0
-        }
-      },
-      "Lifeng": {
-        "avatarSqUrl": "data/images/e1ffee22e9f4a4df2562cbfce21108e1.png",
-        "rarity": "6",
-        "potential": 3,
-        "profession": "Guard",
-        "property": "Physical",
-        "weaponType": "Polearm",
-        "level": 90,
-        "weapon": {
-          "name": "Mountain Bearer",
-          "iconUrl": "data/images/b4827d12232501551485e0c9f671caa8.png",
-          "rarity": "6",
-          "type": "Polearm",
-          "level": 90,
-          "refineLevel": 0
-        }
-      },
-      "Tangtang": {
-        "avatarSqUrl": "data/images/ee017b6ab7f20b54c0effcf522518d2b.png",
-        "rarity": "6",
-        "potential": 1,
-        "profession": "Caster",
-        "property": "Cryo",
-        "weaponType": "Handcannon",
-        "level": 90,
-        "weapon": {
-          "name": "Brigand's Calling",
-          "iconUrl": "data/images/675ec992ee25214d0af5cdb60ccd893a.png",
-          "rarity": "6",
-          "type": "Handcannon",
-          "level": 90,
-          "refineLevel": 0
+          "refineLevel": 5
         }
       },
       "Wulfgard": {
@@ -1430,23 +1447,6 @@
           "type": "Handcannon",
           "level": 90,
           "refineLevel": 1
-        }
-      },
-      "Chen Qianyu": {
-        "avatarSqUrl": "data/images/a9166c16be2bd4de3a768f55f9521cd9.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Guard",
-        "property": "Physical",
-        "weaponType": "Sword",
-        "level": 90,
-        "weapon": {
-          "name": "Sundering Steel",
-          "iconUrl": "data/images/b78d6567010acaea597aa7cc75980909.png",
-          "rarity": "5",
-          "type": "Sword",
-          "level": 90,
-          "refineLevel": 5
         }
       },
       "Endministrator": {
@@ -1517,23 +1517,6 @@
           "refineLevel": 0
         }
       },
-      "Perlica": {
-        "avatarSqUrl": "data/images/c7d4eaff6c2336b0e9d217e32d208e28.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Caster",
-        "property": "Electric",
-        "weaponType": "Arts Unit",
-        "level": 80,
-        "weapon": {
-          "name": "Detonation Unit",
-          "iconUrl": "data/images/27335fd9a9e8c41c3cc063fbf8481f9b.png",
-          "rarity": "6",
-          "type": "Arts Unit",
-          "level": 80,
-          "refineLevel": 0
-        }
-      },
       "Xaihi": {
         "avatarSqUrl": "data/images/b57fb03447e70561cd497b60af8b69e3.png",
         "rarity": "5",
@@ -1549,6 +1532,23 @@
           "type": "Arts Unit",
           "level": 80,
           "refineLevel": 2
+        }
+      },
+      "Perlica": {
+        "avatarSqUrl": "data/images/c7d4eaff6c2336b0e9d217e32d208e28.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Caster",
+        "property": "Electric",
+        "weaponType": "Arts Unit",
+        "level": 80,
+        "weapon": {
+          "name": "Detonation Unit",
+          "iconUrl": "data/images/27335fd9a9e8c41c3cc063fbf8481f9b.png",
+          "rarity": "6",
+          "type": "Arts Unit",
+          "level": 80,
+          "refineLevel": 0
         }
       },
       "Alesh": {
@@ -1576,6 +1576,40 @@
         "property": "Physical",
         "weaponType": "Greatsword",
         "level": 5,
+        "weapon": {
+          "name": "Darhoff 7",
+          "iconUrl": "data/images/405aa716336d0d399cde63f38096301e.png",
+          "rarity": "3",
+          "type": "Greatsword",
+          "level": 1,
+          "refineLevel": 0
+        }
+      },
+      "Avywenna": {
+        "avatarSqUrl": "data/images/ad690ee34b0fe54fc21e82f04489894f.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Striker",
+        "property": "Electric",
+        "weaponType": "Polearm",
+        "level": 1,
+        "weapon": {
+          "name": "Opero 77",
+          "iconUrl": "data/images/84a37c54af2051047d3da560fb9b98f9.png",
+          "rarity": "3",
+          "type": "Polearm",
+          "level": 1,
+          "refineLevel": 0
+        }
+      },
+      "Snowshine": {
+        "avatarSqUrl": "data/images/b6dca12b51b4bd83b33e5fdce281a024.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Defender",
+        "property": "Cryo",
+        "weaponType": "Greatsword",
+        "level": 1,
         "weapon": {
           "name": "Darhoff 7",
           "iconUrl": "data/images/405aa716336d0d399cde63f38096301e.png",
@@ -1619,36 +1653,19 @@
           "refineLevel": 0
         }
       },
-      "Avywenna": {
-        "avatarSqUrl": "data/images/ad690ee34b0fe54fc21e82f04489894f.png",
-        "rarity": "5",
+      "Antal": {
+        "avatarSqUrl": "data/images/aca43ca0538ead35c4ff7442a6a2a724.png",
+        "rarity": "4",
         "potential": 5,
-        "profession": "Striker",
+        "profession": "Supporter",
         "property": "Electric",
-        "weaponType": "Polearm",
+        "weaponType": "Arts Unit",
         "level": 1,
         "weapon": {
-          "name": "Opero 77",
-          "iconUrl": "data/images/84a37c54af2051047d3da560fb9b98f9.png",
+          "name": "Jiminy 12",
+          "iconUrl": "data/images/74de5c6676451d5c7126ba84f87b0718.png",
           "rarity": "3",
-          "type": "Polearm",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
-      "Snowshine": {
-        "avatarSqUrl": "data/images/b6dca12b51b4bd83b33e5fdce281a024.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Defender",
-        "property": "Cryo",
-        "weaponType": "Greatsword",
-        "level": 1,
-        "weapon": {
-          "name": "Darhoff 7",
-          "iconUrl": "data/images/405aa716336d0d399cde63f38096301e.png",
-          "rarity": "3",
-          "type": "Greatsword",
+          "type": "Arts Unit",
           "level": 1,
           "refineLevel": 0
         }
@@ -1669,27 +1686,10 @@
           "level": 1,
           "refineLevel": 0
         }
-      },
-      "Antal": {
-        "avatarSqUrl": "data/images/aca43ca0538ead35c4ff7442a6a2a724.png",
-        "rarity": "4",
-        "potential": 5,
-        "profession": "Supporter",
-        "property": "Electric",
-        "weaponType": "Arts Unit",
-        "level": 1,
-        "weapon": {
-          "name": "Jiminy 12",
-          "iconUrl": "data/images/74de5c6676451d5c7126ba84f87b0718.png",
-          "rarity": "3",
-          "type": "Arts Unit",
-          "level": 1,
-          "refineLevel": 0
-        }
       }
     },
-    "stamina": "207",
-    "daily_mission": 20,
+    "stamina": "186",
+    "daily_mission": 0,
     "last_updated": null
   }
 }
