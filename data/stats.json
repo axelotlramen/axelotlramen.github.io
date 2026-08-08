@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-08-07T14:08:08.110224-04:00",
+  "last_updated": "2026-08-08T13:53:54.571269-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
     "avatar_url": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u47dee/63bad4d8cc536ef482b88b8aa3d8f867.png",
     "achievements": 1752,
-    "active_days": 983,
+    "active_days": 985,
     "avatar_count": 58,
     "chest_count": 1961,
     "five_star_characters": {
@@ -484,8 +484,8 @@
         "lc": null
       }
     },
-    "stamina": 300,
-    "current_train_score": 0,
+    "stamina": 59,
+    "current_train_score": 500,
     "anomaly_arbitration": {
       "season": "Enwreathed by the World",
       "boss_stars": 3,
@@ -1084,12 +1084,12 @@
     "daily_task": 0
   },
   "hsr_diary": {
-    "Date": "2026-08-07",
-    "Net Currency Gain": 0,
+    "Date": "2026-08-08",
+    "Net Currency Gain": 150,
     "Pulls Net Gain": 0
   },
   "genshin_diary": {
-    "Date": "2026-08-07",
+    "Date": "2026-08-08",
     "Net Currency Gain": 0,
     "Pulls Net Gain": 0
   },
@@ -1097,13 +1097,13 @@
     "status": "Check-in Successful",
     "rewards": [
       {
-        "name": "Protoprism",
-        "count": 2,
-        "icon": "https://static.skport.com/asset/endfield_attendance/0c1e8cf15711a7d59aa7d8786b533cf1.png"
+        "name": "Intermediate Combat Record",
+        "count": 3,
+        "icon": "https://static.skport.com/asset/endfield_attendance/921A397E2765462C009B939E0CD92606.png"
       }
     ],
     "attendance": {
-      "totalSignIns": 6,
+      "totalSignIns": 7,
       "calendar": [
         {
           "awardId": "endfield_attendance_1_2",
@@ -1132,13 +1132,13 @@
         },
         {
           "awardId": "endfield_attendance_6_2",
-          "available": true,
+          "available": false,
           "done": true
         },
         {
           "awardId": "endfield_attendance_1_3",
-          "available": false,
-          "done": false
+          "available": true,
+          "done": true
         },
         {
           "awardId": "endfield_attendance_7_3000",
@@ -1264,9 +1264,9 @@
     },
     "error": null,
     "nextAward": {
-      "name": "Intermediate Combat Record",
-      "count": 3,
-      "icon": "https://static.skport.com/asset/endfield_attendance/921A397E2765462C009B939E0CD92606.png"
+      "name": "Talosian Credit Notes|T-Creds",
+      "count": 3000,
+      "icon": "https://static.skport.com/asset/endfield_attendance/2a58a0e85f39092433842ccd62324785.png"
     }
   },
   "endfield_data": {
@@ -1274,24 +1274,24 @@
     "level": 60,
     "avatar_url": "data/images/6beb98f8c8e7a81d37071bc3593b6321.png",
     "achievements": 123,
-    "active_days": 0,
+    "active_days": 1,
     "avatar_count": 24,
     "aurylenes": 365,
     "chest_count": 802,
     "six_star_characters": {
-      "Tangtang": {
-        "avatarSqUrl": "data/images/ee017b6ab7f20b54c0effcf522518d2b.png",
+      "Arcane": {
+        "avatarSqUrl": "data/images/214ab1caf883e6ca4645b518eacd7231.png",
         "rarity": "6",
-        "potential": 1,
+        "potential": 0,
         "profession": "Caster",
-        "property": "Cryo",
-        "weaponType": "Handcannon",
+        "property": "Nature",
+        "weaponType": "Arts Unit",
         "level": 90,
         "weapon": {
-          "name": "Brigand's Calling",
-          "iconUrl": "data/images/675ec992ee25214d0af5cdb60ccd893a.png",
+          "name": "Type 42: Solemn Phalanx",
+          "iconUrl": "data/images/a13f27526ecf141f2d572796f87169a7.png",
           "rarity": "6",
-          "type": "Handcannon",
+          "type": "Arts Unit",
           "level": 90,
           "refineLevel": 0
         }
@@ -1310,6 +1310,23 @@
           "rarity": "6",
           "type": "Arts Unit",
           "level": 83,
+          "refineLevel": 0
+        }
+      },
+      "Tangtang": {
+        "avatarSqUrl": "data/images/ee017b6ab7f20b54c0effcf522518d2b.png",
+        "rarity": "6",
+        "potential": 1,
+        "profession": "Caster",
+        "property": "Cryo",
+        "weaponType": "Handcannon",
+        "level": 90,
+        "weapon": {
+          "name": "Brigand's Calling",
+          "iconUrl": "data/images/675ec992ee25214d0af5cdb60ccd893a.png",
+          "rarity": "6",
+          "type": "Handcannon",
+          "level": 90,
           "refineLevel": 0
         }
       },
@@ -1347,6 +1364,23 @@
           "refineLevel": 0
         }
       },
+      "Rossi": {
+        "avatarSqUrl": "data/images/bb6cca7221225af1ce18c1850d1abb7e.png",
+        "rarity": "6",
+        "potential": 0,
+        "profession": "Guard",
+        "property": "Physical",
+        "weaponType": "Sword",
+        "level": 90,
+        "weapon": {
+          "name": "Lupine Scarlet",
+          "iconUrl": "data/images/dfa304b9de55a75bce9b5719e7cf1d59.png",
+          "rarity": "6",
+          "type": "Sword",
+          "level": 90,
+          "refineLevel": 0
+        }
+      },
       "Pogranichnik": {
         "avatarSqUrl": "data/images/9c14933aa23b96d01658caed5a3b9907.png",
         "rarity": "6",
@@ -1364,23 +1398,6 @@
           "refineLevel": 0
         }
       },
-      "Arcane": {
-        "avatarSqUrl": "data/images/214ab1caf883e6ca4645b518eacd7231.png",
-        "rarity": "6",
-        "potential": 0,
-        "profession": "Caster",
-        "property": "Nature",
-        "weaponType": "Arts Unit",
-        "level": 90,
-        "weapon": {
-          "name": "Type 42: Solemn Phalanx",
-          "iconUrl": "data/images/a13f27526ecf141f2d572796f87169a7.png",
-          "rarity": "6",
-          "type": "Arts Unit",
-          "level": 90,
-          "refineLevel": 0
-        }
-      },
       "Laevatain": {
         "avatarSqUrl": "data/images/15a984eaecaf0d7c47d871175ae38937.png",
         "rarity": "6",
@@ -1392,23 +1409,6 @@
         "weapon": {
           "name": "Umbral Torch",
           "iconUrl": "data/images/f67ca28a6489e356f928c9c9ef1b61eb.png",
-          "rarity": "6",
-          "type": "Sword",
-          "level": 90,
-          "refineLevel": 0
-        }
-      },
-      "Rossi": {
-        "avatarSqUrl": "data/images/bb6cca7221225af1ce18c1850d1abb7e.png",
-        "rarity": "6",
-        "potential": 0,
-        "profession": "Guard",
-        "property": "Physical",
-        "weaponType": "Sword",
-        "level": 90,
-        "weapon": {
-          "name": "Lupine Scarlet",
-          "iconUrl": "data/images/dfa304b9de55a75bce9b5719e7cf1d59.png",
           "rarity": "6",
           "type": "Sword",
           "level": 90,
@@ -1517,23 +1517,6 @@
           "refineLevel": 0
         }
       },
-      "Xaihi": {
-        "avatarSqUrl": "data/images/b57fb03447e70561cd497b60af8b69e3.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Supporter",
-        "property": "Cryo",
-        "weaponType": "Arts Unit",
-        "level": 80,
-        "weapon": {
-          "name": "Stanza of Memorials",
-          "iconUrl": "data/images/bfbda14b0634b1ef9df15040f2e12640.png",
-          "rarity": "5",
-          "type": "Arts Unit",
-          "level": 80,
-          "refineLevel": 2
-        }
-      },
       "Perlica": {
         "avatarSqUrl": "data/images/c7d4eaff6c2336b0e9d217e32d208e28.png",
         "rarity": "5",
@@ -1549,6 +1532,23 @@
           "type": "Arts Unit",
           "level": 80,
           "refineLevel": 0
+        }
+      },
+      "Xaihi": {
+        "avatarSqUrl": "data/images/b57fb03447e70561cd497b60af8b69e3.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Supporter",
+        "property": "Cryo",
+        "weaponType": "Arts Unit",
+        "level": 80,
+        "weapon": {
+          "name": "Stanza of Memorials",
+          "iconUrl": "data/images/bfbda14b0634b1ef9df15040f2e12640.png",
+          "rarity": "5",
+          "type": "Arts Unit",
+          "level": 80,
+          "refineLevel": 2
         }
       },
       "Alesh": {
@@ -1585,23 +1585,6 @@
           "refineLevel": 0
         }
       },
-      "Avywenna": {
-        "avatarSqUrl": "data/images/ad690ee34b0fe54fc21e82f04489894f.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Striker",
-        "property": "Electric",
-        "weaponType": "Polearm",
-        "level": 1,
-        "weapon": {
-          "name": "Opero 77",
-          "iconUrl": "data/images/84a37c54af2051047d3da560fb9b98f9.png",
-          "rarity": "3",
-          "type": "Polearm",
-          "level": 1,
-          "refineLevel": 0
-        }
-      },
       "Snowshine": {
         "avatarSqUrl": "data/images/b6dca12b51b4bd83b33e5fdce281a024.png",
         "rarity": "5",
@@ -1615,6 +1598,40 @@
           "iconUrl": "data/images/405aa716336d0d399cde63f38096301e.png",
           "rarity": "3",
           "type": "Greatsword",
+          "level": 1,
+          "refineLevel": 0
+        }
+      },
+      "Arclight": {
+        "avatarSqUrl": "data/images/068394e39831e767a19d447579a97b1d.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Vanguard",
+        "property": "Electric",
+        "weaponType": "Sword",
+        "level": 1,
+        "weapon": {
+          "name": "Tarr 11",
+          "iconUrl": "data/images/397d215b08df02e77309f693971a25bf.png",
+          "rarity": "3",
+          "type": "Sword",
+          "level": 1,
+          "refineLevel": 0
+        }
+      },
+      "Avywenna": {
+        "avatarSqUrl": "data/images/ad690ee34b0fe54fc21e82f04489894f.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Striker",
+        "property": "Electric",
+        "weaponType": "Polearm",
+        "level": 1,
+        "weapon": {
+          "name": "Opero 77",
+          "iconUrl": "data/images/84a37c54af2051047d3da560fb9b98f9.png",
+          "rarity": "3",
+          "type": "Polearm",
           "level": 1,
           "refineLevel": 0
         }
@@ -1634,23 +1651,6 @@
           "type": "Greatsword",
           "level": 1,
           "refineLevel": 3
-        }
-      },
-      "Arclight": {
-        "avatarSqUrl": "data/images/068394e39831e767a19d447579a97b1d.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Vanguard",
-        "property": "Electric",
-        "weaponType": "Sword",
-        "level": 1,
-        "weapon": {
-          "name": "Tarr 11",
-          "iconUrl": "data/images/397d215b08df02e77309f693971a25bf.png",
-          "rarity": "3",
-          "type": "Sword",
-          "level": 1,
-          "refineLevel": 0
         }
       },
       "Antal": {
@@ -1688,8 +1688,8 @@
         }
       }
     },
-    "stamina": "186",
-    "daily_mission": 0,
-    "last_updated": null
+    "stamina": "64",
+    "daily_mission": 100,
+    "last_updated": "2026-08-08T13:53:54.570992-04:00"
   }
 }
