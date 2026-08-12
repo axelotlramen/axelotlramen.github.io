@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-08-11T14:12:59.456924-04:00",
+  "last_updated": "2026-08-12T14:13:34.527404-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
     "avatar_url": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u47dee/63bad4d8cc536ef482b88b8aa3d8f867.png",
     "achievements": 1752,
-    "active_days": 987,
+    "active_days": 989,
     "avatar_count": 58,
     "chest_count": 1961,
     "five_star_characters": {
@@ -484,8 +484,8 @@
         "lc": null
       }
     },
-    "stamina": 262,
-    "current_train_score": 0,
+    "stamina": 22,
+    "current_train_score": 500,
     "anomaly_arbitration": {
       "season": "Enwreathed by the World",
       "boss_stars": 3,
@@ -804,7 +804,7 @@
     "level": 58,
     "avatar_url": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/f6ed58ae3cfeeebd6e4956e7c5e4b725.png",
     "achievements": 1031,
-    "active_days": 380,
+    "active_days": 382,
     "avatar_count": 58,
     "oculus": 1243,
     "chest_count": 4190,
@@ -1080,16 +1080,16 @@
         }
       }
     },
-    "resin": 200,
+    "resin": 136,
     "daily_task": 0
   },
   "hsr_diary": {
-    "Date": "2026-08-11",
-    "Net Currency Gain": 0,
+    "Date": "2026-08-12",
+    "Net Currency Gain": 170,
     "Pulls Net Gain": 0
   },
   "genshin_diary": {
-    "Date": "2026-08-11",
+    "Date": "2026-08-12",
     "Net Currency Gain": 0,
     "Pulls Net Gain": 0
   },
@@ -1097,13 +1097,13 @@
     "status": "Check-in Successful",
     "rewards": [
       {
-        "name": "Intermediate Combat Record",
-        "count": 3,
-        "icon": "https://static.skport.com/asset/endfield_attendance/921A397E2765462C009B939E0CD92606.png"
+        "name": "Talosian Credit Notes|T-Creds",
+        "count": 2000,
+        "icon": "https://static.skport.com/asset/endfield_attendance/2a58a0e85f39092433842ccd62324785.png"
       }
     ],
     "attendance": {
-      "totalSignIns": 10,
+      "totalSignIns": 11,
       "calendar": [
         {
           "awardId": "endfield_attendance_1_2",
@@ -1152,13 +1152,13 @@
         },
         {
           "awardId": "endfield_attendance_1_3",
-          "available": true,
+          "available": false,
           "done": true
         },
         {
           "awardId": "endfield_attendance_7_2000",
-          "available": false,
-          "done": false
+          "available": true,
+          "done": true
         },
         {
           "awardId": "endfield_attendance_8_80",
@@ -1264,9 +1264,9 @@
     },
     "error": null,
     "nextAward": {
-      "name": "Talosian Credit Notes|T-Creds",
-      "count": 2000,
-      "icon": "https://static.skport.com/asset/endfield_attendance/2a58a0e85f39092433842ccd62324785.png"
+      "name": "Oroberyl",
+      "count": 80,
+      "icon": "https://static.skport.com/asset/endfield_attendance/8ed434a6cdb173c96ed0572115112f93.png"
     }
   },
   "endfield_data": {
@@ -1294,23 +1294,6 @@
           "type": "Arts Unit",
           "level": 83,
           "refineLevel": 1
-        }
-      },
-      "Rossi": {
-        "avatarSqUrl": "data/images/bb6cca7221225af1ce18c1850d1abb7e.png",
-        "rarity": "6",
-        "potential": 0,
-        "profession": "Guard",
-        "property": "Physical",
-        "weaponType": "Sword",
-        "level": 90,
-        "weapon": {
-          "name": "Lupine Scarlet",
-          "iconUrl": "data/images/dfa304b9de55a75bce9b5719e7cf1d59.png",
-          "rarity": "6",
-          "type": "Sword",
-          "level": 90,
-          "refineLevel": 0
         }
       },
       "Tangtang": {
@@ -1347,6 +1330,23 @@
           "refineLevel": 0
         }
       },
+      "Camille": {
+        "avatarSqUrl": "data/images/ebd60d15f1e07b64fb53c59b905d9767.png",
+        "rarity": "6",
+        "potential": 0,
+        "profession": "Vanguard",
+        "property": "Heat",
+        "weaponType": "Polearm",
+        "level": 90,
+        "weapon": {
+          "name": "Blessing of Lustrous Carmine",
+          "iconUrl": "data/images/02ef4bb9403658103f9e0f43ae77c407.png",
+          "rarity": "6",
+          "type": "Polearm",
+          "level": 90,
+          "refineLevel": 0
+        }
+      },
       "Liino": {
         "avatarSqUrl": "data/images/5c88d0afcc58b2be7c2feacb5dc45d42.png",
         "rarity": "6",
@@ -1364,6 +1364,23 @@
           "refineLevel": 0
         }
       },
+      "Rossi": {
+        "avatarSqUrl": "data/images/bb6cca7221225af1ce18c1850d1abb7e.png",
+        "rarity": "6",
+        "potential": 0,
+        "profession": "Guard",
+        "property": "Physical",
+        "weaponType": "Sword",
+        "level": 90,
+        "weapon": {
+          "name": "Lupine Scarlet",
+          "iconUrl": "data/images/dfa304b9de55a75bce9b5719e7cf1d59.png",
+          "rarity": "6",
+          "type": "Sword",
+          "level": 90,
+          "refineLevel": 0
+        }
+      },
       "Pogranichnik": {
         "avatarSqUrl": "data/images/9c14933aa23b96d01658caed5a3b9907.png",
         "rarity": "6",
@@ -1377,23 +1394,6 @@
           "iconUrl": "data/images/21532368a8d1075f3259f51eb226f9b3.png",
           "rarity": "6",
           "type": "Sword",
-          "level": 90,
-          "refineLevel": 0
-        }
-      },
-      "Camille": {
-        "avatarSqUrl": "data/images/ebd60d15f1e07b64fb53c59b905d9767.png",
-        "rarity": "6",
-        "potential": 0,
-        "profession": "Vanguard",
-        "property": "Heat",
-        "weaponType": "Polearm",
-        "level": 90,
-        "weapon": {
-          "name": "Blessing of Lustrous Carmine",
-          "iconUrl": "data/images/02ef4bb9403658103f9e0f43ae77c407.png",
-          "rarity": "6",
-          "type": "Polearm",
           "level": 90,
           "refineLevel": 0
         }
@@ -1619,23 +1619,6 @@
           "refineLevel": 0
         }
       },
-      "Da Pan": {
-        "avatarSqUrl": "data/images/56ead5c066fd0657518c009d12d67d75.png",
-        "rarity": "5",
-        "potential": 5,
-        "profession": "Striker",
-        "property": "Physical",
-        "weaponType": "Greatsword",
-        "level": 1,
-        "weapon": {
-          "name": "Finishing Call",
-          "iconUrl": "data/images/19f31f1c6464ea63c4012f70c813ab8e.png",
-          "rarity": "5",
-          "type": "Greatsword",
-          "level": 1,
-          "refineLevel": 4
-        }
-      },
       "Snowshine": {
         "avatarSqUrl": "data/images/b6dca12b51b4bd83b33e5fdce281a024.png",
         "rarity": "5",
@@ -1687,6 +1670,23 @@
           "refineLevel": 0
         }
       },
+      "Da Pan": {
+        "avatarSqUrl": "data/images/56ead5c066fd0657518c009d12d67d75.png",
+        "rarity": "5",
+        "potential": 5,
+        "profession": "Striker",
+        "property": "Physical",
+        "weaponType": "Greatsword",
+        "level": 1,
+        "weapon": {
+          "name": "Finishing Call",
+          "iconUrl": "data/images/19f31f1c6464ea63c4012f70c813ab8e.png",
+          "rarity": "5",
+          "type": "Greatsword",
+          "level": 1,
+          "refineLevel": 4
+        }
+      },
       "Fluorite": {
         "avatarSqUrl": "data/images/e50b9cf1b565dc2d31d4b6a2659ada39.png",
         "rarity": "4",
@@ -1722,7 +1722,7 @@
         }
       }
     },
-    "stamina": "346",
+    "stamina": "360",
     "daily_mission": 0,
     "last_updated": "2026-08-09T13:55:07.373272-04:00"
   }
