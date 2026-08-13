@@ -4,29 +4,10 @@
 
 class StatsStore {
   async load() {
-    const response = await fetch("data/stats.json");
+    const response = await fetch("/data/stats.json");
     if (!response.ok) throw new Error("Failed to fetch JSON");
     this.data = await response.json();
     return this.data;
-  }
-}
-
-/* =========================
-   Navigation
-========================= */
-
-class Router {
-  constructor() {
-    document.querySelectorAll(".sidebar nav button[data-page]").forEach((button) => {
-      button.addEventListener("click", () => this.show(button.dataset.page));
-    });
-  }
-
-  show(pageId) {
-    document.querySelectorAll(".page").forEach((p) => {
-      p.classList.remove("active");
-    });
-    document.getElementById(pageId).classList.add("active");
   }
 }
 
@@ -410,14 +391,19 @@ class EndfieldRenderer extends SectionRenderer {
 class App {
   constructor() {
     this.store = new StatsStore();
-    this.router = new Router();
-    this.renderers = [new HomeRenderer(), new HsrRenderer(), new GenshinRenderer(), new EndfieldRenderer()];
+    this.renderers = {
+      home: new HomeRenderer(),
+      hsr: new HsrRenderer(),
+      genshin: new GenshinRenderer(),
+      endfield: new EndfieldRenderer(),
+    };
   }
 
   async init() {
     try {
       const data = await this.store.load();
-      this.renderers.forEach((renderer) => renderer.render(data));
+      const renderer = this.renderers[document.body.dataset.page];
+      if (renderer) renderer.render(data);
     } catch (err) {
       console.error("Stats load error:", err);
     }
