@@ -7,40 +7,7 @@ from typing import Any, Dict, Optional, Tuple
 
 import httpx
 
-from scripts.constants import IMAGE_DIR, now
-
-
-class ImageCache:
-    """Downloads images into data/images/ and serves them back as local relative paths."""
-
-    def __init__(self, http: httpx.Client, logger: logging.Logger):
-        self._http = http
-        self._logger = logger
-
-    def get(self, url: str) -> str:
-        """Return the local relative path for url, downloading it first if not already cached.
-        Returns the original URL on failure."""
-        if not url:
-            return url
-
-        filename = url.split("/")[-1]
-        local_path = IMAGE_DIR / filename
-        relative_path = f"data/images/{filename}"
-
-        if local_path.exists():
-            self._logger.debug(f"Image already cached: {filename}")
-            return relative_path
-
-        try:
-            IMAGE_DIR.mkdir(parents=True, exist_ok=True)
-            response = self._http.get(url, follow_redirects=True)
-            response.raise_for_status()
-            local_path.write_bytes(response.content)
-            self._logger.info(f"Downloaded image: {filename}")
-            return relative_path
-        except Exception as e:
-            self._logger.warning(f"Failed to download image {url}: {e}")
-            return url  # fall back to remote URL
+from scripts.constants import now
 
 
 class EndfieldClient:
@@ -54,7 +21,6 @@ class EndfieldClient:
         self.logger = logging.getLogger("EndfieldClient")
         self._token: Optional[str] = None
         self._http = httpx.Client(timeout=timeout)
-        self._images = ImageCache(self._http, self.logger)
 
     # ------------------------
     # Internal helpers
@@ -311,29 +277,34 @@ class EndfieldClient:
         if code == 0:
             detail = data.get("data", {}).get("detail", {})
 
-            def dl(url):
-                return self._images.get(url)
-
-            six_stars = {
-                char.get("charData").get("name"): {
-                    "avatarSqUrl": dl(char.get("charData").get("avatarSqUrl")),
-                    "rarity": char.get("charData").get("rarity").get("value"),
-                    "potential": char.get("potentialLevel"),
-                    "profession": char.get("charData").get("profession").get("value"),
-                    "property": char.get("charData").get("property").get("value"),
-                    "weaponType": char.get("charData").get("weaponType").get("value"),
-                    "level": char.get("level"),
-                    "weapon": {
-                        "name": char.get("weapon").get("weaponData").get("name"),
-                        "iconUrl": dl(char.get("weapon").get("weaponData").get("iconUrl")),
-                        "rarity": char.get("weapon").get("weaponData").get("rarity").get("value"),
-                        "type": char.get("weapon").get("weaponData").get("type").get("value"),
-                        "level": char.get("weapon").get("level"),
-                        "refineLevel": char.get("weapon").get("refineLevel"),
-                    } if char.get("weapon") else None
-                }
+            six_star_entries = [
+                (
+                    char.get("charData").get("name"),
+                    {
+                        "avatarSqUrl": char.get("charData").get("avatarSqUrl"),
+                        "rarity": char.get("charData").get("rarity").get("value"),
+                        "potential": char.get("potentialLevel"),
+                        "profession": char.get("charData").get("profession").get("value"),
+                        "property": char.get("charData").get("property").get("value"),
+                        "weaponType": char.get("charData").get("weaponType").get("value"),
+                        "level": char.get("level"),
+                        "owned_at": int(char.get("ownTs")) if char.get("ownTs") else None,
+                        "weapon": {
+                            "name": char.get("weapon").get("weaponData").get("name"),
+                            "iconUrl": char.get("weapon").get("weaponData").get("iconUrl"),
+                            "rarity": char.get("weapon").get("weaponData").get("rarity").get("value"),
+                            "type": char.get("weapon").get("weaponData").get("type").get("value"),
+                            "level": char.get("weapon").get("level"),
+                            "refineLevel": char.get("weapon").get("refineLevel"),
+                        } if char.get("weapon") else None
+                    }
+                )
                 for char in detail.get("chars")
-            }
+            ]
+
+            # Most recently recruited first, characters with no known recruit time last.
+            six_star_entries.sort(key=lambda entry: entry[1]["owned_at"] or 0, reverse=True)
+            six_stars = dict(six_star_entries)
 
             domains = detail.get("domain")
             aurylenes = 0
@@ -348,7 +319,7 @@ class EndfieldClient:
             return {
                 "nickname": detail.get("base").get("name"),
                 "level": detail.get("base").get("level"),
-                "avatar_url": dl(detail.get("base").get("avatarUrl")),
+                "avatar_url": detail.get("base").get("avatarUrl"),
 
                 "achievements": detail.get("achieve").get("count"),
                 "active_days": self._get_total_days_login(old_endfield, detail.get("dailyMission").get("dailyActivation")),

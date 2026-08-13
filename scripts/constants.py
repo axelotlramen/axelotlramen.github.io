@@ -1,5 +1,4 @@
 from datetime import datetime
-from pathlib import Path
 from zoneinfo import ZoneInfo
 
 TZ = ZoneInfo("America/New_York")
@@ -7,8 +6,6 @@ TZ = ZoneInfo("America/New_York")
 def now():
     """Return current time in the project timezone."""
     return datetime.now(TZ)
-
-IMAGE_DIR = Path("data/images")
 
 HSR_PATH_NUM_TO_NAME = {
     1: "DESTRUCTION",

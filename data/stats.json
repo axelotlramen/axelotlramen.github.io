@@ -1272,7 +1272,7 @@
   "endfield_data": {
     "nickname": "Axelle",
     "level": 60,
-    "avatar_url": "data/images/6beb98f8c8e7a81d37071bc3593b6321.png",
+    "avatar_url": "/data/images/6beb98f8c8e7a81d37071bc3593b6321.png",
     "achievements": 123,
     "active_days": 2,
     "avatar_count": 26,
@@ -1280,7 +1280,7 @@
     "chest_count": 802,
     "six_star_characters": {
       "Tangtang": {
-        "avatarSqUrl": "data/images/ee017b6ab7f20b54c0effcf522518d2b.png",
+        "avatarSqUrl": "/data/images/ee017b6ab7f20b54c0effcf522518d2b.png",
         "rarity": "6",
         "potential": 1,
         "profession": "Caster",
@@ -1289,7 +1289,7 @@
         "level": 90,
         "weapon": {
           "name": "Brigand's Calling",
-          "iconUrl": "data/images/675ec992ee25214d0af5cdb60ccd893a.png",
+          "iconUrl": "/data/images/675ec992ee25214d0af5cdb60ccd893a.png",
           "rarity": "6",
           "type": "Handcannon",
           "level": 90,
@@ -1297,7 +1297,7 @@
         }
       },
       "Laevatain": {
-        "avatarSqUrl": "data/images/15a984eaecaf0d7c47d871175ae38937.png",
+        "avatarSqUrl": "/data/images/15a984eaecaf0d7c47d871175ae38937.png",
         "rarity": "6",
         "potential": 0,
         "profession": "Striker",
@@ -1306,7 +1306,7 @@
         "level": 90,
         "weapon": {
           "name": "Umbral Torch",
-          "iconUrl": "data/images/f67ca28a6489e356f928c9c9ef1b61eb.png",
+          "iconUrl": "/data/images/f67ca28a6489e356f928c9c9ef1b61eb.png",
           "rarity": "6",
           "type": "Sword",
           "level": 90,
@@ -1314,7 +1314,7 @@
         }
       },
       "Camille": {
-        "avatarSqUrl": "data/images/ebd60d15f1e07b64fb53c59b905d9767.png",
+        "avatarSqUrl": "/data/images/ebd60d15f1e07b64fb53c59b905d9767.png",
         "rarity": "6",
         "potential": 0,
         "profession": "Vanguard",
@@ -1323,7 +1323,7 @@
         "level": 90,
         "weapon": {
           "name": "Blessing of Lustrous Carmine",
-          "iconUrl": "data/images/02ef4bb9403658103f9e0f43ae77c407.png",
+          "iconUrl": "/data/images/02ef4bb9403658103f9e0f43ae77c407.png",
           "rarity": "6",
           "type": "Polearm",
           "level": 90,
@@ -1331,7 +1331,7 @@
         }
       },
       "Lifeng": {
-        "avatarSqUrl": "data/images/e1ffee22e9f4a4df2562cbfce21108e1.png",
+        "avatarSqUrl": "/data/images/e1ffee22e9f4a4df2562cbfce21108e1.png",
         "rarity": "6",
         "potential": 3,
         "profession": "Guard",
@@ -1340,7 +1340,7 @@
         "level": 90,
         "weapon": {
           "name": "Mountain Bearer",
-          "iconUrl": "data/images/b4827d12232501551485e0c9f671caa8.png",
+          "iconUrl": "/data/images/b4827d12232501551485e0c9f671caa8.png",
           "rarity": "6",
           "type": "Polearm",
           "level": 90,
@@ -1348,7 +1348,7 @@
         }
       },
       "Ardelia": {
-        "avatarSqUrl": "data/images/8acdcdaa6c69979a9b01f77281465a0a.png",
+        "avatarSqUrl": "/data/images/8acdcdaa6c69979a9b01f77281465a0a.png",
         "rarity": "6",
         "potential": 1,
         "profession": "Supporter",
@@ -1357,7 +1357,7 @@
         "level": 90,
         "weapon": {
           "name": "Dreams of the Starry Beach",
-          "iconUrl": "data/images/fe34d89d2e92df4d993a4fc881b3d6d8.png",
+          "iconUrl": "/data/images/fe34d89d2e92df4d993a4fc881b3d6d8.png",
           "rarity": "6",
           "type": "Arts Unit",
           "level": 83,
@@ -1365,7 +1365,7 @@
         }
       },
       "Liino": {
-        "avatarSqUrl": "data/images/5c88d0afcc58b2be7c2feacb5dc45d42.png",
+        "avatarSqUrl": "/data/images/5c88d0afcc58b2be7c2feacb5dc45d42.png",
         "rarity": "6",
         "potential": 0,
         "profession": "Supporter",
@@ -1374,7 +1374,7 @@
         "level": 90,
         "weapon": {
           "name": "Bedazzling Night Debut",
-          "iconUrl": "data/images/108eda921a744528c4c11c575d18404c.png",
+          "iconUrl": "/data/images/108eda921a744528c4c11c575d18404c.png",
           "rarity": "6",
           "type": "Polearm",
           "level": 90,
@@ -1382,7 +1382,7 @@
         }
       },
       "Pogranichnik": {
-        "avatarSqUrl": "data/images/9c14933aa23b96d01658caed5a3b9907.png",
+        "avatarSqUrl": "/data/images/9c14933aa23b96d01658caed5a3b9907.png",
         "rarity": "6",
         "potential": 4,
         "profession": "Vanguard",
@@ -1391,7 +1391,7 @@
         "level": 90,
         "weapon": {
           "name": "Never Rest",
-          "iconUrl": "data/images/21532368a8d1075f3259f51eb226f9b3.png",
+          "iconUrl": "/data/images/21532368a8d1075f3259f51eb226f9b3.png",
           "rarity": "6",
           "type": "Sword",
           "level": 90,
@@ -1399,7 +1399,7 @@
         }
       },
       "Arcane": {
-        "avatarSqUrl": "data/images/214ab1caf883e6ca4645b518eacd7231.png",
+        "avatarSqUrl": "/data/images/214ab1caf883e6ca4645b518eacd7231.png",
         "rarity": "6",
         "potential": 0,
         "profession": "Caster",
@@ -1408,7 +1408,7 @@
         "level": 90,
         "weapon": {
           "name": "Type 42: Solemn Phalanx",
-          "iconUrl": "data/images/a13f27526ecf141f2d572796f87169a7.png",
+          "iconUrl": "/data/images/a13f27526ecf141f2d572796f87169a7.png",
           "rarity": "6",
           "type": "Arts Unit",
           "level": 90,
@@ -1416,7 +1416,7 @@
         }
       },
       "Rossi": {
-        "avatarSqUrl": "data/images/bb6cca7221225af1ce18c1850d1abb7e.png",
+        "avatarSqUrl": "/data/images/bb6cca7221225af1ce18c1850d1abb7e.png",
         "rarity": "6",
         "potential": 0,
         "profession": "Guard",
@@ -1425,7 +1425,7 @@
         "level": 90,
         "weapon": {
           "name": "Lupine Scarlet",
-          "iconUrl": "data/images/dfa304b9de55a75bce9b5719e7cf1d59.png",
+          "iconUrl": "/data/images/dfa304b9de55a75bce9b5719e7cf1d59.png",
           "rarity": "6",
           "type": "Sword",
           "level": 90,
@@ -1433,7 +1433,7 @@
         }
       },
       "Chen Qianyu": {
-        "avatarSqUrl": "data/images/a9166c16be2bd4de3a768f55f9521cd9.png",
+        "avatarSqUrl": "/data/images/a9166c16be2bd4de3a768f55f9521cd9.png",
         "rarity": "5",
         "potential": 5,
         "profession": "Guard",
@@ -1442,7 +1442,7 @@
         "level": 90,
         "weapon": {
           "name": "Sundering Steel",
-          "iconUrl": "data/images/b78d6567010acaea597aa7cc75980909.png",
+          "iconUrl": "/data/images/b78d6567010acaea597aa7cc75980909.png",
           "rarity": "5",
           "type": "Sword",
           "level": 90,
@@ -1450,7 +1450,7 @@
         }
       },
       "Wulfgard": {
-        "avatarSqUrl": "data/images/7ddb3b88ce6f0029e143000cfece7b65.png",
+        "avatarSqUrl": "/data/images/7ddb3b88ce6f0029e143000cfece7b65.png",
         "rarity": "5",
         "potential": 5,
         "profession": "Caster",
@@ -1459,7 +1459,7 @@
         "level": 90,
         "weapon": {
           "name": "Rational Farewell",
-          "iconUrl": "data/images/cee67efec0389c4a0197291c3550ace7.png",
+          "iconUrl": "/data/images/cee67efec0389c4a0197291c3550ace7.png",
           "rarity": "5",
           "type": "Handcannon",
           "level": 90,
@@ -1467,7 +1467,7 @@
         }
       },
       "Endministrator": {
-        "avatarSqUrl": "data/images/a1d3ed03165785526b442aee65f0ef52.png",
+        "avatarSqUrl": "/data/images/a1d3ed03165785526b442aee65f0ef52.png",
         "rarity": "6",
         "potential": 3,
         "profession": "Guard",
@@ -1476,7 +1476,7 @@
         "level": 85,
         "weapon": {
           "name": "Grand Vision",
-          "iconUrl": "data/images/22cd7d47a45fd012e7a7db575cce0e3c.png",
+          "iconUrl": "/data/images/22cd7d47a45fd012e7a7db575cce0e3c.png",
           "rarity": "6",
           "type": "Sword",
           "level": 85,
@@ -1484,7 +1484,7 @@
         }
       },
       "Yvonne": {
-        "avatarSqUrl": "data/images/bacd477f99daf106e4995acef6c85456.png",
+        "avatarSqUrl": "/data/images/bacd477f99daf106e4995acef6c85456.png",
         "rarity": "6",
         "potential": 0,
         "profession": "Striker",
@@ -1493,7 +1493,7 @@
         "level": 84,
         "weapon": {
           "name": "Wedge",
-          "iconUrl": "data/images/599bc5ee4e3021f311259985c844107d.png",
+          "iconUrl": "/data/images/599bc5ee4e3021f311259985c844107d.png",
           "rarity": "6",
           "type": "Handcannon",
           "level": 80,
@@ -1501,7 +1501,7 @@
         }
       },
       "Akekuri": {
-        "avatarSqUrl": "data/images/e230eb3f6a0fb635f8efaae2dae05c31.png",
+        "avatarSqUrl": "/data/images/e230eb3f6a0fb635f8efaae2dae05c31.png",
         "rarity": "4",
         "potential": 5,
         "profession": "Vanguard",
@@ -1510,7 +1510,7 @@
         "level": 84,
         "weapon": {
           "name": "Thermite Cutter",
-          "iconUrl": "data/images/c938f2a07f6fbd4af04c04fabf2001e0.png",
+          "iconUrl": "/data/images/c938f2a07f6fbd4af04c04fabf2001e0.png",
           "rarity": "6",
           "type": "Sword",
           "level": 80,
@@ -1518,7 +1518,7 @@
         }
       },
       "Estella": {
-        "avatarSqUrl": "data/images/cc496a068b34e2d8df6b331f55e9ee8e.png",
+        "avatarSqUrl": "/data/images/cc496a068b34e2d8df6b331f55e9ee8e.png",
         "rarity": "4",
         "potential": 5,
         "profession": "Guard",
@@ -1527,7 +1527,7 @@
         "level": 81,
         "weapon": {
           "name": "OBJ Razorhorn",
-          "iconUrl": "data/images/1eb9f2fd6e269da49a919242dfd998cf.png",
+          "iconUrl": "/data/images/1eb9f2fd6e269da49a919242dfd998cf.png",
           "rarity": "5",
           "type": "Polearm",
           "level": 80,
@@ -1535,7 +1535,7 @@
         }
       },
       "Xaihi": {
-        "avatarSqUrl": "data/images/b57fb03447e70561cd497b60af8b69e3.png",
+        "avatarSqUrl": "/data/images/b57fb03447e70561cd497b60af8b69e3.png",
         "rarity": "5",
         "potential": 5,
         "profession": "Supporter",
@@ -1544,7 +1544,7 @@
         "level": 80,
         "weapon": {
           "name": "Stanza of Memorials",
-          "iconUrl": "data/images/bfbda14b0634b1ef9df15040f2e12640.png",
+          "iconUrl": "/data/images/bfbda14b0634b1ef9df15040f2e12640.png",
           "rarity": "5",
           "type": "Arts Unit",
           "level": 80,
@@ -1552,7 +1552,7 @@
         }
       },
       "Perlica": {
-        "avatarSqUrl": "data/images/c7d4eaff6c2336b0e9d217e32d208e28.png",
+        "avatarSqUrl": "/data/images/c7d4eaff6c2336b0e9d217e32d208e28.png",
         "rarity": "5",
         "potential": 5,
         "profession": "Caster",
@@ -1561,7 +1561,7 @@
         "level": 80,
         "weapon": {
           "name": "Detonation Unit",
-          "iconUrl": "data/images/27335fd9a9e8c41c3cc063fbf8481f9b.png",
+          "iconUrl": "/data/images/27335fd9a9e8c41c3cc063fbf8481f9b.png",
           "rarity": "6",
           "type": "Arts Unit",
           "level": 80,
@@ -1569,7 +1569,7 @@
         }
       },
       "Alesh": {
-        "avatarSqUrl": "data/images/cd332677f9e7fb1f297a7c85c34d8c42.png",
+        "avatarSqUrl": "/data/images/cd332677f9e7fb1f297a7c85c34d8c42.png",
         "rarity": "5",
         "potential": 5,
         "profession": "Vanguard",
@@ -1578,7 +1578,7 @@
         "level": 40,
         "weapon": {
           "name": "Fortmaker",
-          "iconUrl": "data/images/c546904a4df9d036f07463d7843dcacd.png",
+          "iconUrl": "/data/images/c546904a4df9d036f07463d7843dcacd.png",
           "rarity": "5",
           "type": "Sword",
           "level": 20,
@@ -1586,7 +1586,7 @@
         }
       },
       "Catcher": {
-        "avatarSqUrl": "data/images/3b87a2f7f90dd9e6aee2d351df43e409.png",
+        "avatarSqUrl": "/data/images/3b87a2f7f90dd9e6aee2d351df43e409.png",
         "rarity": "4",
         "potential": 5,
         "profession": "Defender",
@@ -1595,7 +1595,7 @@
         "level": 5,
         "weapon": {
           "name": "Darhoff 7",
-          "iconUrl": "data/images/405aa716336d0d399cde63f38096301e.png",
+          "iconUrl": "/data/images/405aa716336d0d399cde63f38096301e.png",
           "rarity": "3",
           "type": "Greatsword",
           "level": 1,
@@ -1603,7 +1603,7 @@
         }
       },
       "Last Rite": {
-        "avatarSqUrl": "data/images/07fa83e5634097332d5b1f6b229b3ea2.png",
+        "avatarSqUrl": "/data/images/07fa83e5634097332d5b1f6b229b3ea2.png",
         "rarity": "6",
         "potential": 0,
         "profession": "Striker",
@@ -1612,7 +1612,7 @@
         "level": 1,
         "weapon": {
           "name": "Darhoff 7",
-          "iconUrl": "data/images/405aa716336d0d399cde63f38096301e.png",
+          "iconUrl": "/data/images/405aa716336d0d399cde63f38096301e.png",
           "rarity": "3",
           "type": "Greatsword",
           "level": 1,
@@ -1620,7 +1620,7 @@
         }
       },
       "Arclight": {
-        "avatarSqUrl": "data/images/068394e39831e767a19d447579a97b1d.png",
+        "avatarSqUrl": "/data/images/068394e39831e767a19d447579a97b1d.png",
         "rarity": "5",
         "potential": 5,
         "profession": "Vanguard",
@@ -1629,7 +1629,7 @@
         "level": 1,
         "weapon": {
           "name": "Tarr 11",
-          "iconUrl": "data/images/397d215b08df02e77309f693971a25bf.png",
+          "iconUrl": "/data/images/397d215b08df02e77309f693971a25bf.png",
           "rarity": "3",
           "type": "Sword",
           "level": 1,
@@ -1637,7 +1637,7 @@
         }
       },
       "Da Pan": {
-        "avatarSqUrl": "data/images/56ead5c066fd0657518c009d12d67d75.png",
+        "avatarSqUrl": "/data/images/56ead5c066fd0657518c009d12d67d75.png",
         "rarity": "5",
         "potential": 5,
         "profession": "Striker",
@@ -1646,7 +1646,7 @@
         "level": 1,
         "weapon": {
           "name": "Finishing Call",
-          "iconUrl": "data/images/19f31f1c6464ea63c4012f70c813ab8e.png",
+          "iconUrl": "/data/images/19f31f1c6464ea63c4012f70c813ab8e.png",
           "rarity": "5",
           "type": "Greatsword",
           "level": 1,
@@ -1654,7 +1654,7 @@
         }
       },
       "Snowshine": {
-        "avatarSqUrl": "data/images/b6dca12b51b4bd83b33e5fdce281a024.png",
+        "avatarSqUrl": "/data/images/b6dca12b51b4bd83b33e5fdce281a024.png",
         "rarity": "5",
         "potential": 5,
         "profession": "Defender",
@@ -1663,7 +1663,7 @@
         "level": 1,
         "weapon": {
           "name": "Darhoff 7",
-          "iconUrl": "data/images/405aa716336d0d399cde63f38096301e.png",
+          "iconUrl": "/data/images/405aa716336d0d399cde63f38096301e.png",
           "rarity": "3",
           "type": "Greatsword",
           "level": 1,
@@ -1671,7 +1671,7 @@
         }
       },
       "Avywenna": {
-        "avatarSqUrl": "data/images/ad690ee34b0fe54fc21e82f04489894f.png",
+        "avatarSqUrl": "/data/images/ad690ee34b0fe54fc21e82f04489894f.png",
         "rarity": "5",
         "potential": 5,
         "profession": "Striker",
@@ -1680,7 +1680,7 @@
         "level": 1,
         "weapon": {
           "name": "Opero 77",
-          "iconUrl": "data/images/84a37c54af2051047d3da560fb9b98f9.png",
+          "iconUrl": "/data/images/84a37c54af2051047d3da560fb9b98f9.png",
           "rarity": "3",
           "type": "Polearm",
           "level": 1,
@@ -1688,7 +1688,7 @@
         }
       },
       "Fluorite": {
-        "avatarSqUrl": "data/images/e50b9cf1b565dc2d31d4b6a2659ada39.png",
+        "avatarSqUrl": "/data/images/e50b9cf1b565dc2d31d4b6a2659ada39.png",
         "rarity": "4",
         "potential": 5,
         "profession": "Caster",
@@ -1697,7 +1697,7 @@
         "level": 1,
         "weapon": {
           "name": "Peco 5",
-          "iconUrl": "data/images/a774ee68210d6c5c2091e8249b093ba0.png",
+          "iconUrl": "/data/images/a774ee68210d6c5c2091e8249b093ba0.png",
           "rarity": "3",
           "type": "Handcannon",
           "level": 1,
@@ -1705,7 +1705,7 @@
         }
       },
       "Antal": {
-        "avatarSqUrl": "data/images/aca43ca0538ead35c4ff7442a6a2a724.png",
+        "avatarSqUrl": "/data/images/aca43ca0538ead35c4ff7442a6a2a724.png",
         "rarity": "4",
         "potential": 5,
         "profession": "Supporter",
@@ -1714,7 +1714,7 @@
         "level": 1,
         "weapon": {
           "name": "Jiminy 12",
-          "iconUrl": "data/images/74de5c6676451d5c7126ba84f87b0718.png",
+          "iconUrl": "/data/images/74de5c6676451d5c7126ba84f87b0718.png",
           "rarity": "3",
           "type": "Arts Unit",
           "level": 1,
