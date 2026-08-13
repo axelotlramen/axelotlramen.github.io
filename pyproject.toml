@@ -6,7 +6,6 @@ dependencies = [
     "httpx[brotli]",
     "genshin",
     "ramael",
-    "requests",
     "cookies",
     "rsa",
     "openpyxl",

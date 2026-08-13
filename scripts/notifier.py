@@ -2,7 +2,7 @@ import calendar
 from datetime import timedelta
 from typing import Any, Dict
 
-import requests
+import httpx
 
 from scripts.constants import now
 
@@ -10,10 +10,11 @@ GREEN_EMBED = 5763719
 RED_EMBED = 15548997
 
 class WebhookClient:
-    def __init__(self, hoyolab_webhook: str, endfield_webhook: str, discord_id: str | None = None):
+    def __init__(self, hoyolab_webhook: str, endfield_webhook: str, discord_id: str | None = None, timeout: int = 10):
         self.hoyolab_webhook = hoyolab_webhook
         self.endfield_webhook = endfield_webhook
         self.discord_id = discord_id
+        self._http = httpx.Client(timeout=timeout)
 
     def send_hoyolab(self, elapsed: float, embeds):
         payload = {
@@ -22,7 +23,7 @@ class WebhookClient:
             "embeds": embeds
         }
 
-        response = requests.post(self.hoyolab_webhook, json=payload, timeout=10)
+        response = self._http.post(self.hoyolab_webhook, json=payload)
         response.raise_for_status()
 
     def send_endfield(self, elapsed: float, embeds):
@@ -32,7 +33,7 @@ class WebhookClient:
             "embeds": embeds
         }
 
-        response = requests.post(self.endfield_webhook, json=payload, timeout=10)
+        response = self._http.post(self.endfield_webhook, json=payload)
         response.raise_for_status()
 
     def send_failure(self, task_name: str, error_message: str):
@@ -52,7 +53,7 @@ class WebhookClient:
             "embeds": [embed]
         }
 
-        response = requests.post(self.hoyolab_webhook, json=payload, timeout=10)
+        response = self._http.post(self.hoyolab_webhook, json=payload)
         response.raise_for_status()
 
 
