@@ -21,7 +21,7 @@ class SectionRenderer {
       <div class="card">
         ${title ? `<h2>${title}</h2>` : ""}
         <div class="avatar">
-          <img src="${avatarUrl}" alt="${nickname}" style="width:100%;height:100%;border-radius:50%;object-fit:cover;">
+          <img src="${avatarUrl}" alt="${nickname}" referrerpolicy="no-referrer" style="width:100%;height:100%;border-radius:50%;object-fit:cover;">
         </div>
         <div class="nickname">${nickname}</div>
         <div class="server-level">${subtitle}</div>
@@ -79,21 +79,22 @@ class SectionRenderer {
     `;
   }
 
-  renderCharacterCard({ iconUrl, name, badge, meta, level, weapon }) {
+  renderCharacterCard({ iconUrl, name, badge, meta, level, weapon, recruitedAt }) {
     return `
       <div class="endfield-char-card">
         <div class="endfield-char-avatar">
-          <img src="${iconUrl}" alt="${name}">
+          <img src="${iconUrl}" alt="${name}" referrerpolicy="no-referrer">
           <div class="endfield-potential-badge">${badge}</div>
         </div>
         <div class="endfield-char-info">
           <div class="endfield-char-name">${name}</div>
           <div class="endfield-char-meta">${meta}</div>
           <div class="endfield-char-level">Lv. ${level}</div>
+          ${recruitedAt ? `<div class="endfield-char-recruited">Recruited ${recruitedAt}</div>` : ""}
           ${
             weapon
               ? `<div class="endfield-char-weapon">
-              <img src="${weapon.iconUrl}" alt="${weapon.name}">
+              <img src="${weapon.iconUrl}" alt="${weapon.name}" referrerpolicy="no-referrer">
               <span>${weapon.name}</span>
             </div>`
               : ""
@@ -378,9 +379,19 @@ class EndfieldRenderer extends SectionRenderer {
           meta: `${char.profession} · ${char.property}`,
           level: char.level,
           weapon: char.weapon ? { iconUrl: char.weapon.iconUrl, name: char.weapon.name } : null,
+          recruitedAt: this._formatRecruitedDate(char.owned_at),
         })
       )
       .join("");
+  }
+
+  _formatRecruitedDate(ownedAt) {
+    if (!ownedAt) return null;
+    return new Date(ownedAt * 1000).toLocaleDateString(undefined, {
+      year: "numeric",
+      month: "short",
+      day: "numeric",
+    });
   }
 }
 

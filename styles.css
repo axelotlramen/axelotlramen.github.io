@@ -744,6 +744,14 @@ p {
   text-overflow: ellipsis;
 }
 
+.endfield-char-recruited {
+  font-size: 0.7rem;
+  color: var(--muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .endfield-char-level {
   font-size: 0.8rem;
   color: var(--text);
