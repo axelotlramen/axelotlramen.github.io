@@ -131,13 +131,14 @@ p {
   margin-bottom: 0.75rem;
 }
 
-.sidebar button {
+.sidebar nav a {
   display: block;
   width: 100%;
   background: none;
   border: none;
   color: var(--muted);
   text-align: left;
+  text-decoration: none;
   padding: 0.6rem 0.75rem;
   border-radius: var(--radius);
   cursor: pointer;
@@ -150,7 +151,7 @@ p {
   position: relative;
 }
 
-.sidebar button::before {
+.sidebar nav a::before {
   content: "";
   position: absolute;
   left: 0;
@@ -163,12 +164,14 @@ p {
   transition: opacity 0.2s;
 }
 
-.sidebar button:hover {
+.sidebar nav a:hover,
+.sidebar nav a[aria-current="page"] {
   background: var(--gold-dim);
   color: var(--gold);
 }
 
-.sidebar button:hover::before {
+.sidebar nav a:hover::before,
+.sidebar nav a[aria-current="page"]::before {
   opacity: 1;
 }
 
@@ -183,23 +186,13 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 2rem;
 }
 
-/* =========================
-   Pages
-========================= */
-.page {
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
+.main-content > * {
   width: 100%;
   max-width: 860px;
   animation: fadeUp 0.3s ease;
-}
-
-.page.active {
-  display: flex;
 }
 
 @keyframes fadeUp {
