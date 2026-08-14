@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-14T06:47:46.250658-04:00",
+  "last_updated": "2026-08-14T14:12:29.495150-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
@@ -484,7 +484,7 @@
         "lc": null
       }
     },
-    "stamina": 53,
+    "stamina": 127,
     "current_train_score": 0,
     "anomaly_arbitration": {
       "season": "Enwreathed by the World",
@@ -1094,16 +1094,16 @@
     "Pulls Net Gain": 0
   },
   "endfield_attendance": {
-    "status": "Already Claimed",
+    "status": "Check-in Successful",
     "rewards": [
       {
-        "name": "Oroberyl",
-        "count": 80,
-        "icon": "https://static.skport.com/asset/endfield_attendance/8ed434a6cdb173c96ed0572115112f93.png"
+        "name": "Protoprism",
+        "count": 3,
+        "icon": "https://static.skport.com/asset/endfield_attendance/0c1e8cf15711a7d59aa7d8786b533cf1.png"
       }
     ],
     "attendance": {
-      "totalSignIns": 12,
+      "totalSignIns": 13,
       "calendar": [
         {
           "awardId": "endfield_attendance_1_2",
@@ -1167,8 +1167,8 @@
         },
         {
           "awardId": "endfield_attendance_6_3",
-          "available": false,
-          "done": false
+          "available": true,
+          "done": true
         },
         {
           "awardId": "endfield_attendance_1_3",
@@ -1264,9 +1264,9 @@
     },
     "error": null,
     "nextAward": {
-      "name": "Protoprism",
+      "name": "Intermediate Combat Record",
       "count": 3,
-      "icon": "https://static.skport.com/asset/endfield_attendance/0c1e8cf15711a7d59aa7d8786b533cf1.png"
+      "icon": "https://static.skport.com/asset/endfield_attendance/921A397E2765462C009B939E0CD92606.png"
     }
   },
   "endfield_data": {
