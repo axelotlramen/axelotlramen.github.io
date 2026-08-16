@@ -18,3 +18,11 @@ HSR_PATH_NUM_TO_NAME = {
     8: "REMEMBRANCE",
     9: "ELATION"
 }
+
+GENSHIN_WEAPON_NUM_TO_NAME = {
+    1: "SWORD",
+    10: "CATALYST",
+    11: "CLAYMORE",
+    12: "BOW",
+    13: "POLEARM"
+}

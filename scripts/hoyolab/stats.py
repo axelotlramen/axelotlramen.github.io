@@ -1,6 +1,6 @@
 import logging
 
-from scripts.constants import HSR_PATH_NUM_TO_NAME
+from scripts.constants import GENSHIN_WEAPON_NUM_TO_NAME, HSR_PATH_NUM_TO_NAME
 
 
 class HoyolabStatsFetcher:
@@ -17,7 +17,10 @@ class HoyolabStatsFetcher:
             character_response = await self.client.get_starrail_characters(uid)
             characters = character_response.avatar_list
 
-            # Filter 5-star characters
+            # Filter 5-star characters, sorted by level descending
+            five_star_chars = sorted(
+                (c for c in characters if c.rarity == 5), key=lambda c: c.level, reverse=True
+            )
             five_stars = {
                 char.name: {
                     "icon": char.icon,
@@ -32,7 +35,7 @@ class HoyolabStatsFetcher:
                         "level": char.equip.level,
                         "superimposition": char.equip.rank
                     } if char.equip else None
-                } for char in characters if char.rarity == 5
+                } for char in five_star_chars
             }
 
             hsr_notes = await self.client.get_starrail_notes(uid=uid)
@@ -208,12 +211,15 @@ class HoyolabStatsFetcher:
             user = await self.client.get_genshin_user(uid)
             characters = await self.client.get_genshin_characters(uid)
 
+            five_star_chars = sorted(
+                (c for c in characters if c.rarity == 5), key=lambda c: c.level, reverse=True
+            )
             five_stars = {
                 char.name: {
                     "icon": char.icon,
                     "constellation": char.constellation,
                     "element": char.element,
-                    "weaponType": char.weapon_type,
+                    "weaponType": GENSHIN_WEAPON_NUM_TO_NAME[char.weapon_type],
                     "level": char.level,
                     "friendship": char.friendship,
                     "weapon": {
@@ -223,7 +229,7 @@ class HoyolabStatsFetcher:
                         "level": char.weapon.level,
                         "refinement": char.weapon.refinement
                     } if char.weapon else None
-                } for char in characters if char.rarity == 5
+                } for char in five_star_chars
             }
 
             notes = await self.client.get_genshin_notes(uid)

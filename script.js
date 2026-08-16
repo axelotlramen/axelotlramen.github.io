@@ -200,6 +200,7 @@ class HsrRenderer extends SectionRenderer {
 
     const container = document.getElementById("hsr-characters");
     container.innerHTML = Object.entries(chars)
+      .sort(([, a], [, b]) => b.level - a.level)
       .map(([name, char]) =>
         this.renderCharacterCard({
           iconUrl: char.icon,
@@ -324,6 +325,28 @@ class GenshinRenderer extends SectionRenderer {
       { label: "Daily Tasks", value: `${gi.daily_task ?? 0}/4` },
       { label: "Logged In Today", value: loggedIn ? "Yes" : "No" },
     ]);
+
+    this.renderCharacters(gi);
+  }
+
+  renderCharacters(gi) {
+    const chars = gi?.five_star_characters;
+    if (!chars) return;
+
+    const container = document.getElementById("genshin-characters");
+    container.innerHTML = Object.entries(chars)
+      .sort(([, a], [, b]) => b.level - a.level)
+      .map(([name, char]) =>
+        this.renderCharacterCard({
+          iconUrl: char.icon,
+          name,
+          badge: `C${char.constellation}`,
+          meta: `${char.element} · ${char.weaponType}`,
+          level: char.level,
+          weapon: char.weapon ? { iconUrl: char.weapon.icon, name: char.weapon.name } : null,
+        })
+      )
+      .join("");
   }
 }
 
