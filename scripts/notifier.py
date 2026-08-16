@@ -4,13 +4,13 @@ from typing import Any, Dict
 
 import httpx
 
-from scripts.constants import now
+from scripts.constants import MODE_LABELS, now
 
 GREEN_EMBED = 5763719
 RED_EMBED = 15548997
 
 class WebhookClient:
-    def __init__(self, hoyolab_webhook: str, endfield_webhook: str, discord_id: str | None = None, timeout: int = 10):
+    def __init__(self, hoyolab_webhook: str, endfield_webhook: str | None = None, discord_id: str | None = None, timeout: int = 10):
         self.hoyolab_webhook = hoyolab_webhook
         self.endfield_webhook = endfield_webhook
         self.discord_id = discord_id
@@ -27,6 +27,9 @@ class WebhookClient:
         response.raise_for_status()
 
     def send_endfield(self, elapsed: float, embeds):
+        if not self.endfield_webhook:
+            raise RuntimeError("WebhookClient was constructed without endfield_webhook")
+
         payload = {
             "username": "Chen Qianyu - Dijiang Control Nexus Assistant",
             "content": f"✅ Task completed in `{elapsed:.2f}s`",
@@ -257,6 +260,145 @@ class EmbedBuilder:
                 "icon_url": "https://assets.skport.com/assets/favicon.ico"
             }
         }
+
+    @staticmethod
+    def hsr_sheet_summary(reports):
+        """One embed summarizing every HSR endgame mode's sheet-write result."""
+        has_errors = any(report.error for report in reports)
+        has_changes = any(report.changed for report in reports)
+
+        if has_errors:
+            description = "⚠️ **Daily HSR sheet update finished with errors.**"
+        elif has_changes:
+            description = "📊 **Daily HSR sheet update — new results today.**"
+        else:
+            description = "✅ **Daily HSR sheet update — no changes.**"
+
+        now_est = now()
+
+        return {
+            "title": "Daily HSR Endgame Sheet Update",
+            "description": description,
+            "color": RED_EMBED if has_errors else GREEN_EMBED,
+            "fields": [EmbedBuilder._sheet_report_field(report) for report in reports],
+            "footer": {
+                "text": f"Time: {now_est.strftime('%m/%d/%Y, %I:%M:%S %p')} (ET)"
+            }
+        }
+
+    @staticmethod
+    def _sheet_report_field(report):
+        label = MODE_LABELS.get(report.mode, report.mode.value)
+        if report.version:
+            label = f"{label} (v{report.version})"
+
+        if report.error:
+            value = f"❌ ```{report.error}```"
+        elif report.diff_lines:
+            value = "\n".join(report.diff_lines)
+        else:
+            value = "No changes"
+
+        return {"name": label, "value": value, "inline": False}
+
+    @staticmethod
+    def hsr_usage_summary(overall_changes, by_endgame_changes, top_units, current_patch):
+        """Two embeds: the weekly usage-change summary, and a top-10 leaderboard."""
+        has_changes = bool(overall_changes or by_endgame_changes)
+
+        description = (
+            f"📈 **Weekly character usage update — changes since patch {current_patch}.**"
+            if has_changes
+            else f"✅ **Weekly character usage update — no changes since patch {current_patch}.**"
+        )
+
+        change_fields = []
+        if overall_changes:
+            table = EmbedBuilder._render_table(
+                ["Unit", f"Uses Since {current_patch}"],
+                [
+                    [change.label, f"{change.old_uses} → {change.new_uses}"]
+                    for change in overall_changes
+                ],
+            )
+            change_fields.append({"name": "All Endgames", "value": table})
+
+        if by_endgame_changes:
+            table = EmbedBuilder._render_table(
+                ["Endgame / Unit", "Uses", "Avg Score"],
+                [
+                    [
+                        change.label,
+                        f"{change.old_uses} → {change.new_uses}",
+                        EmbedBuilder._format_avg_change(change.old_avg_score, change.new_avg_score),
+                    ]
+                    for change in by_endgame_changes
+                ],
+            )
+            change_fields.append({"name": "Per Endgame", "value": table})
+
+        if not change_fields:
+            change_fields.append({
+                "name": "Status",
+                "value": f"No usage changes since patch {current_patch}."
+            })
+
+        now_est = now()
+
+        embeds = [{
+            "title": f"Weekly Usage Changes (Since Patch {current_patch})",
+            "description": description,
+            "color": GREEN_EMBED,
+            "fields": change_fields,
+            "footer": {
+                "text": f"Time: {now_est.strftime('%m/%d/%Y, %I:%M:%S %p')} (ET)"
+            }
+        }]
+
+        if top_units:
+            leaderboard = EmbedBuilder._render_table(
+                ["#", "Unit", f"Uses Since {current_patch}"],
+                [
+                    [str(rank), unit, str(uses)]
+                    for rank, (unit, uses) in enumerate(top_units, start=1)
+                ],
+            )
+            embeds.append({
+                "title": f"Top {len(top_units)} Units Since Patch {current_patch}",
+                "color": GREEN_EMBED,
+                "description": leaderboard,
+            })
+
+        return embeds
+
+    @staticmethod
+    def _render_table(headers, rows, limit: int = 1000):
+        """Render a monospace table (in a code block) for Discord, truncated to fit one field."""
+        widths = [len(header) for header in headers]
+        for row in rows:
+            for i, cell in enumerate(row):
+                widths[i] = max(widths[i], len(cell))
+
+        def format_row(cells):
+            return "  ".join(cell.ljust(width) for cell, width in zip(cells, widths))
+
+        lines = [format_row(headers), format_row(["-" * width for width in widths])]
+        lines.extend(format_row(row) for row in rows)
+
+        body = "\n".join(lines)
+        if len(body) > limit:
+            truncated = body[:limit].rsplit("\n", 1)[0]
+            body = f"{truncated}\n… ({len(rows)} rows total)"
+
+        return f"```\n{body}\n```"
+
+    @staticmethod
+    def _format_avg_score(value):
+        return "-" if value is None else f"{value:.2f}"
+
+    @staticmethod
+    def _format_avg_change(old_value, new_value):
+        return f"{EmbedBuilder._format_avg_score(old_value)} → {EmbedBuilder._format_avg_score(new_value)}"
 
     @staticmethod
     def _delta(old_value, new_value):

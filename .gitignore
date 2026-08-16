@@ -7,3 +7,4 @@ __pycache__/
 automation.log
 CLAUDE.md
 data/cost.md
+service_account.json

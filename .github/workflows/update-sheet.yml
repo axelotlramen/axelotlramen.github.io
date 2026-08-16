@@ -1,0 +1,35 @@
+name: Update HSR Endgame Sheet
+
+on:
+  schedule:
+    - cron: "0 12 * * *" # ~7 AM EST
+  workflow_dispatch: # allows manual runs too
+
+jobs:
+  update-sheet:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.11"
+          enable-cache: true
+
+      - name: Install deps
+        run: uv sync --locked
+
+      - name: Write Google service account credentials
+        env:
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+        run: printf '%s' "$GOOGLE_SERVICE_ACCOUNT_JSON" > service_account.json
+
+      - name: Run daily sheet update
+        env:
+          HOYOLAB_WEBHOOK: ${{ secrets.HOYOLAB_WEBHOOK }}
+          DISCORD_ID: ${{ secrets.DISCORD_ID }}
+          HOYOLAB_USER_COOKIES: ${{ secrets.HOYOLAB_USER_COOKIES }}
+          HOYOLAB_HSR_UID: ${{ secrets.HOYOLAB_HSR_UID }}
+          SHEET_CREDENTIALS: service_account.json
+        run: uv run python -m scripts.update_sheet

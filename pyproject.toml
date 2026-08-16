@@ -9,6 +9,9 @@ dependencies = [
     "cookies",
     "rsa",
     "openpyxl",
+    "gspread",
+    "google-auth",
+    "pandas",
 ]
 
 [tool.uv]

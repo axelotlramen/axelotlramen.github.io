@@ -35,7 +35,7 @@ jobs:
           ENDFIELD_WEBHOOK: ${{ secrets.ENDFIELD_WEBHOOK }}
           ENDFIELD_CRED: ${{ secrets.ENDFIELD_CRED }}
           ENDFIELD_GAME_ROLE: ${{ secrets.ENDFIELD_GAME_ROLE }}
-        run: uv run main.py
+        run: uv run python -m scripts.update_stats
 
       - name: Commit & push
         run: |
