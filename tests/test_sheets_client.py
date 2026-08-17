@@ -1,4 +1,4 @@
-from scripts.sheets.sheets_client import GoogleSheetsClient, _diff_rows, _preserve_manual_scores, _sort_key
+from scripts.sheets.sheets_client import NOTES_COL, GoogleSheetsClient, _diff_rows, _preserve_manual_entries, _sort_key
 
 
 class FakeWorksheet:
@@ -26,22 +26,41 @@ def _client(worksheet):
 HEADER = ["Date", "Version", "Mode", "Side", "Notes", "M1", "M2", "M3", "M4", "Score"]
 
 
-def test_preserve_manual_scores_fills_blank_moc_score():
+def test_preserve_manual_entries_fills_blank_moc_score():
     previous = [["01/01/2026", "4.4", "Memory of Chaos 4 Starward", "Node 1", "", "A", "B", "", "", "3000"]]
     new = [["01/02/2026", "4.4", "Memory of Chaos 4 Starward", "Node 1", "", "A", "B", "", "", ""]]
 
-    result = _preserve_manual_scores(previous, new)
+    result = _preserve_manual_entries(previous, new)
 
     assert result[0][-1] == "3000"
 
 
-def test_preserve_manual_scores_does_not_overwrite_a_real_new_score():
+def test_preserve_manual_entries_does_not_overwrite_a_real_new_score():
     previous = [["01/01/2026", "4.4", "Apocalyptic Shadow 4 Starward", "Node 1", "", "A", "B", "", "", "3000"]]
     new = [["01/02/2026", "4.4", "Apocalyptic Shadow 4 Starward", "Node 1", "", "A", "B", "", "", "3600"]]
 
-    result = _preserve_manual_scores(previous, new)
+    result = _preserve_manual_entries(previous, new)
 
     assert result[0][-1] == "3600"
+
+
+def test_preserve_manual_entries_fills_blank_boss_note():
+    previous = [["01/01/2026", "4.4", "Anomaly Arbitration: King", "", "Murata Graphia", "A", "B", "", "", "2"]]
+    new = [["01/02/2026", "4.4", "Anomaly Arbitration: King", "", "", "A", "B", "", "", "3"]]
+
+    result = _preserve_manual_entries(previous, new)
+
+    assert result[0][NOTES_COL] == "Murata Graphia"
+    assert result[0][-1] == "3"  # the real new score still wins
+
+
+def test_preserve_manual_entries_does_not_overwrite_a_real_new_note():
+    previous = [["01/01/2026", "4.4", "Anomaly Arbitration: King", "", "Old Boss Name", "A", "B", "", "", "2"]]
+    new = [["01/02/2026", "4.4", "Anomaly Arbitration: King", "", "New Boss Name", "A", "B", "", "", "3"]]
+
+    result = _preserve_manual_entries(previous, new)
+
+    assert result[0][NOTES_COL] == "New Boss Name"
 
 
 def test_diff_rows_flags_new_side_and_changed_score():

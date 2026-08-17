@@ -6,7 +6,7 @@ from google.oauth2.service_account import Credentials
 
 from scripts.sheets.enums import HSRMode, SheetRow
 
-DATE_COL, VERSION_COL, MODE_COL, SIDE_COL, SCORE_COL = 0, 1, 2, 3, -1
+DATE_COL, VERSION_COL, MODE_COL, SIDE_COL, NOTES_COL, SCORE_COL = 0, 1, 2, 3, 4, -1
 
 # Sheet order: newest version first; within a version, AA, AA King, MoC, PF, Apoc.
 MODE_ORDER = [
@@ -58,7 +58,7 @@ class GoogleSheetsClient:
         mode_values = list(dict.fromkeys(row[MODE_COL] for row in rows))
 
         previous_rows, previous_row_numbers = self._find_matching_rows(worksheet, version, mode_values)
-        rows = _preserve_manual_scores(previous_rows, rows)
+        rows = _preserve_manual_entries(previous_rows, rows)
 
         insert_at = self._find_insert_row(worksheet, version, mode_values)
         worksheet.insert_rows(rows, row=insert_at)
@@ -116,17 +116,22 @@ def _sort_key(version: str, mode_value: str) -> tuple[tuple[int, int], int]:
     return (-major, -minor), MODE_ORDER.index(mode_value)
 
 
-def _preserve_manual_scores(
+def _preserve_manual_entries(
     previous_rows: list[SheetRow], new_rows: list[SheetRow]
 ) -> list[SheetRow]:
-    """Keep a manually-entered score in place when the automation has none to write for that side."""
+    """Keep a manually-entered Notes (e.g. boss name) or Score in place when the automation
+    has nothing of its own to write for that side."""
     previous_by_side = {row[SIDE_COL]: row for row in previous_rows}
 
     preserved = []
     for row in new_rows:
         previous = previous_by_side.get(row[SIDE_COL])
-        if row[SCORE_COL] == "" and previous is not None and previous[SCORE_COL] != "":
-            row = [*row[:SCORE_COL], previous[SCORE_COL]]
+        if previous is not None:
+            row = list(row)
+            if row[NOTES_COL] == "" and previous[NOTES_COL] != "":
+                row[NOTES_COL] = previous[NOTES_COL]
+            if row[SCORE_COL] == "" and previous[SCORE_COL] != "":
+                row[SCORE_COL] = previous[SCORE_COL]
         preserved.append(row)
 
     return preserved
