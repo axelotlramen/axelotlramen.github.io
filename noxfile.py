@@ -25,4 +25,10 @@ def typecheck(session):
 @nox.session
 def run(session):
     _uv_sync(session)
-    session.run("python", "main.py")
+    session.run("python", "-m", "scripts.update_stats")
+
+
+@nox.session
+def test(session):
+    _uv_sync(session, "test")
+    session.run("pytest")

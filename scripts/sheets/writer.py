@@ -34,7 +34,8 @@ class SheetWriter:
         gs_client: GoogleSheetsClient,
         version_resolver: VersionResolver,
     ) -> "SheetWriter":
-        nanoka_characters = await NanokaClient().get_characters()
+        async with NanokaClient() as nanoka:
+            nanoka_characters = await nanoka.get_characters()
         return cls(genshin_client, uid, gs_client, version_resolver, nanoka_characters)
 
     async def build_rows(self, mode: ChallengeMode) -> list[SheetRow]:

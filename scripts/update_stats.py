@@ -14,6 +14,7 @@ from scripts.hoyolab.diary import GENSHIN_CONFIG, HSR_CONFIG, DiaryWorkbook
 from scripts.hoyolab.stats import HoyolabStatsFetcher
 from scripts.logging_config import setup_logging
 from scripts.notifier import EmbedBuilder, WebhookClient
+from scripts.stats_schema import EndfieldData, GenshinData, HSRData, is_valid_section
 from scripts.update_usage import CURRENT_THRESHOLD
 
 USAGE_CSV = Path("data/usage_overall.csv")
@@ -42,6 +43,16 @@ def _order_hsr_by_usage(five_star_characters: dict) -> dict:
         reverse=True,
     )
     return dict(ordered)
+
+
+def _validated_or_previous(logger, label: str, data: dict, model, old_section: dict, degraded: list[str]) -> dict:
+    """Keep the fetched section if it validates, else fall back to the previous snapshot's."""
+    if is_valid_section(data, model):
+        return data
+
+    logger.error(f"{label} fetch returned invalid/empty data - keeping previous snapshot")
+    degraded.append(label)
+    return old_section
 
 
 class StatsUpdatePipeline:
@@ -88,15 +99,28 @@ class StatsUpdatePipeline:
             # ---------------------------
             # Fetch Data
             # ---------------------------
+            old_hsr = (old_data or {}).get("hsr_data", {})
+            old_genshin = (old_data or {}).get("genshin_data", {})
+            old_endfield = (old_data or {}).get("endfield_data", {})
+            degraded: list[str] = []
+
             hsr_data = await self.stats_fetcher.fetch_hsr(self.hsr_uid)
+            hsr_data = _validated_or_previous(logger, "hsr_data", hsr_data, HSRData, old_hsr, degraded)
             if hsr_data.get("five_star_characters"):
                 hsr_data["five_star_characters"] = _order_hsr_by_usage(hsr_data["five_star_characters"])
+
             genshin_data = await self.stats_fetcher.fetch_genshin(self.genshin_uid)
+            genshin_data = _validated_or_previous(logger, "genshin_data", genshin_data, GenshinData, old_genshin, degraded)
+
             hsr_diary = await self.hsr_diary.update(self.hoyolab_client, self.hsr_uid)
             genshin_diary = await self.genshin_diary.update(self.hoyolab_client, self.genshin_uid)
 
             endfield_attendance = self.endfield_client.claim_attendance()
-            endfield_data = self.endfield_client.fetch_endfield_data(old_data.get("endfield_data", {}) if old_data else {})
+            endfield_data = self.endfield_client.fetch_endfield_data(old_endfield)
+            endfield_data = _validated_or_previous(logger, "endfield_data", endfield_data, EndfieldData, old_endfield, degraded)
+
+            if degraded:
+                logger.warning(f"Degraded sections kept from previous snapshot: {', '.join(degraded)}")
 
             data = {
                 "last_updated": now().isoformat(),
@@ -105,7 +129,8 @@ class StatsUpdatePipeline:
                 "hsr_diary": hsr_diary,
                 "genshin_diary": genshin_diary,
                 "endfield_attendance": endfield_attendance,
-                "endfield_data": endfield_data
+                "endfield_data": endfield_data,
+                "degraded_sections": degraded,
             }
 
             os.makedirs("data", exist_ok=True)
@@ -149,12 +174,18 @@ class StatsUpdatePipeline:
             # ---------------------------
             # FAILURE NOTIFICATION
             # ---------------------------
+            logger.exception("Pipeline failed")
 
-            self.notifier.send_failure(
-                task_name="main",
-                error_message=str(e)
-            )
+            try:
+                self.notifier.send_failure(task_name="main", error_message=str(e))
+            except Exception:
+                logger.exception("Failure notification also failed")
+
             raise
+
+        finally:
+            self.notifier.close()
+            self.endfield_client.close()
 
 
 if __name__ == "__main__":

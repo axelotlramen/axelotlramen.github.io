@@ -6,5 +6,6 @@ __pycache__/
 .nox/
 automation.log
 CLAUDE.md
-data/cost.md
 service_account.json
+.env
+codebase_reviews/

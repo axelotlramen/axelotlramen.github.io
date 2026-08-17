@@ -55,11 +55,18 @@ async def run() -> None:
                 reports.append(ModeReport(mode=mode, error=str(error)))
                 logger.error(f"{label}: failed - {error}")
 
+        failed_modes = [report.mode.value for report in reports if report.error]
+
         notifier.send_hoyolab(elapsed=0.0, embeds=[EmbedBuilder.hsr_sheet_summary(reports)])
         logger.info("Sent daily sheet summary to Discord")
+
+        if failed_modes:
+            try:
+                notifier.send_failure("HSR Sheet Update", f"Modes failed: {', '.join(failed_modes)}")
+            except Exception:
+                logger.exception("Failure alert also failed to send")
         reported = True
 
-        failed_modes = [report.mode.value for report in reports if report.error]
         if failed_modes:
             raise RuntimeError(f"Modes failed: {', '.join(failed_modes)}")
 
@@ -68,8 +75,14 @@ async def run() -> None:
     except Exception as error:
         logger.error(f"Sheet update failed: {error}")
         if not reported:
-            notifier.send_failure("HSR Sheet Update", str(error))
+            try:
+                notifier.send_failure("HSR Sheet Update (setup)", str(error))
+            except Exception:
+                logger.exception("Failure notification also failed")
         raise
+
+    finally:
+        notifier.close()
 
 
 if __name__ == "__main__":

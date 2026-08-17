@@ -7,7 +7,7 @@ from typing import Any, Dict, Optional, Tuple
 
 import httpx
 
-from scripts.constants import now
+from scripts.constants import daily_reset_boundary, now
 
 
 class EndfieldClient:
@@ -21,6 +21,15 @@ class EndfieldClient:
         self.logger = logging.getLogger("EndfieldClient")
         self._token: Optional[str] = None
         self._http = httpx.Client(timeout=timeout)
+
+    def close(self) -> None:
+        self._http.close()
+
+    def __enter__(self) -> "EndfieldClient":
+        return self
+
+    def __exit__(self, *exc_info) -> None:
+        self.close()
 
     # ------------------------
     # Internal helpers
@@ -65,6 +74,7 @@ class EndfieldClient:
             f"{self.BASE_URL}/web/v1/auth/refresh",
             headers=headers
         )
+        res.raise_for_status()
 
         data = res.json()
 
@@ -108,6 +118,7 @@ class EndfieldClient:
             headers=headers,
             content=body if body else None
         )
+        response.raise_for_status()
 
         data = response.json()
 
@@ -151,7 +162,7 @@ class EndfieldClient:
 
             for award in awards:
                 reward_id = award.get("id")
-                info = resourceMap[reward_id]
+                info = resourceMap.get(reward_id)
                 if info:
                     self.logger.info(f"- {info['name']} x{info['count']}")
                     rewards.append({
@@ -276,6 +287,11 @@ class EndfieldClient:
 
         if code == 0:
             detail = data.get("data", {}).get("detail", {})
+            base = detail.get("base") or {}
+            achieve = detail.get("achieve") or {}
+            dungeon = detail.get("dungeon") or {}
+            daily_mission_data = detail.get("dailyMission") or {}
+            daily_mission = daily_mission_data.get("dailyActivation")
 
             six_star_entries = [
                 (
@@ -299,14 +315,14 @@ class EndfieldClient:
                         } if char.get("weapon") else None
                     }
                 )
-                for char in detail.get("chars")
+                for char in detail.get("chars") or []
             ]
 
             # Most recently recruited first, characters with no known recruit time last.
             six_star_entries.sort(key=lambda entry: entry[1]["owned_at"] or 0, reverse=True)
             six_stars = dict(six_star_entries)
 
-            domains = detail.get("domain")
+            domains = detail.get("domain") or []
             aurylenes = 0
             crates = 0
 
@@ -317,20 +333,20 @@ class EndfieldClient:
                     crates += level.get("trchestCount", {}).get("count", 0)
 
             return {
-                "nickname": detail.get("base").get("name"),
-                "level": detail.get("base").get("level"),
-                "avatar_url": detail.get("base").get("avatarUrl"),
+                "nickname": base.get("name"),
+                "level": base.get("level"),
+                "avatar_url": base.get("avatarUrl"),
 
-                "achievements": detail.get("achieve").get("count"),
-                "active_days": self._get_total_days_login(old_endfield, detail.get("dailyMission").get("dailyActivation")),
-                "avatar_count": detail.get("base").get("charNum"),
+                "achievements": achieve.get("count"),
+                "active_days": self._get_total_days_login(old_endfield, daily_mission),
+                "avatar_count": base.get("charNum"),
                 "aurylenes": aurylenes,
                 "chest_count": crates,
                 "six_star_characters": six_stars,
 
-                "stamina": detail.get("dungeon").get("curStamina"),
-                "daily_mission": detail.get("dailyMission").get("dailyActivation"),
-                "last_updated": self._get_last_updated(old_endfield, detail.get("dailyMission").get("dailyActivation"))
+                "stamina": dungeon.get("curStamina"),
+                "daily_mission": daily_mission,
+                "last_updated": self._get_last_updated(old_endfield, daily_mission)
             }
 
         else:
@@ -343,8 +359,7 @@ class EndfieldClient:
         last_updated_raw = old_endfield.get("last_updated")
         last_updated = datetime.fromisoformat(last_updated_raw) if last_updated_raw else None
 
-        daily_reset = now().replace(hour=4, minute=0, second=0, microsecond=0)
-        already_updated_today = last_updated is not None and last_updated >= daily_reset
+        already_updated_today = last_updated is not None and last_updated >= daily_reset_boundary()
 
         if not already_updated_today and daily_mission == 100:
             return now().isoformat()
@@ -356,8 +371,7 @@ class EndfieldClient:
         last_updated_raw = old_endfield.get("last_updated")
         last_updated = datetime.fromisoformat(last_updated_raw) if last_updated_raw else None
 
-        daily_reset = now().replace(hour=4, minute=0, second=0, microsecond=0)
-        already_updated_today = last_updated is not None and last_updated >= daily_reset
+        already_updated_today = last_updated is not None and last_updated >= daily_reset_boundary()
 
         if not already_updated_today and daily_mission == 100:
             return active_days + 1

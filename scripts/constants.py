@@ -1,5 +1,5 @@
 from dataclasses import dataclass, field
-from datetime import datetime
+from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 
 from scripts.sheets.enums import ChallengeMode
@@ -9,6 +9,14 @@ TZ = ZoneInfo("America/New_York")
 def now():
     """Return current time in the project timezone."""
     return datetime.now(TZ)
+
+def daily_reset_boundary():
+    """The most recent 4am daily-reset boundary (today's, or yesterday's if it's before 4am)."""
+    current = now()
+    reset = current.replace(hour=4, minute=0, second=0, microsecond=0)
+    if current < reset:
+        reset -= timedelta(days=1)
+    return reset
 
 HSR_PATH_NUM_TO_NAME = {
     1: "DESTRUCTION",

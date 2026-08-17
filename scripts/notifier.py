@@ -16,6 +16,15 @@ class WebhookClient:
         self.discord_id = discord_id
         self._http = httpx.Client(timeout=timeout)
 
+    def close(self) -> None:
+        self._http.close()
+
+    def __enter__(self) -> "WebhookClient":
+        return self
+
+    def __exit__(self, *exc_info) -> None:
+        self.close()
+
     def send_hoyolab(self, elapsed: float, embeds):
         payload = {
             "username": "Hoyolab Stats Bot",

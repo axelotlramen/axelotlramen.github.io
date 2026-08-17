@@ -3,6 +3,43 @@ import logging
 from scripts.constants import GENSHIN_WEAPON_NUM_TO_NAME, HSR_PATH_NUM_TO_NAME
 
 
+def build_hsr_character(char) -> dict:
+    """Build one HSR five-star character's dict. Unknown path IDs fall back rather than crash."""
+    return {
+        "icon": char.icon,
+        "eidolon": char.rank,
+        "element": char.element.capitalize(),
+        "path": HSR_PATH_NUM_TO_NAME.get(char.path, f"Unknown ({char.path})"),
+        "level": char.level,
+        "lc": {
+            "name": char.equip.name,
+            "icon": char.equip.icon,
+            "rarity": char.equip.rarity,
+            "level": char.equip.level,
+            "superimposition": char.equip.rank
+        } if char.equip else None
+    }
+
+
+def build_genshin_character(char) -> dict:
+    """Build one Genshin five-star character's dict. Unknown weapon types fall back rather than crash."""
+    return {
+        "icon": char.icon,
+        "constellation": char.constellation,
+        "element": char.element,
+        "weaponType": GENSHIN_WEAPON_NUM_TO_NAME.get(char.weapon_type, f"Unknown ({char.weapon_type})"),
+        "level": char.level,
+        "friendship": char.friendship,
+        "weapon": {
+            "name": char.weapon.name,
+            "icon": char.weapon.icon,
+            "rarity": char.weapon.rarity,
+            "level": char.weapon.level,
+            "refinement": char.weapon.refinement
+        } if char.weapon else None
+    }
+
+
 class HoyolabStatsFetcher:
     def __init__(self, client):
         self.client = client
@@ -21,22 +58,7 @@ class HoyolabStatsFetcher:
             five_star_chars = sorted(
                 (c for c in characters if c.rarity == 5), key=lambda c: c.level, reverse=True
             )
-            five_stars = {
-                char.name: {
-                    "icon": char.icon,
-                    "eidolon": char.rank,
-                    "element": char.element.capitalize(),
-                    "path": HSR_PATH_NUM_TO_NAME[char.path],
-                    "level": char.level,
-                    "lc": {
-                        "name": char.equip.name,
-                        "icon": char.equip.icon,
-                        "rarity": char.equip.rarity,
-                        "level": char.equip.level,
-                        "superimposition": char.equip.rank
-                    } if char.equip else None
-                } for char in five_star_chars
-            }
+            five_stars = {char.name: build_hsr_character(char) for char in five_star_chars}
 
             hsr_notes = await self.client.get_starrail_notes(uid=uid)
             moc_data = await self._fetch_memory_of_chaos(uid)
@@ -175,7 +197,7 @@ class HoyolabStatsFetcher:
             }
 
         except Exception:
-            logger.error("Failed to fetch Memory of Chaos", exc_info=True)
+            logger.error("Failed to fetch Pure Fiction", exc_info=True)
             return {}
 
     async def _fetch_memory_of_chaos(self, uid):
@@ -183,7 +205,7 @@ class HoyolabStatsFetcher:
         try:
             challenge = await self.client.get_starrail_challenge(uid=uid)
 
-            if not challenge:
+            if not challenge or not challenge.has_data or not challenge.floors:
                 return {}
 
             floor_12 = challenge.floors[0]
@@ -214,23 +236,7 @@ class HoyolabStatsFetcher:
             five_star_chars = sorted(
                 (c for c in characters if c.rarity == 5), key=lambda c: c.level, reverse=True
             )
-            five_stars = {
-                char.name: {
-                    "icon": char.icon,
-                    "constellation": char.constellation,
-                    "element": char.element,
-                    "weaponType": GENSHIN_WEAPON_NUM_TO_NAME[char.weapon_type],
-                    "level": char.level,
-                    "friendship": char.friendship,
-                    "weapon": {
-                        "name": char.weapon.name,
-                        "icon": char.weapon.icon,
-                        "rarity": char.weapon.rarity,
-                        "level": char.weapon.level,
-                        "refinement": char.weapon.refinement
-                    } if char.weapon else None
-                } for char in five_star_chars
-            }
+            five_stars = {char.name: build_genshin_character(char) for char in five_star_chars}
 
             notes = await self.client.get_genshin_notes(uid)
 

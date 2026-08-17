@@ -12,6 +12,7 @@ dependencies = [
     "gspread",
     "google-auth",
     "pandas",
+    "pydantic",
 ]
 
 [tool.uv]
@@ -24,3 +25,7 @@ genshin = { git = "https://github.com/seriaati/genshin.py", branch = "master" }
 dev = ["nox"]
 lint = ["ruff"]
 typecheck = ["pyright"]
+test = ["pytest"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]

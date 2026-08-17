@@ -2,17 +2,21 @@ name: Update HSR Endgame Sheet
 
 on:
   schedule:
-    - cron: "0 12 * * *" # ~7 AM EST
+    - cron: "0 12 * * *" # 12:00 UTC (~7 AM EST / 8 AM EDT)
   workflow_dispatch: # allows manual runs too
+
+concurrency:
+  group: data-updates
+  cancel-in-progress: false
 
 jobs:
   update-sheet:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
 
       - name: Install uv
-        uses: astral-sh/setup-uv@v5
+        uses: astral-sh/setup-uv@d4b2f3b6ecc6e67c4457f6d3e41ec42d3d0fcb86 # v5
         with:
           python-version: "3.11"
           enable-cache: true
@@ -23,7 +27,9 @@ jobs:
       - name: Write Google service account credentials
         env:
           GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
-        run: printf '%s' "$GOOGLE_SERVICE_ACCOUNT_JSON" > service_account.json
+        run: |
+          umask 077
+          printf '%s' "$GOOGLE_SERVICE_ACCOUNT_JSON" > "$RUNNER_TEMP/service_account.json"
 
       - name: Run daily sheet update
         env:
@@ -31,5 +37,9 @@ jobs:
           DISCORD_ID: ${{ secrets.DISCORD_ID }}
           HOYOLAB_USER_COOKIES: ${{ secrets.HOYOLAB_USER_COOKIES }}
           HOYOLAB_HSR_UID: ${{ secrets.HOYOLAB_HSR_UID }}
-          SHEET_CREDENTIALS: service_account.json
+          SHEET_CREDENTIALS: ${{ runner.temp }}/service_account.json
         run: uv run python -m scripts.update_sheet
+
+      - name: Clean up credentials
+        if: always()
+        run: rm -f "$RUNNER_TEMP/service_account.json"

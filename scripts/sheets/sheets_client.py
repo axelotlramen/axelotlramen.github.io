@@ -43,7 +43,12 @@ class GoogleSheetsClient:
         self.gs_client = gspread.authorize(self.creds)
 
     def upsert_rows(self, rows: list[SheetRow]) -> UpsertResult:
-        """Replace existing rows for the same (version, mode); keeps the sheet sorted."""
+        """Replace existing rows for the same (version, mode); keeps the sheet sorted.
+
+        Inserts the new rows before deleting the old ones, so a failure between the two
+        steps leaves the old data in place (possibly duplicated, never lost) instead of
+        deleting first and risking the insert never happening.
+        """
         if not rows:
             return UpsertResult(changed=False)
 
@@ -52,18 +57,24 @@ class GoogleSheetsClient:
         version = rows[0][VERSION_COL]
         mode_values = list(dict.fromkeys(row[MODE_COL] for row in rows))
 
-        previous_rows = self._delete_matching_rows(worksheet, version, mode_values)
+        previous_rows, previous_row_numbers = self._find_matching_rows(worksheet, version, mode_values)
         rows = _preserve_manual_scores(previous_rows, rows)
 
         insert_at = self._find_insert_row(worksheet, version, mode_values)
         worksheet.insert_rows(rows, row=insert_at)
 
+        shift = len(rows)
+        adjusted_numbers = [n + shift if n >= insert_at else n for n in previous_row_numbers]
+        for row_number in sorted(adjusted_numbers, reverse=True):
+            worksheet.delete_rows(row_number)
+
         diff_lines = _diff_rows(previous_rows, rows)
         return UpsertResult(changed=bool(diff_lines), diff_lines=diff_lines, version=version)
 
-    def _delete_matching_rows(
+    def _find_matching_rows(
         self, worksheet: gspread.Worksheet, version: str, mode_values: list[str]
-    ) -> list[SheetRow]:
+    ) -> tuple[list[SheetRow], list[int]]:
+        """Rows (and their row numbers) already on the sheet for this (version, mode) block."""
         values = worksheet.get_all_values()
 
         matching = [
@@ -72,10 +83,7 @@ class GoogleSheetsClient:
             if row[VERSION_COL] == version and row[MODE_COL] in mode_values
         ]
 
-        for row_number, _ in reversed(matching):
-            worksheet.delete_rows(row_number)
-
-        return [row for _, row in matching]
+        return [row for _, row in matching], [row_number for row_number, _ in matching]
 
     def _find_insert_row(
         self, worksheet: gspread.Worksheet, version: str, mode_values: list[str]

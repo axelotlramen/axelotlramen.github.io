@@ -2,20 +2,24 @@ name: Weekly Character Usage Update
 
 on:
   schedule:
-    - cron: "0 12 * * 2" # Tuesdays, ~7 AM EST
+    - cron: "0 12 * * 2" # Tuesdays, 12:00 UTC (~7 AM EST / 8 AM EDT)
   workflow_dispatch: # allows manual runs too
 
 permissions:
   contents: write
 
+concurrency:
+  group: data-updates
+  cancel-in-progress: false
+
 jobs:
   weekly-usage:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
 
       - name: Install uv
-        uses: astral-sh/setup-uv@v5
+        uses: astral-sh/setup-uv@d4b2f3b6ecc6e67c4457f6d3e41ec42d3d0fcb86 # v5
         with:
           python-version: "3.11"
           enable-cache: true
@@ -26,14 +30,20 @@ jobs:
       - name: Write Google service account credentials
         env:
           GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
-        run: printf '%s' "$GOOGLE_SERVICE_ACCOUNT_JSON" > service_account.json
+        run: |
+          umask 077
+          printf '%s' "$GOOGLE_SERVICE_ACCOUNT_JSON" > "$RUNNER_TEMP/service_account.json"
 
       - name: Run weekly usage aggregation
         env:
           HOYOLAB_WEBHOOK: ${{ secrets.HOYOLAB_WEBHOOK }}
           DISCORD_ID: ${{ secrets.DISCORD_ID }}
-          SHEET_CREDENTIALS: service_account.json
+          SHEET_CREDENTIALS: ${{ runner.temp }}/service_account.json
         run: uv run python -m scripts.update_usage
+
+      - name: Clean up credentials
+        if: always()
+        run: rm -f "$RUNNER_TEMP/service_account.json"
 
       - name: Commit updated usage CSVs
         run: |

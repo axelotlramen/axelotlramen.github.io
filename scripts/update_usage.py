@@ -197,8 +197,14 @@ def run() -> None:
 
     except Exception as error:
         logger.error(f"Weekly character usage update failed: {error}")
-        notifier.send_failure("Weekly Character Usage Update", str(error))
+        try:
+            notifier.send_failure("Weekly Character Usage Update", str(error))
+        except Exception:
+            logger.exception("Failure notification also failed")
         raise
+
+    finally:
+        notifier.close()
 
 
 if __name__ == "__main__":

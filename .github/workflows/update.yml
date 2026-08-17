@@ -2,8 +2,15 @@ name: Update And Run Tasks
 
 on:
   schedule:
-    - cron: "27 17 * * *" # 12:27 PM EST
+    - cron: "27 17 * * *" # 17:27 UTC (12:27 PM EST / 1:27 PM EDT)
   workflow_dispatch: # allows manual runs too
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-updates
+  cancel-in-progress: false
 
 jobs:
   update:
@@ -11,10 +18,10 @@ jobs:
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
 
       - name: Install uv
-        uses: astral-sh/setup-uv@v5
+        uses: astral-sh/setup-uv@d4b2f3b6ecc6e67c4457f6d3e41ec42d3d0fcb86 # v5
         with:
           python-version: "3.11"
           enable-cache: true
@@ -42,5 +49,7 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add data/stats.json data/hsr_diary_log.xlsx data/genshin_diary_log.xlsx
-          git commit -m "Update stats & diary"
-          git push
+          if ! git diff --cached --quiet; then
+            git commit -m "Update stats & diary"
+            git push
+          fi
