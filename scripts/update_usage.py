@@ -48,33 +48,54 @@ def _melt_units(df: pd.DataFrame) -> pd.DataFrame:
     return long_df[long_df["Unit"] != ""]  # type: ignore
 
 
+def _patch_buckets() -> list[tuple[float, float]]:
+    """(lower, upper) patch bounds per major version; the newest bucket has no upper bound."""
+    return [
+        (threshold, PATCH_THRESHOLDS[i + 1] if i + 1 < len(PATCH_THRESHOLDS) else float("inf"))
+        for i, threshold in enumerate(PATCH_THRESHOLDS)
+    ]
+
+
+def _in_patch_bucket(df: pd.DataFrame, lower: float, upper: float) -> pd.DataFrame:
+    return df[(df["Patch"] >= lower) & (df["Patch"] < upper)]  # type: ignore
+
+
 def build_overall_usage(df: pd.DataFrame) -> pd.DataFrame:
-    """Unit, plus how many times each has been used since patch 2.0/3.0/4.0."""
+    """Unit, usage count per major version (2.x/3.x/4.x), plus a lifetime Total Usage."""
     columns = []
-    for threshold in PATCH_THRESHOLDS:
-        subset = _melt_units(df[df["Patch"] >= threshold])  # type: ignore
-        columns.append(subset["Unit"].value_counts().rename(f"Uses Since {threshold}"))
+    for lower, upper in _patch_buckets():
+        subset = _melt_units(_in_patch_bucket(df, lower, upper))
+        columns.append(subset["Unit"].value_counts().rename(f"Uses in {lower}"))
+    columns.append(_melt_units(df)["Unit"].value_counts().rename("Total Usage"))
 
     result = pd.concat(columns, axis=1).fillna(0).astype(int)
     result.index.name = "Unit"
-    return result.reset_index().sort_values("Unit").reset_index(drop=True)
+    result = result.reset_index()
+    return result.sort_values(f"Uses in {CURRENT_THRESHOLD}", ascending=False).reset_index(drop=True)
 
 
 def build_per_endgame_usage(df: pd.DataFrame) -> pd.DataFrame:
-    """Endgame Type + Unit, plus usage count and average score since 2.0/3.0/4.0."""
-    per_threshold = []
-    for threshold in PATCH_THRESHOLDS:
-        subset = _melt_units(df[df["Patch"] >= threshold])  # type: ignore
+    """Endgame Type + Unit, usage count/avg score per major version, plus lifetime totals."""
+    per_bucket = []
+    for lower, upper in _patch_buckets():
+        subset = _melt_units(_in_patch_bucket(df, lower, upper))
         grouped = subset.groupby(["Endgame Type", "Unit"])
-        counts = grouped.size().rename(f"Uses Since {threshold}")  # type: ignore
-        avg_scores = grouped["Score"].mean().rename(f"Avg Score Since {threshold}")  # type: ignore
-        per_threshold.append(pd.concat([counts, avg_scores], axis=1))
+        counts = grouped.size().rename(f"Uses in {lower}")  # type: ignore
+        avg_scores = grouped["Score"].mean().rename(f"Avg Score in {lower}")  # type: ignore
+        per_bucket.append(pd.concat([counts, avg_scores], axis=1))
 
-    result = pd.concat(per_threshold, axis=1)
-    for threshold in PATCH_THRESHOLDS:
-        uses_col = f"Uses Since {threshold}"
-        result[uses_col] = result[uses_col].fillna(0).astype(int)
-        result[f"Avg Score Since {threshold}"] = result[f"Avg Score Since {threshold}"].round(2)
+    all_grouped = _melt_units(df).groupby(["Endgame Type", "Unit"])
+    per_bucket.append(pd.concat([
+        all_grouped.size().rename("Total Usage"),  # type: ignore
+        all_grouped["Score"].mean().rename("Avg Score Overall"),  # type: ignore
+    ], axis=1))
+
+    result = pd.concat(per_bucket, axis=1)
+    for lower, _ in _patch_buckets():
+        result[f"Uses in {lower}"] = result[f"Uses in {lower}"].fillna(0).astype(int)
+        result[f"Avg Score in {lower}"] = result[f"Avg Score in {lower}"].round(2)
+    result["Total Usage"] = result["Total Usage"].fillna(0).astype(int)
+    result["Avg Score Overall"] = result["Avg Score Overall"].round(2)
 
     return result.reset_index().sort_values(["Endgame Type", "Unit"]).reset_index(drop=True)
 
@@ -83,11 +104,14 @@ def _current_patch_changes(
     key_cols: list[str], previous: pd.DataFrame | None, current: pd.DataFrame
 ) -> list[UsageChange]:
     """Only the usage/average-score changes for CURRENT_THRESHOLD (the most recent patch)."""
-    uses_col = f"Uses Since {CURRENT_THRESHOLD}"
-    avg_col = f"Avg Score Since {CURRENT_THRESHOLD}"
+    uses_col = f"Uses in {CURRENT_THRESHOLD}"
+    avg_col = f"Avg Score in {CURRENT_THRESHOLD}"
     has_avg_col = avg_col in current.columns
 
     previous_indexed = previous.set_index(key_cols) if previous is not None else None
+    # Guards against the columns not existing yet in an older previous.csv (e.g. right after a rename).
+    previous_has_uses = previous_indexed is not None and uses_col in previous_indexed.columns
+    previous_has_avg = previous_indexed is not None and avg_col in previous_indexed.columns
     current_indexed = current.set_index(key_cols)
 
     changes = []
@@ -96,10 +120,10 @@ def _current_patch_changes(
         new_uses = int(row[uses_col])  # type: ignore
         new_avg = _clean_avg(row[avg_col]) if has_avg_col else None  # type: ignore
 
-        if previous_indexed is not None and key in previous_indexed.index:
-            old_row = previous_indexed.loc[key]
+        if previous_has_uses and key in previous_indexed.index:  # type: ignore
+            old_row = previous_indexed.loc[key]  # type: ignore
             old_uses = int(old_row[uses_col])
-            old_avg = _clean_avg(old_row[avg_col]) if has_avg_col else None
+            old_avg = _clean_avg(old_row[avg_col]) if previous_has_avg else None
         else:
             old_uses, old_avg = 0, None
 
@@ -116,8 +140,8 @@ def _clean_avg(value: float) -> float | None:
 def build_top_units(
     overall_df: pd.DataFrame, top_n: int = TOP_UNITS_COUNT
 ) -> list[tuple[str, int]]:
-    """Top N units by usage since CURRENT_THRESHOLD, across all endgames combined."""
-    uses_col = f"Uses Since {CURRENT_THRESHOLD}"
+    """Top N units by usage in CURRENT_THRESHOLD, across all endgames combined."""
+    uses_col = f"Uses in {CURRENT_THRESHOLD}"
     top = overall_df.nlargest(top_n, uses_col)
     return [(unit, int(uses)) for unit, uses in zip(top["Unit"], top[uses_col])]
 

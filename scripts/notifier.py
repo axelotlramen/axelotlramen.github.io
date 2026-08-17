@@ -307,15 +307,15 @@ class EmbedBuilder:
         has_changes = bool(overall_changes or by_endgame_changes)
 
         description = (
-            f"📈 **Weekly character usage update — changes since patch {current_patch}.**"
+            f"📈 **Weekly character usage update — changes in patch {current_patch}.**"
             if has_changes
-            else f"✅ **Weekly character usage update — no changes since patch {current_patch}.**"
+            else f"✅ **Weekly character usage update — no changes in patch {current_patch}.**"
         )
 
         change_fields = []
         if overall_changes:
             table = EmbedBuilder._render_table(
-                ["Unit", f"Uses Since {current_patch}"],
+                ["Unit", f"Uses in {current_patch}"],
                 [
                     [change.label, f"{change.old_uses} → {change.new_uses}"]
                     for change in overall_changes
@@ -340,13 +340,13 @@ class EmbedBuilder:
         if not change_fields:
             change_fields.append({
                 "name": "Status",
-                "value": f"No usage changes since patch {current_patch}."
+                "value": f"No usage changes in patch {current_patch}."
             })
 
         now_est = now()
 
         embeds = [{
-            "title": f"Weekly Usage Changes (Since Patch {current_patch})",
+            "title": f"Weekly Usage Changes (Patch {current_patch})",
             "description": description,
             "color": GREEN_EMBED,
             "fields": change_fields,
@@ -357,14 +357,14 @@ class EmbedBuilder:
 
         if top_units:
             leaderboard = EmbedBuilder._render_table(
-                ["#", "Unit", f"Uses Since {current_patch}"],
+                ["#", "Unit", f"Uses in {current_patch}"],
                 [
                     [str(rank), unit, str(uses)]
                     for rank, (unit, uses) in enumerate(top_units, start=1)
                 ],
             )
             embeds.append({
-                "title": f"Top {len(top_units)} Units Since Patch {current_patch}",
+                "title": f"Top {len(top_units)} Units in Patch {current_patch}",
                 "color": GREEN_EMBED,
                 "description": leaderboard,
             })

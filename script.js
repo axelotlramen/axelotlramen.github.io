@@ -198,9 +198,9 @@ class HsrRenderer extends SectionRenderer {
     const chars = sr?.five_star_characters;
     if (!chars) return;
 
+    // Order comes from the backend (usage-based, see scripts/update_stats.py).
     const container = document.getElementById("hsr-characters");
     container.innerHTML = Object.entries(chars)
-      .sort(([, a], [, b]) => b.level - a.level)
       .map(([name, char]) =>
         this.renderCharacterCard({
           iconUrl: char.icon,
