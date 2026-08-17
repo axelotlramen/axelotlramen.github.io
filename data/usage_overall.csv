@@ -1,37 +1,37 @@
-Unit,Uses Since 2.0,Uses Since 3.0,Uses Since 4.0
-Aglaea,2,2,0
-Anaxa,29,29,7
-Archer,12,12,12
-Argenti,11,8,0
-Ashveil,18,18,18
-Aventurine,41,28,8
-Bronya,12,12,0
-Cipher,27,27,11
-DHPT,38,38,23
-Dr. Ratio,5,0,0
-Feixiao,35,29,11
-Firefly,10,0,0
-Gallagher,13,6,1
-Gilgamesh,6,6,6
-HM7,7,5,0
-HMC,10,0,0
-Herta,12,8,2
-Himeko,3,0,0
-Huohuo,27,22,8
-Hysilens,6,6,6
-Kafka,6,6,6
-MBlade,9,9,9
-Moze,3,3,3
-Mydei,5,5,0
-Pela,6,1,0
-Phainon,1,1,0
-RMC,37,37,14
-Rin Tohsaka,5,5,5
-Robin,58,45,16
-Ruan Mei,22,10,1
-Saber,12,12,6
-Seele,1,1,1
-Sparkle,16,16,16
-Sunday,50,47,13
-The Herta,15,15,0
-Tingyun,10,7,1
+Unit,Uses in 2.0,Uses in 3.0,Uses in 4.0,Total Usage
+DHPT,0,15,23,38
+Ashveil,0,0,18,18
+Robin,13,29,16,58
+Sparkle,0,0,16,16
+RMC,0,23,14,37
+Sunday,3,34,13,50
+Archer,0,0,12,12
+Feixiao,6,18,11,35
+Cipher,0,16,11,27
+MBlade,0,0,9,9
+Aventurine,13,20,8,41
+Huohuo,5,14,8,27
+Anaxa,0,22,7,29
+Hysilens,0,0,6,6
+Saber,0,6,6,12
+Gilgamesh,0,0,6,6
+Kafka,0,0,6,6
+Rin Tohsaka,0,0,5,5
+Moze,0,0,3,3
+Herta,4,6,2,12
+Tingyun,3,6,1,10
+Ruan Mei,12,9,1,22
+Gallagher,7,5,1,13
+Seele,0,0,1,1
+Firefly,10,0,0,10
+Dr. Ratio,5,0,0,5
+Pela,5,1,0,6
+HMC,10,0,0,10
+The Herta,0,15,0,15
+HM7,2,5,0,7
+Himeko,3,0,0,3
+Argenti,3,8,0,11
+Aglaea,0,2,0,2
+Phainon,0,1,0,1
+Bronya,0,12,0,12
+Mydei,0,5,0,5
