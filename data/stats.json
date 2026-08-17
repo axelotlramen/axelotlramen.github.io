@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-16T13:41:15.785697-04:00",
+  "last_updated": "2026-08-16T21:55:35.534099-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
@@ -484,7 +484,7 @@
         "lc": null
       }
     },
-    "stamina": 62,
+    "stamina": 145,
     "current_train_score": 500,
     "anomaly_arbitration": {
       "season": "Enwreathed by the World",
@@ -803,7 +803,7 @@
     "nickname": "avenlotl",
     "level": 58,
     "avatar_url": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/f6ed58ae3cfeeebd6e4956e7c5e4b725.png",
-    "achievements": 1040,
+    "achievements": 1043,
     "active_days": 384,
     "avatar_count": 59,
     "oculus": 1243,
@@ -976,23 +976,23 @@
       },
       "Traveler": {
         "icon": "https://enka.network/ui/UI_AvatarIcon_PlayerBoy.png",
-        "constellation": 6,
-        "element": "Dendro",
+        "constellation": 0,
+        "element": "Cryo",
         "weaponType": "SWORD",
         "level": 70,
         "friendship": 0,
         "weapon": {
-          "name": "Favonius Sword",
-          "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/cfda75195bd9c341e314a56e976d532f.png",
-          "rarity": 4,
-          "level": 80,
-          "refinement": 2
+          "name": "Exaiphanes Blade",
+          "icon": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/6a7ba976/8ec89cd8827583d02662704f5738efc8.png",
+          "rarity": 5,
+          "level": 20,
+          "refinement": 1
         }
       },
       "Manekina": {
         "icon": "https://enka.network/ui/UI_AvatarIcon_MannequinGirl.png",
         "constellation": 0,
-        "element": "Dendro",
+        "element": "Cryo",
         "weaponType": "SWORD",
         "level": 20,
         "friendship": 0,
@@ -1007,7 +1007,7 @@
       "Manekin": {
         "icon": "https://enka.network/ui/UI_AvatarIcon_MannequinBoy.png",
         "constellation": 0,
-        "element": "Dendro",
+        "element": "Cryo",
         "weaponType": "SWORD",
         "level": 20,
         "friendship": 0,
@@ -1081,7 +1081,7 @@
       }
     },
     "resin": 200,
-    "daily_task": 0
+    "daily_task": 4
   },
   "hsr_diary": {
     "Date": "2026-08-16",
@@ -1090,11 +1090,11 @@
   },
   "genshin_diary": {
     "Date": "2026-08-16",
-    "Net Currency Gain": 0,
+    "Net Currency Gain": 758,
     "Pulls Net Gain": 0
   },
   "endfield_attendance": {
-    "status": "Check-in Successful",
+    "status": "Already Claimed",
     "rewards": [
       {
         "name": "Arms INSP Kit",
@@ -1177,7 +1177,7 @@
         },
         {
           "awardId": "endfield_attendance_4_3",
-          "available": true,
+          "available": false,
           "done": true
         },
         {
@@ -1751,5 +1751,6 @@
     "stamina": "360",
     "daily_mission": 100,
     "last_updated": "2026-08-16T13:41:15.785439-04:00"
-  }
+  },
+  "degraded_sections": []
 }
