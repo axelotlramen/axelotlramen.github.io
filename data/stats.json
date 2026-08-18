@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-08-17T13:51:29.344105-04:00",
+  "last_updated": "2026-08-18T13:50:10.807856-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
     "avatar_url": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u47dee/63bad4d8cc536ef482b88b8aa3d8f867.png",
     "achievements": 1752,
-    "active_days": 994,
+    "active_days": 995,
     "avatar_count": 58,
     "chest_count": 1961,
     "five_star_characters": {
@@ -163,14 +163,6 @@
           "superimposition": 5
         }
       },
-      "Anaxa": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u47dee/30994a0901f8a44e19915e36d574eaae.png",
-        "eidolon": 0,
-        "element": "Wind",
-        "path": "ERUDITION",
-        "level": 80,
-        "lc": null
-      },
       "Gilgamesh": {
         "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u47dee/4e7d68e0fdc33a610a56470ca8c417ca.png",
         "eidolon": 1,
@@ -180,6 +172,42 @@
         "lc": {
           "name": "I Am As You Behold",
           "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u47dee/9e8c4896df1dc80e2ebc04c79b7b156c.png",
+          "rarity": 5,
+          "level": 80,
+          "superimposition": 1
+        }
+      },
+      "Anaxa": {
+        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u47dee/30994a0901f8a44e19915e36d574eaae.png",
+        "eidolon": 0,
+        "element": "Wind",
+        "path": "ERUDITION",
+        "level": 80,
+        "lc": null
+      },
+      "Saber": {
+        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u47dee/629bca9cd162579158e144f386c2cb46.png",
+        "eidolon": 0,
+        "element": "Wind",
+        "path": "DESTRUCTION",
+        "level": 80,
+        "lc": {
+          "name": "A Thankless Coronation",
+          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u47dee/c0c5b1a322be910015036001653310c6.png",
+          "rarity": 5,
+          "level": 80,
+          "superimposition": 1
+        }
+      },
+      "Rin Tohsaka": {
+        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u47dee/8e61465f0a73f3d2fa0bbd89afd3e4cd.png",
+        "eidolon": 0,
+        "element": "Quantum",
+        "path": "ERUDITION",
+        "level": 80,
+        "lc": {
+          "name": "Into the Unreachable Veil",
+          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u47dee/eee7aaa340f79b05b2baef625c28ca70.png",
           "rarity": 5,
           "level": 80,
           "superimposition": 1
@@ -199,20 +227,6 @@
           "superimposition": 5
         }
       },
-      "Saber": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u47dee/629bca9cd162579158e144f386c2cb46.png",
-        "eidolon": 0,
-        "element": "Wind",
-        "path": "DESTRUCTION",
-        "level": 80,
-        "lc": {
-          "name": "A Thankless Coronation",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u47dee/c0c5b1a322be910015036001653310c6.png",
-          "rarity": 5,
-          "level": 80,
-          "superimposition": 1
-        }
-      },
       "Kafka": {
         "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u47dee/1b938c427ca611ca7a2717b1a82b61be.png",
         "eidolon": 0,
@@ -225,20 +239,6 @@
           "rarity": 5,
           "level": 80,
           "superimposition": 2
-        }
-      },
-      "Rin Tohsaka": {
-        "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u47dee/8e61465f0a73f3d2fa0bbd89afd3e4cd.png",
-        "eidolon": 0,
-        "element": "Quantum",
-        "path": "ERUDITION",
-        "level": 80,
-        "lc": {
-          "name": "Into the Unreachable Veil",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u47dee/eee7aaa340f79b05b2baef625c28ca70.png",
-          "rarity": 5,
-          "level": 80,
-          "superimposition": 1
         }
       },
       "Ruan Mei": {
@@ -432,11 +432,11 @@
         "path": "NIHILITY",
         "level": 80,
         "lc": {
-          "name": "Good Night and Sleep Well",
-          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u47dee/431023ea1bd7741a2c43b81a2576d948.png",
+          "name": "Resolution Shines As Pearls of Sweat",
+          "icon": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u47dee/97dd73fc59f970cb12648575dcadba30.png",
           "rarity": 4,
           "level": 80,
-          "superimposition": 5
+          "superimposition": 3
         }
       },
       "Himeko": {
@@ -484,7 +484,7 @@
         "lc": null
       }
     },
-    "stamina": 74,
+    "stamina": 104,
     "current_train_score": 500,
     "anomaly_arbitration": {
       "season": "Enwreathed by the World",
@@ -804,10 +804,10 @@
     "level": 58,
     "avatar_url": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/f6ed58ae3cfeeebd6e4956e7c5e4b725.png",
     "achievements": 1048,
-    "active_days": 385,
+    "active_days": 386,
     "avatar_count": 59,
     "oculus": 1243,
-    "chest_count": 4202,
+    "chest_count": 4204,
     "five_star_characters": {
       "Nicole": {
         "icon": "https://enka.network/ui/UI_AvatarIcon_Nicole.png",
@@ -1081,29 +1081,29 @@
       }
     },
     "resin": 200,
-    "daily_task": 4
+    "daily_task": 0
   },
   "hsr_diary": {
-    "Date": "2026-08-17",
-    "Net Currency Gain": 1275,
+    "Date": "2026-08-18",
+    "Net Currency Gain": 150,
     "Pulls Net Gain": 0
   },
   "genshin_diary": {
-    "Date": "2026-08-17",
-    "Net Currency Gain": 130,
+    "Date": "2026-08-18",
+    "Net Currency Gain": 0,
     "Pulls Net Gain": 0
   },
   "endfield_attendance": {
     "status": "Check-in Successful",
     "rewards": [
       {
-        "name": "Talosian Credit Notes|T-Creds",
-        "count": 3000,
-        "icon": "https://static.skport.com/asset/endfield_attendance/2a58a0e85f39092433842ccd62324785.png"
+        "name": "Advanced Combat Record",
+        "count": 2,
+        "icon": "https://static.skport.com/asset/endfield_attendance/7f6ce8ae13546508255b89a4d8571fe3.png"
       }
     ],
     "attendance": {
-      "totalSignIns": 16,
+      "totalSignIns": 17,
       "calendar": [
         {
           "awardId": "endfield_attendance_1_2",
@@ -1182,13 +1182,13 @@
         },
         {
           "awardId": "endfield_attendance_7_3000",
-          "available": true,
+          "available": false,
           "done": true
         },
         {
           "awardId": "endfield_attendance_3_2",
-          "available": false,
-          "done": false
+          "available": true,
+          "done": true
         },
         {
           "awardId": "endfield_attendance_5_2",
@@ -1264,17 +1264,17 @@
     },
     "error": null,
     "nextAward": {
-      "name": "Advanced Combat Record",
+      "name": "Arms INSP Set",
       "count": 2,
-      "icon": "https://static.skport.com/asset/endfield_attendance/7f6ce8ae13546508255b89a4d8571fe3.png"
+      "icon": "https://static.skport.com/asset/endfield_attendance/90403112f070c14859d107b530ae5851.png"
     }
   },
   "endfield_data": {
     "nickname": "Axelle",
     "level": 60,
     "avatar_url": "https://static.skport.com/image/common/20260121/6beb98f8c8e7a81d37071bc3593b6321.png",
-    "achievements": 123,
-    "active_days": 3,
+    "achievements": 124,
+    "active_days": 4,
     "avatar_count": 26,
     "aurylenes": 365,
     "chest_count": 802,
@@ -1748,9 +1748,9 @@
         }
       }
     },
-    "stamina": "360",
-    "daily_mission": 0,
-    "last_updated": "2026-08-16T13:41:15.785439-04:00"
+    "stamina": "98",
+    "daily_mission": 100,
+    "last_updated": "2026-08-18T13:50:10.807566-04:00"
   },
   "degraded_sections": []
 }
