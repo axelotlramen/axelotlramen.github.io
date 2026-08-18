@@ -786,3 +786,197 @@ p {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+/* =========================
+   Endgame History
+========================= */
+.endgame-filters {
+  max-width: 1200px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.endgame-result-count {
+  max-width: 1200px;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.endgame-filter-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.endgame-filter-row > *:last-child {
+  min-width: 0;
+  flex: 1;
+}
+
+.endgame-filter-label {
+  flex-shrink: 0;
+  width: 90px;
+  padding-top: 0.5rem;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.8rem;
+}
+
+.endgame-mode-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.endgame-mode-btn {
+  background: var(--raise);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 999px;
+  padding: 0.45rem 1rem;
+  font-family: "Outfit", sans-serif;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    border-color 0.2s,
+    color 0.2s;
+}
+
+.endgame-mode-btn:hover {
+  border-color: var(--gold-glow);
+}
+
+.endgame-mode-btn.active {
+  background: var(--gold-dim);
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.endgame-text-input {
+  background: var(--raise);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: var(--radius);
+  padding: 0.5rem 0.9rem;
+  font-family: "Outfit", sans-serif;
+  font-size: 0.85rem;
+  width: 100%;
+  max-width: 320px;
+}
+
+.endgame-text-input:focus {
+  outline: none;
+  border-color: var(--gold-glow);
+}
+
+.endgame-character-filter {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  width: 100%;
+}
+
+.endgame-character-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.8rem;
+  max-height: 140px;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+.endgame-character-option {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.endgame-character-option:has(input:checked) {
+  color: var(--gold);
+}
+
+#endgame-results {
+  max-width: 1200px;
+}
+
+.endgame-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+
+.endgame-table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.82rem;
+}
+
+.endgame-table th,
+.endgame-table td {
+  padding: 0.6rem 0.8rem;
+  text-align: left;
+  white-space: nowrap;
+  border-bottom: 1px solid var(--border);
+}
+
+.endgame-table th {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.72rem;
+  position: sticky;
+  top: 0;
+  background: var(--panel);
+}
+
+.endgame-table tbody tr:hover {
+  background: var(--raise);
+}
+
+.endgame-table th.endgame-icon-col,
+.endgame-table td.endgame-icon-col {
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  text-align: center;
+  width: 44px;
+}
+
+.endgame-table td.endgame-boss-cell {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600;
+  color: var(--gold);
+  white-space: normal;
+}
+
+.endgame-table td.endgame-boss-unknown {
+  color: var(--muted);
+  font-weight: 500;
+  font-style: italic;
+}
+
+.endgame-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  background: var(--raise);
+  display: block;
+}
