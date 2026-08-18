@@ -5,6 +5,9 @@ on:
     - cron: "0 12 * * *" # 12:00 UTC (~7 AM EST / 8 AM EDT)
   workflow_dispatch: # allows manual runs too
 
+permissions:
+  contents: write
+
 concurrency:
   group: data-updates
   cancel-in-progress: false
@@ -43,3 +46,13 @@ jobs:
       - name: Clean up credentials
         if: always()
         run: rm -f "$RUNNER_TEMP/service_account.json"
+
+      - name: Commit & push endgame history CSV
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/endgame_history.csv
+          if ! git diff --cached --quiet; then
+            git commit -m "Update endgame history CSV"
+            git push
+          fi

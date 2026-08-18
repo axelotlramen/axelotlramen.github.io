@@ -7,6 +7,7 @@ import genshin
 from scripts.constants import MODE_LABELS, ModeReport
 from scripts.logging_config import setup_logging
 from scripts.notifier import EmbedBuilder, WebhookClient
+from scripts.sheets.csv_export import build_endgame_history_csv
 from scripts.sheets.enums import ChallengeMode
 from scripts.sheets.sheets_client import GoogleSheetsClient
 from scripts.sheets.version import VersionResolver
@@ -31,10 +32,9 @@ async def run() -> None:
         genshin_client = genshin.Client()
         genshin_client.set_cookies(os.environ["HOYOLAB_USER_COOKIES"])
         uid = int(os.environ["HOYOLAB_HSR_UID"])
+        gs_client = GoogleSheetsClient()
 
-        writer = await SheetWriter.create(
-            genshin_client, uid, GoogleSheetsClient(), VersionResolver()
-        )
+        writer = await SheetWriter.create(genshin_client, uid, gs_client, VersionResolver())
 
         reports = []
         for mode in DAILY_MODES:
@@ -56,6 +56,11 @@ async def run() -> None:
                 logger.error(f"{label}: failed - {error}")
 
         failed_modes = [report.mode.value for report in reports if report.error]
+
+        try:
+            await build_endgame_history_csv(gs_client, writer.nanoka_characters, genshin_client, uid)
+        except Exception:
+            logger.exception("Failed to build data/endgame_history.csv - leaving the previous version in place")
 
         notifier.send_hoyolab(elapsed=0.0, embeds=[EmbedBuilder.hsr_sheet_summary(reports)])
         logger.info("Sent daily sheet summary to Discord")

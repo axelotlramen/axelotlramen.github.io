@@ -55,6 +55,8 @@ HSR_SHORT_NAMES = {
     "Remembrance Trailblazer": "RMC",
     "Dan Heng • Permansor Terrae": "DHPT",
     "Mortenax Blade": "MBlade",
+    "Harmony Trailblazer": "HMC",
+    "The Hunt March 7th": "HM7",
 }
 
 MODE_LABELS = {

@@ -29,3 +29,8 @@ test = ["pytest"]
 
 [tool.pytest.ini_options]
 pythonpath = ["."]
+
+[tool.pyright]
+# Specifying `exclude` at all disables pyright's implicit default excludes (dot-dirs like
+# .nox/.venv, __pycache__, etc.) - so those have to be listed explicitly alongside ours.
+exclude = ["codebase_reviews", "**/.nox", "**/.venv", "**/__pycache__", "**/.git"]
