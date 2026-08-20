@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-08-19T13:47:07.510645-04:00",
+  "last_updated": "2026-08-20T13:53:13.121866-04:00",
   "hsr_data": {
     "nickname": "Caelus",
     "level": 70,
     "avatar_url": "https://act-webstatic.hoyoverse.com/darkmatter/hkrpg/prod_gf_cn/item_icon_u47dee/63bad4d8cc536ef482b88b8aa3d8f867.png",
     "achievements": 1752,
-    "active_days": 996,
+    "active_days": 997,
     "avatar_count": 58,
     "chest_count": 1961,
     "five_star_characters": {
@@ -484,8 +484,8 @@
         "lc": null
       }
     },
-    "stamina": 300,
-    "current_train_score": 0,
+    "stamina": 72,
+    "current_train_score": 500,
     "anomaly_arbitration": {
       "season": "Enwreathed by the World",
       "boss_stars": 3,
@@ -751,7 +751,7 @@
       "total_stars": 36,
       "floor_data": {
         "floor": "Stormcleanse (XII)Starward Mode",
-        "cycles": 1,
+        "cycles": 0,
         "first_half": [
           {
             "id": 1015,
@@ -803,11 +803,11 @@
     "nickname": "avenlotl",
     "level": 58,
     "avatar_url": "https://act-webstatic.hoyoverse.com/hk4e/e20200928calculate/item_icon/67c7f6c8/f6ed58ae3cfeeebd6e4956e7c5e4b725.png",
-    "achievements": 1049,
-    "active_days": 387,
+    "achievements": 1052,
+    "active_days": 388,
     "avatar_count": 59,
     "oculus": 1243,
-    "chest_count": 4226,
+    "chest_count": 4239,
     "five_star_characters": {
       "Nicole": {
         "icon": "https://enka.network/ui/UI_AvatarIcon_Nicole.png",
@@ -1080,30 +1080,30 @@
         }
       }
     },
-    "resin": 200,
+    "resin": 59,
     "daily_task": 4
   },
   "hsr_diary": {
-    "Date": "2026-08-19",
-    "Net Currency Gain": 0,
+    "Date": "2026-08-20",
+    "Net Currency Gain": 150,
     "Pulls Net Gain": 0
   },
   "genshin_diary": {
-    "Date": "2026-08-19",
-    "Net Currency Gain": 576,
+    "Date": "2026-08-20",
+    "Net Currency Gain": 314,
     "Pulls Net Gain": 0
   },
   "endfield_attendance": {
     "status": "Check-in Successful",
     "rewards": [
       {
-        "name": "Arms INSP Set",
-        "count": 2,
-        "icon": "https://static.skport.com/asset/endfield_attendance/90403112f070c14859d107b530ae5851.png"
+        "name": "Elementary Cognitive Carrier",
+        "count": 5,
+        "icon": "https://static.skport.com/asset/endfield_attendance/ed34d5a121dbc81da6f6991792ff97f6.png"
       }
     ],
     "attendance": {
-      "totalSignIns": 18,
+      "totalSignIns": 19,
       "calendar": [
         {
           "awardId": "endfield_attendance_1_2",
@@ -1192,13 +1192,13 @@
         },
         {
           "awardId": "endfield_attendance_5_2",
-          "available": true,
+          "available": false,
           "done": true
         },
         {
           "awardId": "endfield_attendance_2_5",
-          "available": false,
-          "done": false
+          "available": true,
+          "done": true
         },
         {
           "awardId": "endfield_attendance_8_100",
@@ -1264,16 +1264,16 @@
     },
     "error": null,
     "nextAward": {
-      "name": "Elementary Cognitive Carrier",
-      "count": 5,
-      "icon": "https://static.skport.com/asset/endfield_attendance/ed34d5a121dbc81da6f6991792ff97f6.png"
+      "name": "Oroberyl",
+      "count": 100,
+      "icon": "https://static.skport.com/asset/endfield_attendance/8ed434a6cdb173c96ed0572115112f93.png"
     }
   },
   "endfield_data": {
     "nickname": "Axelle",
     "level": 60,
     "avatar_url": "https://static.skport.com/image/common/20260121/6beb98f8c8e7a81d37071bc3593b6321.png",
-    "achievements": 124,
+    "achievements": 125,
     "active_days": 4,
     "avatar_count": 26,
     "aurylenes": 365,
@@ -1748,7 +1748,7 @@
         }
       }
     },
-    "stamina": "297",
+    "stamina": "360",
     "daily_mission": 0,
     "last_updated": "2026-08-18T13:50:10.807566-04:00"
   },
