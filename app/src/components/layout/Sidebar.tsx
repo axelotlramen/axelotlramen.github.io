@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import { X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { profile } from "@/content/profile";
 
@@ -10,10 +11,19 @@ const links = [
   { to: "/endgame", label: "Endgame Log", color: "var(--tab-endgame)", rotate: "-1.5deg", dark: false },
 ];
 
-export function Sidebar() {
+interface SidebarProps {
+  open: boolean;
+  onNavigate: () => void;
+}
+
+export function Sidebar({ open, onNavigate }: SidebarProps) {
   return (
     <aside
-      className="relative flex w-56 shrink-0 flex-col bg-sidebar pt-8 pl-6"
+      className={cn(
+        "fixed inset-y-0 left-0 z-40 flex w-64 shrink-0 flex-col overflow-y-auto bg-sidebar pt-8 pr-6 pl-6 transition-transform duration-200",
+        "md:static md:z-auto md:w-56 md:translate-x-0 md:pr-0",
+        open ? "translate-x-0" : "-translate-x-full"
+      )}
       style={{
         backgroundImage:
           "repeating-linear-gradient(to bottom, color-mix(in oklch, var(--sidebar-foreground) 25%, transparent) 0, color-mix(in oklch, var(--sidebar-foreground) 25%, transparent) 8px, transparent 8px, transparent 26px)",
@@ -23,18 +33,28 @@ export function Sidebar() {
         boxShadow: "inset -6px 0 10px -8px rgba(0,0,0,0.35)",
       }}
     >
+      <button
+        type="button"
+        onClick={onNavigate}
+        aria-label="Close menu"
+        className="absolute top-4 right-4 rounded-md p-1 text-sidebar-foreground md:hidden"
+      >
+        <X className="size-5" />
+      </button>
+
       <h2
         className="mb-10 pl-4 text-4xl text-sidebar-foreground"
         style={{ fontFamily: "var(--font-heading)", transform: "rotate(-3deg)" }}
       >
         {profile.username}
       </h2>
-      <nav className="flex flex-col gap-3">
+      <nav className="flex flex-col gap-3 pb-8">
         {links.map((link) => (
           <NavLink
             key={link.to}
             to={link.to}
             end={link.end}
+            onClick={onNavigate}
             className={({ isActive }) =>
               cn(
                 "notebook-tab relative py-2.5 pl-4 pr-5 text-lg transition-transform duration-150",

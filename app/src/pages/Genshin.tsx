@@ -1,4 +1,4 @@
-import { useStats } from "@/hooks/useStats";
+import { useStatsContext } from "@/context/StatsContext";
 import { ProfileCard } from "@/components/stats/ProfileCard";
 import { MiniCard } from "@/components/stats/MiniCard";
 import { CharacterCard } from "@/components/stats/CharacterCard";
@@ -8,7 +8,7 @@ import { Doodle } from "@/components/decor/Doodle";
 import { Skeleton } from "@/components/ui/skeleton";
 
 export function Genshin() {
-  const { data, loading, error } = useStats();
+  const { data, loading, error } = useStatsContext();
   const gi = data?.genshin_data;
 
   return (

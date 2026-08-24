@@ -1,4 +1,4 @@
-import { useStats } from "@/hooks/useStats";
+import { useStatsContext } from "@/context/StatsContext";
 import { ProfileCard } from "@/components/stats/ProfileCard";
 import { IntroCard } from "@/components/stats/IntroCard";
 import { EmptyState } from "@/components/stats/EmptyState";
@@ -7,7 +7,7 @@ import { Doodle } from "@/components/decor/Doodle";
 import { Skeleton } from "@/components/ui/skeleton";
 
 export function Home() {
-  const { data, loading, error } = useStats();
+  const { data, loading, error } = useStatsContext();
 
   return (
     <div className="relative">

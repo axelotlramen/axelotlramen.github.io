@@ -1,4 +1,4 @@
-import { useStats } from "@/hooks/useStats";
+import { useStatsContext } from "@/context/StatsContext";
 import { ProfileCard } from "@/components/stats/ProfileCard";
 import { MiniCard } from "@/components/stats/MiniCard";
 import { CharacterCard } from "@/components/stats/CharacterCard";
@@ -17,7 +17,7 @@ function formatRecruitedDate(ownedAt: number | undefined): string | null {
 }
 
 export function Endfield() {
-  const { data, loading, error } = useStats();
+  const { data, loading, error } = useStatsContext();
   const ef = data?.endfield_data;
 
   return (
