@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>axelotlramen's Gacha Dashboard</title>
+    <!--
+      GitHub Pages serves this for any path with no matching file (i.e. every
+      client-routed path but "/"). It re-encodes the path into a query string
+      redirect to "/", which index.html's inline script decodes back into a
+      real route before React Router mounts. Standard "spa-github-pages"
+      pattern (https://github.com/rafgraph/spa-github-pages).
+    -->
+    <script>
+      var segmentCount = 0;
+      var l = window.location;
+      l.replace(
+        l.protocol +
+          "//" +
+          l.hostname +
+          (l.port ? ":" + l.port : "") +
+          l.pathname
+            .split("/")
+            .slice(0, 1 + segmentCount)
+            .join("/") +
+          "/?/" +
+          l.pathname
+            .slice(1)
+            .split("/")
+            .slice(segmentCount)
+            .join("/")
+            .replace(/&/g, "~and~") +
+          (l.search ? "&" + l.search.slice(1).replace(/&/g, "~and~") : "") +
+          l.hash
+      );
+    </script>
+  </head>
+  <body></body>
+</html>
